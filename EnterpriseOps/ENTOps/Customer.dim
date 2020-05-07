@@ -1,0 +1,1854 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Customer</ID>
+  <Name>Customer</Name>
+  <CreatedTimestamp>2020-05-06T19:03:56.683333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2020-05-06T19:03:56.683333Z</LastSchemaUpdate>
+  <Description>Customer attributes represented in two separate cube dimensions, Bill To Customer (who will pay for it)  and Order Customer (who places the Order, often who we also Ship-to).  In some cases, the Order Customer wants shipping to go to a different address.  This is represented in the Deliver To dimension.  
+
+
+</Description>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="6" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2725" scrolltop="-7316" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="4868" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" left="20" top="0" logicalid="3" controlid="1" masterid="0" hint1="0" hint2="0" width="0" height="0" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="0" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="0" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00000000000000000000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj />
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCustomer" left="0" top="0" logicalid="4" controlid="2" masterid="0" hint1="0" hint2="0" width="5001" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008913000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="ENTSales_DimCustomer" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2725</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7316</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="192">
+            <Shape Id="Customer Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Customer Key" />
+                <Attribute Id="Addr Last Mod Dtm" />
+                <Attribute Id="Addr Line1" />
+                <Attribute Id="Addr Line2" />
+                <Attribute Id="Cash Disc Cd" />
+                <Attribute Id="Charges Group Cd" />
+                <Attribute Id="City" />
+                <Attribute Id="Classification Group Cd" />
+                <Attribute Id="Commission Group Cd" />
+                <Attribute Id="Country Region Cd" />
+                <Attribute Id="County" />
+                <Attribute Id="Credit Limit" />
+                <Attribute Id="CSR Cd" />
+                <Attribute Id="Currency Cd" />
+                <Attribute Id="Cust Group Cd" />
+                <Attribute Id="Cust Type Id" />
+                <Attribute Id="Default Business Unit Cd" />
+                <Attribute Id="Default Cost Site Cd" />
+                <Attribute Id="Default Sales Channel Cd" />
+                <Attribute Id="Default Site Id" />
+                <Attribute Id="Default Warehouse Cd" />
+                <Attribute Id="Delivery Mode Cd" />
+                <Attribute Id="Delivery Reason Cd" />
+                <Attribute Id="Delivery Terms Cd" />
+                <Attribute Id="Disc Price Group Cd" />
+                <Attribute Id="Freight GL Acct Num" />
+                <Attribute Id="GL Acct Num" />
+                <Attribute Id="Hold Status Id" />
+                <Attribute Id="Is Backorder Allowed" />
+                <Attribute Id="Is Credit Limit Mandatory" />
+                <Attribute Id="Is Freight Accrual" />
+                <Attribute Id="Is Mail Nothing" />
+                <Attribute Id="Is Mail Opt In" />
+                <Attribute Id="Is Mail Opt Out" />
+                <Attribute Id="Is Mail1 Per Qtr" />
+                <Attribute Id="Is Mill" />
+                <Attribute Id="Is No Rent" />
+                <Attribute Id="Legal Entity Cd" />
+                <Attribute Id="Loyalty Auto Renew Alert Dt" />
+                <Attribute Id="Loyalty Auto Renew Flag" />
+                <Attribute Id="Loyalty Birth Dt" />
+                <Attribute Id="Loyalty Exp Dt" />
+                <Attribute Id="Loyalty Orig Start Dt" />
+                <Attribute Id="Loyalty Start Dt" />
+                <Attribute Id="Loyalty Status" />
+                <Attribute Id="Pallet Type" />
+                <Attribute Id="Payment Method" />
+                <Attribute Id="Payment Terms Cd" />
+                <Attribute Id="Postal Code" />
+                <Attribute Id="Pref Last Mod Dtm" />
+                <Attribute Id="Primary Email" />
+                <Attribute Id="Primary Phone" />
+                <Attribute Id="Record Type" />
+                <Attribute Id="Remit Vendor Num" />
+                <Attribute Id="Sales Pool Cd" />
+                <Attribute Id="SCF Code" />
+                <Attribute Id="State Province" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Parent Acct Num" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent Acct Num" />
+              </Attributes>
+              <Position x="265" y="20" />
+            </Shape>
+            <Shape Id="Bill To Acct Num" Expanded="false">
+              <Attributes>
+                <Attribute Id="Bill To Acct Num" />
+              </Attributes>
+              <Position x="265" y="68" />
+            </Shape>
+            <Shape Id="Sales District Cd" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sales District Cd" />
+              </Attributes>
+              <Position x="265" y="116" />
+            </Shape>
+            <Shape Id="Sales Manager Cd" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sales Manager Cd" />
+              </Attributes>
+              <Position x="265" y="164" />
+            </Shape>
+            <Shape Id="Company Cd" Expanded="false">
+              <Attributes>
+                <Attribute Id="Company Cd" />
+                <Attribute Id="Acct Num 1" />
+              </Attributes>
+              <Position x="265" y="212" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>1699-12-31T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>Enterprise DW</DataSourceViewID>
+  </Source>
+  <Type>Customers</Type>
+  <ErrorConfiguration>
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute>
+      <ID>Customer Key</ID>
+      <Name>Customer</Name>
+      <Description>Full Customer Name</Description>
+      <Usage>Key</Usage>
+      <EstimatedCount>1410</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CustomerKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>CustName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Company Cd</AttributeID>
+          <Name>Acct Num</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Legal Entity Cd</AttributeID>
+          <Name>Legal Entity</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Record Type</AttributeID>
+          <Name>Record Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Cust Group Cd</AttributeID>
+          <Name>Cust Group</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Cust Type Id</AttributeID>
+          <Name>Cust Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Hold Status Id</AttributeID>
+          <Name>Hold Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Classification Group Cd</AttributeID>
+          <Name>Classification Group</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Addr Line1</AttributeID>
+          <Name>Addr Line1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Addr Line2</AttributeID>
+          <Name>Addr Line2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>City</AttributeID>
+          <Name>City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>State Province</AttributeID>
+          <Name>State Province</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>County</AttributeID>
+          <Name>County</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Postal Code</AttributeID>
+          <Name>Postal Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>SCF Code</AttributeID>
+          <Name>SCF Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Country Region Cd</AttributeID>
+          <Name>Country Region</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Primary Email</AttributeID>
+          <Name>Primary Email</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Primary Phone</AttributeID>
+          <Name>Primary Phone</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Addr Last Mod Dtm</AttributeID>
+          <Name>Addr Last Mod Dtm</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Remit Vendor Num</AttributeID>
+          <Name>Remit Vendor Num</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>GL Acct Num</AttributeID>
+          <Name>GL Acct Num</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Pallet Type</AttributeID>
+          <Name>Pallet Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Sales Manager Cd</AttributeID>
+          <Name>Sales Manager</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Sales District Cd</AttributeID>
+          <Name>Sales District</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Currency Cd</AttributeID>
+          <Name>Currency Cd</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Is Credit Limit Mandatory</AttributeID>
+          <Name>Is Credit Limit Mandatory</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Credit Limit</AttributeID>
+          <Name>Credit Limit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Delivery Terms Cd</AttributeID>
+          <Name>Delivery Terms</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Delivery Mode Cd</AttributeID>
+          <Name>Delivery Mode</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Delivery Reason Cd</AttributeID>
+          <Name>Delivery Reason</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Is Freight Accrual</AttributeID>
+          <Name>Is Freight Accrual</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Freight GL Acct Num</AttributeID>
+          <Name>Freight GL Acct Num</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Default Site Id</AttributeID>
+          <Name>Default Site</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Default Warehouse Cd</AttributeID>
+          <Name>Default Warehouse</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Sales Pool Cd</AttributeID>
+          <Name>Sales Pool</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CSR Cd</AttributeID>
+          <Name>CSR</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Is Backorder Allowed</AttributeID>
+          <Name>Is Backorder Allowed</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Disc Price Group Cd</AttributeID>
+          <Name>Disc Price Group</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Charges Group Cd</AttributeID>
+          <Name>Charges Group</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Payment Terms Cd</AttributeID>
+          <Name>Payment Terms</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Cash Disc Cd</AttributeID>
+          <Name>Cash Disc</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Payment Method</AttributeID>
+          <Name>Payment Method</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Commission Group Cd</AttributeID>
+          <Name>Commission Group</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Default Business Unit Cd</AttributeID>
+          <Name>Default Business Unit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Default Cost Site Cd</AttributeID>
+          <Name>Default Cost Site</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Default Sales Channel Cd</AttributeID>
+          <Name>Default Sales Channel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Is Mill</AttributeID>
+          <Name>Is Mill</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Bill To Acct Num</AttributeID>
+          <Name>Bill To Customer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Parent Acct Num</AttributeID>
+          <Name>Parent Customer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Parent Acct Num 1</AttributeID>
+          <Name>Parent Acct Num</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Company Cd</ID>
+      <Name>Acct Num</Name>
+      <Description>Customer Account Number</Description>
+      <EstimatedCount>1410</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CompanyCd</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>AcctNum</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>AcctNum</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Acct Num 1</AttributeID>
+          <Name>Cust Name-Num</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Legal Entity Cd</ID>
+      <Name>Legal Entity</Name>
+      <Description>Legal Entity Description.  Finance manages this field as a way to note Payment information. </Description>
+      <EstimatedCount>24</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>LegalEntityCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>LegalEntityDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Finance</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Record Type</ID>
+      <Name>Record Type</Name>
+      <Description>Notes whether the customer account represents an Organization or a Person.</Description>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>RecordType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>RecordType</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Cust Group Cd</ID>
+      <Name>Cust Group</Name>
+      <Description>Customer Group Name (ex. Trade, Catalog direct, Catalog wholesale, Internal Company Sale)</Description>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CustGroupCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>CustGroupName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Cust Type Id</ID>
+      <Name>Cust Type</Name>
+      <Description>Customer Type Description (ex. Customer, Prospect, Ship to)</Description>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CustTypeId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>CustTypeDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Hold Status Id</ID>
+      <Name>Hold Status</Name>
+      <Description>Hold Status Desc (ex. All, Invoice, No)</Description>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>HoldStatusId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>HoldStatusDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Other</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Classification Group Cd</ID>
+      <Name>Invoice Method</Name>
+      <Description>Classifcation Group Description (ex. EDI, EDI &amp; Email, Email)</Description>
+      <EstimatedCount>9</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>ClassificationGroupCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>ClassificationGroupDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Addr Line1</ID>
+      <Name>Addr Line1</Name>
+      <Description>Customer Primary Address Line 1</Description>
+      <EstimatedCount>1061</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>AddrLine1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>250</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>AddrLine1</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyOptimizedState>NotOptimized</AttributeHierarchyOptimizedState>
+      <AttributeHierarchyDisplayFolder>Geography</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Addr Line2</ID>
+      <Name>Addr Line2</Name>
+      <Description>Customer Primary Address Line 2</Description>
+      <EstimatedCount>70</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>AddrLine2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>250</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>AddrLine2</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Geography</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>City</ID>
+      <Name>City</Name>
+      <Description>Primary City</Description>
+      <EstimatedCount>647</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>City</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>City</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Geography</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>State Province</ID>
+      <Name>State Province</Name>
+      <Description>Primary State or Province</Description>
+      <EstimatedCount>58</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>StateProvince</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>StateProvince</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Geography</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>County</ID>
+      <Name>County</Name>
+      <Description>Primary County</Description>
+      <EstimatedCount>330</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>County</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>County</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Geography</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Postal Code</ID>
+      <Name>Postal Code</Name>
+      <Description>Primary Postal Code</Description>
+      <EstimatedCount>822</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>PostalCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>PostalCode</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Geography</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>SCF Code</ID>
+      <Name>SCF Code</Name>
+      <Description>A destination Sectional Center Facility (SCF) is a Processing and Distribution Center (P&amp;DC) of the United States Postal Service (USPS) that serves a designated geographical area defined by one or more three-digit ZIP Code prefixes.</Description>
+      <EstimatedCount>396</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>SCFCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>SCFCode</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Geography</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Country Region Cd</ID>
+      <Name>Country Region</Name>
+      <Description>Primary Country Region Name</Description>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CountryRegionCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>CountryRegionName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Geography</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Primary Email</ID>
+      <Name>Primary Email</Name>
+      <Description>Primary Contact E-mail Address</Description>
+      <EstimatedCount>405</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>PrimaryEmail</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>PrimaryEmail</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyOptimizedState>NotOptimized</AttributeHierarchyOptimizedState>
+      <AttributeHierarchyDisplayFolder>Contact</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Primary Phone</ID>
+      <Name>Primary Phone</Name>
+      <Description>Primary Contact Phone Number</Description>
+      <EstimatedCount>576</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>PrimaryPhone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>PrimaryPhone</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyOptimizedState>NotOptimized</AttributeHierarchyOptimizedState>
+      <AttributeHierarchyDisplayFolder>Contact</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Addr Last Mod Dtm</ID>
+      <Name>Addr Last Mod Dtm</Name>
+      <Description>Source Last Modified Datetime of Primary Address</Description>
+      <EstimatedCount>406</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>AddrLastModDtm</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>AddrLastModDtm</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Geography</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>M/d/yyyy</ddl300_300:FormatString>
+    </Attribute>
+    <Attribute>
+      <ID>Remit Vendor Num</ID>
+      <Name>Remit Vendor Num</Name>
+      <Description>Rermit Vendor Number</Description>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>RemitVendorNum</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>RemitVendorNum</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Finance</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>GL Acct Num</ID>
+      <Name>GL Acct Num</Name>
+      <Description>General Ledger Account number for Internal Customers.  Managed by Finance and stored in AX muti-use column "FEDERALCOMMENTS"</Description>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>GLAcctNum</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>GLAcctNum</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Finance</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Pallet Type</ID>
+      <Name>Pallet Type</Name>
+      <Description>Pallet Type for Wholesale Customers.  Managed by Wholesale and stored in AX multi-use column "FEDERALCOMMENTS"</Description>
+      <EstimatedCount>6</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>PalletType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>PalletType</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Sales Manager Cd</ID>
+      <Name>Sales Manager</Name>
+      <Description>Sales Manager/Director/Lead/CSD Name.  Housed as Employee Responsible in AX.</Description>
+      <EstimatedCount>21</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>SalesManagerCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>SalesManagerName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Sales</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Sales District Cd</ID>
+      <Name>Sales District</Name>
+      <Description>Sales District/Region description</Description>
+      <EstimatedCount>17</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>SalesDistrictCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>SalesDistrictDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Sales</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Currency Cd</ID>
+      <Name>Currency Cd</Name>
+      <Description>Customer Currency 3 character ISO Currency Code (ex. USD)</Description>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CurrencyCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>CurrencyCd</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Geography</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Is Credit Limit Mandatory</ID>
+      <Name>Is Credit Limit Mandatory</Name>
+      <Description>T/F Indicator noting if Credit Limit is mandatory for the Customer</Description>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>IsCreditLimitMandatory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>IsCreditLimitMandatory</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Credit Limit</ID>
+      <Name>Credit Limit</Name>
+      <Description>Customer Credit Limit</Description>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CreditLimit</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>CreditLimit</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Delivery Terms Cd</ID>
+      <Name>Delivery Terms</Name>
+      <Description>Delivery Term Description (ex. FOB Destination, FOB Shipper)</Description>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>DeliveryTermsCd</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CompanyCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>DeliveryTermsDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Delivery Mode Cd</ID>
+      <Name>Delivery Mode</Name>
+      <Description>Delivery Mode Description (ex. Fed Ex Ground, UPS ground, USPS Standard). For BFS, value might be blank if there are multi-ship points.</Description>
+      <EstimatedCount>16</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>DeliveryModeCd</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CompanyCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>DeliveryModeDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Delivery Reason Cd</ID>
+      <Name>Delivery Reason</Name>
+      <Description>Delivery Reason Description (ex. Customer Pick Up, Prepaid)</Description>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>DeliveryReasonCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>DeliveryReasonDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Is Freight Accrual</ID>
+      <Name>Is Freight Accrual</Name>
+      <Description>T/F Indicator on whether Freight is accrued for Customer Account.  FF no longer does Freight Accruals but default value is True.</Description>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>IsFreightAccrual</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>IsFreightAccrual</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Finance</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Freight GL Acct Num</ID>
+      <Name>Freight GL Acct Num</Name>
+      <Description>Freight GL Account.  Used for Aborn integration.</Description>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>FreightGLAcctNum</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>FreightGLAcctNum</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Finance</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Default Site Id</ID>
+      <Name>Default Site</Name>
+      <Description>Default Site Desc (ex. ADM-Buffalo, States BFS, Tighe). For BFS, value might be blank if there are multi-ship points.</Description>
+      <EstimatedCount>48</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>DefaultSiteId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>DefaultSiteDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Default Warehouse Cd</ID>
+      <Name>Default Warehouse</Name>
+      <Description>Default Warehouse Description (ex. ADM-Buffalo NY BFS, ARD-Columbus OH BFS, Bay State-Indiantown FL). For BFS, value might be blank if there are multi-ship points.</Description>
+      <EstimatedCount>50</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>DefaultWarehouseCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>DefaultWarehouseDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Sales Pool Cd</ID>
+      <Name>Sales Pool</Name>
+      <Description>Sales Pool Description (ex. BFS, Family Flour, Manufacturing)</Description>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>SalesPoolCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>SalesPoolDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CSR Cd</ID>
+      <Name>CSR</Name>
+      <Description>Customer Service Representative Name</Description>
+      <EstimatedCount>10</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CSRCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>CSRDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Is Backorder Allowed</ID>
+      <Name>Is Backorder Allowed</Name>
+      <Description>T/F indicator on whether Backordering is allowed for Customer Account</Description>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>IsBackorderAllowed</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>IsBackorderAllowed</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Disc Price Group Cd</ID>
+      <Name>Price Group</Name>
+      <Description>Discount Price Group Description (ex. Amazon, Elite, Mill Direct)</Description>
+      <EstimatedCount>17</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>DiscPriceGroupCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>DiscPriceGroupDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Charges Group Cd</ID>
+      <Name>Charges Group</Name>
+      <Description>Charges Group Description (ex. DA 1.00 %, FA $480, Sales Promotion 2.0  %)</Description>
+      <EstimatedCount>15</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>ChargesGroupCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>ChargesGroupDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Payment Terms Cd</ID>
+      <Name>Payment Terms</Name>
+      <Description>Payment Terms Description (ex. Net 10, Net 20, Pre Paid, Upon Receipt)</Description>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>PaymentTermsCd</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CompanyCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>PaymentTermsDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Cash Disc Cd</ID>
+      <Name>Cash Disc</Name>
+      <Description>Cash Discount Description (ex. 1% Net 10, 2% Net 15)</Description>
+      <EstimatedCount>10</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CashDiscCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>CashDiscDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Payment Method</ID>
+      <Name>Payment Method</Name>
+      <Description>Payment Method (ex. Cust Check, InterCo, On Account)</Description>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>PaymentMethod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>PaymentMethod</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Commission Group Cd</ID>
+      <Name>Commission Group</Name>
+      <Description>Commision Group Description  (ex. AC-CHAR, AC-METRO, AC-TARGET, NON BRKRD, SYS BOS RB)</Description>
+      <EstimatedCount>38</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CommissionGroupCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>CommissionGroupDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Sales</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Default Business Unit Cd</ID>
+      <Name>Default Business Unit</Name>
+      <Description>Default Business Unit Description</Description>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>DefaultBusinessUnitCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>DefaultBusinessUnitDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Default Cost Site Cd</ID>
+      <Name>Default Cost Site</Name>
+      <Description>Default Cost Site Description</Description>
+      <EstimatedCount>45</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>DefaultCostSiteCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>DefaultCostSiteDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Default Sales Channel Cd</ID>
+      <Name>Default Sales Channel</Name>
+      <Description>Default Sales Channel Description</Description>
+      <EstimatedCount>15</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>DefaultSalesChannelCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>DefaultSalesChannelDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Default Settings</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Acct Num 1</ID>
+      <Name>Cust Name-Num</Name>
+      <Description>Concatenation of Customer Name and Account Number</Description>
+      <EstimatedCount>1410</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>AcctNum</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CompanyCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>123</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>CustNameNum</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Is Mill</ID>
+      <Name>Is Mill</Name>
+      <Description>T/F Indicator noting True where Sales District/Region Code = "MILL"</Description>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Boolean</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>IsMill</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>-1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>IsMill</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Sales</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Bill To Acct Num</ID>
+      <Name>Bill To Customer</Name>
+      <Description>Bill-to (aka Invoice) Customer Name</Description>
+      <EstimatedCount>534</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>BillToAcctNum</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>CompanyCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>BillToCustName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Parent Acct Num</ID>
+      <Name>Parent Customer</Name>
+      <Description>Parent Customer Name</Description>
+      <EstimatedCount>444</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>ParentAcctNum</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>ParentCustName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Parent Acct Num 1</ID>
+      <Name>Parent Acct Num</Name>
+      <Description>Parent value to BillToAcctNum, representing the Parent Company.  Currently used by KAF Wholesale only.</Description>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>ENTSales_DimCustomer</TableID>
+            <ColumnID>ParentAcctNum</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>ENTSales_DimCustomer</TableID>
+          <ColumnID>ParentAcctNum</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy>
+      <ID>Hierarchy</ID>
+      <Name>Parent Customer Hierarchy</Name>
+      <Levels>
+        <Level>
+          <ID>Parent Customer</ID>
+          <Name>Parent Customer</Name>
+          <SourceAttributeID>Parent Acct Num</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Bill To Customer</ID>
+          <Name>Bill To Customer</Name>
+          <SourceAttributeID>Bill To Acct Num</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Customer</ID>
+          <Name>Order Customer</Name>
+          <SourceAttributeID>Customer Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
