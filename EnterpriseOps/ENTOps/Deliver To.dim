@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="685e6b7b-c34c-4c9b-96bf-9389670f5083" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Deliver To</ID>
   <Name>Deliver To</Name>
   <CreatedTimestamp>2020-05-06T19:03:56.69Z</CreatedTimestamp>
@@ -9,9 +9,9 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3433" scrolltop="-8017" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11853" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3433" scrolltop="-8017" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7170" y="23336" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -20,9 +20,9 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimDeliverTo" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3810" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDeliverTo" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3810" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="00080000e20e000088130000" />
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e20e000088130000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
@@ -69,11 +69,11 @@
   </Annotations>
   <LastProcessed>1699-12-31T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6e6912e8-fa96-42ea-b9f7-720aecaf270d">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
   <Type>Geography</Type>
-  <ErrorConfiguration>
+  <ErrorConfiguration dwd:design-time-name="68f55648-20c7-4e2f-a93e-950eddd342f5">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
@@ -83,63 +83,63 @@
   <Collation>Latin1_General_CI_AS</Collation>
   <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute>
+    <Attribute dwd:design-time-name="5ed273c0-cb12-431a-bc26-331b09216b12">
       <ID>Deliver To Key</ID>
       <Name>Deliver To Name</Name>
       <Description>Deliver To Receipient Name</Description>
       <Usage>Key</Usage>
-      <EstimatedCount>5763901</EstimatedCount>
+      <EstimatedCount>6928588</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="d235c5c6-d837-401a-bcfc-703c0b2e82ed">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de705566-429d-4e29-83ef-ab37cc7999de">
             <TableID>ENTSales_DimDeliverTo</TableID>
             <ColumnID>DeliverToKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="6477bd67-1e18-4947-8f1b-986d9bc56abc">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0f79cd33-7e13-4bd6-ad5c-dd225fb22f46">
           <TableID>ENTSales_DimDeliverTo</TableID>
           <ColumnID>DeliverToName</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a9585ea6-b534-499b-9d94-238faefe6815">
           <AttributeID>Addr Line1</AttributeID>
           <Name>Addr Line1</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f090a0a0-c4fa-4a6c-95ce-a7a266dfa7a8">
           <AttributeID>Addr Line2</AttributeID>
           <Name>Addr Line2</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dd33318f-1b22-4a18-bb21-6992bbe29a09">
           <AttributeID>City</AttributeID>
           <Name>City</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f5fe4361-f013-4ee6-86da-83317573e313">
           <AttributeID>State Province</AttributeID>
           <Name>State Province</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8b9845b8-6d51-44e5-a16a-e9cfb7cf6328">
           <AttributeID>County</AttributeID>
           <Name>County</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1b57ee90-e6d6-4359-ac68-d1fb9ed68bfb">
           <AttributeID>Postal Code</AttributeID>
           <Name>Postal Code</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0a224ba0-83df-48c2-bff5-d3f1b0994aac">
           <AttributeID>SCF Code</AttributeID>
           <Name>SCF Code</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="53cc2a45-f5b4-4220-8a53-ce59f6502b35">
           <AttributeID>Country Region Cd</AttributeID>
           <Name>Country Region</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="460f777b-ec48-41b2-bf24-990a7e924191">
           <AttributeID>Is Current Addr</AttributeID>
           <Name>Is Current Addr</Name>
         </AttributeRelationship>
@@ -147,25 +147,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="9e20158e-7418-46c1-a326-997d668e1917">
       <ID>Addr Line1</ID>
       <Name>Addr Line1</Name>
       <Description>Address Line 1</Description>
-      <EstimatedCount>3297933</EstimatedCount>
+      <EstimatedCount>3709221</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="608bc8c1-7b73-4de3-b0c5-80c98f202fb6">
           <DataType>WChar</DataType>
           <DataSize>250</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d5a80510-1e88-425b-ab97-93cdd07b8f1e">
             <TableID>ENTSales_DimDeliverTo</TableID>
             <ColumnID>AddrLine1</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="a804e5fb-82f3-449b-bf6a-41282a1d4521">
         <DataType>WChar</DataType>
         <DataSize>250</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="96dd5815-ffe9-4693-ace0-88924c9021ab">
           <TableID>ENTSales_DimDeliverTo</TableID>
           <ColumnID>AddrLine1</ColumnID>
         </Source>
@@ -175,25 +175,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="6a2aafc6-d86a-46a9-980b-e74d597f7d2b">
       <ID>Addr Line2</ID>
       <Name>Addr Line2</Name>
       <Description>Address Line 2</Description>
-      <EstimatedCount>63892</EstimatedCount>
+      <EstimatedCount>104968</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="de9e4647-12d7-4871-9337-6ca69b8e113e">
           <DataType>WChar</DataType>
           <DataSize>250</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d22a6ed-50c2-4784-ae50-a4e79424ca9f">
             <TableID>ENTSales_DimDeliverTo</TableID>
             <ColumnID>AddrLine2</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="54e645af-986b-4567-a4a5-a57c82b24b06">
         <DataType>WChar</DataType>
         <DataSize>250</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="31d62f5c-154d-4d6a-872a-a2bdaf2cb8cb">
           <TableID>ENTSales_DimDeliverTo</TableID>
           <ColumnID>AddrLine2</ColumnID>
         </Source>
@@ -202,25 +202,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="82f8ba55-4030-4955-8300-88636110aa12">
       <ID>City</ID>
       <Name>City</Name>
       <Description>City</Description>
-      <EstimatedCount>30702</EstimatedCount>
+      <EstimatedCount>33087</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="d439a306-d76d-4504-a2a2-9f80083861ee">
           <DataType>WChar</DataType>
           <DataSize>60</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4169e92f-7c3e-415c-b182-48fe909c87d5">
             <TableID>ENTSales_DimDeliverTo</TableID>
             <ColumnID>City</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="a1e6208b-28d5-4c12-ab2f-30e1dd9971aa">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="87b98046-4536-4b82-adc0-cb1b57fe8715">
           <TableID>ENTSales_DimDeliverTo</TableID>
           <ColumnID>City</ColumnID>
         </Source>
@@ -229,25 +229,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="c884a95f-d19d-4cd5-9d7f-0e7e171659bd">
       <ID>State Province</ID>
       <Name>State Province</Name>
       <Description>State or Province</Description>
-      <EstimatedCount>91</EstimatedCount>
+      <EstimatedCount>94</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="7659316e-c3a0-4377-8870-3a6fa0aeae68">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a41391cc-8b06-4d4a-a976-458a447d81a8">
             <TableID>ENTSales_DimDeliverTo</TableID>
             <ColumnID>StateProvince</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="cb93c13c-b202-4992-9150-5a377cbbf4cb">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="35675f38-88c0-42e8-adbe-043ac831035b">
           <TableID>ENTSales_DimDeliverTo</TableID>
           <ColumnID>StateProvince</ColumnID>
         </Source>
@@ -256,25 +256,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="e5b5f9e8-334a-4a3d-9047-3ff01ba5d9b9">
       <ID>County</ID>
       <Name>County</Name>
       <Description>County</Description>
       <EstimatedCount>1924</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="f933ecbd-a58b-42a7-a19d-c2ab721c9d5c">
           <DataType>WChar</DataType>
           <DataSize>4000</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="34c72147-83bc-4af2-ad40-8386029f81b6">
             <TableID>ENTSales_DimDeliverTo</TableID>
             <ColumnID>County</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="b74e0225-5561-47be-bc86-c54efa6cf2a5">
         <DataType>WChar</DataType>
         <DataSize>4000</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4d773340-eacb-4083-8937-3b3ecfe4448d">
           <TableID>ENTSales_DimDeliverTo</TableID>
           <ColumnID>County</ColumnID>
         </Source>
@@ -283,25 +283,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="6cbfd22f-2661-40c1-ab1b-0eb7f76ffb33">
       <ID>Postal Code</ID>
       <Name>Postal Code</Name>
       <Description>Postal Code</Description>
-      <EstimatedCount>54053</EstimatedCount>
+      <EstimatedCount>54892</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="a9b9cf29-06f6-4f03-9ab2-35bc762d9a2c">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6019b1e5-0d1a-4213-9b61-41421a7cc76b">
             <TableID>ENTSales_DimDeliverTo</TableID>
             <ColumnID>PostalCode</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="0da43917-9dbd-4efa-b6f0-78d1e860bb73">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8c6437c0-6891-43ee-af6c-9bb5610df691">
           <TableID>ENTSales_DimDeliverTo</TableID>
           <ColumnID>PostalCode</ColumnID>
         </Source>
@@ -310,25 +310,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="5d2c19f1-2d7b-4570-b7d7-8a35bcbb6844">
       <ID>SCF Code</ID>
       <Name>SCF Code</Name>
       <Description>A destination Sectional Center Facility (SCF) is a Processing and Distribution Center (P&amp;DC) of the United States Postal Service (USPS) that serves a designated geographical area defined by one or more three-digit ZIP Code prefixes.</Description>
-      <EstimatedCount>2426</EstimatedCount>
+      <EstimatedCount>2440</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="b5a2d27b-4a9c-4373-b667-e3653e507494">
           <DataType>WChar</DataType>
           <DataSize>3</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="702b9ec1-c63c-4530-b3f2-c3db6fe2e9bb">
             <TableID>ENTSales_DimDeliverTo</TableID>
             <ColumnID>SCFCode</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="b61dacc4-617e-4b5e-8637-d562c00e4ba7">
         <DataType>WChar</DataType>
         <DataSize>3</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cac9a48a-19bf-49a9-ae2c-71426642365c">
           <TableID>ENTSales_DimDeliverTo</TableID>
           <ColumnID>SCFCode</ColumnID>
         </Source>
@@ -337,25 +337,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="324ca86c-3f70-42e3-bdda-40eb786a3954">
       <ID>Country Region Cd</ID>
       <Name>Country Region</Name>
       <Description>Country Region Name</Description>
-      <EstimatedCount>108</EstimatedCount>
+      <EstimatedCount>110</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="e6bc298b-984d-4b3a-b4e3-cb3e7d8a7d25">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="86196449-abea-420d-be6e-40fe39d16e89">
             <TableID>ENTSales_DimDeliverTo</TableID>
             <ColumnID>CountryRegionCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="5ec0d326-0b24-4534-a872-069fbf099147">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f91646eb-b030-4e3c-926b-048e5904e616">
           <TableID>ENTSales_DimDeliverTo</TableID>
           <ColumnID>CountryRegionName</ColumnID>
         </Source>
@@ -364,23 +364,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="7855cdf9-c419-4a6f-a6a1-6f4ef9b6bb6d">
       <ID>Is Current Addr</ID>
       <Name>Is Current Addr</Name>
       <Description>T/F indicator noting if the Address record is the most current for the Deliver To Receipient</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="a3ab7536-d29f-456b-ab63-27054732b51b">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7696774c-348b-47a4-b246-e44f20ca1ec8">
             <TableID>ENTSales_DimDeliverTo</TableID>
             <ColumnID>IsCurrentAddr</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="210fa1f2-5dd1-4e63-be54-9ebe1de8ca56">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8b729610-6f0f-4edf-99ad-f5623f0bd420">
           <TableID>ENTSales_DimDeliverTo</TableID>
           <ColumnID>IsCurrentAddr</ColumnID>
         </Source>
@@ -391,31 +391,31 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy>
+    <Hierarchy dwd:design-time-name="cf1b052b-a843-4dbe-b7fe-1e0257ee1b9f">
       <ID>Hierarchy</ID>
       <Name>Deliver To Hierarchy</Name>
       <Levels>
-        <Level>
+        <Level dwd:design-time-name="96cee6be-665a-43cc-a75f-1ea5cd2416aa">
           <ID>Country Region</ID>
           <Name>Country Region</Name>
           <SourceAttributeID>Country Region Cd</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="c0609659-052e-43ee-bfa4-71c59237d38d">
           <ID>State Province</ID>
           <Name>State Province</Name>
           <SourceAttributeID>State Province</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="70721644-35aa-4fb5-8c6e-7ee7e0bdab4d">
           <ID>County</ID>
           <Name>County</Name>
           <SourceAttributeID>County</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="7e425cea-f3cd-41cb-a3c4-501a042df4bc">
           <ID>City</ID>
           <Name>City</Name>
           <SourceAttributeID>City</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="3fe34372-c9da-4480-b252-68cde6655161">
           <ID>Postal Code</ID>
           <Name>Postal Code</Name>
           <SourceAttributeID>Postal Code</SourceAttributeID>
@@ -423,12 +423,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
-  <ProactiveCaching>
+  <ProactiveCaching dwd:design-time-name="821d544e-9190-4388-a860-ab2f84a1b721">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="688811ff-fcfd-4176-959b-0cbd7f2eff8e" />
   </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

@@ -1,0 +1,471 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1fc95b14-4add-43de-8bf2-cae209915849" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Purch Order</ID>
+  <Name>Purch Order</Name>
+  <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3764" scrolltop="-8520" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10239" y="22040" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimPurchOrder" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3969" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000810f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="ENTOps_dimPurchOrder" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3764</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8520</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c480edb8-4166-4153-bfcb-b77de6d3b202">
+    <DataSourceViewID>Enterprise DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="04369339-24fe-4a94-be89-151e1cf55119">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0b19e7af-ccad-4230-88fb-69b74531e6da">
+      <ID>Purch Order Key</ID>
+      <Name>Purch Order Key</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>75026</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7d29c3f9-97c3-412b-a8a0-4a1345999b1c">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eb684e83-ba61-42cf-8a67-e3bf83fa01fe">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>PurchOrderKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ef7c464f-cf07-4d53-a7de-f2372b99e0c6">
+          <AttributeID>Purch Order Num</AttributeID>
+          <Name>Purch Order Num</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="48fd4a45-7f9d-470b-86b3-3c2f93904001">
+          <AttributeID>Purch Type Id</AttributeID>
+          <Name>Purch Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="74b7c3a1-269d-4637-9489-96ab6f21914c">
+          <AttributeID>Document Status Id</AttributeID>
+          <Name>Document Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3c03a140-c84f-4840-8419-ccd7a86a9897">
+          <AttributeID>Document State Id</AttributeID>
+          <Name>Document State</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1b14a63e-01fb-4001-a6be-0ea5f25dc474">
+          <AttributeID>Is Unplanned PO</AttributeID>
+          <Name>Is Unplanned PO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7ce6a6b6-0b06-4315-a8a3-0065840f2dea">
+          <AttributeID>Is Drop Ship</AttributeID>
+          <Name>Is Drop Ship</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="50d976c1-7253-44be-8b4e-92aa58161d63">
+          <AttributeID>Warehouse Receipt Dt</AttributeID>
+          <Name>Warehouse Receipt Dt</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7f1936d7-925d-4c85-baa7-6391d0469fa9">
+          <AttributeID>COA Attached Dt</AttributeID>
+          <Name>COA Attached Dt</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="af361ba7-c3c5-4718-a5e9-53e27c8a6189">
+          <AttributeID>Docking Dt</AttributeID>
+          <Name>Docking Dt</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="089c32f6-6e15-4b48-b0f4-6e6bb3f9eafd">
+          <AttributeID>Received By Cd</AttributeID>
+          <Name>Received By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3f540320-dbc8-4619-9e17-a62e55a4c829">
+          <AttributeID>Delivery Mode Cd</AttributeID>
+          <Name>Delivery Mode</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8b256d5f-fe0e-4e92-a524-e65787157ed5">
+          <AttributeID>Mill Load Num</AttributeID>
+          <Name>Mill Load Num</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="aa9bc447-d8df-48b7-9ee6-3c4a1aaf25a0">
+          <AttributeID>Mill Invoice Num</AttributeID>
+          <Name>Mill Invoice Num</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="42b73f99-270b-46b0-bba1-ed894d2373ed">
+          <AttributeID>Rail Car Num</AttributeID>
+          <Name>Rail Car Num</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e5e82a27-eced-4ffe-a6f7-d43776ce51b1">
+          <AttributeID>Is Freight Entered</AttributeID>
+          <Name>Is Freight Entered</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2e81141e-a4a7-4050-b16a-607920af7f45">
+      <ID>Purch Order Num</ID>
+      <Name>Purch Order Num</Name>
+      <EstimatedCount>44885</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fe726ff9-9e0e-44dc-b37b-d6c3bed8d556">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca5f2abe-535f-47b1-8249-48610f5e064d">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>PurchOrderNum</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="93a5a9d7-eef9-45d2-8311-7032120a7a6a">
+      <ID>Purch Type Id</ID>
+      <Name>Purch Type</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c3430745-7797-4674-b74b-6df8216642e0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63c44868-50a7-4f17-a515-c8299517c4ff">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>PurchTypeId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1e2fef6c-acd5-4fc2-9cc4-32e39afb96aa">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="45c65574-c8fb-4a1d-ba28-a09069ba53a3">
+          <TableID>ENTOps_dimPurchOrder</TableID>
+          <ColumnID>PurchTypeDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8cf354a9-a83a-4acd-8e0e-633ade6b6c98">
+      <ID>Document Status Id</ID>
+      <Name>Document Status</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="72e060d5-8a0d-404d-8368-88b256ed82a3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="98b488fe-3c2e-46c1-add2-ead1efeb8127">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>DocumentStatusId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e3a03746-3a63-4094-9ab7-375ce96c12b5">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1e8a9cd1-a5de-4026-9ccc-7a6374a309ef">
+          <TableID>ENTOps_dimPurchOrder</TableID>
+          <ColumnID>DocumentStatusDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5df7835b-2cab-425e-869c-e756f61bcc01">
+      <ID>Document State Id</ID>
+      <Name>Document State</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e1f8ace1-c295-419f-b8b3-0d4b3d255fcc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca5c602c-2cdd-4074-a0bf-f542c7632196">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>DocumentStateId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d08bb3e9-fbfe-4d22-bdb7-5c98d13e53ff">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fd1fc9ad-b6b0-451d-9d8d-e4339a86395a">
+          <TableID>ENTOps_dimPurchOrder</TableID>
+          <ColumnID>DocumentStateDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4eb4013e-b339-47df-9953-cfa74fe0b6aa">
+      <ID>Is Unplanned PO</ID>
+      <Name>Is Unplanned PO</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e9b384ac-fa4e-4739-9d4a-2dd5ba5376c7">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4992cd8d-6e3d-40ba-ba4b-aff829c21447">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>IsUnplannedPO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0bdb1223-ecd2-446b-9d79-55545414eda7">
+      <ID>Is Drop Ship</ID>
+      <Name>Is Drop Ship</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cbc9bad2-d6e5-433a-b3a8-681d0d9c3b88">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e51330b-3a4b-4a7a-a3d3-b3111213cde6">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>IsDropShip</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="55d8ad66-6c43-4e96-bddb-e544af97c537">
+      <ID>Warehouse Receipt Dt</ID>
+      <Name>Warehouse Receipt Dt</Name>
+      <EstimatedCount>1489</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bb1ae65f-80fc-4888-ab95-de8413957d89">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c18ed68f-e14b-47e5-899e-eba09502bec7">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>WarehouseReceiptDt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Dates</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f6b7f0ab-aefa-44db-be13-4eac4e3da5cd">
+      <ID>COA Attached Dt</ID>
+      <Name>COA Attached Dt</Name>
+      <EstimatedCount>1431</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="60c4e972-4564-4a74-8247-555153bcc59b">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cfc1f10c-c177-4117-980e-9f5ebff75755">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>COAAttachedDt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Dates</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b1617cf6-1e29-4e51-b6d3-045aa3baf489">
+      <ID>Docking Dt</ID>
+      <Name>Docking Dt</Name>
+      <EstimatedCount>462</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4b5fd373-404c-4cbc-a0cc-d0fe7b1b05a3">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ce3ca52-6fdd-48bd-8911-04eb9d67a14c">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>DockingDt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Dates</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="80b8223f-76d8-4607-b871-c01f58f72e21">
+      <ID>Received By Cd</ID>
+      <Name>Received By</Name>
+      <EstimatedCount>36</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="984833e2-4aba-4af7-a11a-51c6e3869d99">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0bcc880a-9add-4d0f-80b4-f29a7875ccf7">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>ReceivedByCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="86210033-6cc6-4166-96f4-d49785e4555d">
+        <DataType>WChar</DataType>
+        <DataSize>51</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4f674a7b-a13d-4843-b14d-e5f041209ab0">
+          <TableID>ENTOps_dimPurchOrder</TableID>
+          <ColumnID>ReceivedByName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5849cee5-aac6-4071-989e-0f6802955f57">
+      <ID>Delivery Mode Cd</ID>
+      <Name>Delivery Mode</Name>
+      <EstimatedCount>95</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2b60f5b4-1b2e-4407-8880-75963371cdfb">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2e84809-e64a-4904-977e-2c95f4db0c62">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>DeliveryModeCd</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3ef01859-21e5-4f94-a95b-9ba693125d42">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4625c5c8-73f1-4f45-8cea-81f049f8ef2a">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>CompanyCd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e0c54159-21bb-49b3-a30c-f5e690e6a39c">
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a66a99b0-cc76-47c3-97b0-d770fd316060">
+          <TableID>ENTOps_dimPurchOrder</TableID>
+          <ColumnID>DeliveryModeDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6f28fe6e-fc30-4ab3-b4de-47b342333068">
+      <ID>Mill Load Num</ID>
+      <Name>Mill Load Num</Name>
+      <EstimatedCount>16654</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb358b54-0b7e-447d-8f43-e752c82bf2c3">
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b6981d6-211a-4ed4-a12e-eded3eccbdda">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>MillLoadNum</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Mill Related</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0b8e7be6-56a3-4226-8233-fadf341d32b0">
+      <ID>Mill Invoice Num</ID>
+      <Name>Mill Invoice Num</Name>
+      <EstimatedCount>26947</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="745dccfe-761f-442a-9f04-65e9223d2c9d">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45844724-ab5d-4868-b421-d864812a6fa3">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>MillInvoiceNum</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Mill Related</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="36c76347-c07b-40a9-ba1c-5ce11cb8f08c">
+      <ID>Rail Car Num</ID>
+      <Name>Rail Car Num</Name>
+      <EstimatedCount>38</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6ad58911-8f6a-4c28-8047-3d4d23032e68">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9faebe94-c877-4cee-b45b-9627889bcaf8">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>RailCarNum</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4181bec9-47f2-4a0e-a3c9-625924485f1e">
+      <ID>Is Freight Entered</ID>
+      <Name>Is PO Freight Entered</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eb7dc89c-1db0-4b85-a741-ce19591182d6">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b075696e-72e3-431b-81be-4f1f730a7616">
+            <TableID>ENTOps_dimPurchOrder</TableID>
+            <ColumnID>IsFreightEntered</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

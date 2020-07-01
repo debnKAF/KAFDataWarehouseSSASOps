@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bc75c571-9492-495e-b603-e5ea92f4a186" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Warehouse</ID>
   <Name>Warehouse</Name>
   <CreatedTimestamp>2020-05-06T19:03:56.713333Z</CreatedTimestamp>
@@ -10,9 +10,9 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1951" scrolltop="-8017" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="13282" y="21325" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1951" scrolltop="-8017" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7170" y="23336" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -111,10 +111,10 @@
   </Annotations>
   <LastProcessed>1699-12-31T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2628354a-f05b-40a4-8518-be71fc007981">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
-  <ErrorConfiguration>
+  <ErrorConfiguration dwd:design-time-name="bc57e938-5f38-459a-94a3-fe1d9e401883">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
@@ -124,70 +124,70 @@
   <Collation>Latin1_General_CI_AS</Collation>
   <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute>
+    <Attribute dwd:design-time-name="04c8157d-0cba-4fdb-80cb-c357f7d7cad0">
       <ID>Warehouse Key</ID>
       <Name>Warehouse Key</Name>
       <Description>Unique identifier in the Warehouse dimension table</Description>
       <Usage>Key</Usage>
-      <EstimatedCount>179956</EstimatedCount>
+      <EstimatedCount>126494</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="0f4cf6ed-5ac3-42a9-a898-e6d44cd4afcc">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d40e68c-83d9-4937-997c-1c78049c10a7">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>WarehouseKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="e191cb33-85ba-4a64-b795-6d139913d801">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="100edae1-05c6-4e60-8254-77f2e8de05df">
           <TableID>ENTSales_DimWarehouse</TableID>
           <ColumnID>WarehouseKey</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="222dab5d-98c8-4ca5-b8d2-ac85ad453240">
           <AttributeID>Invent Batch Num</AttributeID>
           <Name>Invent Batch Num</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a396bb04-accb-462e-a877-4d70e09a5b27">
           <AttributeID>Warehouse Type Id</AttributeID>
           <Name>Warehouse Type</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7d0e9c0f-048f-4364-b7f5-6419c2412939">
           <AttributeID>Is Virtual Warehouse</AttributeID>
           <Name>Is Virtual Warehouse</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ed4f4c2e-f8bf-4e53-baf2-b6b7fb52603b">
           <AttributeID>Location Cd</AttributeID>
           <Name>Location Cd</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c14528a0-8852-4f92-8d06-92a938741218">
           <AttributeID>Warehouse Cd</AttributeID>
           <Name>Warehouse</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="38ac11fb-8559-4f5f-964a-fdae0b66275b">
           <AttributeID>Site Cd</AttributeID>
           <Name>Site</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1da9cb11-a2e2-497c-80e4-d881c2fc05c8">
           <AttributeID>Site Cd 1</AttributeID>
           <Name>Site Cd</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2e5dc405-55a3-49ab-962c-36120f7ca75e">
           <AttributeID>Warehouse Cd 1</AttributeID>
           <Name>Warehouse Cd</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="418b6ffa-4be8-4c1c-91cc-bc838535ba4e">
           <AttributeID>City</AttributeID>
           <Name>City</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1dd25251-983c-47a2-9670-a9decdfa99e4">
           <AttributeID>State Province</AttributeID>
           <Name>State Province</Name>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4c373d53-5b44-49cd-9c72-52da8f518c53">
           <AttributeID>Postal Code</AttributeID>
           <Name>Postal Code</Name>
         </AttributeRelationship>
@@ -197,25 +197,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="fa29d78d-2f91-4162-a04c-7eaec45d88fe">
       <ID>Invent Batch Num</ID>
       <Name>Lot Cd</Name>
       <Description>Inventory Batch/Lot Number</Description>
-      <EstimatedCount>29948</EstimatedCount>
+      <EstimatedCount>40185</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="6c4e6971-b9d6-4815-ab43-15597b762375">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c5ed1cf9-9f63-4bd4-9d8f-cd94aad21104">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>InventBatchNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="e8532a07-acdb-46e9-b3cd-2147972bd8d6">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9b4aa6cc-cb60-4224-ad49-cb3f29a18c3a">
           <TableID>ENTSales_DimWarehouse</TableID>
           <ColumnID>InventBatchNum</ColumnID>
         </Source>
@@ -224,25 +224,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="a5046301-8647-4538-b97a-32896045a49d">
       <ID>Location Cd</ID>
       <Name>Location Cd</Name>
       <Description>Inventory Location Code within the Warehouse (ex. 02-C2, 02-B3, 02-B2)</Description>
-      <EstimatedCount>600</EstimatedCount>
+      <EstimatedCount>2619</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="9e037152-ca6c-4e03-a45a-967c97a20807">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="636f8fe4-1ce7-4605-aff2-14da8079dfbe">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>LocationCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="9b6ef94c-d0b0-4ee9-b236-bbb536eb0948">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="65995e7a-600c-4252-952c-6c0536c61718">
           <TableID>ENTSales_DimWarehouse</TableID>
           <ColumnID>LocationCd</ColumnID>
         </Source>
@@ -251,33 +251,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="932226df-c625-4c2b-bf6c-b485e4563f4b">
       <ID>Warehouse Cd</ID>
       <Name>Warehouse</Name>
       <Description>Warehouse Long Name</Description>
-      <EstimatedCount>180</EstimatedCount>
+      <EstimatedCount>219</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="597f1f05-2c15-4178-8e3e-7d0a284acac1">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aaae5c38-d4db-43c9-89d1-4eba5a29daef">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>WarehouseCd</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="7e8ae2ed-07fe-42f2-8938-efae0d327c32">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="361dbb92-7aaf-4f52-82c5-ed47c23fdf68">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>CompanyCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="d899c281-ba9a-4186-91df-f3976ca7a11c">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="75d2f384-bb25-4fa8-be96-6bd79fa61c6a">
           <TableID>ENTSales_DimWarehouse</TableID>
           <ColumnID>WarehouseDesc</ColumnID>
         </Source>
@@ -286,24 +286,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="674a721b-5d0b-4d76-b8c7-d2514287ba7c">
       <ID>Warehouse Type Id</ID>
       <Name>Warehouse Type</Name>
       <Description>Warehouse Type (ex. Quarantine, N/A, Transit)</Description>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="b471d89a-adc4-41b4-8cb1-7a2519592a6d">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b05e04b7-5562-4e57-9c6a-fbf97d97800e">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>WarehouseTypeId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="8c463f10-be60-4ce3-a533-84849f8222da">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="337ce9d7-ceed-4775-a2b0-16addb0caa2e">
           <TableID>ENTSales_DimWarehouse</TableID>
           <ColumnID>WarehouseTypeDesc</ColumnID>
         </Source>
@@ -312,23 +312,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="9476dfd3-cdd4-419a-9011-9b5863360cdd">
       <ID>Is Virtual Warehouse</ID>
       <Name>Is Virtual Warehouse</Name>
       <Description>T/F Indicator noting True if the Warehouse is Virtual.</Description>
-      <EstimatedCount>1</EstimatedCount>
+      <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="ac8d021d-f3cf-4499-a6ee-7902ccb197fa">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="22c3e011-80b5-4f52-aa6b-d1e17d334751">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>IsVirtualWarehouse</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="52810bd8-3abe-4df7-99eb-0a1f4e24559c">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="036e48bb-e882-441e-9a7a-2171fd164233">
           <TableID>ENTSales_DimWarehouse</TableID>
           <ColumnID>IsVirtualWarehouse</ColumnID>
         </Source>
@@ -337,33 +337,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="7f35a699-432e-4fbc-8f52-98427371a6f3">
       <ID>Site Cd</ID>
       <Name>Site</Name>
       <Description>Site Description/Long Name (ex. Manufacturing, Prime, Columbian, Catalogue, Retail)</Description>
-      <EstimatedCount>92</EstimatedCount>
+      <EstimatedCount>91</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="2c5afc1b-cc6d-46bf-a586-177d15e42f2d">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f4e357c-339b-456b-8fde-c7a99b53687c">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>SiteCd</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="f9417ca1-db54-4749-8557-ecf58af1bd7c">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="655bc535-f71b-4eaa-b5c9-4edefb4e1537">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>CompanyCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="1feba254-a461-48cd-b743-53e499e5357c">
         <DataType>WChar</DataType>
         <DataSize>72</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c771fdd5-25b4-4311-9df3-da7390bc6ff1">
           <TableID>ENTSales_DimWarehouse</TableID>
           <ColumnID>SiteDesc</ColumnID>
         </Source>
@@ -372,24 +372,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="ca6e6f2a-b9b0-40d6-8d2e-184212296a41">
       <ID>Site Cd 1</ID>
       <Name>Site Cd</Name>
       <Description>Site Code/Short Name</Description>
+      <EstimatedCount>89</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="d298f1fd-3bac-47fb-bf8f-2ad4e81b5f13">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="897c5795-fe3d-4ae4-af14-f36fdcc62e58">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>SiteCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="448bb412-cc8f-4d7b-a487-6676a504f0c9">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="495ea859-5166-486f-b001-934402183845">
           <TableID>ENTSales_DimWarehouse</TableID>
           <ColumnID>SiteCd</ColumnID>
         </Source>
@@ -398,24 +399,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="9c052b25-5627-4854-967b-0751cb613a14">
       <ID>Warehouse Cd 1</ID>
       <Name>Warehouse Cd</Name>
       <Description>Warehouse Code/Short Name</Description>
+      <EstimatedCount>213</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="32e24832-9181-4653-9fc9-f8f61b0eb25c">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="308a85c5-cf41-4870-a07a-387bb419f3a7">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>WarehouseCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="39d7d480-f196-4a0c-aff1-e056642af49b">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1831fd97-7f41-43ab-be39-fed1a78d27c9">
           <TableID>ENTSales_DimWarehouse</TableID>
           <ColumnID>WarehouseCd</ColumnID>
         </Source>
@@ -424,23 +426,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="b7b0bdd3-9235-491d-81a9-f34e5cfb8900">
       <ID>City</ID>
       <Name>City</Name>
+      <EstimatedCount>75</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="781038f8-8f24-4ff7-ae93-fecb639484cc">
           <DataType>WChar</DataType>
           <DataSize>60</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b41c343-3ab1-405d-9857-121f484f617b">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>City</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="97adbe5d-6f28-4af1-9cf8-802f6cba7426">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b089d479-d3b7-40f4-86db-17c4624cd5af">
           <TableID>ENTSales_DimWarehouse</TableID>
           <ColumnID>City</ColumnID>
         </Source>
@@ -449,23 +452,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="7b9451c2-4df8-4b7a-ab2a-35be9564bbab">
       <ID>State Province</ID>
       <Name>State Province</Name>
+      <EstimatedCount>34</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="465644b1-ad5c-4e35-ac43-e8e7a7dd134b">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa41072c-ad9e-482c-a41f-696e99ac4018">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>StateProvince</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="bb461eb5-87a8-42de-a23e-a19b4a9b74fc">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8603c5bb-75b1-4914-9122-c3e86e07385d">
           <TableID>ENTSales_DimWarehouse</TableID>
           <ColumnID>StateProvince</ColumnID>
         </Source>
@@ -474,23 +478,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="c79f3706-f8cb-46e7-a7a6-1776855c5c85">
       <ID>Postal Code</ID>
       <Name>Postal Code</Name>
+      <EstimatedCount>77</EstimatedCount>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="9724fb9f-8726-4a36-b281-c40fec5c38af">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea9447da-b18f-4ad9-afb5-64d91c774e65">
             <TableID>ENTSales_DimWarehouse</TableID>
             <ColumnID>PostalCode</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="d90cb841-fd44-4651-916c-585d86f01edb">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="55c34ecb-c45b-4931-be1a-d461bfeb1226">
           <TableID>ENTSales_DimWarehouse</TableID>
           <ColumnID>PostalCode</ColumnID>
         </Source>
@@ -501,26 +506,26 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy>
+    <Hierarchy dwd:design-time-name="7a6cfef6-2a53-4753-b033-216e05b744d2">
       <ID>Hierarchy</ID>
       <Name>Warehouse Hierarchy</Name>
       <Levels>
-        <Level>
+        <Level dwd:design-time-name="6e9a954c-c36b-455f-b520-b338027791ac">
           <ID>Site</ID>
           <Name>Site</Name>
           <SourceAttributeID>Site Cd</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="8849e040-422f-4739-b421-2ea9bdf43594">
           <ID>Warehouse</ID>
           <Name>Warehouse</Name>
           <SourceAttributeID>Warehouse Cd</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="dde40c08-b67c-486a-b3b5-7405a101db42">
           <ID>Location Cd</ID>
           <Name>Location Cd</Name>
           <SourceAttributeID>Location Cd</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="1899addd-252f-4947-9d3f-1ecce37abf4b">
           <ID>Invent Batch Num</ID>
           <Name>Lot Cd</Name>
           <SourceAttributeID>Invent Batch Num</SourceAttributeID>
@@ -528,12 +533,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
-  <ProactiveCaching>
+  <ProactiveCaching dwd:design-time-name="752895d4-791e-430d-8565-65b9d2a90e21">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="9d88bab4-4dca-4ccd-b35e-836c50d9895a" />
   </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>
