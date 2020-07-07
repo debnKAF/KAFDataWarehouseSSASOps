@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="50c9c60e-4827-46d0-b7e8-548673e93eb8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b311230e-805e-48a0-aecf-d61912d30212" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Reporting Unitof Measure</ID>
   <Name>Reporting Unit of Measure</Name>
   <CreatedTimestamp>2020-05-06T19:03:56.7Z</CreatedTimestamp>
@@ -9,7 +9,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3632" scrolltop="-9366" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7170" y="23336" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3632" scrolltop="-9366" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5503" y="31829" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
             </font>
@@ -69,11 +69,11 @@
   </Annotations>
   <LastProcessed>1699-12-31T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="88973d34-e568-4791-a557-8e6d5a6272ae">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="40db45d5-9b4d-4909-bbdc-07232b19b67c">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
   <Type>Utility</Type>
-  <ErrorConfiguration dwd:design-time-name="5a4f3e95-2cf8-48a5-82e9-34724e078138">
+  <ErrorConfiguration dwd:design-time-name="20a69ac6-b7e4-4fde-8462-ae1ce8639ac8">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
@@ -83,35 +83,35 @@
   <Collation>Latin1_General_CI_AS</Collation>
   <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="767703c5-69f5-4a36-9b88-e700692353c9">
+    <Attribute dwd:design-time-name="d00bbeb2-04ac-4fcf-950e-f1853bedf86c">
       <ID>Unit Of Measure Key</ID>
       <Name>Reporting Unit of Measure</Name>
       <Description>Choice of reporting unit of measure.  Current values are Eaches, Cases, Hundredweight and Pounds.  Default value is Cases.</Description>
       <Usage>Key</Usage>
       <EstimatedCount>6</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fbf4b0f1-ddba-48fa-a961-0dd2be3501e9">
+        <KeyColumn dwd:design-time-name="54fffab4-e79d-4342-9aed-29e8e6dcbd51">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9831ac1d-01b8-4c75-801d-cc2989c7e211">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fbc8b4b2-630c-4e95-90cd-bb18978fdc4f">
             <TableID>dim_ReportingUnitofMeasure</TableID>
             <ColumnID>UnitOfMeasureKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="674d1220-1f4d-4c89-a268-c4bf3fd33a1b">
+      <NameColumn dwd:design-time-name="ade8a41d-61fe-4375-930e-23c1989aa9eb">
         <DataType>WChar</DataType>
         <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="65ed48d7-3e67-419c-8f93-ae07360a6834">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5f0d0e25-a80a-428a-b4a2-17591d3ce3f3">
           <TableID>dim_ReportingUnitofMeasure</TableID>
           <ColumnID>UnitOfMeasureDesc</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
       <DefaultMember>[Reporting Unit of Measure].[Reporting Unit of Measure].&amp;[1]</DefaultMember>
-      <ValueColumn dwd:design-time-name="141c05a2-3eac-45f3-86db-8b9c1e59a4c3">
+      <ValueColumn dwd:design-time-name="a1caf7d8-67a8-4ea0-93a5-332eb6a0d2f3">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="0749e70e-1639-48da-9ee1-5e2a3f3f2a82">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8263cdc5-f55c-4431-a325-c3a4cd6b515b">
           <TableID>dim_ReportingUnitofMeasure</TableID>
           <ColumnID>UnitOfMeasureCd</ColumnID>
         </Source>
@@ -121,12 +121,12 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
-  <ProactiveCaching dwd:design-time-name="f8292bf6-1473-4251-a81a-7047169a1ed7">
+  <ProactiveCaching dwd:design-time-name="a698c43c-2132-4852-9943-31ea62db2136">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="f613d540-eddc-4f47-9f3b-f9c6d65cbe8c" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="f3da35a9-90ab-4bbe-bf29-afdafc581279" />
   </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

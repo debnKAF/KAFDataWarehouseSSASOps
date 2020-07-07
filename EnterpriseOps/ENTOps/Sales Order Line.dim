@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dd0379fb-cbd4-4911-b3e7-20563572d36a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="023c562c-5209-4352-b5e5-bbcce803bca8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Sales</ID>
   <Name>Sales Order Line</Name>
   <CreatedTimestamp>2020-05-06T19:03:56.703333Z</CreatedTimestamp>
@@ -9,7 +9,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4306" scrolltop="-7091" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7170" y="23336" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4306" scrolltop="-7091" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5503" y="31829" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
             </font>
@@ -93,11 +93,11 @@
   </Annotations>
   <LastProcessed>1699-12-31T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="cf7ab255-baf2-48e1-8f6b-5bafc381bf73">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4273e34b-64c5-4721-8519-6cb72e9fff4f">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="899d8c48-df1c-4f6e-b1e0-176300fe0597">
+  <ErrorConfiguration dwd:design-time-name="da5617ee-1f2f-4e37-bc88-a410452f32b9">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
@@ -107,24 +107,24 @@
   <Collation>Latin1_General_CI_AS</Collation>
   <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="0e2fdd42-384a-4e71-8566-bdc099272187">
+    <Attribute dwd:design-time-name="cf0ccd4d-85a7-4f4c-9a66-51be2312d137">
       <ID>Kit Type Id</ID>
       <Name>Kit Type</Name>
       <Description>Currently only applicable to the Direct business, notes whether the line item represents a non-kit, virtual kit header or virtual kit component.  When doing sales analysis it is imperative that you are not viewing virtual kit headers and components together as you will be double counting.  The Sales Order Toggle KAFSalesension prevents you from double counting in the cube.</Description>
       <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e751ef05-78aa-4db9-b753-293debbddfe9">
+        <KeyColumn dwd:design-time-name="4b6ccebb-e0ea-4bc3-a76f-2cd9fc7283ec">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b492f194-779e-4188-85c3-73d19acd4025">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ace41ac-e3c3-46b0-8e12-cc821cf9f7dd">
             <TableID>ENTSales_DimSales</TableID>
             <ColumnID>KitTypeId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="cb5be7a5-2a03-4df7-86bd-e5a92c1ea3d3">
+      <NameColumn dwd:design-time-name="b6ac5847-7b87-4f56-9426-bb08d4592e43">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b0e5f3f6-ef9e-459e-a907-548d4473b055">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="06cf7dfb-9dfa-4a80-82ce-15114b2c11be">
           <TableID>ENTSales_DimSales</TableID>
           <ColumnID>KitTypeDesc</ColumnID>
         </Source>
@@ -134,24 +134,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bb9bdc95-f34e-448d-9b77-9c356bb9ac5b">
+    <Attribute dwd:design-time-name="9c885d42-5873-47ff-87d8-a3ab9741cd55">
       <ID>Sales Status Id</ID>
       <Name>Sales Status</Name>
       <Description>Sales Status from the Sales Order Line.  Please note that for determining cancelled orders or open orders both the status from the line and header are considered.</Description>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e8446c2f-9ee8-4623-a60f-466404f1d92b">
+        <KeyColumn dwd:design-time-name="50ebf6e4-471a-4e3d-99b7-1fb703ea8ac0">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="eb233876-7639-43ef-bb28-d5362d554147">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d2a8d3b-01c5-45a4-9775-709df8695101">
             <TableID>ENTSales_DimSales</TableID>
             <ColumnID>SalesStatusId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ed4bcf2f-f6af-447b-a4de-d5c9e78c3c00">
+      <NameColumn dwd:design-time-name="9b52760c-4709-44cf-a1c4-7528efc8090f">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="79a4e819-b7be-451e-b29f-9d0c05d0098b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="72b3e06b-784f-4b1e-8c08-38624ffc02fb">
           <TableID>ENTSales_DimSales</TableID>
           <ColumnID>SalesStatusDesc</ColumnID>
         </Source>
@@ -160,25 +160,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="13bd64a5-aaad-4c2e-9454-cab297c2344f">
+    <Attribute dwd:design-time-name="9cb17c2d-2a53-4984-bc49-e9db53c99dbc">
       <ID>Is Open Order</ID>
       <Name>Is Open Order</Name>
       <Description>An order is considered to be in "Open" status when the Sales Status is not equal to Invoiced or Cancelled.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0f6782e0-49c6-44b8-93f6-e922aba5de0d">
+        <KeyColumn dwd:design-time-name="6a49c770-87cc-471d-8ddd-fda1f41899bd">
           <DataType>Boolean</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="cea89fb3-0f25-4b46-9e8f-37875e00d827">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4f11646c-920e-4c02-b9dd-f061c49aeead">
             <TableID>ENTSales_DimSales</TableID>
             <ColumnID>IsOpenOrder</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="918d31c2-0859-4b3b-bdd3-b69eb5b81508">
+      <NameColumn dwd:design-time-name="3bbbce75-652f-4f15-9567-a96e856e20c1">
         <DataType>WChar</DataType>
         <DataSize>-1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="ca64c171-dde5-4f46-bcd3-7a030f645f92">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="59e219dd-2ea7-4d11-b4d9-f073ad401436">
           <TableID>ENTSales_DimSales</TableID>
           <ColumnID>IsOpenOrder</ColumnID>
         </Source>
@@ -187,24 +187,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="efd54148-5203-4d0b-a19b-62b521e5797a">
+    <Attribute dwd:design-time-name="b7b4fe36-9e72-406a-a910-38401c7d6f69">
       <ID>Return Status Id</ID>
       <Name>Return Status</Name>
       <Description>Status of a Return (ex. Invoiced, Expected, Registered, etc.)</Description>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1c140ab2-caf6-483d-8c83-6ce924443405">
+        <KeyColumn dwd:design-time-name="b4720829-2b8f-4877-9cc4-259f99b4cf33">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff6ebd06-263f-48c2-8eb2-ab964958ae13">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eacb68a4-2440-4e38-bc9f-77519a7809f0">
             <TableID>ENTSales_DimSales</TableID>
             <ColumnID>ReturnStatusId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="92e32420-8b4b-4f62-a22e-b23aee130ffd">
+      <NameColumn dwd:design-time-name="a3da3a95-fa75-43da-ae4d-4f43b83a08ee">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="c1f006e2-796c-4712-ab8c-410f0e5a92e3">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="502386e2-ec42-4037-afee-8944d08d1aa5">
           <TableID>ENTSales_DimSales</TableID>
           <ColumnID>ReturnStatusDesc</ColumnID>
         </Source>
@@ -213,33 +213,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="81037190-89b8-4894-b929-e061d9451a22">
+    <Attribute dwd:design-time-name="c8458d93-8ac0-4bd9-801c-b4e8c8bb6e4f">
       <ID>Delivery Mode Cd</ID>
       <Name>Delivery Mode</Name>
       <Description>Method of how customer will recieve shipment (ex. USPS Priority Mail, FedEx Ground, Pick Up, etc.)</Description>
-      <EstimatedCount>73</EstimatedCount>
+      <EstimatedCount>74</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="19cf36ec-54af-40b0-996e-d87c027134a6">
+        <KeyColumn dwd:design-time-name="20472b29-1820-4fc4-9305-1c83353ef176">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8890c90a-64b4-48ef-af73-898efab9c178">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc58c448-bf1b-4b3e-9be2-f2b1b31eb895">
             <TableID>ENTSales_DimSales</TableID>
             <ColumnID>CompanyCd</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="f1021287-0a42-46c8-835a-377219f5099c">
+        <KeyColumn dwd:design-time-name="4302e5b9-a39f-4362-afc3-d5227a1e94d4">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="310f4ae7-3f76-41e5-bf8a-a8c124c1f474">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d901a6a2-9d0d-4dc4-b0e1-9479da00dadf">
             <TableID>ENTSales_DimSales</TableID>
             <ColumnID>DeliveryModeCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="5bb067fa-9c9d-4787-950c-347f13770475">
+      <NameColumn dwd:design-time-name="672c66a5-9eb5-4406-a2e0-0456681b6b74">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7cb8a07b-bb7b-46f8-bb51-04ddcd09b814">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="da57fcee-ad18-46a8-b940-a9fce5df6fbd">
           <TableID>ENTSales_DimSales</TableID>
           <ColumnID>DeliveryModeDesc</ColumnID>
         </Source>
@@ -248,23 +248,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5dd5e873-82ff-4bf2-ab44-f78f18d30edb">
+    <Attribute dwd:design-time-name="8ddc875e-ec52-4ebf-80c2-7e87d0854362">
       <ID>Is Drop Ship</ID>
       <Name>Is Drop Ship</Name>
       <Description>T/F indicator noting if the Order line was Drop Shipped, meaning that the item was purchased from a third party and shipped directly to the Customer.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="194036e5-0f56-4f13-89ed-ba80882b7163">
+        <KeyColumn dwd:design-time-name="0c6665c6-eb7b-4604-948e-d73da723ea6a">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6332c975-232c-436f-b656-a498a3fabad2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6c91c485-8964-40de-b549-3c2f84700d7d">
             <TableID>ENTSales_DimSales</TableID>
             <ColumnID>IsDropShip</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="5b42193b-edf7-47ae-8bfe-63fb578e0678">
+      <NameColumn dwd:design-time-name="3ae3b5d7-5532-4582-bbdc-5de80d7462de">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="3bc6c4cc-b6bf-4a9a-8b4e-09ee72ad1029">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7a7e3751-024b-4fd1-a425-0c2675f977d4">
           <TableID>ENTSales_DimSales</TableID>
           <ColumnID>IsDropShip</ColumnID>
         </Source>
@@ -274,24 +274,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="76da6b35-0c2d-4c56-a396-aa18a71a0a16">
+    <Attribute dwd:design-time-name="da0d8f93-ba03-480a-93bc-0a0725168f8a">
       <ID>Drop Ship Status Id</ID>
       <Name>Drop Ship Status</Name>
       <Description>Current status of the Drop Shipment (ex. Purchase Order released, Purchase order shipped, etc.)</Description>
       <EstimatedCount>7</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0d9a9385-61e1-4da0-bd51-229e843eb9dd">
+        <KeyColumn dwd:design-time-name="0f6f6f6e-0d54-460c-9302-d04c7c2e6624">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4486dd0-250a-4806-b548-1a1a892b7303">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8265188b-707b-4beb-a06f-4cb973245906">
             <TableID>ENTSales_DimSales</TableID>
             <ColumnID>DropShipStatusId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="745cbf94-7e36-47e9-a526-0fd12f6101ab">
+      <NameColumn dwd:design-time-name="05777f92-5eaa-49c5-8198-4e9bd297d43c">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="707ba1a7-914d-4d39-a608-4ab4c8b6c96e">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e90c7e5a-cc51-43ae-8e8c-fb12b59b6ed5">
           <TableID>ENTSales_DimSales</TableID>
           <ColumnID>DropShipStatusDesc</ColumnID>
         </Source>
@@ -301,25 +301,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="40de61f7-dd31-4ae7-9fce-ca89ded6a194">
+    <Attribute dwd:design-time-name="79d08dbc-9a20-4ab1-a070-13dfd39a08d8">
       <ID>Return Reason Cd</ID>
       <Name>Return Reason</Name>
       <Description>Reason for a Return (ex. Carrier damage, Missing Item, etc.)</Description>
       <EstimatedCount>36</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="21a65ee4-d6fa-45fd-b09c-7ea36151b7ca">
+        <KeyColumn dwd:design-time-name="a7fda604-e4c5-4ff9-9952-86c553d9f82c">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ac2c06f-8ec1-4139-b4d9-34278ccecfb3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ae5ab2a-0747-4448-8200-45ee1fae17ed">
             <TableID>ENTSales_DimSales</TableID>
             <ColumnID>ReturnReasonCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="630cc6b1-39a0-41c1-8daa-741b357bf628">
+      <NameColumn dwd:design-time-name="da572ccf-eeff-4bd3-b619-d97af35c3ec1">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b5b28d86-ee18-4a33-825f-c4e73e1e12c5">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="216952ea-34f5-4819-8bdb-23c978b94001">
           <TableID>ENTSales_DimSales</TableID>
           <ColumnID>ReturnReasonDesc</ColumnID>
         </Source>
@@ -328,62 +328,62 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4987a77e-ca90-40c0-bed6-4869a546cc68">
+    <Attribute dwd:design-time-name="f881975b-8f20-40d7-8e10-2f153f2f5073">
       <ID>Sales Order Line Key</ID>
       <Name>Sales Order Line Key</Name>
       <Description>Unique Identifier in the Sales Order Line Dimension table</Description>
       <Usage>Key</Usage>
-      <EstimatedCount>14968</EstimatedCount>
+      <EstimatedCount>15008</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fb6d501b-cd79-42c6-af17-b6a499373e5e">
+        <KeyColumn dwd:design-time-name="95b0569c-5cf0-4495-9c46-01c89861bb55">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="04dc844c-3665-46e5-bdfc-6fe973e52006">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c6c31c47-953e-4a34-8f55-192354a77d56">
             <TableID>ENTSales_DimSales</TableID>
             <ColumnID>SalesOrderLineKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="b77ea56d-52aa-4126-a932-f4d33f537641">
+      <NameColumn dwd:design-time-name="830ea6f0-2cc8-4f29-8754-f1e2f8832284">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b15350a0-af87-415b-b9dd-1f3a71affdcd">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7fb40654-cf12-4519-b09b-8e128df81e5e">
           <TableID>ENTSales_DimSales</TableID>
           <ColumnID>SalesOrderLineKey</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="81050859-e1ec-4ef9-b168-efcb06d60742">
+        <AttributeRelationship dwd:design-time-name="6855d10f-54b8-4916-8343-48ca1f15c8ac">
           <AttributeID>Kit Type Id</AttributeID>
           <Name>Kit Type</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f4d02562-0c95-48c3-98b4-d3a071ee76c7">
+        <AttributeRelationship dwd:design-time-name="b91779c0-8a90-46f9-b9b7-2bf50f418580">
           <AttributeID>Sales Status Id</AttributeID>
           <Name>Sales Status</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="703d2c62-eec6-47f3-b3b8-443edecf27ca">
+        <AttributeRelationship dwd:design-time-name="ed001d33-c77b-421c-91ec-4de7f0010796">
           <AttributeID>Is Open Order</AttributeID>
           <Name>Is Open Order</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8eac6c1e-eea3-499c-bcb6-f572b0621313">
+        <AttributeRelationship dwd:design-time-name="4d1eb2b2-075d-4b93-a0b3-8fc10d0a3d46">
           <AttributeID>Return Status Id</AttributeID>
           <Name>Return Status</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f4de6153-d17c-4802-ad4b-f6b4e67a4313">
+        <AttributeRelationship dwd:design-time-name="a673d23d-bea2-40e4-9b00-2db29311386e">
           <AttributeID>Delivery Mode Cd</AttributeID>
           <Name>Delivery Mode</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c78a8100-1b97-4b2b-90ef-990f43cd903d">
+        <AttributeRelationship dwd:design-time-name="7934deb6-482e-45cd-9cc5-93fef52ec8e3">
           <AttributeID>Is Drop Ship</AttributeID>
           <Name>Is Drop Ship</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9d4d8e13-b275-44fd-9b8b-e88308a43b10">
+        <AttributeRelationship dwd:design-time-name="daa18cfb-bef9-481d-aeae-f355867b8974">
           <AttributeID>Drop Ship Status Id</AttributeID>
           <Name>Drop Ship Status</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c1db957d-4096-4572-a2c2-0d00ee0ac83c">
+        <AttributeRelationship dwd:design-time-name="cf2091b9-c1f0-4ead-9bbc-0536cf1cec39">
           <AttributeID>Return Reason Cd</AttributeID>
           <Name>Return Reason</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="85dd7cc4-b06e-4ddc-bfef-0cffcfd63b29">
+        <AttributeRelationship dwd:design-time-name="16fa23b2-b922-4ca2-a72c-cea442c6eb34">
           <AttributeID>Sales Order Line Num</AttributeID>
           <Name>Sales Order Line Num</Name>
         </AttributeRelationship>
@@ -392,31 +392,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d3909c22-cb22-426e-b019-eb62bef4ad21">
+    <Attribute dwd:design-time-name="ed9a0729-b08e-40df-a5d7-75871abc81ba">
       <ID>Sales Order Line Num</ID>
       <Name>Sales Order Line Num</Name>
       <Description>Sales Order Line Number</Description>
       <EstimatedCount>1826</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e23c50a2-12d0-4d1d-8d21-1549bce3cc74">
+        <KeyColumn dwd:design-time-name="7d41a715-5e4d-44a0-8396-5617d7e7d4eb">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4183bcb1-d17a-439d-bda7-ec0c4f50b6c5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0f5c8b3-49cf-4257-9f06-8681134b5aa6">
             <TableID>ENTSales_DimSales</TableID>
             <ColumnID>SalesOrderLineNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="09d30bb5-e300-4af7-841e-3183dc88f029">
+      <NameColumn dwd:design-time-name="7fd219af-6c0a-4f17-94e5-63d47977278d">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="80521724-14c2-4539-b5b7-428cd375bb28">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="639cc2b0-a793-4459-8c5c-d232c2fbdaed">
           <TableID>ENTSales_DimSales</TableID>
           <ColumnID>SalesOrderLineNum</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="39347e4d-daba-47c5-af92-9a9000732c78">
+      <ValueColumn dwd:design-time-name="e45a4467-1a4a-4f96-a9df-a224d6c077ff">
         <DataType>Double</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="0f98d046-5329-4e09-b93e-8defd2428a98">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e50f2a71-1f72-4b1d-8492-064c42102417">
           <TableID>ENTSales_DimSales</TableID>
           <ColumnID>SalesOrderLineNum</ColumnID>
         </Source>
@@ -426,12 +426,12 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
-  <ProactiveCaching dwd:design-time-name="b77dcbfc-eaa1-4d62-8894-2af2b64e9ee0">
+  <ProactiveCaching dwd:design-time-name="86339ba4-a87d-4ab8-b315-8d010a29c360">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="0e9d010f-01b9-4b5a-a10f-fb8d0d7ccb0a" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="ba874ded-9bb0-41cf-9834-347554f8493d" />
   </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

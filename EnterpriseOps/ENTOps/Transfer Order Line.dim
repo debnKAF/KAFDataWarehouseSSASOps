@@ -1,14 +1,14 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="27c8e9a6-49cc-4c10-a7a5-36fa421d2c0e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="69e9f715-ae7c-41de-be75-523e9e2e89ae" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Transfer Order Line</ID>
   <Name>Transfer Order Line</Name>
-  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3075" scrolltop="-8162" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10239" y="21325" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3075" scrolltop="-8162" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="15293" y="22040" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimTransferOrderLine" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4048" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimTransferOrderLine" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4048" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e0000d00f000088130000" />
             </control>
@@ -66,127 +66,137 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ca9ba000-7af5-42ea-a7c8-91d3caa9e07b">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4b474f1a-2472-411c-9840-f5da4b5d24e6">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="559b7017-36ff-44c7-8c1c-edea0fc28bd4">
+  <ErrorConfiguration dwd:design-time-name="4849b3bd-8710-4f4f-878c-ee546bfad5be">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="1a6cdcac-d0ec-4842-b975-f0380de4ab09">
+    <Attribute dwd:design-time-name="e993dc49-ed27-4607-b7c3-667aa8448d7c">
       <ID>Transfer Order Line Key</ID>
       <Name>Transfer Order Line Key</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>2215</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c8c49670-5501-4021-9cbf-87b9397e721a">
+        <KeyColumn dwd:design-time-name="1e1af634-3c38-451d-9523-5a0912c6aaa5">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b4d78c5-93c0-4389-a075-5aee9c9be0af">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="05452585-18c5-454d-9fba-5fe505668583">
             <TableID>ENTOps_dimTransferOrderLine</TableID>
             <ColumnID>TransferOrderLineKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="2e14481c-9a4c-438f-95de-a75506fe7e1c">
+        <AttributeRelationship dwd:design-time-name="5aa4c907-0363-4ead-bfc9-9d6aa0405183">
           <AttributeID>Transfer Order Line Num</AttributeID>
           <Name>Transfer Order Line Num</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="fc8a4868-2f60-418d-9146-5c27dc69cf80">
+        <AttributeRelationship dwd:design-time-name="987a5d96-1653-4f69-a462-fedcbb412518">
           <AttributeID>Transfer Status Id</AttributeID>
           <Name>Transfer Status</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="3d857496-9178-4d28-9390-9823782ef692">
+        <AttributeRelationship dwd:design-time-name="88c1d995-0956-4af2-9f50-46146f129d15">
           <AttributeID>Is Open Order</AttributeID>
           <Name>Is Open Transfer Order</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="feacd4d1-5090-448e-8457-858ea67da426">
+        <AttributeRelationship dwd:design-time-name="cb0ccf18-a0b9-4157-bdd9-b4343e8c2a19">
           <AttributeID>Remain Status Id</AttributeID>
           <Name>Remain Status</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f7e79293-8a23-41c6-a912-88e512bd0fb2">
+    <Attribute dwd:design-time-name="a36a0dc4-823e-443c-a18d-ad964e77173c">
       <ID>Transfer Order Line Num</ID>
       <Name>Transfer Order Line Num</Name>
+      <EstimatedCount>1804</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ed61d694-4611-4583-a400-e1aa799c0ed3">
+        <KeyColumn dwd:design-time-name="6eb834ff-67cb-457f-9ac7-1c2125540ee7">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="39d02c39-bfc8-4cf2-b506-370c2bdd99b5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4c3ab37-6e1a-49b2-af8b-240bc08c5ad4">
             <TableID>ENTOps_dimTransferOrderLine</TableID>
             <ColumnID>TransferOrderLineNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="23189a7a-7737-48e2-8edc-929e487833f2">
+    <Attribute dwd:design-time-name="3df59904-57d1-42af-813d-ac35eb3b95a6">
       <ID>Transfer Status Id</ID>
       <Name>Transfer Status</Name>
+      <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="904e088b-5fae-4967-b132-eae7a2309f9e">
+        <KeyColumn dwd:design-time-name="bc3a2875-4aa6-416c-b2ca-fe8d44a4f4f3">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d1c6a8e-7b92-4cd4-8fce-85a658fe3a16">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95e20739-5489-44d3-823e-04b0a8cb3ef0">
             <TableID>ENTOps_dimTransferOrderLine</TableID>
             <ColumnID>TransferStatusId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="86dbc621-d609-4366-991f-5e6fc67e98cf">
+      <NameColumn dwd:design-time-name="0e82a5dc-1f95-4fc3-b68f-e59280f245c2">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7fcb6df5-7824-48cb-ab86-c0a155366b9b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7377dac6-d996-46e6-81c6-246b0a1b868f">
           <TableID>ENTOps_dimTransferOrderLine</TableID>
           <ColumnID>TransferStatusDesc</ColumnID>
         </Source>
       </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f6dddd86-2984-4eed-807a-e5b03e4c7a4b">
+    <Attribute dwd:design-time-name="76172588-ec32-4ab4-8fd2-981ce530a6ba">
       <ID>Is Open Order</ID>
       <Name>Is Open Transfer Order</Name>
+      <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c435cfca-44cc-4e9e-9d02-b7f24804886b">
+        <KeyColumn dwd:design-time-name="3e76565a-397e-436c-82a7-125f4e101551">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="97414af0-4110-48e5-abaf-1e700c7c2807">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1532ee99-87f0-4ca7-92d9-c3d8d5a8c3fb">
             <TableID>ENTOps_dimTransferOrderLine</TableID>
             <ColumnID>IsOpenOrder</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="202ba095-a93b-4064-96a0-d0afd84297ff">
+    <Attribute dwd:design-time-name="6b942a48-d487-41ae-b613-57b290d7d12f">
       <ID>Remain Status Id</ID>
       <Name>Remain Status</Name>
+      <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f04ffc8b-0b88-401e-a9ce-c52773c884b4">
+        <KeyColumn dwd:design-time-name="c30aded8-1c87-44c5-9136-470b715ba418">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0af37136-fd79-49a7-8942-37ff669a304f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f63e87f-60dd-4441-94bc-5e3260c61b08">
             <TableID>ENTOps_dimTransferOrderLine</TableID>
             <ColumnID>RemainStatusId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="dd2911e0-356e-444c-89f5-f66277e99b6c">
+      <NameColumn dwd:design-time-name="6acd7797-707f-47ec-9433-b850a6d5623b">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="ad83822a-680d-4b04-8588-08e2355e6487">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="96822d00-c14e-4064-9241-f8ad274c32c8">
           <TableID>ENTOps_dimTransferOrderLine</TableID>
           <ColumnID>RemainStatusDesc</ColumnID>
         </Source>
       </NameColumn>
+      <AttributeHierarchyDisplayFolder>General</AttributeHierarchyDisplayFolder>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
