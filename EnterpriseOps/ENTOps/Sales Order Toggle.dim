@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="391f7b02-f91a-40e9-a141-aa5bab08ef3c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1ace2415-8dd0-481b-9481-e32e55f30dd4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Sales Order Toggle</ID>
   <Name>Sales Order Toggle</Name>
   <CreatedTimestamp>2019-08-01T17:32:26.986667Z</CreatedTimestamp>
@@ -9,7 +9,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4517" scrolltop="-9102" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5503" y="31829" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4517" scrolltop="-9102" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7170" y="48498" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
             </font>
@@ -84,11 +84,11 @@
   </Annotations>
   <LastProcessed>2019-08-12T23:21:30.063333Z</LastProcessed>
   <State>Processed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6644d9d3-c98b-482c-aca7-3bfd2d8059d3">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9f5f3887-49c9-45b3-8163-bc859d380829">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
   <Type>Utility</Type>
-  <ErrorConfiguration dwd:design-time-name="321a70bb-afea-409e-9608-6c08ed7c0777">
+  <ErrorConfiguration dwd:design-time-name="70dfc852-c6ef-41aa-a6ed-588a08999662">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
@@ -98,25 +98,25 @@
   <Collation>Latin1_General_CI_AS</Collation>
   <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="147f105c-e992-4e60-aead-c9fc82597ff1">
+    <Attribute dwd:design-time-name="c098983a-e6e9-4992-92db-d743f7db1507">
       <ID>Sales Order Toggle Key</ID>
       <Name>Sales Order Toggle</Name>
       <Description>Values are "Kir Component View" and "Kit Header View (Orders only)", with a default value of the former.  When looking at either Invoice measures or data by Invoice date one should use the "Kit Component View".</Description>
       <Usage>Key</Usage>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a5b2d02f-6769-47bc-9f87-3f61b78924fe">
+        <KeyColumn dwd:design-time-name="a1f4de60-8cdb-47a1-808a-89cc92c5a907">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="479f1678-abe0-4bfb-9783-1459a70c11a0">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="458082a3-72be-4330-8f01-f3948349f80a">
             <TableID>ENTSales_dimSalesOrderToggle</TableID>
             <ColumnID>SalesOrderToggleKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="c7b9b020-d8fe-4a3c-aaaa-9903c401e0e6">
+      <NameColumn dwd:design-time-name="7119f4eb-3b8a-4e5c-9115-f3f1a5b94c78">
         <DataType>WChar</DataType>
         <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="70bf27e3-659a-4568-b7e9-f84c1c103f0c">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="61d19873-e76a-4335-ac16-adddf1fa6382">
           <TableID>ENTSales_dimSalesOrderToggle</TableID>
           <ColumnID>SalesOrderToggleDesc</ColumnID>
         </Source>
@@ -128,12 +128,12 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
-  <ProactiveCaching dwd:design-time-name="2d9f24ab-e65c-465b-843c-875bcd9d35ea">
+  <ProactiveCaching dwd:design-time-name="cfbf8742-e3ee-4f94-9b8f-5e17fed6b760">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5409b517-cab0-4afd-bd8a-1d6df1ba9065" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="45b7accb-763e-47a3-b778-2c3db152fc53" />
   </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

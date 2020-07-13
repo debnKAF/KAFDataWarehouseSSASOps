@@ -40,10 +40,6 @@
       <FullPath>Deliver To.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Invoice Date FY Calcs.dim</Name>
-      <FullPath>Invoice Date FY Calcs.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Item.dim</Name>
       <FullPath>Item.dim</FullPath>
     </ProjectItem>
