@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="32268394-1f33-4872-9dfb-f98a7cad4ce9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4094a8b3-b323-4e6c-98f7-98adb1dffe3c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Purch Order Line</ID>
   <Name>Purch Order Line</Name>
   <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3579" scrolltop="-8520" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="15108" y="22040" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3579" scrolltop="-8520" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7170" y="48498" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
             </font>
@@ -68,58 +68,58 @@
   </Annotations>
   <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="229b503c-5927-4f18-a7f6-b2fbfb42df98">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="86933825-290d-42ca-a4ff-563183b63318">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="ce582ee5-3bae-4268-b9f0-dbbf17ebad11">
+  <ErrorConfiguration dwd:design-time-name="969d548a-9101-4c40-9e6d-7a012999b971">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="4bd9b57b-d54b-41c3-8c71-7ec3dd25dd3f">
+    <Attribute dwd:design-time-name="0976eefd-e0bc-4815-9c57-b4d3d0f1aaa1">
       <ID>Purch Order Line Key</ID>
       <Name>Purch Order Line Key</Name>
       <Usage>Key</Usage>
       <EstimatedCount>63665</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e2ce8086-323f-4d68-9133-58ce8b30ddea">
+        <KeyColumn dwd:design-time-name="414ab4d7-faf4-4185-880c-7c3f96fbff0b">
           <DataType>BigInt</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="cbb82a2e-5890-420c-8a0c-0a78d7f2b04f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2c48eb0-2272-4971-84d2-e175cbab263a">
             <TableID>ENTOps_dimPurchOrderLine</TableID>
             <ColumnID>PurchOrderLineKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="396e7a1d-8188-466c-8dbd-e22bb2274f5b">
+        <AttributeRelationship dwd:design-time-name="8bc739b9-734d-45a4-a808-30f1a07da440">
           <AttributeID>Purch Order Line Num</AttributeID>
           <Name>Purch Order Line Num</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="84c8edee-f6c3-45ff-9381-c0704e43dc56">
+        <AttributeRelationship dwd:design-time-name="56619f7a-4611-48e8-b9be-ef424e6f3335">
           <AttributeID>Drop Ship Sales Order Num</AttributeID>
           <Name>Drop Ship Sales Order Num</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="63d976d1-3869-470b-aed2-4e6486481c93">
+        <AttributeRelationship dwd:design-time-name="faf49e83-80a2-474c-9d3f-f03c819db345">
           <AttributeID>Purch Status Id</AttributeID>
           <Name>Purch Status</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="020efbb7-3ed0-4cb5-a455-639069d0c662">
+        <AttributeRelationship dwd:design-time-name="996f056f-621c-4343-8f26-d3177ea128e8">
           <AttributeID>Is Open Purch Order</AttributeID>
           <Name>Is Open Purch Order</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9082c9df-1e33-4658-8193-62316f252176">
+        <AttributeRelationship dwd:design-time-name="e8c49209-4a68-4c81-bef4-fc709fa668f1">
           <AttributeID>Deleted Ind</AttributeID>
           <Name>Deleted Ind</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="15361aef-258f-4879-bca0-dcb42d2536ab">
+        <AttributeRelationship dwd:design-time-name="9a97a8a7-0e53-4084-8a13-762fc54a3c01">
           <AttributeID>Drop Ship Status Id</AttributeID>
           <Name>Drop Ship Status</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0dd4af24-9666-43eb-928b-664d650c0538">
+        <AttributeRelationship dwd:design-time-name="b104377d-e61e-412e-b15e-c682e8bae669">
           <AttributeID>Mill Contract Num</AttributeID>
           <Name>Mill Contract Num</Name>
         </AttributeRelationship>
@@ -129,14 +129,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="82b0370b-34dc-405f-8744-4ae55cbeb47a">
+    <Attribute dwd:design-time-name="3076160c-e97a-4a39-b708-73e417fc298d">
       <ID>Purch Order Line Num</ID>
       <Name>Purch Order Line Num</Name>
       <EstimatedCount>59</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fc402b20-da40-406e-bd3b-8ca92de4b96e">
+        <KeyColumn dwd:design-time-name="b0b9cd2d-33d0-4282-92e3-53982cc15b6a">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ac398ff5-3c64-4d2f-81fb-6f472a4850d8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea386446-2795-4217-b31a-ac47b45825f6">
             <TableID>ENTOps_dimPurchOrderLine</TableID>
             <ColumnID>PurchOrderLineNum</ColumnID>
           </Source>
@@ -146,15 +146,15 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="454b6b48-23d1-4cb2-b9fc-d7328fefc25d">
+    <Attribute dwd:design-time-name="9bfbb904-f00b-4104-89a2-8a1b4e1df49e">
       <ID>Drop Ship Sales Order Num</ID>
       <Name>Drop Ship Sales Order Num</Name>
       <EstimatedCount>27031</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="008cd23f-3fa3-465f-8313-c56e29d57b5c">
+        <KeyColumn dwd:design-time-name="7b1cd4e3-ce1e-4638-ba3c-f80586849b35">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f549c79a-5328-40df-b48d-1a164e664286">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="620c65e6-79e6-4e55-ac9e-2fbd7761838e">
             <TableID>ENTOps_dimPurchOrderLine</TableID>
             <ColumnID>DropShipSalesOrderNum</ColumnID>
           </Source>
@@ -164,23 +164,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0ec03bae-e312-4d65-b165-22703cadb9f8">
+    <Attribute dwd:design-time-name="b3865342-1b85-48d4-9251-b524bddf6a1a">
       <ID>Purch Status Id</ID>
       <Name>Purch Status</Name>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1fd55eae-6046-4c2a-8527-1b938328ff1f">
+        <KeyColumn dwd:design-time-name="f01d737e-412c-4679-b401-fa52dd7411f8">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b71bcc0c-66fe-4a7c-9fb2-394a2727e5c0">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a3b04a81-02dc-42ea-bda3-57d871066900">
             <TableID>ENTOps_dimPurchOrderLine</TableID>
             <ColumnID>PurchStatusId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="971fa0bd-d0c8-423d-9371-fdc2310229e7">
+      <NameColumn dwd:design-time-name="fbbb1f4e-fe67-4178-88a4-b136dcab4914">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="37852bba-a9da-4e39-9016-2f5b92d7c874">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="afd8f75f-4948-49d8-8a54-74cd3d3fd537">
           <TableID>ENTOps_dimPurchOrderLine</TableID>
           <ColumnID>PurchStatusDesc</ColumnID>
         </Source>
@@ -189,14 +189,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="93c20c42-2ac6-4091-902d-1f79f205b6c0">
+    <Attribute dwd:design-time-name="d2339e90-1b4c-449c-9e43-6abbb2026688">
       <ID>Is Open Purch Order</ID>
       <Name>Is Open Purch Order</Name>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3823428c-6384-4cf4-b2fe-591106e2541f">
+        <KeyColumn dwd:design-time-name="af70048f-7d51-4c8a-b601-09f8c136a737">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d529261-983b-4fda-ac26-1e64f6291a77">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a148103-5c83-4886-832d-ed026dae1a1a">
             <TableID>ENTOps_dimPurchOrderLine</TableID>
             <ColumnID>IsOpenPurchOrder</ColumnID>
           </Source>
@@ -206,14 +206,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c382531e-daad-49b9-966f-3136d367d933">
+    <Attribute dwd:design-time-name="e97c2d11-4bd2-41cf-8db2-271b36c75a4d">
       <ID>Deleted Ind</ID>
       <Name>Deleted Ind</Name>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8605f150-b8b9-4b0b-b5e7-130551ac3bde">
+        <KeyColumn dwd:design-time-name="88f04214-de0f-4d58-a443-14e7f249b84f">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="06f75fbf-489a-4fc8-9737-e581fc74e859">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ced8d4df-1ec9-4ffe-943f-841e7a31840d">
             <TableID>ENTOps_dimPurchOrderLine</TableID>
             <ColumnID>DeletedInd</ColumnID>
           </Source>
@@ -223,23 +223,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d813887a-39c6-49f9-9054-7564d6160598">
+    <Attribute dwd:design-time-name="a9c0f7eb-13b8-4f41-ab73-8c49e1cc7c40">
       <ID>Drop Ship Status Id</ID>
       <Name>Drop Ship Status</Name>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3753024b-753d-4b71-b80d-206a221c9d63">
+        <KeyColumn dwd:design-time-name="47069174-a821-4fca-aae5-123cc4244580">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a705f03b-560f-419c-acb2-ab98c37d1408">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="56cd4e00-1e00-4b2e-b5f9-eb86bcef93e9">
             <TableID>ENTOps_dimPurchOrderLine</TableID>
             <ColumnID>DropShipStatusId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="1c264e31-eccb-4088-8f9e-fbdad916fc9c">
+      <NameColumn dwd:design-time-name="2e266d4a-3102-4a69-8f86-45917d8a5d46">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="4a0ea0b6-9f47-4d1d-94e1-db545b6d13d2">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9c603e00-46fe-41ee-9c30-d510867322ba">
           <TableID>ENTOps_dimPurchOrderLine</TableID>
           <ColumnID>DropShipStatusDesc</ColumnID>
         </Source>
@@ -248,15 +248,15 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="962fc5ca-3e4a-48be-b395-22d85b51a0b8">
+    <Attribute dwd:design-time-name="d85cc49b-9c7e-4b49-83ff-311318fce7d7">
       <ID>Mill Contract Num</ID>
       <Name>Mill Contract Num</Name>
       <EstimatedCount>2536</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="52133433-c36e-4ec6-a95e-b73a951c179a">
+        <KeyColumn dwd:design-time-name="a9282f8d-169b-4d2c-8a35-934ed03b2870">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="989356ad-544d-4d08-bf57-ca5e8f37ebf8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b87af519-e269-4656-acd4-12c6bcfd1761">
             <TableID>ENTOps_dimPurchOrderLine</TableID>
             <ColumnID>MillContractNum</ColumnID>
           </Source>
