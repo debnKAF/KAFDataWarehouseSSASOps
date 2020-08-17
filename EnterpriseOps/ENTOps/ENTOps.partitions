@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a46f6f08-553a-4152-80df-d5cbfdf58a6d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ce8018f8-23dc-4de8-838c-3464110a1364" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>ENTOps</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Fact Sales</ID>
       <Partitions>
-        <Partition dwd:design-time-name="b154e620-fe11-47d6-8ca0-6431d9376b43">
+        <Partition dwd:design-time-name="07eac7d2-3c6e-40fe-b164-411fa84dd3de">
           <ID>Fact Sales - KAF</ID>
           <Name>Fact Sales - KAF</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="f8419bb0-eecf-4bd7-95b2-bae27736f1cc">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="17a5bc21-2dfa-42a8-a6ae-7f7ebbaa1670">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT [ENTOps].[factSales].[CompanyKey],[ENTOps].[factSales].[OrderDateKey],[ENTOps].[factSales].[InvoiceDateKey],[ENTOps].[factSales].[ShipDateKey],[ENTOps].[factSales].[OrderCustomerKey],[ENTOps].[factSales].[BillToCustomerKey],[ENTOps].[factSales].[DeliverToKey],[ENTOps].[factSales].[VendorKey],[ENTOps].[factSales].[WarehouseKey],[ENTOps].[factSales].[GLAcctKey],[ENTOps].[factSales].[UnitPriceLocal],[ENTOps].[factSales].[UnitCostLocal],[ENTOps].[factSales].[UnitDiscLocal],[ENTOps].[factSales].[ItemKey],[ENTOps].[factSales].[InvoiceNetSalesAmt],[ENTOps].[factSales].[InvoiceGrossSalesAmt],[ENTOps].[factSales].[InvoiceDiscAmt],[ENTOps].[factSales].[InvoiceCOGSAmt],[ENTOps].[factSales].[OrderNetSalesAmt],[ENTOps].[factSales].[OrderGrossSalesAmt],[ENTOps].[factSales].[OrderDiscAmt],[ENTOps].[factSales].[OrderCOGSAmt],[ENTOps].[factSales].[OrderQtyEach],[ENTOps].[factSales].[OrderQtyCase],[ENTOps].[factSales].[OrderQtyCWT],[ENTOps].[factSales].[OrderQtyLbs],[ENTOps].[factSales].[InvoiceQtyEach],[ENTOps].[factSales].[InvoiceQtyCase],[ENTOps].[factSales].[InvoiceQtyCWT],[ENTOps].[factSales].[InvoiceQtyLbs],[ENTOps].[factSales].[MergeCustomerKey],[ENTOps].[factSales].[AllocLineDiscAmtLocal],[ENTOps].[factSales].[DocumentKey],[ENTOps].[factSales].[Datasource],[ENTOps].[factSales].[SalesOrderNum],[ENTOps].[factSales].[CompanyCd],[ENTOps].[factSales].[SalesOrderKey],[ENTOps].[factSales].[SalesOrderSourceKey],[ENTOps].[factSales].[AllocShippingIncomeAmt],[ENTOps].[factSales].[AllocShippingExpenseAmt],[ENTOps].[factSales].[SalesOrderLineKey],[ENTOps].[factSales].[InvoiceLineAmt],[ENTOps].[factSales].[InvoiceExtAmt],[ENTOps].[factSales].[OrderLineAmt],[ENTOps].[factSales].[OrderExtAmt],[ENTOps].[factSales].[EstOrderDateKey],[ENTOps].[factSales].[OrderQty],[ENTOps].[factSales].[InvoiceQty],[ENTOps].[factSales].[OrderTimeKey],[ENTOps].[factSales].[OrderQtyGrossLbs],[ENTOps].[factSales].[OrderQtyPallets],[ENTOps].[factSales].[InvoiceQtyGrossLbs],[ENTOps].[factSales].[InvoiceQtyPallets],[ENTOps].[factSales].[AllocPOFreightInAmt],[ENTOps].[factSales].[AllocTransferFreightInAmt],[ENTOps].[factSales].[AllocDropShipFreightOutAmt]
 FROM [ENTOps].[factSales]
@@ -23,14 +23,14 @@ WHERE [CompanyCd] = 'KAF'</QueryDefinition>
           <EstimatedRows>106446</EstimatedRows>
           <AggregationDesignID>40PctAgg</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="89a4145c-5adf-4d50-998a-daa10ba502a5">
+        <Partition dwd:design-time-name="91a8174a-1b5b-4454-94a0-7c4cbc7c7440">
           <ID>Fact Sales - BCI</ID>
           <Name>Fact Sales - BCI</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="d26a9ee3-cd44-4989-8d14-6db81d0be88d">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="0d4c9f28-2940-4f30-b87a-c08fa8e54b61">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT [ENTOps].[factSales].[CompanyKey],[ENTOps].[factSales].[OrderDateKey],[ENTOps].[factSales].[InvoiceDateKey],[ENTOps].[factSales].[ShipDateKey],[ENTOps].[factSales].[OrderCustomerKey],[ENTOps].[factSales].[BillToCustomerKey],[ENTOps].[factSales].[DeliverToKey],[ENTOps].[factSales].[VendorKey],[ENTOps].[factSales].[WarehouseKey],[ENTOps].[factSales].[GLAcctKey],[ENTOps].[factSales].[UnitPriceLocal],[ENTOps].[factSales].[UnitCostLocal],[ENTOps].[factSales].[UnitDiscLocal],[ENTOps].[factSales].[ItemKey],[ENTOps].[factSales].[InvoiceNetSalesAmt],[ENTOps].[factSales].[InvoiceGrossSalesAmt],[ENTOps].[factSales].[InvoiceDiscAmt],[ENTOps].[factSales].[InvoiceCOGSAmt],[ENTOps].[factSales].[OrderNetSalesAmt],[ENTOps].[factSales].[OrderGrossSalesAmt],[ENTOps].[factSales].[OrderDiscAmt],[ENTOps].[factSales].[OrderCOGSAmt],[ENTOps].[factSales].[OrderQtyEach],[ENTOps].[factSales].[OrderQtyCase],[ENTOps].[factSales].[OrderQtyCWT],[ENTOps].[factSales].[OrderQtyLbs],[ENTOps].[factSales].[InvoiceQtyEach],[ENTOps].[factSales].[InvoiceQtyCase],[ENTOps].[factSales].[InvoiceQtyCWT],[ENTOps].[factSales].[InvoiceQtyLbs],[ENTOps].[factSales].[MergeCustomerKey],[ENTOps].[factSales].[AllocLineDiscAmtLocal],[ENTOps].[factSales].[DocumentKey],[ENTOps].[factSales].[Datasource],[ENTOps].[factSales].[SalesOrderNum],[ENTOps].[factSales].[CompanyCd],[ENTOps].[factSales].[SalesOrderKey],[ENTOps].[factSales].[SalesOrderSourceKey],[ENTOps].[factSales].[AllocShippingIncomeAmt],[ENTOps].[factSales].[AllocShippingExpenseAmt],[ENTOps].[factSales].[SalesOrderLineKey],[ENTOps].[factSales].[InvoiceLineAmt],[ENTOps].[factSales].[InvoiceExtAmt],[ENTOps].[factSales].[OrderLineAmt],[ENTOps].[factSales].[OrderExtAmt],[ENTOps].[factSales].[EstOrderDateKey],[ENTOps].[factSales].[OrderQty],[ENTOps].[factSales].[InvoiceQty],[ENTOps].[factSales].[OrderTimeKey],[ENTOps].[factSales].[OrderQtyGrossLbs],[ENTOps].[factSales].[OrderQtyPallets],[ENTOps].[factSales].[InvoiceQtyGrossLbs],[ENTOps].[factSales].[InvoiceQtyPallets],[ENTOps].[factSales].[AllocPOFreightInAmt],[ENTOps].[factSales].[AllocTransferFreightInAmt],[ENTOps].[factSales].[AllocDropShipFreightOutAmt]
 FROM [ENTOps].[factSales]
@@ -2151,16 +2151,16 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
     <MeasureGroup>
       <ID>Fact Purchase</ID>
       <Partitions>
-        <Partition dwd:design-time-name="8dd6e332-50a4-462a-bd51-ad4e0a50afa0">
+        <Partition dwd:design-time-name="5db59a2a-acef-4fd6-b2ae-b3d199f6dab1">
           <ID>Fact Purchase - KAF</ID>
           <Name>Fact Purchase - KAF</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="7e741ca3-67a4-4a31-a205-be3377b9a9c9">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="8f28e947-be93-4d89-8866-bf825985f31f">
             <DataSourceID>Enterprise DW</DataSourceID>
-            <QueryDefinition>SELECT [ENTOps].[factPurchase].[CompanyKey],[ENTOps].[factPurchase].[OrderDateKey],[ENTOps].[factPurchase].[ReceiveDateKey],[ENTOps].[factPurchase].[RequestedShipDateKey],[ENTOps].[factPurchase].[OrigRequestedShipDateKey],[ENTOps].[factPurchase].[ActualShipDateKey],[ENTOps].[factPurchase].[DeliveryDateKey],[ENTOps].[factPurchase].[OrderVendorKey],[ENTOps].[factPurchase].[BillToVendorKey],[ENTOps].[factPurchase].[DeliverToKey],[ENTOps].[factPurchase].[ItemKey],[ENTOps].[factPurchase].[WarehouseKey],[ENTOps].[factPurchase].[PurchOrderKey],[ENTOps].[factPurchase].[OrderQty],[ENTOps].[factPurchase].[UnitPriceLocal],[ENTOps].[factPurchase].[OrderLineAmtLocal],[ENTOps].[factPurchase].[AllocFreightAmtLocal],[ENTOps].[factPurchase].[ShipDateKey],[ENTOps].[factPurchase].[CustomerKey],[ENTOps].[factPurchase].[PurchOrderLineKey],[ENTOps].[factPurchase].[OrderQtyEach],[ENTOps].[factPurchase].[OrderQtyCase],[ENTOps].[factPurchase].[OrderQtyCWT],[ENTOps].[factPurchase].[OrderQtyLbs],[ENTOps].[factPurchase].[OrderQtyGrossLbs],[ENTOps].[factPurchase].[OrderQtyPallets],[ENTOps].[factPurchase].[Datasource],[ENTOps].[factPurchase].[CompanyCd]
+            <QueryDefinition>SELECT *
 FROM [ENTOps].[factPurchase]
 WHERE CompanyCd = 'KAF'</QueryDefinition>
           </Source>
@@ -2169,16 +2169,16 @@ WHERE CompanyCd = 'KAF'</QueryDefinition>
           <ProcessingMode>Regular</ProcessingMode>
           <EstimatedRows>112907</EstimatedRows>
         </Partition>
-        <Partition dwd:design-time-name="f399c6f2-aacd-4ffc-b690-425e24078c34">
+        <Partition dwd:design-time-name="bb934dd9-3473-4a24-af66-dad79473d296">
           <ID>Fact Purchase - BCI</ID>
           <Name>Fact Purchase - BCI</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="824c3b7f-542c-40db-ad02-435c7019c101">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="1aff41ae-b856-4840-afeb-61fe12be8123">
             <DataSourceID>Enterprise DW</DataSourceID>
-            <QueryDefinition>SELECT [ENTOps].[factPurchase].[CompanyKey],[ENTOps].[factPurchase].[OrderDateKey],[ENTOps].[factPurchase].[ReceiveDateKey],[ENTOps].[factPurchase].[RequestedShipDateKey],[ENTOps].[factPurchase].[OrigRequestedShipDateKey],[ENTOps].[factPurchase].[ActualShipDateKey],[ENTOps].[factPurchase].[DeliveryDateKey],[ENTOps].[factPurchase].[OrderVendorKey],[ENTOps].[factPurchase].[BillToVendorKey],[ENTOps].[factPurchase].[DeliverToKey],[ENTOps].[factPurchase].[ItemKey],[ENTOps].[factPurchase].[WarehouseKey],[ENTOps].[factPurchase].[PurchOrderKey],[ENTOps].[factPurchase].[OrderQty],[ENTOps].[factPurchase].[UnitPriceLocal],[ENTOps].[factPurchase].[OrderLineAmtLocal],[ENTOps].[factPurchase].[AllocFreightAmtLocal],[ENTOps].[factPurchase].[ShipDateKey],[ENTOps].[factPurchase].[CustomerKey],[ENTOps].[factPurchase].[PurchOrderLineKey],[ENTOps].[factPurchase].[OrderQtyEach],[ENTOps].[factPurchase].[OrderQtyCase],[ENTOps].[factPurchase].[OrderQtyCWT],[ENTOps].[factPurchase].[OrderQtyLbs],[ENTOps].[factPurchase].[OrderQtyGrossLbs],[ENTOps].[factPurchase].[OrderQtyPallets],[ENTOps].[factPurchase].[Datasource],[ENTOps].[factPurchase].[CompanyCd]
+            <QueryDefinition>SELECT*
 FROM [ENTOps].[factPurchase]
 WHERE CompanyCd = 'BCI'</QueryDefinition>
           </Source>
@@ -2192,14 +2192,14 @@ WHERE CompanyCd = 'BCI'</QueryDefinition>
     <MeasureGroup>
       <ID>Fact Transfer</ID>
       <Partitions>
-        <Partition dwd:design-time-name="20da3943-37db-46db-84ab-e827618175f2">
+        <Partition dwd:design-time-name="7d80d61a-f7eb-4235-8a2b-056f7bb8af2a">
           <ID>Fact Transfer - KAF</ID>
           <Name>Fact Transfer - KAF</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="e0e0732f-6bda-46a1-a981-a57b942c671d">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="f77600a0-a2d8-4749-a376-f3246fd5d7e5">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT [ENTOps].[factTransfer].[CompanyKey],[ENTOps].[factTransfer].[OrderDateKey],[ENTOps].[factTransfer].[ShipDateKey],[ENTOps].[factTransfer].[ReceiveDateKey],[ENTOps].[factTransfer].[OrderVendorKey],[ENTOps].[factTransfer].[BillToVendorKey],[ENTOps].[factTransfer].[DeliverToKey],[ENTOps].[factTransfer].[ItemKey],[ENTOps].[factTransfer].[FromWarehouseKey],[ENTOps].[factTransfer].[ToWarehouseKey],[ENTOps].[factTransfer].[DocumentKey],[ENTOps].[factTransfer].[ReceiveQty],[ENTOps].[factTransfer].[ShipQty],[ENTOps].[factTransfer].[TransferQty],[ENTOps].[factTransfer].[AllocFreightInAmtLocal],[ENTOps].[factTransfer].[Datasource],[ENTOps].[factTransfer].[CustomerKey],[ENTOps].[factTransfer].[OrderTimeKey],[ENTOps].[factTransfer].[TransferOrderKey],[ENTOps].[factTransfer].[TransferOrderLineKey],[ENTOps].[factTransfer].[ReceiveQtyEach],[ENTOps].[factTransfer].[ReceiveQtyCase],[ENTOps].[factTransfer].[ReceiveQtyCWT],[ENTOps].[factTransfer].[ReceiveQtyLbs],[ENTOps].[factTransfer].[ReceiveQtyGrossLbs],[ENTOps].[factTransfer].[ReceiveQtyPallets],[ENTOps].[factTransfer].[ShipQtyEach],[ENTOps].[factTransfer].[ShipQtyCase],[ENTOps].[factTransfer].[ShipQtyCWT],[ENTOps].[factTransfer].[ShipQtyLbs],[ENTOps].[factTransfer].[ShipQtyGrossLbs],[ENTOps].[factTransfer].[ShipQtyPallets],[ENTOps].[factTransfer].[TransferQtyEach],[ENTOps].[factTransfer].[TransferQtyCase],[ENTOps].[factTransfer].[TransferQtyCWT],[ENTOps].[factTransfer].[TransferQtyLbs],[ENTOps].[factTransfer].[TransferQtyGrossLbs],[ENTOps].[factTransfer].[TransferQtyPallets],[ENTOps].[factTransfer].[CompanyCd]
 FROM [ENTOps].[factTransfer]
@@ -2210,14 +2210,14 @@ WHERE CompanyCd = 'KAF'</QueryDefinition>
           <ProcessingMode>Regular</ProcessingMode>
           <EstimatedRows>14430</EstimatedRows>
         </Partition>
-        <Partition dwd:design-time-name="465ad9d0-8bcb-4924-8190-b12c1178b946">
+        <Partition dwd:design-time-name="38300662-e5cb-4b80-bd71-0af639693bc3">
           <ID>Fact Transfer</ID>
           <Name>Fact Transfer - BCI</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="38b99265-a1e9-4bd5-9d93-56dc6aae5846">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="63927de1-957b-483c-bf4d-a6683fc84ae4">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT [ENTOps].[factTransfer].[CompanyKey],[ENTOps].[factTransfer].[OrderDateKey],[ENTOps].[factTransfer].[ShipDateKey],[ENTOps].[factTransfer].[ReceiveDateKey],[ENTOps].[factTransfer].[OrderVendorKey],[ENTOps].[factTransfer].[BillToVendorKey],[ENTOps].[factTransfer].[DeliverToKey],[ENTOps].[factTransfer].[ItemKey],[ENTOps].[factTransfer].[FromWarehouseKey],[ENTOps].[factTransfer].[ToWarehouseKey],[ENTOps].[factTransfer].[DocumentKey],[ENTOps].[factTransfer].[ReceiveQty],[ENTOps].[factTransfer].[ShipQty],[ENTOps].[factTransfer].[TransferQty],[ENTOps].[factTransfer].[AllocFreightInAmtLocal],[ENTOps].[factTransfer].[Datasource],[ENTOps].[factTransfer].[CustomerKey],[ENTOps].[factTransfer].[OrderTimeKey],[ENTOps].[factTransfer].[TransferOrderKey],[ENTOps].[factTransfer].[TransferOrderLineKey],[ENTOps].[factTransfer].[ReceiveQtyEach],[ENTOps].[factTransfer].[ReceiveQtyCase],[ENTOps].[factTransfer].[ReceiveQtyCWT],[ENTOps].[factTransfer].[ReceiveQtyLbs],[ENTOps].[factTransfer].[ReceiveQtyGrossLbs],[ENTOps].[factTransfer].[ReceiveQtyPallets],[ENTOps].[factTransfer].[ShipQtyEach],[ENTOps].[factTransfer].[ShipQtyCase],[ENTOps].[factTransfer].[ShipQtyCWT],[ENTOps].[factTransfer].[ShipQtyLbs],[ENTOps].[factTransfer].[ShipQtyGrossLbs],[ENTOps].[factTransfer].[ShipQtyPallets],[ENTOps].[factTransfer].[TransferQtyEach],[ENTOps].[factTransfer].[TransferQtyCase],[ENTOps].[factTransfer].[TransferQtyCWT],[ENTOps].[factTransfer].[TransferQtyLbs],[ENTOps].[factTransfer].[TransferQtyGrossLbs],[ENTOps].[factTransfer].[TransferQtyPallets],[ENTOps].[factTransfer].[CompanyCd]
 FROM [ENTOps].[factTransfer]
