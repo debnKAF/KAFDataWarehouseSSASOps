@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7252befe-9c63-4833-8133-646816e850de" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="77f68cd2-1d5d-4d4b-9144-7bfa4f4b55b9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Enterprise DW</ID>
   <Name>Enterprise DW</Name>
   <CreatedTimestamp>2020-05-06T19:03:56.666667Z</CreatedTimestamp>
@@ -31,7 +31,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="120" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="3645" scrolltop="22203" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="35137" y="22648" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="120" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="3645" scrolltop="22203" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="19420" y="23363" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -2237,7 +2237,7 @@
                   <xs:element name="PrimaryVendorItemNum" msprop:design-time-name="0d185cb1-b82c-4f64-9285-c53977c3cade" msprop:DbColumnName="PrimaryVendorItemNum" msprop:FriendlyName="PrimaryVendorItemNum">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
-                        <xs:maxLength value="20" />
+                        <xs:maxLength value="30" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
@@ -3148,7 +3148,7 @@
                   <xs:element name="CompanyType" msprop:design-time-name="5ae43fdd-7054-4bcd-a9f2-c501bdf425c8" msprop:DbColumnName="CompanyType" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
-                        <xs:maxLength value="15" />
+                        <xs:maxLength value="14" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
@@ -3607,20 +3607,20 @@
                     </xs:simpleType>
                   </xs:element>
                   <xs:element name="ReceiveDateKey" msprop:design-time-name="edc6ee5a-00d5-435d-b5d5-4adbf16fcdaa" msprop:DbColumnName="ReceiveDateKey" type="xs:int" minOccurs="0" />
-                  <xs:element name="RemainQtyNotShipped" msprop:DbColumnName="RemainQtyNotShipped" msprop:design-time-name="2f3bc986-a185-43a6-ba6e-3eb167a0aec9" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotInvoiced" msprop:DbColumnName="RemainQtyNotInvoiced" msprop:design-time-name="a5abbf80-613a-49f6-a64e-6eb1ae7cb73e" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotShippedEach" msprop:DbColumnName="RemainQtyNotShippedEach" msprop:design-time-name="70f3b70b-b86b-41ed-8757-0aafb12ff984" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotShippedCase" msprop:DbColumnName="RemainQtyNotShippedCase" msprop:design-time-name="42938c24-f429-4bcd-a22f-4bbe3ab1edef" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotShippedCWT" msprop:DbColumnName="RemainQtyNotShippedCWT" msprop:design-time-name="8ad2ea4b-5171-4a28-8bf0-9c7894510308" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotShippedLbs" msprop:DbColumnName="RemainQtyNotShippedLbs" msprop:design-time-name="e468c74a-b826-436f-adf7-3349466ee0c5" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotShippedGrossLbs" msprop:DbColumnName="RemainQtyNotShippedGrossLbs" msprop:design-time-name="62f55bae-16a9-4110-99fd-290c4a3b78bc" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotShippedPallets" msprop:DbColumnName="RemainQtyNotShippedPallets" msprop:design-time-name="14701f79-6c70-477f-b0c0-7357d353e651" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotInvoicedEach" msprop:DbColumnName="RemainQtyNotInvoicedEach" msprop:design-time-name="8613cf2d-b48b-4824-b878-5cfd7f5e3eae" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotInvoicedCase" msprop:DbColumnName="RemainQtyNotInvoicedCase" msprop:design-time-name="165b106b-19da-418d-a9bf-789216800efb" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotInvoicedCWT" msprop:DbColumnName="RemainQtyNotInvoicedCWT" msprop:design-time-name="d510f64c-2297-48e3-96bf-666720d1fe6f" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotInvoicedLbs" msprop:DbColumnName="RemainQtyNotInvoicedLbs" msprop:design-time-name="bea88259-8237-4e2a-8da9-25c466109982" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotInvoicedGrossLbs" msprop:DbColumnName="RemainQtyNotInvoicedGrossLbs" msprop:design-time-name="68ab4ae4-2e2c-44e7-9bcd-cdf85d525626" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="RemainQtyNotInvoicedPallets" msprop:DbColumnName="RemainQtyNotInvoicedPallets" msprop:design-time-name="7668a016-9205-47f4-8a6c-24248a21a3e5" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotShipped" msprop:design-time-name="2f3bc986-a185-43a6-ba6e-3eb167a0aec9" msprop:DbColumnName="RemainQtyNotShipped" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotInvoiced" msprop:design-time-name="a5abbf80-613a-49f6-a64e-6eb1ae7cb73e" msprop:DbColumnName="RemainQtyNotInvoiced" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotShippedEach" msprop:design-time-name="70f3b70b-b86b-41ed-8757-0aafb12ff984" msprop:DbColumnName="RemainQtyNotShippedEach" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotShippedCase" msprop:design-time-name="42938c24-f429-4bcd-a22f-4bbe3ab1edef" msprop:DbColumnName="RemainQtyNotShippedCase" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotShippedCWT" msprop:design-time-name="8ad2ea4b-5171-4a28-8bf0-9c7894510308" msprop:DbColumnName="RemainQtyNotShippedCWT" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotShippedLbs" msprop:design-time-name="e468c74a-b826-436f-adf7-3349466ee0c5" msprop:DbColumnName="RemainQtyNotShippedLbs" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotShippedGrossLbs" msprop:design-time-name="62f55bae-16a9-4110-99fd-290c4a3b78bc" msprop:DbColumnName="RemainQtyNotShippedGrossLbs" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotShippedPallets" msprop:design-time-name="14701f79-6c70-477f-b0c0-7357d353e651" msprop:DbColumnName="RemainQtyNotShippedPallets" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotInvoicedEach" msprop:design-time-name="8613cf2d-b48b-4824-b878-5cfd7f5e3eae" msprop:DbColumnName="RemainQtyNotInvoicedEach" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotInvoicedCase" msprop:design-time-name="165b106b-19da-418d-a9bf-789216800efb" msprop:DbColumnName="RemainQtyNotInvoicedCase" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotInvoicedCWT" msprop:design-time-name="d510f64c-2297-48e3-96bf-666720d1fe6f" msprop:DbColumnName="RemainQtyNotInvoicedCWT" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotInvoicedLbs" msprop:design-time-name="bea88259-8237-4e2a-8da9-25c466109982" msprop:DbColumnName="RemainQtyNotInvoicedLbs" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotInvoicedGrossLbs" msprop:design-time-name="68ab4ae4-2e2c-44e7-9bcd-cdf85d525626" msprop:DbColumnName="RemainQtyNotInvoicedGrossLbs" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RemainQtyNotInvoicedPallets" msprop:design-time-name="7668a016-9205-47f4-8a6c-24248a21a3e5" msprop:DbColumnName="RemainQtyNotInvoicedPallets" type="xs:decimal" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>

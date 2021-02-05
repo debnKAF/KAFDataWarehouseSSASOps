@@ -1,0 +1,390 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c140ccc9-e20c-47fd-8e18-ac51888dc013" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ENTFcst</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Sales</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="50161fb3-d1a2-4948-b0a0-0dbb84860e36">
+          <ID>Fact Sales - KAF</ID>
+          <Name>Fact Sales - KAF</Name>
+          <CreatedTimestamp>2020-07-06T21:48:20.77Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-01-03T22:42:36.13Z</LastSchemaUpdate>
+          <LastProcessed>2021-01-25T15:30:48.093333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="85bb90de-7389-4a01-b4c6-5eabd40ed59e">
+            <DataSourceID>Enterprise DW</DataSourceID>
+            <QueryDefinition>SELECT *
+FROM [ENTFcst].[factSales]
+WHERE [CompanyCd] = 'KAF'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="005827ed-b47a-47c0-adc4-151d383a0e78">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="a264cb6a-8723-458a-8e23-fba270ae0654" />
+          </ProactiveCaching>
+          <EstimatedSize>17073414</EstimatedSize>
+          <EstimatedRows>106446</EstimatedRows>
+        </Partition>
+        <Partition dwd:design-time-name="6773a318-0306-4f9c-90ff-114aa5dfd0fc">
+          <ID>Fact Sales - BCI</ID>
+          <Name>Fact Sales - BCI</Name>
+          <CreatedTimestamp>2020-07-06T21:48:20.816667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-01-03T22:42:36.3Z</LastSchemaUpdate>
+          <LastProcessed>2021-01-25T15:35:41.67Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="6084d9fe-f80e-47a3-a008-364d5299154f">
+            <DataSourceID>Enterprise DW</DataSourceID>
+            <QueryDefinition>SELECT *
+FROM [ENTFcst].[factSales]
+WHERE [CompanyCd] = 'BCI'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="804c46a7-58dd-43f7-9d0e-9f8c41cc7372">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d49f024f-410f-4c29-93cf-94381099f05d" />
+          </ProactiveCaching>
+          <EstimatedSize>777252900</EstimatedSize>
+          <EstimatedRows>4213787</EstimatedRows>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>40PctAgg</ID>
+          <Name>40PctAgg</Name>
+          <CreatedTimestamp>2020-07-14T00:56:06.706667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-01-03T22:42:36.113333Z</LastSchemaUpdate>
+          <EstimatedRows>4213787</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Company</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Company Key</AttributeID>
+                  <EstimatedCount>2843</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Company Cd</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Business Unit Cd</AttributeID>
+                  <EstimatedCount>7</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cost Site Cd</AttributeID>
+                  <EstimatedCount>93</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dept Cd</AttributeID>
+                  <EstimatedCount>34</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sales Channel Cd</AttributeID>
+                  <EstimatedCount>16</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Item Type Cd</AttributeID>
+                  <EstimatedCount>18</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Direct Business Area</AttributeID>
+                  <EstimatedCount>6</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Company Type</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Order Vendor</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Vendor Key</AttributeID>
+                  <EstimatedCount>5458</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Vendor Num</AttributeID>
+                  <EstimatedCount>5458</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Vendor Num 1</AttributeID>
+                  <EstimatedCount>5458</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Invoice Vendor Num</AttributeID>
+                  <EstimatedCount>5102</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Vendor Group Cd</AttributeID>
+                  <EstimatedCount>10</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Vendor Type Id</AttributeID>
+                  <EstimatedCount>2</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Is Remit To Vendor</AttributeID>
+                  <EstimatedCount>2</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Blocked Status Id</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Is One Time Vendor</AttributeID>
+                  <EstimatedCount>2</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Cd</AttributeID>
+                  <EstimatedCount>1</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Addr Line1</AttributeID>
+                  <EstimatedCount>4470</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Addr Line2</AttributeID>
+                  <EstimatedCount>966</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>City</AttributeID>
+                  <EstimatedCount>1566</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>State Province</AttributeID>
+                  <EstimatedCount>61</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>County</AttributeID>
+                  <EstimatedCount>501</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Postal Code</AttributeID>
+                  <EstimatedCount>2760</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Cd</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Primary Email</AttributeID>
+                  <EstimatedCount>974</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Is Primary Email For PO</AttributeID>
+                  <EstimatedCount>2</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Primary Phone</AttributeID>
+                  <EstimatedCount>1702</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Primary Fax</AttributeID>
+                  <EstimatedCount>1</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Delivery Terms Cd</AttributeID>
+                  <EstimatedCount>7</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Delivery Mode Cd</AttributeID>
+                  <EstimatedCount>18</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Default Site Cd</AttributeID>
+                  <EstimatedCount>23</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Default Warehouse Cd</AttributeID>
+                  <EstimatedCount>26</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Default In Transit Warehouse</AttributeID>
+                  <EstimatedCount>19</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Location Cd Req Main</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Payment Terms Cd</AttributeID>
+                  <EstimatedCount>17</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cash Disc Cd</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cash Disc Num Of Days</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cash Disc Pct</AttributeID>
+                  <EstimatedCount>6</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Order Min</AttributeID>
+                  <EstimatedCount>15</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Payment Method</AttributeID>
+                  <EstimatedCount>10</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Vendor Buyer Cd</AttributeID>
+                  <EstimatedCount>9</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Purch Pool Cd</AttributeID>
+                  <EstimatedCount>14</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Is Contract Required</AttributeID>
+                  <EstimatedCount>2</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Language Cd</AttributeID>
+                  <EstimatedCount>2</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Is W9 Included</AttributeID>
+                  <EstimatedCount>2</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Federal Tax Id</AttributeID>
+                  <EstimatedCount>992</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Default Business Unit Cd</AttributeID>
+                  <EstimatedCount>7</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Default Cost Site Cd</AttributeID>
+                  <EstimatedCount>27</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Default Item Type Cd</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Vendor Num 1 1</AttributeID>
+                  <EstimatedCount>5458</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Datasource</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Datasource</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Data As Of Datetime</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Company</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Company Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Order Vendor</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Datasource</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Company</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Company Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Order Vendor</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Datasource</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Datasource</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Sales Budget TEMP</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9c6005f9-ed2f-4c1d-b7cc-79e979da6a85">
+          <ID>Fact Sales Budget TEMP</ID>
+          <Name>Fact Sales Budget TEMP</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9b88c937-9cfc-4957-b383-27b8b6c98196">
+            <DataSourceViewID>Enterprise DW</DataSourceViewID>
+            <TableID>ENTFcst_factSalesBudgetTEMP</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Forecast TEMP</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3b82b47f-807e-474e-a645-7bd5b563fdc7">
+          <ID>Fact Forecast TEMP</ID>
+          <Name>Fact Forecast TEMP</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8b8119e5-ab36-48cf-aaf7-51242286530f">
+            <DataSourceViewID>Enterprise DW</DataSourceViewID>
+            <TableID>ENTFcst_factForecastTEMP</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

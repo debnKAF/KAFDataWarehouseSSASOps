@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "ENTOps", "ENTOps\ENTOps.dwproj", "{C4575D22-6CC4-4BCC-82AC-6487FB60D0F1}"
 EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "ENTFcst", "ENTFcst\ENTFcst.dwproj", "{B276302E-ED04-496D-AC09-AE73ABAD1E2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -13,6 +15,9 @@ Global
 		{C4575D22-6CC4-4BCC-82AC-6487FB60D0F1}.Development|Default.ActiveCfg = Development
 		{C4575D22-6CC4-4BCC-82AC-6487FB60D0F1}.Development|Default.Build.0 = Development
 		{C4575D22-6CC4-4BCC-82AC-6487FB60D0F1}.Development|Default.Deploy.0 = Development
+		{B276302E-ED04-496D-AC09-AE73ABAD1E2F}.Development|Default.ActiveCfg = Development
+		{B276302E-ED04-496D-AC09-AE73ABAD1E2F}.Development|Default.Build.0 = Development
+		{B276302E-ED04-496D-AC09-AE73ABAD1E2F}.Development|Default.Deploy.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
