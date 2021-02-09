@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c140ccc9-e20c-47fd-8e18-ac51888dc013" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="18682d4a-9012-4590-8db6-4176af23bfb4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>ENTFcst</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Fact Sales</ID>
       <Partitions>
-        <Partition dwd:design-time-name="50161fb3-d1a2-4948-b0a0-0dbb84860e36">
+        <Partition dwd:design-time-name="be100ca3-0ebb-43f0-820c-bb37bec19736">
           <ID>Fact Sales - KAF</ID>
           <Name>Fact Sales - KAF</Name>
           <CreatedTimestamp>2020-07-06T21:48:20.77Z</CreatedTimestamp>
           <LastSchemaUpdate>2021-01-03T22:42:36.13Z</LastSchemaUpdate>
           <LastProcessed>2021-01-25T15:30:48.093333Z</LastProcessed>
           <State>Processed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="85bb90de-7389-4a01-b4c6-5eabd40ed59e">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="a9626909-f2ac-4f2f-b7c7-2dd010eaa99c">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT *
 FROM [ENTFcst].[factSales]
@@ -20,24 +20,24 @@ WHERE [CompanyCd] = 'KAF'</QueryDefinition>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="005827ed-b47a-47c0-adc4-151d383a0e78">
+          <ProactiveCaching dwd:design-time-name="388200e5-b52d-4231-bc42-bd5f9ba30b32">
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="a264cb6a-8723-458a-8e23-fba270ae0654" />
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4749e264-c866-4bf1-9187-2471bb50b19b" />
           </ProactiveCaching>
           <EstimatedSize>17073414</EstimatedSize>
           <EstimatedRows>106446</EstimatedRows>
         </Partition>
-        <Partition dwd:design-time-name="6773a318-0306-4f9c-90ff-114aa5dfd0fc">
+        <Partition dwd:design-time-name="8bbe36f2-0c4f-43f4-bb74-d52d0b163a84">
           <ID>Fact Sales - BCI</ID>
           <Name>Fact Sales - BCI</Name>
           <CreatedTimestamp>2020-07-06T21:48:20.816667Z</CreatedTimestamp>
           <LastSchemaUpdate>2021-01-03T22:42:36.3Z</LastSchemaUpdate>
           <LastProcessed>2021-01-25T15:35:41.67Z</LastProcessed>
           <State>Processed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="6084d9fe-f80e-47a3-a008-364d5299154f">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="bec7d2f8-37e4-4170-854a-74a17cbddabd">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT *
 FROM [ENTFcst].[factSales]
@@ -46,12 +46,12 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="804c46a7-58dd-43f7-9d0e-9f8c41cc7372">
+          <ProactiveCaching dwd:design-time-name="04374815-b7d7-4e1c-8f36-c1341c3cad05">
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d49f024f-410f-4c29-93cf-94381099f05d" />
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="6be3e668-6d9e-447f-bf61-93684a389837" />
           </ProactiveCaching>
           <EstimatedSize>777252900</EstimatedSize>
           <EstimatedRows>4213787</EstimatedRows>
@@ -261,10 +261,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                   <EstimatedCount>2</EstimatedCount>
                 </Attribute>
                 <Attribute>
-                  <AttributeID>Federal Tax Id</AttributeID>
-                  <EstimatedCount>992</EstimatedCount>
-                </Attribute>
-                <Attribute>
                   <AttributeID>Default Business Unit Cd</AttributeID>
                   <EstimatedCount>7</EstimatedCount>
                 </Attribute>
@@ -349,14 +345,14 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
     <MeasureGroup>
       <ID>Fact Sales Budget TEMP</ID>
       <Partitions>
-        <Partition dwd:design-time-name="9c6005f9-ed2f-4c1d-b7cc-79e979da6a85">
+        <Partition dwd:design-time-name="6b194966-da30-43b6-9707-93bc0b73465c">
           <ID>Fact Sales Budget TEMP</ID>
           <Name>Fact Sales Budget TEMP</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9b88c937-9cfc-4957-b383-27b8b6c98196">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cb06594f-8486-496a-bbc8-45ca0d593954">
             <DataSourceViewID>Enterprise DW</DataSourceViewID>
             <TableID>ENTFcst_factSalesBudgetTEMP</TableID>
           </Source>
@@ -369,14 +365,14 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
     <MeasureGroup>
       <ID>Fact Forecast TEMP</ID>
       <Partitions>
-        <Partition dwd:design-time-name="3b82b47f-807e-474e-a645-7bd5b563fdc7">
+        <Partition dwd:design-time-name="d4be2ad5-21e2-4f74-aeac-40c5d3e15499">
           <ID>Fact Forecast TEMP</ID>
           <Name>Fact Forecast TEMP</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8b8119e5-ab36-48cf-aaf7-51242286530f">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="621ec302-d9c8-47ca-ae98-df73415507c4">
             <DataSourceViewID>Enterprise DW</DataSourceViewID>
             <TableID>ENTFcst_factForecastTEMP</TableID>
           </Source>

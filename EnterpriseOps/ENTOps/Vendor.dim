@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="50e7b70d-b470-43bf-bee9-f49957adc72a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c8fea9fa-dad8-4048-bcbd-01ce235246de" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Vendor</ID>
   <Name>Vendor</Name>
   <CreatedTimestamp>2020-05-06T19:03:56.71Z</CreatedTimestamp>
@@ -10,9 +10,9 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3102" scrolltop="-7541" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7170" y="48498" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3102" scrolltop="-7541" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11589" y="22040" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -70,10 +70,10 @@
   </Annotations>
   <LastProcessed>1699-12-31T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="43451b0e-d825-49f3-9a22-5f64ef51d20b">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="0446c1fe-9096-45a7-97a4-08cb77a97363">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="4c7b35b1-b559-4b45-baeb-9259e3b41191">
+  <ErrorConfiguration dwd:design-time-name="a00b54c6-33cb-4062-8eb5-285c731d747b">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
@@ -83,194 +83,190 @@
   <Collation>Latin1_General_CI_AS</Collation>
   <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="eb68657c-f326-423d-be32-7057a7e5bc06">
+    <Attribute dwd:design-time-name="b8e6f5d1-b147-45ac-bd24-1a6ecbef7750">
       <ID>Vendor Key</ID>
       <Name>Vendor Key</Name>
       <Description>Unique Identifier in the Vendor KAFSalesension VIEW</Description>
       <Usage>Key</Usage>
       <EstimatedCount>5458</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2b354946-8dfb-4d56-aab4-bee1a64b7029">
+        <KeyColumn dwd:design-time-name="6de8651d-e659-4dcc-bbf0-3832ad890335">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b5f68f1-b8d3-46bf-83c7-bc11dbef3d77">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f76ac8c2-8bfc-437d-b101-2f071ddda248">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>VendorKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="5c50649c-e540-475e-b83c-7671600ef7e8">
+      <NameColumn dwd:design-time-name="fac38a8f-8d1d-4056-aa7d-1056f6a5b157">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8ae16d3a-0142-4295-89b7-989aa892473f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d1ff3455-a343-4cbc-8c67-a72cbeed12bd">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>VendorKey</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="3784be7d-9725-47e1-9818-b64efdd28644">
+        <AttributeRelationship dwd:design-time-name="83819190-b642-483d-bf6f-1e110a1cd161">
           <AttributeID>Vendor Num</AttributeID>
           <Name>Vendor Num</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0f99e8a0-dc99-4716-a6eb-babe42266a0b">
+        <AttributeRelationship dwd:design-time-name="f5be93e7-cdb6-4050-aa50-b3c42f53429b">
           <AttributeID>Vendor Num 1</AttributeID>
           <Name>Vendor Name</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="08eae47e-9dc4-4c64-a658-2408340a540d">
+        <AttributeRelationship dwd:design-time-name="850ed384-af67-4a90-bc0c-fda3408fdc98">
           <AttributeID>Invoice Vendor Num</AttributeID>
           <Name>Invoice Vendor Num</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="cfcb2582-d953-4689-b5b0-827d005d9ece">
+        <AttributeRelationship dwd:design-time-name="496cc645-b83b-47c6-9d0d-7652a9a92e78">
           <AttributeID>Vendor Group Cd</AttributeID>
           <Name>Vendor Group</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="797325c3-9a78-46f6-9852-5e7a7f65cd22">
+        <AttributeRelationship dwd:design-time-name="541fca0c-988c-421f-bb7d-83fa43e4f330">
           <AttributeID>Vendor Type Id</AttributeID>
           <Name>Vendor Type</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="20e96cf9-40ef-4ae3-a58a-f5b602b16555">
+        <AttributeRelationship dwd:design-time-name="c98808bb-2d3a-422a-9bf4-5a0ac8394f00">
           <AttributeID>Is Remit To Vendor</AttributeID>
           <Name>Is Remit To Vendor</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="347f4b07-f806-45ba-aa82-d396a6064dfa">
+        <AttributeRelationship dwd:design-time-name="732c010f-6e1f-424e-b355-ddef6101a278">
           <AttributeID>Blocked Status Id</AttributeID>
           <Name>Blocked Status</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5838559e-b168-4cee-8937-76d0e1a181dc">
+        <AttributeRelationship dwd:design-time-name="2f67bc93-6c42-4e3e-a3c6-fcaea2d285d0">
           <AttributeID>Is One Time Vendor</AttributeID>
           <Name>Is One Time Vendor</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c77676bb-3b4b-4d50-b903-3ae38c488694">
+        <AttributeRelationship dwd:design-time-name="43862168-f637-4144-b673-62bfd42f2dc6">
           <AttributeID>Currency Cd</AttributeID>
           <Name>Currency Cd</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="43a7573e-e583-4fa5-8b81-9e32d42f4360">
+        <AttributeRelationship dwd:design-time-name="be984cea-e473-4732-85c8-88282f37f5b7">
           <AttributeID>Addr Line1</AttributeID>
           <Name>Addr Line1</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7fa3866c-e288-4fe3-8a19-624b677aad16">
+        <AttributeRelationship dwd:design-time-name="e7c4daa0-cc02-4517-ab68-aee3fba4a188">
           <AttributeID>Addr Line2</AttributeID>
           <Name>Addr Line2</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7e32c591-0cb2-440e-8241-3a68506b0723">
+        <AttributeRelationship dwd:design-time-name="23208bfc-6d19-4630-811d-4a06e91be31e">
           <AttributeID>City</AttributeID>
           <Name>City</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d83e5653-f46f-436e-a5f2-8febecfe3c95">
+        <AttributeRelationship dwd:design-time-name="a0af8e5d-7296-4380-8c4b-d82a6234556c">
           <AttributeID>State Province</AttributeID>
           <Name>State Province</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9d429717-9eb0-4d2f-8741-7fc77a885d42">
+        <AttributeRelationship dwd:design-time-name="a77a5a90-61c0-4e9b-826d-28be63d0994f">
           <AttributeID>County</AttributeID>
           <Name>County</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="564ffea3-e406-44e4-af67-10b6c9db685f">
+        <AttributeRelationship dwd:design-time-name="44f46651-5669-48e1-befb-48c3b04b64bf">
           <AttributeID>Postal Code</AttributeID>
           <Name>Postal Code</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4748af26-081d-4e08-ac19-d2d30d9a2bdc">
+        <AttributeRelationship dwd:design-time-name="9d283c22-4509-4de7-bdaf-238361277a69">
           <AttributeID>Country Region Cd</AttributeID>
           <Name>Country Region</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a82f7088-3d82-4c9e-a6af-5ef2e59cffd7">
+        <AttributeRelationship dwd:design-time-name="9b73149a-c4e2-4502-9639-518214231034">
           <AttributeID>Primary Email</AttributeID>
           <Name>Primary Email</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4031dbc4-68dc-4793-80cd-624e3e5e6a0d">
+        <AttributeRelationship dwd:design-time-name="9a8aa24b-3a70-4728-93a4-5c57939a190d">
           <AttributeID>Is Primary Email For PO</AttributeID>
           <Name>Is Primary Email For PO</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a63d0f22-1b1d-406f-823c-43fb7df67bf6">
+        <AttributeRelationship dwd:design-time-name="8bd5ce71-2451-4747-b3bf-e20caa6ec901">
           <AttributeID>Primary Phone</AttributeID>
           <Name>Primary Phone</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="efc3baeb-d326-4fd8-b4bb-d6934ecda0e3">
+        <AttributeRelationship dwd:design-time-name="3ae9df0c-054a-4f88-a1f9-2e74f6cbc2e9">
           <AttributeID>Primary Fax</AttributeID>
           <Name>Primary Fax</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7d064d2d-ab69-4fc3-a2b0-8ade97209ff2">
+        <AttributeRelationship dwd:design-time-name="a625f647-faf1-4669-a9fe-286038dcfd8f">
           <AttributeID>Delivery Terms Cd</AttributeID>
           <Name>Delivery Terms</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="192e63a9-cec4-4e9f-ad8c-b9be576b0b10">
+        <AttributeRelationship dwd:design-time-name="81fcc78d-0124-4638-a98a-564c571e5fc1">
           <AttributeID>Delivery Mode Cd</AttributeID>
           <Name>Delivery Mode</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="81171bc9-f978-4cf8-b7ff-0212bca276ad">
+        <AttributeRelationship dwd:design-time-name="2f340321-6c18-4714-a570-c7cb7ee39598">
           <AttributeID>Default Site Cd</AttributeID>
           <Name>Default Site</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ae33f5d8-e141-4798-91b4-75a6d3a9a68f">
+        <AttributeRelationship dwd:design-time-name="bd84b7c5-b46f-4bf7-b917-a2b8bb5f984a">
           <AttributeID>Default Warehouse Cd</AttributeID>
           <Name>Default Warehouse</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1e83ccc4-2924-4684-9cfb-9323c78a1012">
+        <AttributeRelationship dwd:design-time-name="70c411a4-1f70-4e5b-934c-93f271f2ab95">
           <AttributeID>Default In Transit Warehouse</AttributeID>
           <Name>Default In Transit Warehouse</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="e3f675ff-bee9-4716-814a-665c44db9e36">
+        <AttributeRelationship dwd:design-time-name="0909f666-b223-4bd6-be65-e4ef7a4f62b0">
           <AttributeID>Location Cd Req Main</AttributeID>
           <Name>Location Cd Req Main</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="79483c26-7263-4b20-892d-b5a62f819ac6">
+        <AttributeRelationship dwd:design-time-name="9b49a9e2-9b63-4d66-b65e-10b46e56377d">
           <AttributeID>Payment Terms Cd</AttributeID>
           <Name>Payment Terms</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c9039a7d-3cdc-43f4-9b1b-11c28da6b4c2">
+        <AttributeRelationship dwd:design-time-name="7a6c5b52-e792-4340-8a9f-961928ac24ab">
           <AttributeID>Cash Disc Cd</AttributeID>
           <Name>Cash Disc</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7c72976e-fa6d-47d8-a8f8-bd08f6897985">
+        <AttributeRelationship dwd:design-time-name="619c431a-8bc3-4677-acbb-c85cca3224a7">
           <AttributeID>Cash Disc Num Of Days</AttributeID>
           <Name>Cash Disc Num Of Days</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="23dd8d6e-e807-4884-ab16-adb3c59480cf">
+        <AttributeRelationship dwd:design-time-name="f4ba62b7-8234-4daa-a273-bf3491249e62">
           <AttributeID>Cash Disc Pct</AttributeID>
           <Name>Cash Disc Pct</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="05dd8840-fdb4-44a6-a9e3-a935a5eae059">
+        <AttributeRelationship dwd:design-time-name="46874de9-49aa-4026-9125-04d1773b8804">
           <AttributeID>Order Min</AttributeID>
           <Name>Order Min</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="403463fd-e42f-4561-bdc6-27ee53fd451e">
+        <AttributeRelationship dwd:design-time-name="f28957b7-f181-4ddc-8be1-b725717b297f">
           <AttributeID>Payment Method</AttributeID>
           <Name>Payment Method</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0f025124-5163-459a-9fbd-6b6ed13a1b41">
+        <AttributeRelationship dwd:design-time-name="39edf935-5491-430a-b7b1-854e7c21238b">
           <AttributeID>Vendor Buyer Cd</AttributeID>
           <Name>Vendor Buyer</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="696e2dd8-89fc-4d2b-85d9-dddcf4603773">
+        <AttributeRelationship dwd:design-time-name="1b45fb46-a4e2-4841-a48c-5044e7f2f69a">
           <AttributeID>Purch Pool Cd</AttributeID>
           <Name>Purch Pool</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="de229b31-bbf8-4fe5-a0d2-4da6036fd950">
+        <AttributeRelationship dwd:design-time-name="8da8780f-b953-48be-8c6f-d23d785ba513">
           <AttributeID>Is Contract Required</AttributeID>
           <Name>Is Contract Required</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a525e4ec-9b57-4c72-a7f9-b6ce2aa04537">
+        <AttributeRelationship dwd:design-time-name="b96fd370-26f5-45b0-87d2-710bc9ce57b8">
           <AttributeID>Language Cd</AttributeID>
           <Name>Language Cd</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="10823809-6ae0-4030-8390-c0cdd1554b3f">
+        <AttributeRelationship dwd:design-time-name="55b4f587-7263-4360-9e07-502d1a07a6c3">
           <AttributeID>Is W9 Included</AttributeID>
           <Name>Is W9 Included</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="60ea6437-de6c-42c7-ac82-753a90c1119b">
-          <AttributeID>Federal Tax Id</AttributeID>
-          <Name>Federal Tax Id</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b4c74634-a645-4c00-9c54-8c4dc6db3cff">
+        <AttributeRelationship dwd:design-time-name="a68f4d09-4def-42a1-b60e-8b5c42c9455e">
           <AttributeID>Default Business Unit Cd</AttributeID>
           <Name>Default Business Unit</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d32e626d-46cf-41bf-9eed-068f785182be">
+        <AttributeRelationship dwd:design-time-name="bc6d829f-dc29-46d7-b4b9-54cd1e7c4e1f">
           <AttributeID>Default Cost Site Cd</AttributeID>
           <Name>Default Cost Site</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="dcc992d5-cd23-4c46-9241-665db19ef3d3">
+        <AttributeRelationship dwd:design-time-name="c50e3318-6e63-4d58-98a1-83452e24c152">
           <AttributeID>Default Item Type Cd</AttributeID>
           <Name>Default Item Type</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="dfc15893-c71e-4311-945f-5d08db23595b">
+        <AttributeRelationship dwd:design-time-name="797354a4-c216-4b1c-8a2c-8a42b2ff7d73">
           <AttributeID>Vendor Num 1 1</AttributeID>
           <Name>Vendor Name(Num)</Name>
         </AttributeRelationship>
@@ -280,25 +276,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1a3eeb16-2322-446c-bc26-f7ada6d9c3b4">
+    <Attribute dwd:design-time-name="23c9b51f-a0e2-42a2-9b94-3372078229e8">
       <ID>Vendor Num</ID>
       <Name>Vendor Num</Name>
       <Description>Vendor Number</Description>
       <EstimatedCount>5458</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="46a7f367-3987-4596-9d01-f06810d30399">
+        <KeyColumn dwd:design-time-name="a0b625a1-babc-42e1-8ab1-d1716dfd6243">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e285dac5-baa0-40f7-99c2-c74afbc203af">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="00da7720-b002-4a21-8cdd-b72c1d84fe41">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>VendorNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="27b3ddd6-85fd-42a9-8e85-514538eb2c60">
+      <NameColumn dwd:design-time-name="0eba027a-2445-4724-add6-a66462c6fc84">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="bc2d426b-a360-42f6-aa01-617fffde4264">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8c1e8ac4-a994-4267-9525-8c0b52415da3">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>VendorNum</ColumnID>
         </Source>
@@ -307,25 +303,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b573a5dc-f7c2-4e5b-acc8-c9fb1593c4e9">
+    <Attribute dwd:design-time-name="2a64dcff-1927-40fc-82fd-322186ddbeea">
       <ID>Vendor Num 1</ID>
       <Name>Vendor Name</Name>
       <Description>Vendor Name</Description>
       <EstimatedCount>5458</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6acf835e-9023-46f6-a407-08dd13fc58b0">
+        <KeyColumn dwd:design-time-name="0a0cd6e8-f25e-49e8-a2a7-4fc79d8a4047">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb702b78-2c53-4511-a906-375c3f363926">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="00954aba-4feb-49b3-a223-1b2064746b2f">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>VendorNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="81f653c1-9e72-4f6f-907e-9bd9fc6aa02d">
+      <NameColumn dwd:design-time-name="550229dd-c10c-46c2-ad89-e4af9866bf39">
         <DataType>WChar</DataType>
         <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8e47560d-81f3-41ce-a515-917dc367f97f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="db4606a4-7ad7-43f1-8b1c-23f0bd68798d">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>VendorName</ColumnID>
         </Source>
@@ -334,25 +330,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="17b633f8-246d-4ade-9977-5401fcb6bb73">
+    <Attribute dwd:design-time-name="cfc8e97c-a529-4a63-abec-89e76e059a89">
       <ID>Invoice Vendor Num</ID>
       <Name>Invoice Vendor Num</Name>
       <Description>Invoice/Bill-to Vendor Number</Description>
       <EstimatedCount>5102</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a7de175c-c4fe-42d3-b962-734b58bf9611">
+        <KeyColumn dwd:design-time-name="7d0450d8-bd34-4ccc-9bc1-2ee854e27bb6">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="84982f35-6d8a-4e6e-9383-295a2f45d88d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f579e804-080a-49f2-80a1-9db8669e384e">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>InvoiceVendorNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="259359e4-359c-43b1-8868-98ef591b3c54">
+      <NameColumn dwd:design-time-name="f0ded978-3871-4c4c-bd10-9a9064b1a041">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8e03ad4a-2bbb-4657-bf28-2e1c17c29a08">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3a9d676f-af64-417c-b819-a95176ef890d">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>InvoiceVendorNum</ColumnID>
         </Source>
@@ -361,33 +357,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="72c0a3a0-3731-452a-b44a-31494376ed3c">
+    <Attribute dwd:design-time-name="5722e54a-6354-44d3-9d3c-c18f62851630">
       <ID>Vendor Group Cd</ID>
       <Name>Vendor Group</Name>
       <Description>Vendor Group (ex. External vendors, Employee reimbursements thru ExpenseWatch, Manufacturers, Check request vendors in our TPM, etc.)</Description>
       <EstimatedCount>10</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b1c6c6fd-636d-4083-b827-b1a755ecad40">
+        <KeyColumn dwd:design-time-name="c941e0f3-15d0-48c9-8fe8-ba392298cf87">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6c61c118-3785-455a-aaba-549f00a62d63">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="68f42483-c7c3-458b-985e-0c024d719bc1">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>VendorGroupCd</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="abcf33ee-f632-462c-8771-6901d4cb68b8">
+        <KeyColumn dwd:design-time-name="66f560d2-60bb-40ec-a9bc-68d95b9e6c6f">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="634fcbd8-abef-4218-a54d-4150d7c81f8b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc439705-3764-4a92-ac0f-74a141cd7f66">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>CompanyCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="70bbf3d7-8716-47a0-917c-5fc86121679b">
+      <NameColumn dwd:design-time-name="a534ce6c-6d80-4e3d-b9c8-da479d62d254">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="de4d6ccd-d7b0-4dad-b3c4-add82e910919">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="133e7531-2edd-47e7-a7cc-8f68e6aeb905">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>VendorGroupDesc</ColumnID>
         </Source>
@@ -396,24 +392,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="07900609-0535-4a11-bd63-d0d5615a3d34">
+    <Attribute dwd:design-time-name="62d7329c-8869-4fd5-b593-56e32d15b997">
       <ID>Vendor Type Id</ID>
       <Name>Vendor Type</Name>
       <Description>Vendor Type (ex. Standard)</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8579f854-415f-430e-8414-c322059cfa62">
+        <KeyColumn dwd:design-time-name="8692546c-4d17-4605-8d99-fddd68c4263e">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7c74715c-bd62-4d32-8204-0e2635232fd7">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2fc5358-c677-40c3-91df-b0b6df658638">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>VendorTypeId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="b9dcee73-2d1f-49c1-b192-d0b240579d75">
+      <NameColumn dwd:design-time-name="96521ca9-0ff4-4f52-b2e7-7a7ea952fa31">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="50c902ae-06a3-4dce-96b9-b62a1b466d3b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2b11b6f2-9e91-442e-ba19-9984600d8376">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>VendorTypeDesc</ColumnID>
         </Source>
@@ -422,23 +418,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bd709271-7455-4f8a-990d-48e6514e987d">
+    <Attribute dwd:design-time-name="ee5525b8-176b-4a1d-9d7a-05b920b33645">
       <ID>Is Remit To Vendor</ID>
       <Name>Is Remit To Vendor</Name>
       <Description>T/F Indicator notingTrue if the Vendor is also the Remit To Vendor</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2826a819-ba9c-4ed9-85fa-7c430c302552">
+        <KeyColumn dwd:design-time-name="f44a0a95-11b8-45bf-9a8d-594b350f7486">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7e443f9e-c0dd-4a20-89b5-a8335808310a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e6ddce5-022c-4aa5-98be-28349a6525da">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>IsRemitToVendor</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="009245a5-ad3e-403e-8433-91f5ef5da965">
+      <NameColumn dwd:design-time-name="a4a154b3-8704-4946-bccd-99f9c88e9b87">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="d833668f-832c-4f27-8d87-c7194fcd2fbe">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6109819e-72bb-4807-8b68-e61569e06023">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>IsRemitToVendor</ColumnID>
         </Source>
@@ -447,24 +443,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="08c19457-03ef-4d2b-91dc-3e220e4eebbc">
+    <Attribute dwd:design-time-name="9eaf1159-f0dd-4088-9414-cf4b212a21c1">
       <ID>Blocked Status Id</ID>
       <Name>Blocked Status</Name>
       <Description>Blocked Status (ex.No, All)</Description>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5f5d5317-b948-468d-b4d6-2d57cd149584">
+        <KeyColumn dwd:design-time-name="f2a29edc-8779-45ea-b0be-58825c104f0b">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="71ecea52-5cc8-4492-9d4d-91dc5ce7c884">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb1dff23-7f50-42e9-8c22-13038f6ea1a8">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>BlockedStatusId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="a59c2691-ceba-461c-af8e-766f56c8eb79">
+      <NameColumn dwd:design-time-name="1c608be3-2eb8-4a09-91b7-34c1bad4d33e">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="e7bca5b4-1540-44be-9ce6-4d09ec7e320f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fe8ebbd1-b7cb-4c66-a24d-8f854a54c952">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>BlockedStatusDesc</ColumnID>
         </Source>
@@ -473,23 +469,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5a4e2c3c-708b-452e-9286-9a77db91e759">
+    <Attribute dwd:design-time-name="e1da1f68-9741-47e2-8b2b-bdaacccbb140">
       <ID>Is One Time Vendor</ID>
       <Name>Is One Time Vendor</Name>
       <Description>T/F Indicator noting True if the Vendor was set up as a one-time Vendor.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d82de6a4-2d65-4710-9679-a6c2f40a20b6">
+        <KeyColumn dwd:design-time-name="5b956cab-8887-4e8c-8b83-a8d382761fcb">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a66a6f40-b6d2-4eb0-88e4-89492bda6ea4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4419b96-16d1-4b51-9c45-2157b6f27d21">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>IsOneTimeVendor</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="9804b5c0-7aae-4d9d-87e2-f7e141da7256">
+      <NameColumn dwd:design-time-name="c47222fb-aae2-40e6-8add-8b1e9dfbab98">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="274e427f-f2ad-4fe3-85b7-c31a27e95d1f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8e070cc4-34e9-4b99-a714-d0a5e2ee2b4e">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>IsOneTimeVendor</ColumnID>
         </Source>
@@ -498,25 +494,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="fd587859-bdae-4801-9ff5-3c51d19a3a6a">
+    <Attribute dwd:design-time-name="e8f14926-f53a-45a3-a196-49b484da9eb0">
       <ID>Currency Cd</ID>
       <Name>Currency Cd</Name>
       <Description>Vendor Currency Code</Description>
       <EstimatedCount>1</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ee32065a-42f5-47a1-baf3-cbb74b48052c">
+        <KeyColumn dwd:design-time-name="0c30ce3f-06c5-4071-9926-82b675bfb0b6">
           <DataType>WChar</DataType>
           <DataSize>3</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bd207de1-43cf-4908-bcff-cd5cbc1f6a4e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4fdeb378-ca30-4089-8869-fbe0ee97b7d3">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>CurrencyCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="08e92cab-4336-40b0-9474-59e340b7e79e">
+      <NameColumn dwd:design-time-name="319349d1-0bb6-40dc-946c-c35d4db73e61">
         <DataType>WChar</DataType>
         <DataSize>3</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="14979141-259e-41de-bd72-e2fcbeddc235">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="65e31d95-953f-42eb-8b6f-8683619fabe9">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>CurrencyCd</ColumnID>
         </Source>
@@ -525,25 +521,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="651e5be8-1ab3-4e1e-b340-cf3d79dfa989">
+    <Attribute dwd:design-time-name="56810481-3e0b-46f8-9491-8a062fa483be">
       <ID>Addr Line1</ID>
       <Name>Addr Line1</Name>
       <Description>Vendor Primary Address Line 1</Description>
       <EstimatedCount>4470</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d056b84f-7cab-4670-8b56-503bd0d88544">
+        <KeyColumn dwd:design-time-name="41a11e1d-8b60-4c56-95fb-56e2b182c902">
           <DataType>WChar</DataType>
           <DataSize>250</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca049bce-9c15-4b7c-ba96-902ea0aa5be0">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fad235d9-1230-4cdf-9795-141199910ada">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>AddrLine1</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="c1beee2e-3dee-423a-8ea2-3f9dc904d181">
+      <NameColumn dwd:design-time-name="42b40b36-87bd-46d0-90fd-f49453a897dc">
         <DataType>WChar</DataType>
         <DataSize>250</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="1816012b-40ec-4b1b-8485-8c3aa1f7f8e8">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bb88ba84-d21d-448f-8d88-8bfb2c6d9019">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>AddrLine1</ColumnID>
         </Source>
@@ -552,25 +548,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ad06f134-c809-4a1f-880c-4209a6c33f77">
+    <Attribute dwd:design-time-name="72b8246c-8a39-49d1-8224-3b055f4a0845">
       <ID>Addr Line2</ID>
       <Name>Addr Line2</Name>
       <Description>Vendor Primary Address Line 2</Description>
       <EstimatedCount>966</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="7372ed30-2023-41c6-948f-cfdef35a406b">
+        <KeyColumn dwd:design-time-name="27a90bde-6acf-4152-93dd-c065c5af03df">
           <DataType>WChar</DataType>
           <DataSize>250</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e6b10ee5-96c4-4a8e-9797-3c4afa975007">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc118d09-c325-406e-97af-ee16630b8b4a">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>AddrLine2</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="f7007991-dfd7-4332-8418-09e472cf327d">
+      <NameColumn dwd:design-time-name="2c9d8cf9-857d-49bc-9fe6-fe04d8c5e9a8">
         <DataType>WChar</DataType>
         <DataSize>250</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="09717058-17b4-4a22-a4df-d3e0d8883267">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ac2bf42f-ba6a-4d41-8b11-3aeb61e1eff4">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>AddrLine2</ColumnID>
         </Source>
@@ -579,25 +575,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b0f9e33f-44eb-4e76-b217-466f5d76065e">
+    <Attribute dwd:design-time-name="f2f839f6-826f-42b6-9ee6-4fd9aa796b08">
       <ID>City</ID>
       <Name>City</Name>
       <Description>Primary City</Description>
       <EstimatedCount>1566</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6767c3eb-df82-4f2e-b555-5a21b6d8c42d">
+        <KeyColumn dwd:design-time-name="629e490a-df5d-4c81-bf59-172cad98d22a">
           <DataType>WChar</DataType>
           <DataSize>60</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a1e6e22-cedf-49d8-ba02-21ef0f3c1f82">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a7e2c55a-ef50-4b7c-95db-3d4902bbb874">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>City</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="bf5257c7-c3a7-47fa-a920-f446dcb99ccf">
+      <NameColumn dwd:design-time-name="78bf58f3-5cfb-41d5-882d-ed7d69b25cd3">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="6d3c8fb8-537f-4191-8e3a-205318b4d0b4">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4e0f2835-9975-4535-8ab8-d7a7830cbf85">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>City</ColumnID>
         </Source>
@@ -606,25 +602,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="fcd5105b-74c1-46b2-a81a-57b401a7c058">
+    <Attribute dwd:design-time-name="a242e0c4-83cd-4cac-8291-100786f2d1cc">
       <ID>State Province</ID>
       <Name>State Province</Name>
       <Description>Primary State or Province</Description>
       <EstimatedCount>61</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d7548265-61ad-4ef0-b19c-18aea4736862">
+        <KeyColumn dwd:design-time-name="c7133767-0343-47aa-946c-80507e0f417b">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe13689f-a4c8-4179-acb7-74cea9be964d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="549a62f9-94f5-4ad4-afc5-98e453f4539d">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>StateProvince</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="d11d0865-682a-4607-bc08-098feb4ccf6f">
+      <NameColumn dwd:design-time-name="98536975-72f4-4099-bf27-1346e21dfdc0">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="21a2cbee-dbec-4aca-98d4-0b34f3bae691">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9cd55446-95d5-4b3b-a0ed-5e6568b15272">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>StateProvince</ColumnID>
         </Source>
@@ -633,25 +629,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6cb78b6c-a97f-4dc9-a167-de3811f13611">
+    <Attribute dwd:design-time-name="a6df49da-8a1e-4d88-bf89-e973d41202f3">
       <ID>County</ID>
       <Name>County</Name>
       <Description>Primary County</Description>
       <EstimatedCount>501</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9c66d2ad-3fa6-4c8e-a7e8-4788754ad615">
+        <KeyColumn dwd:design-time-name="9f93c20c-5b55-4622-9372-f045535fa885">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d83b84ad-98be-463a-9176-2fb5d1adf737">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4edbf2ee-549a-45e7-a1b7-c59b35a504a6">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>County</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="9c035ff5-e702-4885-9d79-fcd270182999">
+      <NameColumn dwd:design-time-name="67a45b6a-b182-4f64-a661-3c0ce99d2623">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="3b8ed13a-c8cf-4b98-8b91-6897dd8e220e">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e355e54d-005d-4030-8ae5-efcdf7417c77">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>County</ColumnID>
         </Source>
@@ -660,25 +656,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f6fc04c6-4770-4102-8123-eae3d62fa195">
+    <Attribute dwd:design-time-name="c36a33be-a9cd-47d0-8316-e0ad43ab8464">
       <ID>Postal Code</ID>
       <Name>Postal Code</Name>
       <Description>Primary Postal Code</Description>
       <EstimatedCount>2760</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="99d5bf64-24fc-4a8a-ab4f-495386afd50f">
+        <KeyColumn dwd:design-time-name="806066fc-d9f9-4ebd-98dd-b4e7f31d9659">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c784017a-9b24-4895-abac-b38bb8d14e7b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="53819ac7-21c5-4cec-b366-b7e0c5cd2750">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>PostalCode</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="1d0c9b96-781a-482c-b2a3-ae06760d2c69">
+      <NameColumn dwd:design-time-name="7727d6e4-bf80-416e-86cf-426ac5fc1b48">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="47deb59e-993a-41c1-8ddf-36b4defc1e28">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9c7df86f-eb5a-4ab0-a089-10e2cb393463">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>PostalCode</ColumnID>
         </Source>
@@ -687,25 +683,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="98775c90-0cd5-4384-b7de-a464c665ec16">
+    <Attribute dwd:design-time-name="62801092-8e87-4627-8a75-d7c3dcb3f33f">
       <ID>Country Region Cd</ID>
       <Name>Country Region</Name>
       <Description>Primary Country/Region Name</Description>
       <EstimatedCount>12</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8d1b6e38-81f7-4638-8767-8fc6b5feb4a6">
+        <KeyColumn dwd:design-time-name="b77a5cca-2723-47dc-8bc4-6f23cffb098d">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="51a6cbe0-5819-4023-9256-93326696df19">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a0164a1-c103-4b96-902a-a81f6d85464a">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>CountryRegionCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="0938f8b8-e305-4cb1-b75f-d94b65b54c2a">
+      <NameColumn dwd:design-time-name="cb3a5ac0-25b1-4c5c-95bd-5a4754b9ea97">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="14aa42bb-e4cb-479e-b783-28e1d53c8363">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="94b53da7-bc18-4a2e-8f6e-3a3ab0efa106">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>CountryRegionName</ColumnID>
         </Source>
@@ -714,25 +710,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="89559f15-27bd-412b-a665-c5f1ade69e47">
+    <Attribute dwd:design-time-name="10fb8df3-1f39-41fc-86b9-cd3245e01b15">
       <ID>Primary Email</ID>
       <Name>Primary Email</Name>
       <Description>Primary Contact E-mail Address</Description>
       <EstimatedCount>974</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="372a4630-fa59-494b-8b5d-6aaa77880eb6">
+        <KeyColumn dwd:design-time-name="3e283ef0-98cc-42fb-9dc6-aa4166f3f85e">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b627c5dc-fa86-4896-9e33-013e0fe3c20c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="907f9c7e-0a74-4cd3-8059-86eff43cab05">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>PrimaryEmail</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="cf950e6b-46e1-48ae-8ce2-33db563013b5">
+      <NameColumn dwd:design-time-name="854ceaf9-b3eb-47ff-a1ab-13935d95e325">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7a832252-d527-4692-9a95-f4b1914f8a0d">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e0e8d124-3707-4407-bf02-27ba3c411940">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>PrimaryEmail</ColumnID>
         </Source>
@@ -741,23 +737,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d74490bf-b988-48c0-b0fb-bdc288a3c6dd">
+    <Attribute dwd:design-time-name="0dfbc6d0-3ee3-473b-965d-5f5da3b5b518">
       <ID>Is Primary Email For PO</ID>
       <Name>Is Primary Email For PO</Name>
       <Description>T/F Indicator noting True when the Primary E-mail Address is used on the Purchase Order</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="65050cb5-041b-4ff4-96c9-02a3e8482c38">
+        <KeyColumn dwd:design-time-name="d04858c3-a5b9-4b47-a546-8ba5df6b467e">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4140fc56-c775-40a9-918b-818072f46682">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ece909d4-2db4-43df-8136-f1e2b2ec6b50">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>IsPrimaryEmailForPO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="0ae908c2-7c10-4114-9d43-7ad38feeecfe">
+      <NameColumn dwd:design-time-name="87421922-1f6e-4837-970e-64bb8fef5da4">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7fda52a1-1f6f-40f2-9416-513d4b4ce635">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="68046ef0-9e59-4a8f-b251-d609d970a09f">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>IsPrimaryEmailForPO</ColumnID>
         </Source>
@@ -766,25 +762,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1fc441f2-5f19-44e7-b522-a063e4ee62f0">
+    <Attribute dwd:design-time-name="6bb7fdde-2203-4707-8e3c-ef09ba787ed7">
       <ID>Primary Phone</ID>
       <Name>Primary Phone</Name>
       <Description>Primary Contact Phone Number</Description>
       <EstimatedCount>1702</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f583e30e-a88d-44b3-a41f-2a344176c544">
+        <KeyColumn dwd:design-time-name="d73bfc1c-9605-4cd3-9909-7e01289c00eb">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a098f08-4a73-4808-97b2-b372afe40653">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c03f3dd5-2246-45a4-b6d4-71c5a9d27916">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>PrimaryPhone</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="71d600b4-9120-491e-ad74-3e338cd5661c">
+      <NameColumn dwd:design-time-name="b19eae9a-023f-4a19-9bb5-a721ea901e51">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8c6cb313-9a98-47bd-9994-61806bde7ac9">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3b954537-8f91-46e9-bf93-1c3322c2684a">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>PrimaryPhone</ColumnID>
         </Source>
@@ -793,25 +789,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="511b4acd-1ec3-4450-a36f-da5854c257c4">
+    <Attribute dwd:design-time-name="5425a34c-d5ed-4d46-baf4-117ff24879d7">
       <ID>Primary Fax</ID>
       <Name>Primary Fax</Name>
       <Description>Primary Contact Fax Number</Description>
       <EstimatedCount>1</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d8a04720-f7dd-45bc-9c55-745a9e17ff1d">
+        <KeyColumn dwd:design-time-name="4cb6ecff-5af0-4627-b12d-b647e01818ad">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a3527a6b-b230-4686-89a2-f42cf6e5be00">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c8f7861-828a-49a6-9834-1e3ef774f4fb">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>PrimaryFax</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="14c00bb1-aef6-43a2-bcd2-cd6dc041a0fd">
+      <NameColumn dwd:design-time-name="c12aac45-dcaa-4693-b8da-d0c724f3ce1d">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="9e36bf73-e751-4570-9af7-6a4ca091d808">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="54e81550-ef88-44af-99a4-0f84e7e40e4b">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>PrimaryFax</ColumnID>
         </Source>
@@ -820,33 +816,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d213362a-d2df-4934-9c81-790364d148fe">
+    <Attribute dwd:design-time-name="16aa5cec-b491-4bb3-b39d-17ed7e1a6e68">
       <ID>Delivery Terms Cd</ID>
       <Name>Delivery Terms</Name>
       <Description>Delivery Term Description (ex. FOB Destination, FOB Shipper)</Description>
       <EstimatedCount>7</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e529ceec-2fb2-4901-974b-b30a70016433">
+        <KeyColumn dwd:design-time-name="4e4e16ec-4d58-427f-a7d2-2aedd67c1593">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b928544f-9495-43fa-90c6-49710bb5688a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46e08ff4-c095-4aee-a951-15bb8ef28190">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>DeliveryTermsCd</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="72080cb9-2104-4cc9-b601-e387ea6c798f">
+        <KeyColumn dwd:design-time-name="73ca040d-344c-4ea1-8efa-cc2280e56568">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f904e89-7361-4b05-b38a-15e28e13bd74">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bf31523e-d557-4f81-b925-5f7c3fc85d10">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>CompanyCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ef1a6099-99b0-4f5e-9201-b6fbae0afd3b">
+      <NameColumn dwd:design-time-name="85693dec-9ec9-45dc-86a6-c6618836a683">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b4810f57-0f1b-4233-9952-5f58dc1caecc">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a6c10542-d230-40ce-a81e-8ed009ade561">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>DeliveryTermsDesc</ColumnID>
         </Source>
@@ -855,33 +851,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e129a4d9-71c1-4fed-a5d1-f8dcc68b771e">
+    <Attribute dwd:design-time-name="920ee10c-c778-45be-88b5-dd77a69e69ea">
       <ID>Delivery Mode Cd</ID>
       <Name>Delivery Mode</Name>
       <Description>Delivery Mode Description (ex. Fed Ex Ground, UPS ground, USPS Standard). For BFS, value might be blank if there are multi-ship points.</Description>
       <EstimatedCount>18</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5e66a82a-f379-4d8d-b771-5d4b69f29eef">
+        <KeyColumn dwd:design-time-name="02b496c1-4337-41d3-b596-9090fb7895a0">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f502ebb0-9a04-476e-a637-aa7e81e39043">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba819295-8b5d-4812-809c-9838991fb74e">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>DeliveryModeCd</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="0c24a6d2-a7e0-414a-b4ee-48cda629708e">
+        <KeyColumn dwd:design-time-name="96eca8ec-af04-4e76-ba75-76a7381f8997">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="faed30f4-0b82-404c-bc73-ab44976e699a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="91beb073-7b9d-4c3a-9b1f-96539cb8c1d4">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>CompanyCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="08ec3395-2111-4f0f-a019-3ef0821006d5">
+      <NameColumn dwd:design-time-name="18f7f249-0a14-41c8-8423-4456c9441e1d">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="08d60f74-af0f-47e7-9f54-3169c19b2055">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0be93e98-3250-4f23-9971-23811c6d8c67">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>DeliveryModeDesc</ColumnID>
         </Source>
@@ -890,25 +886,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4e128d7a-84b7-452c-b4dd-06f4e776a3d9">
+    <Attribute dwd:design-time-name="bf171c09-7ae5-40fd-9da0-df0123610ef7">
       <ID>Default Site Cd</ID>
       <Name>Default Site</Name>
       <Description>Default Site Desc (ex. ADM-Buffalo, States BFS, Tighe). For BFS, value might be blank if there are multi-ship points.</Description>
       <EstimatedCount>23</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="bdef755c-2000-4da4-ac69-c2f03b8710c6">
+        <KeyColumn dwd:design-time-name="cfa8deeb-2c0c-4fa3-ac34-4e04e12887af">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="141f8c32-f823-465d-bb73-5454f9e74fa1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a0e7821f-b4b4-4338-a4f5-3bd6e986f407">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>DefaultSiteCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="3fd15738-d285-4265-bf18-a2b1857be49a">
+      <NameColumn dwd:design-time-name="11dd0b25-ccc2-4e18-8acd-ecbb4dea29e6">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="c676aa8c-6001-4087-9b53-d0fe80b24499">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5cd2dc8e-c9a5-414b-afa3-006e2dabd9a5">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>DefaultSiteDesc</ColumnID>
         </Source>
@@ -917,25 +913,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9640c464-0bc8-4d4a-b899-e7949581d9e4">
+    <Attribute dwd:design-time-name="fd7aa2f3-15de-4210-9803-109138e95e2a">
       <ID>Default Warehouse Cd</ID>
       <Name>Default Warehouse</Name>
       <Description>Default Warehouse Description (ex. ADM-Buffalo NY BFS, ARD-Columbus OH BFS, Bay State-Indiantown FL). For BFS, value might be blank if there are multi-ship points.</Description>
       <EstimatedCount>26</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="be556fe0-69f1-491a-adf9-aca4291fc0d0">
+        <KeyColumn dwd:design-time-name="301e1817-76a3-4bee-be40-407f5b4dac23">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed2ab87c-3e0d-4cb6-970a-b94885a54298">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f52c9de0-f3e6-4822-8af7-4ce1d93d1f05">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>DefaultWarehouseCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="6fe6de89-e48c-44d9-9385-885c13da6268">
+      <NameColumn dwd:design-time-name="a199e23f-ed87-4b3e-b6e3-9a14ff9af5bb">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="173813c5-2deb-4b56-b900-e96e82d283db">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="10026c3b-51b1-4860-9b19-d64ef6bba36f">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>DefaultWarehouseDesc</ColumnID>
         </Source>
@@ -944,25 +940,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6d277e2a-f65f-4fbf-bd32-77acdf9fcd8b">
+    <Attribute dwd:design-time-name="58b93d07-0824-4892-b3bf-c4963b354b7c">
       <ID>Default In Transit Warehouse</ID>
       <Name>Default In Transit Warehouse</Name>
       <Description>Default In Transit Warehouse</Description>
       <EstimatedCount>19</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="990de76b-fc60-438a-aa00-a2adeda9c42b">
+        <KeyColumn dwd:design-time-name="31e5038e-49ef-4345-b151-25029e05b3db">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c0dfdd11-c658-40dd-b186-a99282346d49">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b717e1c6-10e0-4990-8b65-a0152d6bb24c">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>DefaultInTransitWarehouse</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="1c1169ad-ec17-4a35-8dac-8cc616fffb9b">
+      <NameColumn dwd:design-time-name="2c34275a-c787-4bc2-b2d5-d7aa87887502">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="a0236a98-eed8-4fd2-b687-029809c826f6">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d006a47a-86b8-44af-9f15-85da49f9c118">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>DefaultInTransitWarehouse</ColumnID>
         </Source>
@@ -971,25 +967,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="870c2d13-2b92-4af8-869d-151bf68e470f">
+    <Attribute dwd:design-time-name="5e66e556-50c8-49e6-b91e-cd7342427536">
       <ID>Location Cd Req Main</ID>
       <Name>Location Cd Req Main</Name>
       <Description>Location Code Req Main.  Does not appear to be used.</Description>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="07c9b605-1ab0-416d-9a55-b5c3b1c642c8">
+        <KeyColumn dwd:design-time-name="1136c0e4-38a5-4be0-8d00-ad833e6eacce">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3db42e46-ef6d-43e6-a787-09a3a1766126">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5ae141b4-1bc7-4191-ac84-76543c976416">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>LocationCdReqMain</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="4dfe4dff-1cb7-455b-a26b-4e54595bf2a7">
+      <NameColumn dwd:design-time-name="aa084a0c-e3b6-452f-85c7-452ba7ca8aa7">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="d608a2e8-eb90-4291-b2b7-ccef7228e456">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2fed9a0b-3d62-4df5-b478-78703cdb5b7f">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>LocationCdReqMain</ColumnID>
         </Source>
@@ -998,25 +994,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1848d572-55bd-47ee-a7ba-b897091d6edb">
+    <Attribute dwd:design-time-name="4cc11b5f-8c72-497b-94bb-3f46643359c2">
       <ID>Payment Terms Cd</ID>
       <Name>Payment Terms</Name>
       <Description>Payment Terms Description (ex. Net 10, Net 20, Pre Paid, Upon Receipt)</Description>
       <EstimatedCount>17</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ed03047b-f264-4e17-bce8-c0895ba418d9">
+        <KeyColumn dwd:design-time-name="38996cfd-a5d2-4637-a49a-64da68cf1570">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="120ad278-647f-41f6-8d5b-6fb8ad08b6e2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f8f7a4d-c259-4d01-83ec-ac3599de1c0b">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>PaymentTermsCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ddcf321c-f049-4f3e-aa6e-50c82dc65214">
+      <NameColumn dwd:design-time-name="5bf5f67f-1d44-41f1-a327-906b3b521601">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f04701a5-cf53-41ea-b228-954955752bba">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="14adbba7-b55e-452c-b1b4-ab9844c1dba9">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>PaymentTermsDesc</ColumnID>
         </Source>
@@ -1025,25 +1021,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="96dacb1e-e048-45e5-8521-0e94ded706b0">
+    <Attribute dwd:design-time-name="a5c79df8-ae7b-407b-943a-151b12fba107">
       <ID>Cash Disc Cd</ID>
       <Name>Cash Disc</Name>
       <Description>Cash Discount Description (ex. 1% Net 10, 2% Net 15)</Description>
       <EstimatedCount>12</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e189cbe4-5f73-41ca-84cb-716d8d80020e">
+        <KeyColumn dwd:design-time-name="38d521e6-011b-4318-b3a0-421c08db6966">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="17c02885-80df-470f-835c-7d927b4045bb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6369ff89-edc1-43c7-962d-dee9a3ac6955">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>CashDiscCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="56d77c60-2fae-405d-b962-b9ad72388787">
+      <NameColumn dwd:design-time-name="aeb00d07-cab2-4a9d-86e6-0274ab53af27">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="e674eab3-0b41-41de-9ef6-c0024ac32e8f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="925c2102-9c71-4331-91ad-a879f9f0d6b9">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>CashDiscDesc</ColumnID>
         </Source>
@@ -1052,23 +1048,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="195220e4-e61f-46f7-a9e6-c30a3dd8b3db">
+    <Attribute dwd:design-time-name="f65dc291-bf61-496a-b948-6eb2aaf5f331">
       <ID>Cash Disc Num Of Days</ID>
       <Name>Cash Disc Num Of Days</Name>
       <Description>Cash Discount Number of Days</Description>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="faef338c-8c4c-4619-ae3e-a36f0db5f8be">
+        <KeyColumn dwd:design-time-name="16cc58e5-8ab9-44c2-a4f2-f2ccdf48ac62">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1e8c17e-2887-481e-8812-6956ae936ab7">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8882c7f0-d097-44b8-a411-6342b1d9df9d">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>CashDiscNumOfDays</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="d205dc2d-543f-487e-986c-68aece61d668">
+      <NameColumn dwd:design-time-name="7f064ec1-a141-4051-bf3f-5665bee2f851">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="40e39e94-3c0b-4997-8d4e-c41202ff9f4f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8e5d268a-e1ef-4641-8e4f-d855d42d1894">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>CashDiscNumOfDays</ColumnID>
         </Source>
@@ -1077,23 +1073,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="53f45cdd-212d-4ab4-8d78-856674d8fd3b">
+    <Attribute dwd:design-time-name="67a123eb-92e0-4da4-9785-e53cc01913a2">
       <ID>Cash Disc Pct</ID>
       <Name>Cash Disc Pct</Name>
       <Description>Cash Discount Percent</Description>
       <EstimatedCount>6</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="06683d73-3105-4be0-a599-2b4019ec1b70">
+        <KeyColumn dwd:design-time-name="b54fa899-26a7-4cf4-97f7-0d2a7801375a">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b268ecd8-9a06-4c40-8e82-0c7bed87d435">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="336b6dbd-2fd0-408a-a8a3-cb2f908c4d70">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>CashDiscPct</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="bbecf426-7ff9-4a4c-ae36-1a3a09692248">
+      <NameColumn dwd:design-time-name="d2469304-1262-4c11-8b9e-ac7eccdba786">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="2f327369-db02-4653-bcb8-b45411f3d39b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7e2c8d36-e629-450f-a343-0b39144d6eb3">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>CashDiscPct</ColumnID>
         </Source>
@@ -1102,23 +1098,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3e80d88f-0674-48f7-8294-e90e345a0b53">
+    <Attribute dwd:design-time-name="d5b12f46-dd63-42c4-af29-b7ca74c2fb0e">
       <ID>Order Min</ID>
       <Name>Order Min</Name>
       <Description>Order Minimum Amount</Description>
       <EstimatedCount>15</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d081d74e-58c2-4ae0-82a0-942d4d418890">
+        <KeyColumn dwd:design-time-name="82b91c73-ef4b-4225-a78b-3163bd2c0e61">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4945d398-4ee2-4604-a326-bee6cf237de9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a126f8e4-e1fa-4b9d-bc26-d4224ad08c77">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>OrderMin</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="1f6ab80a-6730-40ea-8de7-dba4b8eda1f4">
+      <NameColumn dwd:design-time-name="82b48b90-ebae-4d5c-9b32-c5c78f913744">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="2dfa02df-6b69-41fe-a66a-1000656b617a">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fdeca9c0-8e08-41aa-b705-6bd133bb968e">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>OrderMin</ColumnID>
         </Source>
@@ -1127,24 +1123,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ddb148bb-9819-4592-aabe-5e2afee53dd8">
+    <Attribute dwd:design-time-name="74bce74e-77fd-43f3-b6ec-4393d8009051">
       <ID>Payment Method</ID>
       <Name>Payment Method</Name>
       <EstimatedCount>10</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="51e7c910-d200-44b5-9610-b0c7e394351c">
+        <KeyColumn dwd:design-time-name="32db4982-d75a-49bc-8ce8-c957abdd63b1">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="85403b59-4851-4791-9bbc-6e2b25ae3c23">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1f39d86-32c7-46e1-9075-16c49816d000">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>PaymentMethod</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="42362815-d9a7-44f1-acda-4677fa1e9d7f">
+      <NameColumn dwd:design-time-name="fa8e988e-f28a-4ed4-a1b8-d2fceabc3069">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="1fab0259-d223-4ffc-9400-0563f4f486fa">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="64ae7f31-964f-4523-961b-84420b5f7f7a">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>PaymentMethod</ColumnID>
         </Source>
@@ -1153,25 +1149,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="026b9d21-5843-443f-97dd-19d5ca11929c">
+    <Attribute dwd:design-time-name="76cd48ba-c197-43e8-a808-5736381369fc">
       <ID>Vendor Buyer Cd</ID>
       <Name>Vendor Buyer</Name>
       <Description>Vendor Buyer (ex. All vendors shared between MFG, Wholesale or others, All Manufacturing vendors, Inactive Vendor, All Family Flour, BFS &amp; Mix vendors, etc.)</Description>
       <EstimatedCount>9</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="634d8e42-e4f1-4da9-9992-4ed8e55dcffe">
+        <KeyColumn dwd:design-time-name="5cac351b-7b09-4f51-8bec-4057374d78f5">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1bc5950-60af-4ca1-8020-92a322ecf41d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5248c0f3-aaad-4b65-9244-940d827974ad">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>VendorBuyerCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="0b10ff86-d121-4180-a0fb-a7bd969de22c">
+      <NameColumn dwd:design-time-name="a4f13d12-26fc-4f29-9323-5e9bcb07d8f7">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="db120b85-d556-4187-b515-da796b57cdf1">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7926dcf3-c77c-45d3-97c6-1026cc91223e">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>VendorBuyerDesc</ColumnID>
         </Source>
@@ -1180,25 +1176,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="686413c8-d61e-4081-b661-754b640660ec">
+    <Attribute dwd:design-time-name="e377666d-d85d-4c68-a481-e7d1cf20a1e2">
       <ID>Purch Pool Cd</ID>
       <Name>Purch Pool</Name>
       <Description>Purchase Pool (ex. RAW MFG, BFS, MFG, FLOUR)</Description>
       <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5e24bb8f-c18c-4312-a25c-17dd8485c9c0">
+        <KeyColumn dwd:design-time-name="3922859d-fcb5-456b-902d-641d1852557e">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="51b302b7-97a2-4361-a327-1d8fe5c1cbc9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="54fac70b-9370-4d0f-855d-25716558e50f">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>PurchPoolCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="353c8164-b371-4400-ae1a-27c85cd8ba1d">
+      <NameColumn dwd:design-time-name="0bdddd56-167b-4841-9c04-72875e80c17c">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="388c3cac-99b7-47d3-8018-4b035bf67677">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="976a5530-a34a-44c7-8d57-70945c5203a5">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>PurchPoolDesc</ColumnID>
         </Source>
@@ -1207,23 +1203,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7010194c-affa-43ce-bca5-3e11001653b0">
+    <Attribute dwd:design-time-name="e2ffaa41-2844-4ed8-9f5f-cca52a94a34d">
       <ID>Is Contract Required</ID>
       <Name>Is Contract Required</Name>
       <Description>T/F Indicator noting True if a Contract with the Vendor is required</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="92160bab-3d06-41e5-88c7-828fcdc868a0">
+        <KeyColumn dwd:design-time-name="56999942-e1e1-4b70-a07b-db7bf5189b27">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="41e5daf1-34d8-4139-8dfc-cd0a1b5aaadc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63f9c064-dd99-4289-aa74-e079876aa0b9">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>IsContractRequired</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="b1bf45f1-6299-4c0b-836d-3ae7e20b3f53">
+      <NameColumn dwd:design-time-name="ef990e80-2f00-4187-8029-10fe691c0ed7">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="c0f539e9-a1b5-432e-98aa-9c59e720d304">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4f1900d0-d8a1-4908-830d-d31e928e5453">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>IsContractRequired</ColumnID>
         </Source>
@@ -1232,25 +1228,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d42288dd-c1ad-47db-bf0b-9efb117fa42b">
+    <Attribute dwd:design-time-name="6d29cacc-6c13-4654-b61f-02e7c27ef741">
       <ID>Language Cd</ID>
       <Name>Language Cd</Name>
       <Description>Vendor Language Code</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9cd83464-717d-48d7-aee2-eb6efc988161">
+        <KeyColumn dwd:design-time-name="a9e1372f-b2b5-4037-8147-35448a9ef56f">
           <DataType>WChar</DataType>
           <DataSize>7</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7a338121-6c6e-423e-80e5-7f5d973cf4cc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9fc11143-e742-4ceb-ba92-6bc04db9ff20">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>LanguageCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="11042836-6c64-4363-842e-38a2ec03623f">
+      <NameColumn dwd:design-time-name="ae6e3cd8-3e4c-43d8-865d-0edb30ef8aab">
         <DataType>WChar</DataType>
         <DataSize>7</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="67c3479c-6bcf-4e60-9151-a741a8fbd285">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="84ece171-914b-4c14-9b08-4788211a3eed">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>LanguageCd</ColumnID>
         </Source>
@@ -1259,23 +1255,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="85294070-dab6-451a-89d7-cbdb4acc8fdb">
+    <Attribute dwd:design-time-name="25d05a54-76c6-425d-8c74-2221d10c2564">
       <ID>Is W9 Included</ID>
       <Name>Is W9 Included</Name>
       <Description>T/F Indicator noting True if W9 is included in Vendor file</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="baa7a856-f79b-46c0-a9da-b50d4b1f3271">
+        <KeyColumn dwd:design-time-name="e89c4e30-e5f2-461f-ad9e-5f81c7a6581e">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="639e88a1-e339-4faa-badc-86cb75384498">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="19c69eb1-e077-4163-968c-fb935885deb4">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>IsW9Included</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="9d4445a1-4404-452f-ba0f-fcb228ee5416">
+      <NameColumn dwd:design-time-name="8c225269-6e50-48aa-a516-24bfcc5a63f7">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b23b5794-a1fc-4e8a-b383-050777c39b83">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3bba1a74-bbe3-498f-b0ae-1e6f49e1331e">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>IsW9Included</ColumnID>
         </Source>
@@ -1284,52 +1280,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="60ce2b71-cf4d-495b-b9cd-5a27e9be4b04">
-      <ID>Federal Tax Id</ID>
-      <Name>Federal Tax Id</Name>
-      <Description>Vendor Federal Tax Id</Description>
-      <EstimatedCount>992</EstimatedCount>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="4feb4d06-402e-4527-aa37-e41b913a62ef">
-          <DataType>WChar</DataType>
-          <DataSize>11</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e09a1900-9530-4913-9030-3b3e5fc96e08">
-            <TableID>ENTSales_DimVendor</TableID>
-            <ColumnID>FederalTaxId</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="24a71a58-0df4-48cf-b4a6-3e1d15183747">
-        <DataType>WChar</DataType>
-        <DataSize>11</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="734123a0-12d7-4337-8bab-72dd8d8e0f56">
-          <TableID>ENTSales_DimVendor</TableID>
-          <ColumnID>FederalTaxId</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeHierarchyDisplayFolder>Other</AttributeHierarchyDisplayFolder>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="4b75320a-fcf2-476d-8c15-f66d9c187ca9">
+    <Attribute dwd:design-time-name="acd2a15a-1bf0-4668-8ca0-1385ff6c5870">
       <ID>Default Business Unit Cd</ID>
       <Name>Default Business Unit</Name>
       <Description>Default Business Unit Description</Description>
       <EstimatedCount>7</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c8131bc0-b086-40df-bc4e-cdb7ea03f5aa">
+        <KeyColumn dwd:design-time-name="9cd15965-64fa-4a6e-9bdd-3a43a79a476a">
           <DataType>WChar</DataType>
           <DataSize>30</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f62cfc5c-c8af-4d64-a40f-a90f2314a089">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af8bb463-9a59-4cb6-8881-b2467f7457ee">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>DefaultBusinessUnitCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="9790b59c-5456-4eb4-a2e6-75e4520d344c">
+      <NameColumn dwd:design-time-name="738119ee-4fab-4ce8-8a06-ccd2ab9432a1">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="2b91f670-76a6-4096-8262-27077a8d53b1">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c75c3cfd-9c2d-44a5-b5ed-a1346927ca7f">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>DefaultBusinessUnitDesc</ColumnID>
         </Source>
@@ -1338,25 +1307,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3263e9b5-ed41-45e7-b9fb-a91a9e6e9d48">
+    <Attribute dwd:design-time-name="b5262866-6855-4514-b354-fcde95c502ef">
       <ID>Default Cost Site Cd</ID>
       <Name>Default Cost Site</Name>
       <Description>Default Cost Site Description</Description>
       <EstimatedCount>27</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="abe85a2c-73b2-4459-8ba4-43ced2b1bf9c">
+        <KeyColumn dwd:design-time-name="017bec0d-814c-44a6-b1cb-94bd9dfd95b9">
           <DataType>WChar</DataType>
           <DataSize>30</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="336e29ef-e071-479e-bfb8-624a8870ee53">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9873d6b6-439c-4aab-b88c-348cb8ab3fa0">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>DefaultCostSiteCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="11d82829-50e5-446c-bbff-4c88e66d4fcf">
+      <NameColumn dwd:design-time-name="34b1e14f-e18f-479f-8677-ddaaeb46b45f">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="1c026ac9-4a70-43cf-b843-000ac9f7b5bc">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2b50aeab-0acf-4d9d-b4ba-991f23dfa9f2">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>DefaultCostSiteDesc</ColumnID>
         </Source>
@@ -1365,25 +1334,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="97387672-6d89-45d4-b5c0-03b6d896af4d">
+    <Attribute dwd:design-time-name="22929446-5f33-4ca5-aa08-0d1b9091e2ba">
       <ID>Default Item Type Cd</ID>
       <Name>Default Item Type</Name>
       <Description>Default Item Type Description</Description>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2658bf70-06a7-4d14-a737-4c7be3210baf">
+        <KeyColumn dwd:design-time-name="ac2cfa53-8f90-4141-b0c9-8678b1d4b5b7">
           <DataType>WChar</DataType>
           <DataSize>30</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="eca81393-0c13-49cd-beb2-6da5beff5c13">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9fbda4ce-ebab-470a-b555-6453887315a4">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>DefaultItemTypeCd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="1a208594-44bf-4105-b10b-76b236de5113">
+      <NameColumn dwd:design-time-name="8084634a-09af-4ad5-890d-1271eb231639">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="41df6754-f041-4515-9ec1-7f8a4448f439">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a0654c4a-e3fc-4743-b4fa-656216273a8f">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>DefaultItemTypeDesc</ColumnID>
         </Source>
@@ -1392,24 +1361,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6b1851b9-dad4-4475-8738-47355c959628">
+    <Attribute dwd:design-time-name="dab4a02c-bd6c-40f0-bad1-d6ad9940571b">
       <ID>Vendor Num 1 1</ID>
       <Name>Vendor Name-Num</Name>
       <EstimatedCount>5458</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3033bfcf-a7e4-42ea-80ff-5d5cb22c7828">
+        <KeyColumn dwd:design-time-name="191a64a4-a138-468b-84c7-3ab517233a0c">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ddf819da-85a6-4e7f-972e-8f2fa8811cc2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8e4a79a-3c9f-4e88-a1e3-1a42c346e0c8">
             <TableID>ENTSales_DimVendor</TableID>
             <ColumnID>VendorNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="b6673002-4210-47cd-b98e-b5adb71fbf4b">
+      <NameColumn dwd:design-time-name="0941afba-d63f-4543-8520-4431c7a3cd64">
         <DataType>WChar</DataType>
         <DataSize>123</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b3e06589-7128-4230-959c-6a376c1475d3">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="75cdfc92-2bd2-4842-959b-0cc477a92470">
           <TableID>ENTSales_DimVendor</TableID>
           <ColumnID>VendorNameNum</ColumnID>
         </Source>
@@ -1419,12 +1388,12 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
-  <ProactiveCaching dwd:design-time-name="42f0eea5-1f5c-47cf-bf4b-32892fa1e083">
+  <ProactiveCaching dwd:design-time-name="5b69c157-65e3-4d24-9398-e1a315b983a7">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="181ca0ba-041f-4a66-bf71-df03d143898b" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="fc228f28-3377-4827-b18e-f165c88f77fa" />
   </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>
