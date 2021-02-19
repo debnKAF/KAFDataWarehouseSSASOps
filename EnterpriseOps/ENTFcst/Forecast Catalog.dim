@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="743a6f67-49cf-4ab4-92a2-02329ccceaaf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4fd3867c-5e0d-43f3-8c49-95b0831f8ecb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Forecast Catalog</ID>
   <Name>Forecast Catalog</Name>
   <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3089" scrolltop="-8876" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11589" y="22040" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3089" scrolltop="-8876" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11986" y="22040" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -100,42 +100,50 @@
   </Annotations>
   <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c3e56cda-098d-4467-baf6-7f4c8f754fc1">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7f2a9f75-800b-4ce9-b2ba-b7ea2bd3b0c7">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="b8bc5841-9d38-412e-aa35-f91c4a3b8917">
+  <ErrorConfiguration dwd:design-time-name="1b8ea571-049b-4674-9edd-f6c8b69393f3">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="acf203fa-129e-4d37-abe2-e8f472f06148">
+    <Attribute dwd:design-time-name="d7091ddc-0cca-4ea1-999d-b1c500ae218a">
       <ID>Forecast Catalog Key</ID>
       <Name>Forecast Catalog Key</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5a631d30-720f-4321-9e24-7da0a7212c57">
+        <KeyColumn dwd:design-time-name="9b4d03f5-760f-4cc3-8ca3-d4c71c92267c">
           <DataType>Integer</DataType>
           <NullProcessing>Error</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6015d328-6606-48d3-a059-37d4ea3f4bc4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba5d0124-f521-435f-80bc-cb0417f35fef">
             <TableID>ENTFcst_dimForecastCatalog</TableID>
             <ColumnID>ForecastCatalogKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="ec800db2-93d9-4538-b4f6-6f3a3448047f">
+        <AttributeRelationship dwd:design-time-name="e18f6d3d-4a35-41b3-b193-e12d3e5affcd">
           <AttributeID>Forecast Desc</AttributeID>
           <Name>Forecast Desc</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5d00e621-6225-47bb-b135-f8e1a131577d">
-          <AttributeID>Published Dtm</AttributeID>
-          <Name>Published Dtm</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="3e966a6b-820f-4c2b-8bd3-4aef9b7a6a9a">
+        <AttributeRelationship dwd:design-time-name="d89a0ba9-f229-4a61-ab92-fbe0308237e6">
           <AttributeID>Is Current Forecast</AttributeID>
           <Name>Is Current Forecast</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a48e9ad3-e30a-448c-b263-b6025798e574">
+          <AttributeID>Snapshot Month Id</AttributeID>
+          <Name>Snapshot Month</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="429a6b49-f9d4-4689-b071-596be9be4f0e">
+          <AttributeID>Snapshot Month- Year</AttributeID>
+          <Name>Snapshot Month- Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="96dec418-2d6b-4b91-98fc-a327f31a1c7e">
+          <AttributeID>Snapshot Year Num</AttributeID>
+          <Name>Snapshot Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -143,21 +151,21 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="dfbd0b0c-1c70-4f0b-8a8e-ddd3fc639a93">
+    <Attribute dwd:design-time-name="eeff7741-109e-49e1-b842-925cc5749e2d">
       <ID>Forecast Desc</ID>
       <Name>Forecast Desc</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="abedfd89-e89d-49b9-803a-aa45fbe03aff">
+        <KeyColumn dwd:design-time-name="9b81b080-a267-4665-9f55-207586342c15">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="cd91c1a7-72fc-47ee-a6ec-dace8f28b606">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ddb74eb1-5bbc-4e51-bbd3-b442845c786e">
             <TableID>ENTFcst_dimForecastCatalog</TableID>
             <ColumnID>ForecastDesc</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="a93ba360-f5bb-4f2a-85d6-6fdb4369c1fa">
+        <AttributeRelationship dwd:design-time-name="8fac131e-10d0-4836-aafe-fa2812f8790c">
           <AttributeID>Sort Order</AttributeID>
           <Name>Sort Order</Name>
         </AttributeRelationship>
@@ -168,80 +176,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="55c826e6-d738-4ae7-8e72-83fd6f953d5d">
-      <ID>Published Dtm</ID>
-      <Name>Published Dtm</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="322821d3-5cf4-4b90-a625-2ec887ea5859">
-          <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f848989e-8200-437f-a040-4eb200a41d15">
-            <TableID>ENTFcst_dimForecastCatalog</TableID>
-            <ColumnID>PublishedDtm</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="929eb044-a21c-420b-92a0-57e5af632a11">
-          <AttributeID>Published Month Id</AttributeID>
-          <Name>Published Month</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d6b05fbc-d9c6-4c26-b71d-f662ddb7a659">
-          <AttributeID>Published Month- Year</AttributeID>
-          <Name>Published Month-Year</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8c9a9624-9165-4ffd-8af2-415681157fca">
-          <AttributeID>Published Year Num</AttributeID>
-          <Name>Published Year</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="b86294dd-e91d-4822-8ba0-b4400947ef5b">
-      <ID>Published Month Id</ID>
-      <Name>Published Month</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="40806698-0c29-47b0-949e-a1695c9adf1b">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="424d579c-7abb-44fd-844f-5dad8e18ce56">
-            <TableID>ENTFcst_dimForecastCatalog</TableID>
-            <ColumnID>PublishedMonthId</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="a5069e38-1921-4e61-b76b-e272895393e5">
-        <DataType>WChar</DataType>
-        <DataSize>30</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="38e78b34-ac87-44ef-bce3-52b8f4b5c708">
-          <TableID>ENTFcst_dimForecastCatalog</TableID>
-          <ColumnID>PublishedMonth</ColumnID>
-        </Source>
-      </NameColumn>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="56e04fd9-4604-4116-baf0-3ab3a0a1907a">
-      <ID>Published Year Num</ID>
-      <Name>Published Year</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="30254c0d-9941-46e5-98cc-b041b4011270">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c04f8e3f-1708-444f-90ea-65d47d2581fd">
-            <TableID>ENTFcst_dimForecastCatalog</TableID>
-            <ColumnID>PublishedYearNum</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="3efdb959-f4e6-4d74-a295-2eed9bfa2302">
+    <Attribute dwd:design-time-name="35d83fa8-5dfa-4d2d-80ac-89f083374a0f">
       <ID>Is Current Forecast</ID>
       <Name>Is Current Forecast</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="80be398a-4adc-4640-a3cb-e36ab185b9cf">
+        <KeyColumn dwd:design-time-name="0df5059a-3b3f-421a-9926-4b54a494cac1">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8fe2cbad-47c0-421e-b703-91717c359011">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="871a14e1-d9d1-4375-bdf9-27408c0434cb">
             <TableID>ENTFcst_dimForecastCatalog</TableID>
             <ColumnID>IsCurrentForecast</ColumnID>
           </Source>
@@ -250,35 +191,73 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e81e0c07-3d12-49d4-859d-0b5ca052e762">
-      <ID>Published Month- Year</ID>
-      <Name>Published Month-Year</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="cd5f05a2-55fd-43b9-b4c2-d688373632ea">
-          <DataType>WChar</DataType>
-          <DataSize>35</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c71944cf-8504-4069-b717-061ad4b43776">
-            <TableID>ENTFcst_dimForecastCatalog</TableID>
-            <ColumnID>PublishedMonth-Year</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="21bbadc0-b376-49d4-9b3e-0a6c4be8116c">
+    <Attribute dwd:design-time-name="0e3dbd16-eb49-40f1-a089-412772d5873d">
       <ID>Sort Order</ID>
       <Name>Sort Order</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d1999f0e-b042-40c0-84ce-671d80e24581">
+        <KeyColumn dwd:design-time-name="455086d2-e96e-4b37-b850-1ec0a826eaf6">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b8fb5bab-a39a-444b-a01f-4a9112b78313">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa7ea8ae-c60e-4ee3-ac77-3b81c3289914">
             <TableID>ENTFcst_dimForecastCatalog</TableID>
             <ColumnID>SortOrder</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="370a0219-6a20-4c4d-9382-7ee922f1df15">
+      <ID>Snapshot Month Id</ID>
+      <Name>Snapshot Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33f5ff0b-66f1-4612-8b8a-e67b323cf150">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a493dfca-1fd3-482b-bce2-08bcfdbc7fe7">
+            <TableID>ENTFcst_dimForecastCatalog</TableID>
+            <ColumnID>SnapshotMonthId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d6798106-453a-4257-8678-c66e6f5c6848">
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cebf6a18-4684-428d-8fde-ea4497b5e165">
+          <TableID>ENTFcst_dimForecastCatalog</TableID>
+          <ColumnID>SnapshotMonth</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="22198a90-f7a7-4aba-a46e-a3678499b1f3">
+      <ID>Snapshot Month- Year</ID>
+      <Name>Snapshot Month- Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="20924783-4397-4327-ba2d-be9584670821">
+          <DataType>WChar</DataType>
+          <DataSize>35</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85c3d911-a6c5-4830-8901-dc52215f20ee">
+            <TableID>ENTFcst_dimForecastCatalog</TableID>
+            <ColumnID>SnapshotMonth-Year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="52009ce8-a2a7-4157-bba6-358c9efbc395">
+      <ID>Snapshot Year Num</ID>
+      <Name>Snapshot Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f018c8d0-df81-4f0b-9b1b-d1a537d320bc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f69ef6f-ff4b-4d57-b8b3-618a694f8af7">
+            <TableID>ENTFcst_dimForecastCatalog</TableID>
+            <ColumnID>SnapshotYearNum</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>

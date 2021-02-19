@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="be3f95a9-5cf5-48c4-83d5-c13374c8565f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="415da8b1-cdfa-4787-bd1a-3053958b7aee" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Enterprise DW</ID>
   <Name>Enterprise DW</Name>
   <CreatedTimestamp>2020-05-06T19:03:56.666667Z</CreatedTimestamp>
@@ -31,7 +31,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="82" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3718" scrolltop="2582" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="34078" y="23363" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="83" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="5004" scrolltop="-10132" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="31221" y="23363" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -698,12 +698,32 @@
                     <point x="18731" y="7200" />
                   </connector>
                 </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="16707" top="925" logicalid="82" controlid="42" masterid="0" hint1="0" hint2="0" width="7364" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[factForecastTEMP-dimSalesOrderToggle]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="20" sourceattachpoint="15" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="17007" y="1324" />
+                    <point x="20389" y="1324" />
+                    <point x="20389" y="1400" />
+                    <point x="23771" y="1400" />
+                  </connector>
+                </ddscontrol>
               </dds>
 </DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
-            <DiagramViewPortLeft>-3718</DiagramViewPortLeft>
-            <DiagramViewPortTop>2582</DiagramViewPortTop>
+            <DiagramViewPortLeft>5004</DiagramViewPortLeft>
+            <DiagramViewPortTop>-10132</DiagramViewPortTop>
             <DiagramBoundingLeft>0</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>100</DiagramZoom>
@@ -2454,6 +2474,14 @@
                   <xs:element name="AllocQtyPallets" msprop:design-time-name="df0cb153-4631-471d-a534-010d7967706a" msprop:DbColumnName="AllocQtyPallets" type="xs:decimal" minOccurs="0" />
                   <xs:element name="LagKey" msprop:design-time-name="aa2ebe78-578c-4df4-a733-59830383db99" msprop:DbColumnName="LagKey" type="xs:int" minOccurs="0" />
                   <xs:element name="AllocForecastUnit" msprop:design-time-name="d5fcc452-bb04-45b7-9c25-f4ed691b9aea" msprop:DbColumnName="AllocForecastUnit" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="VendorNum" msprop:design-time-name="8863fbd1-b6ed-4e79-80a9-f22089174c6d" msprop:DbColumnName="VendorNum" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SalesOrderToggleKey" msprop:DbColumnName="SalesOrderToggleKey" msprop:design-time-name="f7460869-7a19-49d7-93a8-f5fb321929a1" type="xs:int" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -2468,25 +2496,25 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="PublishedDtm" msprop:design-time-name="8c5828b4-8ee5-4cc5-8996-ba0b10b57f06" msprop:DbColumnName="PublishedDtm" msprop:FriendlyName="PublishedDtm" type="xs:dateTime" />
-                  <xs:element name="PublishedMonthId" msdata:ReadOnly="true" msprop:design-time-name="bedb386d-ee92-47f3-a93c-d66c3d6a9728" msprop:DbColumnName="PublishedMonthId" msprop:FriendlyName="PublishedMonthId" type="xs:int" minOccurs="0" />
-                  <xs:element name="PublishedMonth" msdata:ReadOnly="true" msprop:design-time-name="c8c8e581-0643-44be-88fe-5a8872e8f381" msprop:DbColumnName="PublishedMonth" msprop:FriendlyName="PublishedMonth" minOccurs="0">
+                  <xs:element name="IsCurrentForecast" msprop:design-time-name="7e8afcc6-321e-4aac-8178-60705209b9b8" msprop:DbColumnName="IsCurrentForecast" msprop:FriendlyName="IsCurrentForecast" type="xs:boolean" />
+                  <xs:element name="SortOrder" msprop:design-time-name="62bf15c3-96a4-4b5f-b8aa-64fe7477e491" msprop:DbColumnName="SortOrder" type="xs:int" minOccurs="0" />
+                  <xs:element name="SnapshotDtm" msprop:design-time-name="d6ee12ad-1ea9-4de2-996c-6a9c2f711f08" msprop:DbColumnName="SnapshotDtm" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="SnapshotMonthId" msprop:design-time-name="61090c82-f6d5-4389-a907-0316bb3e3d93" msprop:DbColumnName="SnapshotMonthId" type="xs:int" minOccurs="0" />
+                  <xs:element name="SnapshotMonth" msprop:design-time-name="1ddc90c5-e7fc-4362-978c-b61f62ef5754" msprop:DbColumnName="SnapshotMonth" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="30" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="PublishedYearNum" msdata:ReadOnly="true" msprop:design-time-name="fcea826a-59b3-4596-b884-0e5ded9211d5" msprop:DbColumnName="PublishedYearNum" msprop:FriendlyName="PublishedYearNum" type="xs:int" minOccurs="0" />
-                  <xs:element name="IsCurrentForecast" msprop:design-time-name="7e8afcc6-321e-4aac-8178-60705209b9b8" msprop:DbColumnName="IsCurrentForecast" msprop:FriendlyName="IsCurrentForecast" type="xs:boolean" />
-                  <xs:element name="PublishedMonth-Year" msprop:design-time-name="ca10706e-0b5e-4e8c-a006-30d8f66d4af9" msprop:DbColumnName="PublishedMonth-Year" minOccurs="0">
+                  <xs:element name="SnapshotYearNum" msprop:design-time-name="d67cdb06-de3d-4ee5-a8e6-e32fdd6b29a9" msprop:DbColumnName="SnapshotYearNum" type="xs:int" minOccurs="0" />
+                  <xs:element name="SnapshotMonth-Year" msprop:design-time-name="eafc3f99-8aba-4ce9-96f2-359ea8e086ed" msprop:DbColumnName="SnapshotMonth-Year" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="35" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="SortOrder" msprop:DbColumnName="SortOrder" msprop:design-time-name="62bf15c3-96a4-4b5f-b8aa-64fe7477e491" type="xs:int" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -2732,6 +2760,7 @@
           <msdata:Relationship name="factForecastTEMP-dimLag" msdata:parent="ENTFcst_dimLag" msdata:child="ENTFcst_factForecastTEMP" msdata:parentkey="LagKey" msdata:childkey="LagKey" msprop:IsLogical="True" msprop:Description="" />
           <msdata:Relationship name="factSales-dimSalesOrderLine" msdata:parent="ENTFcst_dimSalesOrderLine" msdata:child="ENTSales_FactInvoiceOrders" msdata:parentkey="SalesOrderLineKey" msdata:childkey="SalesOrderLineKey" msprop:IsLogical="True" msprop:Description="" />
           <msdata:Relationship name="factPlanningBudget-dimCompany" msdata:parent="ENTSales_dimCompany" msdata:child="ENTFcst_factSalesBudgetTEMP" msdata:parentkey="CompanyKey" msdata:childkey="CompanyKey" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="factForecastTEMP-dimSalesOrderToggle" msdata:parent="ENTSales_dimSalesOrderToggle" msdata:child="ENTFcst_factForecastTEMP" msdata:parentkey="SalesOrderToggleKey" msdata:childkey="SalesOrderToggleKey" msprop:IsLogical="True" msprop:Description="" />
         </xs:appinfo>
       </xs:annotation>
     </xs:schema>
