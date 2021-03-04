@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f770de96-b475-44ca-a6e0-a4f5f1d118b1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="57d6e622-8b5d-465c-8bf7-3142e6ad3907" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Lag</ID>
   <Name>Lag</Name>
   <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
@@ -8,9 +8,9 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5108" scrolltop="-6363" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11933" y="22040" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5108" scrolltop="-6363" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="0" y="0" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -91,31 +91,32 @@
   </Annotations>
   <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f12abecd-8a38-4107-9c73-84a5fb6b5b4f">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3958d973-8a3d-42e2-aa9d-f102db3d23b5">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="dfebf8f1-e56f-4c86-beaf-7fa6efc51040">
+  <ErrorConfiguration dwd:design-time-name="dd75d5f6-74b1-4d58-9481-b442c2231969">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="b7cba0e6-40d5-47e4-a2c1-7fbb75bf960c">
+    <Attribute dwd:design-time-name="5bf15c9f-1a13-4706-8215-cd1b0a2cd2b0">
       <ID>Lag Key</ID>
       <Name>Lag Key</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>13</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="da6a6a60-8ff3-4d1c-922d-ca600399dc3f">
+        <KeyColumn dwd:design-time-name="09aba56d-977f-43d1-857c-225f9276874e">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="21c21d8f-16c5-4e58-98bb-5f247f4731a2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="765f3832-e3ee-4538-a05b-a1a8d6c8a4cd">
             <TableID>ENTFcst_dimLag</TableID>
             <ColumnID>LagKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="7e0bd034-97a2-48f7-ab71-5855da525db6">
+        <AttributeRelationship dwd:design-time-name="abf472c0-8cbd-4352-9142-18017be644ae">
           <AttributeID>Lag Id</AttributeID>
           <Name>Lag</Name>
         </AttributeRelationship>
@@ -125,28 +126,29 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3fe9ca06-f303-41b7-9106-0f0f18ce6952">
+    <Attribute dwd:design-time-name="753c044b-5a95-47e5-9886-f32fb09d3cf3">
       <ID>Lag Id</ID>
       <Name>Lag</Name>
+      <EstimatedCount>13</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="52c1e6fb-b797-4fbf-af5e-f9ff1172404c">
+        <KeyColumn dwd:design-time-name="95d3ce0c-6702-4675-b707-cc2c1fcebcb2">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f4af052-2089-4907-ae59-009f2d72ccab">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="894ed2db-6dae-4902-a81d-edcc1af07604">
             <TableID>ENTFcst_dimLag</TableID>
             <ColumnID>LagId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="b527d018-84a5-440e-9307-dac49ca68458">
+      <NameColumn dwd:design-time-name="a6b13b9e-8d5f-46bb-abdf-54bdd9915844">
         <DataType>WChar</DataType>
         <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="34b1ca2d-c76b-44d9-bf4c-e5bedbcdfefd">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6a24e0b7-b77d-477b-822b-9edf46d8898f">
           <TableID>ENTFcst_dimLag</TableID>
           <ColumnID>LagName</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="3e94630c-009b-4c3f-a008-b6a69ec9fced">
+        <AttributeRelationship dwd:design-time-name="cbf6c068-24cd-4b37-84d8-78240b6a415a">
           <AttributeID>Sort Order</AttributeID>
           <Name>Sort Order</Name>
         </AttributeRelationship>
@@ -156,13 +158,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bea38844-4944-4671-87fd-69933d7abf70">
+    <Attribute dwd:design-time-name="e12f0619-e3e6-4e43-b219-3b385d40c935">
       <ID>Sort Order</ID>
       <Name>Sort Order</Name>
+      <EstimatedCount>13</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a429578a-efa6-4d34-a1dc-7f055b0fbbf3">
+        <KeyColumn dwd:design-time-name="0bc25a25-3e25-486a-9a05-ded65d583c88">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0289aca1-49e9-44d2-b8ec-6f81d627f9f0">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b52998f-b3e9-420c-951f-5538779e5acc">
             <TableID>ENTFcst_dimLag</TableID>
             <ColumnID>SortOrder</ColumnID>
           </Source>
