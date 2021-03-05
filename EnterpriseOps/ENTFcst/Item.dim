@@ -282,7 +282,7 @@
       <Name>Item Key</Name>
       <Description>Unique Identifier in the Item Dimension table</Description>
       <Usage>Key</Usage>
-      <EstimatedCount>25574</EstimatedCount>
+      <EstimatedCount>25788</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="9905417c-7a31-4867-923a-53bdee7ee978">
           <DataType>BigInt</DataType>
@@ -574,7 +574,7 @@
       <ID>Item Num</ID>
       <Name>Item Num</Name>
       <Description>Item Number</Description>
-      <EstimatedCount>12604</EstimatedCount>
+      <EstimatedCount>12635</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="571e5c3d-3e7b-438d-8b6d-8ead6959c74d">
           <DataType>WChar</DataType>
@@ -601,7 +601,7 @@
       <ID>Item Name</ID>
       <Name>Item Name</Name>
       <Description>Item Name</Description>
-      <EstimatedCount>12604</EstimatedCount>
+      <EstimatedCount>12635</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="5ee38963-f5b4-40c4-aea9-43baf395df06">
           <DataType>WChar</DataType>
@@ -634,7 +634,7 @@
       <ID>Item Num 1</ID>
       <Name>Item Name-Num</Name>
       <Description>Concatenation of Item Name and Item Number</Description>
-      <EstimatedCount>12604</EstimatedCount>
+      <EstimatedCount>12635</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="e09f240c-7f63-48e8-99f2-e0d086af000f">
           <DataType>WChar</DataType>
@@ -661,7 +661,7 @@
       <ID>Item Num 2</ID>
       <Name>Item Num-Name</Name>
       <Description>Concatenation of Item Number and Item Name</Description>
-      <EstimatedCount>12604</EstimatedCount>
+      <EstimatedCount>12635</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="4bb6750f-9fab-4615-979b-de0cddb0239e">
           <DataType>WChar</DataType>
@@ -694,7 +694,7 @@
       <ID>Item Desc</ID>
       <Name>Item Desc Misc</Name>
       <Description>Currently used for multiple purposes in AX to house Item Name for Packing Slip (MFG), Pack Size in EDI format (WHL), etc.  </Description>
-      <EstimatedCount>13212</EstimatedCount>
+      <EstimatedCount>13256</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="ee2f4dc9-fbaf-4925-a172-060fd7771458">
           <DataType>WChar</DataType>
@@ -729,7 +729,7 @@
       <ID>Barcode</ID>
       <Name>Barcode</Name>
       <Description>For WHL, this should be the UPC Code. UPC stands for Univeral Product Code.  UPC consists of 12 numeric digits that are uniquely assigned to each trade item.  For Direct, this can represent the UPC, EAN, or ISBN.  Codes are stored in AX at the Master Product level, meaning there is only one Barcode stored per product regardless of company.</Description>
-      <EstimatedCount>12604</EstimatedCount>
+      <EstimatedCount>12635</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="6580acac-0541-4d9f-9154-a0729a67c54a">
           <DataType>WChar</DataType>
@@ -782,7 +782,7 @@
       <ID>Barcode 1</ID>
       <Name>Barcode Desc</Name>
       <Description>UPC Description.  This is slated to become the "Reportable" Item Level since similar products with different case pack sizes will have unique Item Numbers created in AX. Should be sourced from GS1 to support consistency.</Description>
-      <EstimatedCount>12604</EstimatedCount>
+      <EstimatedCount>12635</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="7b643d5c-1113-4cd1-83c8-a5743fdbc264">
           <DataType>WChar</DataType>
@@ -817,7 +817,7 @@
       <ID>GTIN</ID>
       <Name>GTIN</Name>
       <Description>GTIN stands for Global Trade Item Number. It is a numbering system developed by GS1 System (https://www.gs1.org) for identifying trade items such as products and services.  We are using the EAN-UCC14 code format in AX.</Description>
-      <EstimatedCount>293</EstimatedCount>
+      <EstimatedCount>295</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="0aa54dea-b15c-4839-9acf-d76c3c77cd0c">
           <DataType>WChar</DataType>
@@ -1121,7 +1121,7 @@
       <ID>Net Weight</ID>
       <Name>Net Weight</Name>
       <Description>For Direct, currently is Gross, not Net Weight but it was requested that we still populate the ODS/DW with it called Net Weight.  Represents the weight (in pounds) of the product without packaging.</Description>
-      <EstimatedCount>608</EstimatedCount>
+      <EstimatedCount>607</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="bd546c1e-567d-430a-b560-cd970a569157">
           <DataType>Double</DataType>
@@ -1171,7 +1171,7 @@
       <ID>Gross Weight</ID>
       <Name>Gross Weight</Name>
       <Description>NetWeight + TareWeight</Description>
-      <EstimatedCount>673</EstimatedCount>
+      <EstimatedCount>672</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="5c10cbf4-a58c-484a-a2b7-68c0110b2c19">
           <DataType>Double</DataType>
@@ -1246,7 +1246,7 @@
       <ID>Height</ID>
       <Name>Height</Name>
       <Description>Height of Package (in inches)</Description>
-      <EstimatedCount>222</EstimatedCount>
+      <EstimatedCount>223</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="8ec0ba7d-9eea-4a78-90c9-e6a2ee106102">
           <DataType>Double</DataType>
@@ -1271,7 +1271,7 @@
       <ID>Cubic Inches</ID>
       <Name>Cubic Inches</Name>
       <Description>Depth x Width x Height (in inches)</Description>
-      <EstimatedCount>944</EstimatedCount>
+      <EstimatedCount>947</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="e7afcdc2-2b62-4b71-b7e3-480f98819ad0">
           <DataType>Double</DataType>
@@ -1447,7 +1447,7 @@
       <ID>Shelf Life Days</ID>
       <Name>Shelf Life Days</Name>
       <Description>Represents the number of days until a product expires.</Description>
-      <EstimatedCount>63</EstimatedCount>
+      <EstimatedCount>64</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="95aeda9e-21d8-4b26-871a-4674e76a05ae">
           <DataType>Integer</DataType>
@@ -1472,7 +1472,7 @@
       <ID>Target End Dt</ID>
       <Name>Target End Dt</Name>
       <Description>Target End Date used for Marketing purposes.  Unknown values are stored as '1/1/1900'. Tracked historical in DW.</Description>
-      <EstimatedCount>416</EstimatedCount>
+      <EstimatedCount>422</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="63ab700b-bfc7-4c03-b384-849b580e2cb7">
           <DataType>Date</DataType>
@@ -1503,7 +1503,7 @@
       <ID>Target Begin Dt</ID>
       <Name>Target Start Dt</Name>
       <Description>Target Begin Date used for Marketing purposes. Unknown values are stored as '1/1/1900'. Tracked historical in DW.</Description>
-      <EstimatedCount>750</EstimatedCount>
+      <EstimatedCount>752</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="abe6fc66-8734-4f5f-a2eb-cd6f7ddd6f41">
           <DataType>Date</DataType>
@@ -1824,7 +1824,7 @@
       <ID>Primary Vendor Item Num</ID>
       <Name>Primary Vendor Item Num</Name>
       <Description>External Item Number that the Primary Vendor assigns to Item</Description>
-      <EstimatedCount>5512</EstimatedCount>
+      <EstimatedCount>5520</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="2f9c64f3-d7ef-4919-b2ba-7d9f84bf2bfa">
           <DataType>WChar</DataType>
@@ -1851,7 +1851,7 @@
       <ID>Base Sales Gross Price</ID>
       <Name>Base Sales Gross Price</Name>
       <Description>Most recent Base Sales Gross Price (aka Unit Price).  Not used by Wholesale.</Description>
-      <EstimatedCount>1956</EstimatedCount>
+      <EstimatedCount>1958</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="48b0d5fe-bdee-4416-8b42-68288ad86637">
           <DataType>Double</DataType>
@@ -1903,7 +1903,7 @@
       <ID>Base Sales Gross Price Last Mod Dt</ID>
       <Name>Base Sales Gross Price Last Mod Dt</Name>
       <Description>Last Modified Datetime of Base Sales Gross Price</Description>
-      <EstimatedCount>1103</EstimatedCount>
+      <EstimatedCount>1119</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="fce707fc-1cbc-4e01-b6ff-f52a924a7f25">
           <DataType>Date</DataType>
@@ -1928,7 +1928,7 @@
       <ID>Unit Cost</ID>
       <Name>Unit Cost</Name>
       <Description>Most recent Unit Cost</Description>
-      <EstimatedCount>3211</EstimatedCount>
+      <EstimatedCount>3215</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="caf50ffb-7e31-4a59-8a74-8443d75705a2">
           <DataType>Double</DataType>
@@ -2703,7 +2703,7 @@
       <ID>Item Num Id</ID>
       <Name>Item Num Id</Name>
       <Description>Integer format of the Item Number.  Unknown Items are equal to 0, as are Item Numbers with alpha characters.</Description>
-      <EstimatedCount>12599</EstimatedCount>
+      <EstimatedCount>12630</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="6bc736e2-231b-45ef-bde3-b707c19ce2a9">
           <DataType>Integer</DataType>
@@ -2745,7 +2745,7 @@
     <Attribute dwd:design-time-name="b7138e0c-408f-4f93-8506-b5e2dbaed4a0">
       <ID>Target End Month Key</ID>
       <Name>Target End Month</Name>
-      <EstimatedCount>105</EstimatedCount>
+      <EstimatedCount>106</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="c801666a-e04c-424f-8ca9-b5dd9d5bfa8c">
           <DataType>Integer</DataType>
@@ -2793,7 +2793,7 @@
     <Attribute dwd:design-time-name="3ac862c5-379c-47d1-aaaa-fc4b0f5f02ce">
       <ID>Target Begin Month Key</ID>
       <Name>Target Start Month</Name>
-      <EstimatedCount>140</EstimatedCount>
+      <EstimatedCount>141</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="dc65654f-f5d5-40ff-82f0-99321bb2c218">
           <DataType>Integer</DataType>

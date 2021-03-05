@@ -129,7 +129,7 @@
       <Name>Warehouse Key</Name>
       <Description>Unique identifier in the Warehouse dimension table</Description>
       <Usage>Key</Usage>
-      <EstimatedCount>143297</EstimatedCount>
+      <EstimatedCount>143414</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="c3b4cf58-1922-444a-803b-52b77d3d4ea7">
           <DataType>Integer</DataType>
@@ -201,7 +201,7 @@
       <ID>Invent Batch Num</ID>
       <Name>Lot Cd</Name>
       <Description>Inventory Batch/Lot Number</Description>
-      <EstimatedCount>46128</EstimatedCount>
+      <EstimatedCount>46598</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="222a4f8b-376f-45a8-a7db-46a92eecb335">
           <DataType>WChar</DataType>
@@ -228,7 +228,7 @@
       <ID>Location Cd</ID>
       <Name>Location Cd</Name>
       <Description>Inventory Location Code within the Warehouse (ex. 02-C2, 02-B3, 02-B2)</Description>
-      <EstimatedCount>2690</EstimatedCount>
+      <EstimatedCount>2696</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="8eac18da-ed71-4c94-bb76-fb4ec2c8f677">
           <DataType>WChar</DataType>
@@ -255,7 +255,7 @@
       <ID>Warehouse Cd</ID>
       <Name>Warehouse</Name>
       <Description>Warehouse Long Name</Description>
-      <EstimatedCount>223</EstimatedCount>
+      <EstimatedCount>244</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="0e51176f-9c17-4b95-9980-ff1185a2e9c1">
           <DataType>WChar</DataType>
@@ -341,7 +341,7 @@
       <ID>Site Cd</ID>
       <Name>Site</Name>
       <Description>Site Description/Long Name (ex. Manufacturing, Prime, Columbian, Catalogue, Retail)</Description>
-      <EstimatedCount>95</EstimatedCount>
+      <EstimatedCount>96</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="b78ca7ab-6b22-44c9-8be3-fabe2584bf7d">
           <DataType>WChar</DataType>
@@ -403,7 +403,7 @@
       <ID>Warehouse Cd 1</ID>
       <Name>Warehouse Cd</Name>
       <Description>Warehouse Code/Short Name</Description>
-      <EstimatedCount>216</EstimatedCount>
+      <EstimatedCount>236</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="31d43b62-e4b2-496b-a598-ad05c1384c68">
           <DataType>WChar</DataType>
@@ -429,7 +429,7 @@
     <Attribute dwd:design-time-name="28e9509c-c505-4d40-b35b-aab21cf7f72b">
       <ID>City</ID>
       <Name>City</Name>
-      <EstimatedCount>77</EstimatedCount>
+      <EstimatedCount>82</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="82c9b4fa-3674-4dc4-9d75-6a302c037a41">
           <DataType>WChar</DataType>
@@ -455,7 +455,7 @@
     <Attribute dwd:design-time-name="ec1bf2b4-39b7-447d-8f3e-f6f99a0c7d87">
       <ID>State Province</ID>
       <Name>State Province</Name>
-      <EstimatedCount>33</EstimatedCount>
+      <EstimatedCount>35</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="97a548e5-f523-4be5-8b07-0f37d5ea712f">
           <DataType>WChar</DataType>
@@ -481,7 +481,7 @@
     <Attribute dwd:design-time-name="4c4b098b-98a6-4286-8570-b22b2e1ce104">
       <ID>Postal Code</ID>
       <Name>Postal Code</Name>
-      <EstimatedCount>78</EstimatedCount>
+      <EstimatedCount>83</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="cfb816ee-e049-4771-8833-ef83b01a6e78">
           <DataType>WChar</DataType>

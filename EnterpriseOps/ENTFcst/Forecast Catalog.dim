@@ -114,7 +114,7 @@
       <ID>Forecast Catalog Key</ID>
       <Name>Forecast Catalog Key</Name>
       <Usage>Key</Usage>
-      <EstimatedCount>16</EstimatedCount>
+      <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="7cf4a936-5cd3-43a5-b25a-9dfcd59eceb5">
           <DataType>Integer</DataType>
@@ -155,7 +155,7 @@
     <Attribute dwd:design-time-name="69b95a0b-b240-42e8-b158-82ec683cdbb3">
       <ID>Forecast Desc</ID>
       <Name>Forecast Desc</Name>
-      <EstimatedCount>16</EstimatedCount>
+      <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="60e6afaa-c66a-4d63-8790-56040036de62">
           <DataType>WChar</DataType>
@@ -197,7 +197,7 @@
     <Attribute dwd:design-time-name="d1fd4635-1f6e-4d93-b46c-6ee14d612d80">
       <ID>Sort Order</ID>
       <Name>Sort Order</Name>
-      <EstimatedCount>16</EstimatedCount>
+      <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="882bddaa-817e-4b81-8924-d3d65d7c044a">
           <DataType>Integer</DataType>
@@ -238,7 +238,7 @@
     <Attribute dwd:design-time-name="60c6bdd9-6d49-4e6a-b3f9-b04e02c149e6">
       <ID>Snapshot Month- Year</ID>
       <Name>Snapshot Month- Year</Name>
-      <EstimatedCount>16</EstimatedCount>
+      <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="e2a4f520-fb0c-4d55-8dea-2af389e7177f">
           <DataType>WChar</DataType>
@@ -255,7 +255,7 @@
     <Attribute dwd:design-time-name="0b1e355e-cb67-4d70-b480-465d75f3ea5b">
       <ID>Snapshot Year Num</ID>
       <Name>Snapshot Year</Name>
-      <EstimatedCount>3</EstimatedCount>
+      <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="894e7e66-8476-4b57-ada9-89ae0eceeeee">
           <DataType>Integer</DataType>

@@ -88,7 +88,7 @@
       <Name>Vendor Key</Name>
       <Description>Unique Identifier in the Vendor KAFSalesension VIEW</Description>
       <Usage>Key</Usage>
-      <EstimatedCount>5719</EstimatedCount>
+      <EstimatedCount>5745</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="f572cfbf-2884-4a1d-a4ea-4bf32a51fb84">
           <DataType>BigInt</DataType>
@@ -280,7 +280,7 @@
       <ID>Vendor Num</ID>
       <Name>Vendor Num</Name>
       <Description>Vendor Number</Description>
-      <EstimatedCount>5719</EstimatedCount>
+      <EstimatedCount>5745</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="14645c52-04ea-4df9-bac0-20d61cf8aed5">
           <DataType>WChar</DataType>
@@ -307,7 +307,7 @@
       <ID>Vendor Num 1</ID>
       <Name>Vendor Name</Name>
       <Description>Vendor Name</Description>
-      <EstimatedCount>5719</EstimatedCount>
+      <EstimatedCount>5745</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="d4987967-9163-4f60-86f6-7729e95ac199">
           <DataType>WChar</DataType>
@@ -334,7 +334,7 @@
       <ID>Invoice Vendor Num</ID>
       <Name>Invoice Vendor Num</Name>
       <Description>Invoice/Bill-to Vendor Number</Description>
-      <EstimatedCount>5302</EstimatedCount>
+      <EstimatedCount>5325</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="15f037e4-8c34-4048-acfb-0d2ed00a4900">
           <DataType>WChar</DataType>
@@ -525,7 +525,7 @@
       <ID>Addr Line1</ID>
       <Name>Addr Line1</Name>
       <Description>Vendor Primary Address Line 1</Description>
-      <EstimatedCount>4674</EstimatedCount>
+      <EstimatedCount>4696</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="28aeab73-5d62-4003-a609-07c3e7c481f5">
           <DataType>WChar</DataType>
@@ -552,7 +552,7 @@
       <ID>Addr Line2</ID>
       <Name>Addr Line2</Name>
       <Description>Vendor Primary Address Line 2</Description>
-      <EstimatedCount>1007</EstimatedCount>
+      <EstimatedCount>1009</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="741a404f-98fa-4d94-929d-c1a45e3e5cd2">
           <DataType>WChar</DataType>
@@ -579,7 +579,7 @@
       <ID>City</ID>
       <Name>City</Name>
       <Description>Primary City</Description>
-      <EstimatedCount>1607</EstimatedCount>
+      <EstimatedCount>1613</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="ee2bdd33-950c-41c9-af2d-d509fb1c24dc">
           <DataType>WChar</DataType>
@@ -633,7 +633,7 @@
       <ID>County</ID>
       <Name>County</Name>
       <Description>Primary County</Description>
-      <EstimatedCount>511</EstimatedCount>
+      <EstimatedCount>513</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="f3bcac77-19af-488a-ab72-c92a598d995f">
           <DataType>WChar</DataType>
@@ -660,7 +660,7 @@
       <ID>Postal Code</ID>
       <Name>Postal Code</Name>
       <Description>Primary Postal Code</Description>
-      <EstimatedCount>2874</EstimatedCount>
+      <EstimatedCount>2886</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="8d8a6cb5-dc2c-467d-aedf-68971c9f9dfe">
           <DataType>WChar</DataType>
@@ -714,7 +714,7 @@
       <ID>Primary Email</ID>
       <Name>Primary Email</Name>
       <Description>Primary Contact E-mail Address</Description>
-      <EstimatedCount>1032</EstimatedCount>
+      <EstimatedCount>1047</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="ee50710c-135d-4d6e-88ad-61c3d1fe5bde">
           <DataType>WChar</DataType>
@@ -766,7 +766,7 @@
       <ID>Primary Phone</ID>
       <Name>Primary Phone</Name>
       <Description>Primary Contact Phone Number</Description>
-      <EstimatedCount>1744</EstimatedCount>
+      <EstimatedCount>1754</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="69389c5a-9d2e-4a77-8243-2157b7b063f8">
           <DataType>WChar</DataType>
@@ -855,7 +855,7 @@
       <ID>Delivery Mode Cd</ID>
       <Name>Delivery Mode</Name>
       <Description>Delivery Mode Description (ex. Fed Ex Ground, UPS ground, USPS Standard). For BFS, value might be blank if there are multi-ship points.</Description>
-      <EstimatedCount>20</EstimatedCount>
+      <EstimatedCount>21</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="dcbb216b-1024-4b11-9b20-3f9865e11b03">
           <DataType>WChar</DataType>
@@ -1364,7 +1364,7 @@
     <Attribute dwd:design-time-name="b4eb9224-800e-4bd1-b7bc-1b8f38baf145">
       <ID>Vendor Num 1 1</ID>
       <Name>Vendor Name-Num</Name>
-      <EstimatedCount>5719</EstimatedCount>
+      <EstimatedCount>5745</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="ab408a11-30ed-4e1b-8e1b-157d83c46c56">
           <DataType>WChar</DataType>

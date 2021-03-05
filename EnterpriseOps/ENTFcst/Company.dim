@@ -87,7 +87,7 @@
       <Name>Company Key</Name>
       <Description>Unique identifier in the Company Dimension table</Description>
       <Usage>Key</Usage>
-      <EstimatedCount>3054</EstimatedCount>
+      <EstimatedCount>3076</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="baa15b22-bda4-43cc-b7c8-180da257f2e6">
           <DataType>Integer</DataType>

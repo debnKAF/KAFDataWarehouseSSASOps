@@ -5606,7 +5606,7 @@
         </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
-      <EstimatedRows>7467671</EstimatedRows>
+      <EstimatedRows>7638447</EstimatedRows>
       <EstimatedSize>794326314</EstimatedSize>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
@@ -6542,7 +6542,7 @@
         </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
-      <EstimatedRows>42288</EstimatedRows>
+      <EstimatedRows>42350</EstimatedRows>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
         <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c625895a-aa9f-4ee7-b00b-0732f5f40fbf">
@@ -6677,7 +6677,7 @@
     </MeasureGroup>
     <MeasureGroup dwd:design-time-name="909622b9-1b1c-48fd-829b-dbdcb91a2fd9">
       <ID>Fact Forecast</ID>
-      <Name>Measure Group -Forecast</Name>
+      <Name>Measure Group - Forecast</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
@@ -6762,7 +6762,7 @@
         </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
-      <EstimatedRows>3530684</EstimatedRows>
+      <EstimatedRows>11221560</EstimatedRows>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
         <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="368e5bc1-ddda-449a-8102-6143299cb4e5">
