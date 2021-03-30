@@ -6966,6 +6966,7 @@
         </Dimension>
       </Dimensions>
       <Partitions />
+      <AggregationDesigns />
     </MeasureGroup>
   </MeasureGroups>
   <Source dwd:design-time-name="779d6588-3a33-4d02-8741-ba29651c9ac5">
@@ -7297,7 +7298,6 @@ VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\Error' ,  ASSOCIATED_MEASURE_
 --MAPE
 
 
-
 CREATE MEMBER CURRENTCUBE.[Measures].[FPMAPE]
  AS AVG(SelectedFiscalPeriods,[Measures].[ABS Pct Error]), 
 FORMAT_STRING = "Percent", 
@@ -7314,9 +7314,17 @@ VISIBLE = 0 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_G
 //FORMAT_STRING = "Percent",  
 //VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';  
 
+//CREATE MEMBER CURRENTCUBE.[Measures].[MAPE]
+//AS 
+//AVG(DESCENDANTS([Item].[Master Product Sales Hierarchy].currentmember, [Item].[Master Product Sales Hierarchy].[Item Num-Name]),[Measures].[FPMAPE]),
+//FORMAT_STRING = "Percent",  
+//VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';  
+  
+
 CREATE MEMBER CURRENTCUBE.[Measures].[MAPE]
 AS 
-AVG(DESCENDANTS([Item].[Master Product Sales Hierarchy].currentmember, [Item].[Master Product Sales Hierarchy].[Item Num-Name]),[Measures].[FPMAPE]),
+iif([Item].[Master Product Sales Hierarchy].currentmember.level.ordinal = 0, AVG(SelectedItems,[Measures].[FPMAPE]),
+AVG(DESCENDANTS([Item].[Master Product Sales Hierarchy].currentmember, [Item].[Master Product Sales Hierarchy].[Item Num-Name]),[Measures].[FPMAPE])),
 FORMAT_STRING = "Percent",  
 VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';  
 
