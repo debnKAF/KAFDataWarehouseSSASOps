@@ -7285,18 +7285,10 @@ CREATE MEMBER CURRENTCUBE.[Measures].[ABS Pct Error]
  AS ABS([Measures].[Pct Error]), 
 FORMAT_STRING = "Percent", 
 VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\Error' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';    
-//
-//CREATE MEMBER CURRENTCUBE.[Measures].[Weighted Pct Error] 
-// AS iif([Measures].[Original Order Qty RtF]=0 AND [Measures].[Fcst Qty]=0,NULL,
-//iif([Measures].[Original Order Qty RtF]= 0 AND [Measures].[Fcst Qty] &lt;&gt; 0, -1, 
-//iif(ISEMPTY(Axis(1).Item(0).Item (0).Dimension.Levels(0).item(0)),1,
-//[Measures].[ABS Error]/SUM( Axis(1).Item(0).Item (0).Dimension.Levels(0).item(0),[Measures].[Original Order Qty RtF])
-//    ))) , 
-//FORMAT_STRING = "Percent", 
-//VISIBLE = 0 ,  DISPLAY_FOLDER = 'Unit Calculations\Error' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';  
+
+
 
 --MAPE
-
 
 CREATE MEMBER CURRENTCUBE.[Measures].[FPMAPE]
  AS AVG(SelectedFiscalPeriods,[Measures].[ABS Pct Error]), 
@@ -7314,12 +7306,6 @@ VISIBLE = 0 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_G
 //FORMAT_STRING = "Percent",  
 //VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';  
 
-//CREATE MEMBER CURRENTCUBE.[Measures].[MAPE]
-//AS 
-//AVG(DESCENDANTS([Item].[Master Product Sales Hierarchy].currentmember, [Item].[Master Product Sales Hierarchy].[Item Num-Name]),[Measures].[FPMAPE]),
-//FORMAT_STRING = "Percent",  
-//VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';  
-  
 
 CREATE MEMBER CURRENTCUBE.[Measures].[MAPE]
 AS 
@@ -7329,19 +7315,6 @@ FORMAT_STRING = "Percent",
 VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';  
 
 
-//CREATE MEMBER CURRENTCUBE.[Measures].[WMAPE]
-// AS ([Measures].[Weighted Pct Error]*[Measures].[Original Order Qty RtF])/[Measures].[Original Order Qty RtF], 
-//FORMAT_STRING = "Percent", 
-//VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';    
-
-//CREATE MEMBER CURRENTCUBE.[Measures].[WMAPE] 
-//AS iif([Measures].[Original Order Qty RtF]=0 AND [Measures].[Fcst Qty]=0,NULL,
-//iif([Measures].[Original Order Qty RtF]= 0 AND [Measures].[Fcst Qty] &lt;&gt; 0, -1, 
-//[Measures].[ABS Error]/SUM( Axis(1).Item(0).Item (0).Dimension.Levels(0).item(0),[Measures].[Original Order Qty RtF])
-//)) , 
-//FORMAT_STRING = "Percent", 
-//VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast'; 
-
 CREATE MEMBER CURRENTCUBE.[Measures].[WMAPE] 
  AS iif(([Measures].[Original Order Qty RtF]=0 AND [Measures].[Fcst Qty]=0) ,NULL,
 [Measures].[ABS Error]/SUM(Root([Item]),[Measures].[Original Order Qty RtF])
@@ -7350,13 +7323,6 @@ FORMAT_STRING = "Percent",
 VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast'; 
 
 
-//CREATE MEMBER CURRENTCUBE.[Measures].[WMAPE (Dynamic)] 
-// AS iif([Measures].[Original Order Qty RtF]=0 AND [Measures].[Fcst Qty]=0,NULL,
-//iif([Measures].[Original Order Qty RtF]= 0 AND [Measures].[Fcst Qty] &lt;&gt; 0, -1, 
-//[Measures].[ABS Error]/SUM({SelectedItems},[Measures].[Original Order Qty RtF])
-//    )) , 
-//FORMAT_STRING = "Percent", 
-//VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast'; 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[SelectedItemsOOQ] 
  AS SUM([SelectedItems],[Measures].[Original Order Qty RtF])
@@ -7367,7 +7333,6 @@ VISIBLE = 0 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_G
 
 CREATE MEMBER CURRENTCUBE.[Measures].[WMAPE (Dynamic)] 
  AS iif([Measures].[Original Order Qty RtF]=0 AND [Measures].[Fcst Qty]=0,NULL,
---[Measures].[ABS Error]/([Item].[Master Product Sales Hierarchy].CurrentMember.Parent,[Measures].[Original Order Qty RtF]))
 iif([Measures].[SelectedItemsOOQ] &lt;&gt;0,[Measures].[ABS Error]/[Measures].[SelectedItemsOOQ] ,NULL))
     , 
 FORMAT_STRING = "Percent", 
@@ -7389,10 +7354,6 @@ VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_G
 
 
 --DEVIATION
-//CREATE MEMBER CURRENTCUBE.[Measures].[Deviation]
-// AS ABS([Measures].[Original Order Qty RtF] - [Measures].[Fcst Qty]), 
-//FORMAT_STRING = "#,##0;-#,##0", 
-//VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\Deviation' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';  
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Mean Deviation]
  AS AVG(SelectedFiscalPeriods,[Measures].[ABS Error]), 
