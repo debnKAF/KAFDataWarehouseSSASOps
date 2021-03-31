@@ -9,7 +9,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="96" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1534" scrolltop="7693" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="29871" y="22040" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="96" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1534" scrolltop="7693" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="30930" y="22040" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -6760,6 +6760,19 @@
           <Visible>false</Visible>
           <FormatString>#,##0;-#,##0</FormatString>
         </Measure>
+        <Measure dwd:design-time-name="0c1d2d8e-4b25-42de-b7e4-efc6ad67b471">
+          <ID>d MAPE</ID>
+          <Name>d MAPE</Name>
+          <Source dwd:design-time-name="5e4a3ce7-7aa3-4605-b486-e7a62c82ee62">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="907f9fea-ed3a-431f-aead-09b6a46e3ac0">
+              <TableID>ENTFcst_factForecastTEMP</TableID>
+              <ColumnID>dMAPE</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Unit Calculations\MAPE</DisplayFolder>
+          <FormatString>#,##0.00 %;-#,##0.00 %</FormatString>
+        </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
       <EstimatedRows>11221560</EstimatedRows>
@@ -7203,9 +7216,6 @@ CREATE HIDDEN DYNAMIC SET SelectedItems
 AS {[Item].[Master Product Sales Hierarchy].[Item Num-Name].members} ;
 
 
-
-
-
                    
 CREATE MEMBER CURRENTCUBE.[Measures].[Open Order Qty]
  AS iif([Sales Order Line].[Is Open Order] IS [Sales Order Line].[Is Open Order].&amp;[1] OR [Sales Order Line].[Is Open Order] IS [Sales Order Line].[Is Open Order].[ALL]
@@ -7293,7 +7303,7 @@ VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\Error' ,  ASSOCIATED_MEASURE_
 CREATE MEMBER CURRENTCUBE.[Measures].[FPMAPE]
  AS AVG(SelectedFiscalPeriods,[Measures].[ABS Pct Error]), 
 FORMAT_STRING = "Percent", 
-VISIBLE = 0 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';     
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';     
 
 //CREATE MEMBER CURRENTCUBE.[Measures].[LagMAPE]
 // AS AVG(SelectedLags,[Measures].[ABS Pct Error]), 
@@ -7314,6 +7324,10 @@ AVG(DESCENDANTS([Item].[Master Product Sales Hierarchy].currentmember, [Item].[M
 FORMAT_STRING = "Percent",  
 VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';  
 
+SCOPE([Measures].[d MAPE]);
+    THIS = AVG(EXISTING(SelectedItems),[Measures].[FPMAPE]);
+END SCOPE;
+
 
 CREATE MEMBER CURRENTCUBE.[Measures].[WMAPE] 
  AS iif(([Measures].[Original Order Qty RtF]=0 AND [Measures].[Fcst Qty]=0) ,NULL,
@@ -7321,7 +7335,6 @@ CREATE MEMBER CURRENTCUBE.[Measures].[WMAPE]
     ), 
 FORMAT_STRING = "Percent", 
 VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast'; 
-
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[SelectedItemsOOQ] 
@@ -7339,17 +7352,17 @@ FORMAT_STRING = "Percent",
 VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast'; 
 
 
-CREATE MEMBER CURRENTCUBE.[Measures].[3 Month MAPE]
- AS iif(isempty([Measures].[Original Order Qty RtF]),NULL,
-AVG({[Lag].[Lag].&amp;[1],[Lag].[Lag].&amp;[2],[Lag].[Lag].&amp;[3]},[ABS Pct Error])), 
-FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';   
-
-CREATE MEMBER CURRENTCUBE.[Measures].[6 Month MAPE]
- AS iif(isempty([Measures].[Original Order Qty RtF]),NULL,
-AVG({[Lag].[Lag].&amp;[1],[Lag].[Lag].&amp;[2],[Lag].[Lag].&amp;[3],[Lag].[Lag].&amp;[4],[Lag].[Lag].&amp;[5],[Lag].[Lag].&amp;[6]},[ABS Pct Error])), 
-FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';   
+//CREATE MEMBER CURRENTCUBE.[Measures].[3 Month MAPE]
+// AS iif(isempty([Measures].[Original Order Qty RtF]),NULL,
+//AVG({[Lag].[Lag].&amp;[1],[Lag].[Lag].&amp;[2],[Lag].[Lag].&amp;[3]},[ABS Pct Error])), 
+//FORMAT_STRING = "Percent", 
+//VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';   
+//
+//CREATE MEMBER CURRENTCUBE.[Measures].[6 Month MAPE]
+// AS iif(isempty([Measures].[Original Order Qty RtF]),NULL,
+//AVG({[Lag].[Lag].&amp;[1],[Lag].[Lag].&amp;[2],[Lag].[Lag].&amp;[3],[Lag].[Lag].&amp;[4],[Lag].[Lag].&amp;[5],[Lag].[Lag].&amp;[6]},[ABS Pct Error])), 
+//FORMAT_STRING = "Percent", 
+//VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';   
 
 
 
