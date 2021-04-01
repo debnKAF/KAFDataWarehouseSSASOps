@@ -6762,7 +6762,7 @@
         </Measure>
         <Measure dwd:design-time-name="0c1d2d8e-4b25-42de-b7e4-efc6ad67b471">
           <ID>d MAPE</ID>
-          <Name>d MAPE</Name>
+          <Name>MAPE</Name>
           <Source dwd:design-time-name="5e4a3ce7-7aa3-4605-b486-e7a62c82ee62">
             <DataType>Integer</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="907f9fea-ed3a-431f-aead-09b6a46e3ac0">
@@ -7303,7 +7303,7 @@ VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\Error' ,  ASSOCIATED_MEASURE_
 CREATE MEMBER CURRENTCUBE.[Measures].[FPMAPE]
  AS AVG(SelectedFiscalPeriods,[Measures].[ABS Pct Error]), 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';     
+VISIBLE = 0 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';     
 
 //CREATE MEMBER CURRENTCUBE.[Measures].[LagMAPE]
 // AS AVG(SelectedLags,[Measures].[ABS Pct Error]), 
@@ -7317,14 +7317,14 @@ VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_G
 //VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';  
 
 
-CREATE MEMBER CURRENTCUBE.[Measures].[MAPE]
-AS 
-iif([Item].[Master Product Sales Hierarchy].currentmember.level.ordinal = 0, AVG(SelectedItems,[Measures].[FPMAPE]),
-AVG(DESCENDANTS([Item].[Master Product Sales Hierarchy].currentmember, [Item].[Master Product Sales Hierarchy].[Item Num-Name]),[Measures].[FPMAPE])),
-FORMAT_STRING = "Percent",  
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';  
+//CREATE MEMBER CURRENTCUBE.[Measures].[MAPE]
+//AS 
+//iif([Item].[Master Product Sales Hierarchy].currentmember.level.ordinal = 0, AVG(SelectedItems,[Measures].[FPMAPE]),
+//AVG(DESCENDANTS([Item].[Master Product Sales Hierarchy].currentmember, [Item].[Master Product Sales Hierarchy].[Item Num-Name]),[Measures].[FPMAPE])),
+//FORMAT_STRING = "Percent",  
+//VISIBLE = 1 ,  DISPLAY_FOLDER = 'Unit Calculations\MAPE' ,  ASSOCIATED_MEASURE_GROUP = 'Measure Group - Forecast';  
 
-SCOPE([Measures].[d MAPE]);
+SCOPE([Measures].[MAPE]);
     THIS = AVG(EXISTING(SelectedItems),[Measures].[FPMAPE]);
 END SCOPE;
 
