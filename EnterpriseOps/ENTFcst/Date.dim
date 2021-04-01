@@ -1,18 +1,18 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b1e2d32b-94ca-4839-9da3-ac1f571af425" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d41363f7-9aed-41ef-ac7a-f7317976705f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Date</ID>
   <Name>Date</Name>
   <CreatedTimestamp>2020-05-06T19:03:56.676667Z</CreatedTimestamp>
   <LastSchemaUpdate>2021-01-03T22:42:35.5Z</LastSchemaUpdate>
-  <Description>The Date dimension is a SSAS role playing dimension meaning that it can be used for various dates that we need to report on (ex. Invoice Date, Order Date, Ship Date etc.)  It houses basic date related attributes and both Fiscal and Calendar hierarchies, as well as T/F indicators that can be used to determine specific time frames (ex. Current Rpt Month, Prior Year, etc.)  For open orders that have not invoiced, the requested ship date is represented as invoice date. Please note that not all Date dimensions work for all Measure groups.
+  <Description>The Date dimension is a SSAS role playing dimension meaning that it can be used for various dates that we need to report on (ex. Invoice Date, Order Date, Ship Date etc.)  It houses basic date related attributes and both Fiscal and Calendar hierarchies, as well as T/F indicators that can be used to determine specific time frames (ex. Current Rpt Month, Prior Year, etc.)  For open orders that have not invoiced, the requested ship date is represented as invoice date. Planning Date is defined as Requested Ship Date for Open Orders, Order Date for Direct Invoiced Orders and Ship Date (aka Packing Slip Date) for Wholesale Invoiced Orders. Please note that not all Date dimensions work for all Measure groups.
 </Description>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="6" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5345" scrolltop="-6086" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="0" y="0" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="6" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5345" scrolltop="-6086" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10292" y="22040" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -254,11 +254,11 @@
   </Annotations>
   <LastProcessed>2021-01-25T15:27:19.513333Z</LastProcessed>
   <State>Processed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="61462372-fcfb-42e9-ac8a-897192dc57fb">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c2035ed1-39a5-4ffa-ad09-86bb9b42de91">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
   <Type>Time</Type>
-  <ErrorConfiguration dwd:design-time-name="1674818b-2128-4c97-a71e-999f23fb41c4">
+  <ErrorConfiguration dwd:design-time-name="ee6f7c62-686f-4525-9271-7d930b70762e">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
@@ -268,7 +268,7 @@
   <Collation>Latin1_General_CI_AS</Collation>
   <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="b37fb9aa-1963-474b-a2bc-43f08eeb4766">
+    <Attribute dwd:design-time-name="4db7042c-27e9-448c-b381-f409a65d372c">
       <ID>Date Key</ID>
       <Name>Short Dt</Name>
       <Description>Short Date (Sample Format: 2018-01-01)</Description>
@@ -276,251 +276,251 @@
       <Usage>Key</Usage>
       <EstimatedCount>8767</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ec2b4ace-83a5-455d-b1a2-1428b92451e8">
+        <KeyColumn dwd:design-time-name="e64676b1-e01f-4aa8-a792-e8d206ae4f04">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2042e9a-30d0-4b06-b00c-49938b0c2d96">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8091c0a-56b9-4c59-b30a-cf89cc89331e">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>DateKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="5b27af78-9c50-40f3-b828-d71df0d4af67">
+      <NameColumn dwd:design-time-name="3e6cd8a4-6cf6-44a2-bde8-e1ec50d7e9ca">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="d9f8b253-cc53-4c5a-a836-03452041fedc">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="56366f62-d81c-4f55-8f7a-05abace71238">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>ShortDate</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="1a12d723-3937-4d3e-8259-d78f22f03c0b">
+        <AttributeRelationship dwd:design-time-name="f4d3588f-8416-4606-a9e4-b8152b7dfda0">
           <AttributeID>Is Holiday USA</AttributeID>
           <Name>Is Holiday USA</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2bfbe2f4-a300-4304-a1b5-9eaa965fb0a2">
+        <AttributeRelationship dwd:design-time-name="eab4ee26-d33c-4d9c-8463-94ae22b0011e">
           <AttributeID>Is Weekday</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Is Weekday</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9a0e0b66-f097-46b5-94ec-cc15f8ef4a52">
+        <AttributeRelationship dwd:design-time-name="027e05e0-786e-4ed0-9ad5-dbf7ff94c8f8">
           <AttributeID>Holiday USA</AttributeID>
           <Name>Holiday USA</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1b0bbfc1-167c-4adc-b07d-fd5f44644368">
+        <AttributeRelationship dwd:design-time-name="87fc9eb0-9368-452f-b3f6-607dc0af3dfb">
           <AttributeID>Is Last Day Of Month</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Is Last Day Of Month</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="71894406-8d97-4bc6-b011-f25051fe020b">
+        <AttributeRelationship dwd:design-time-name="3be4d6a4-12bf-4d69-8572-6fa51bdcb3c7">
           <AttributeID>Is First Day Of Month</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Is First Day Of Month</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a12fe916-43a4-4e47-becb-aaa35eccae1e">
+        <AttributeRelationship dwd:design-time-name="11dfce9f-0d2c-48a7-b2f7-11deb0bb0002">
           <AttributeID>Day Counter</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Day Counter</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4bac6612-12f7-44c4-b012-c4d9f9ab31a1">
+        <AttributeRelationship dwd:design-time-name="badb62cd-c678-4d3a-a3f6-0dd5f613ceb2">
           <AttributeID>Month Counter</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Month Counter</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="72ae0ec9-125e-452d-81c6-322f9f296afe">
+        <AttributeRelationship dwd:design-time-name="27d27bb4-1b4b-4df4-a0c8-a2601e904253">
           <AttributeID>Month No 1 1</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Month</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="79f6b5b1-918f-4079-894e-dab95d4cfb85">
+        <AttributeRelationship dwd:design-time-name="3ceb04dd-2d21-489a-9deb-384e702368cb">
           <AttributeID>Day Of Week No 1</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Day Suffix</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b2baea96-d9f2-4e88-a328-ec09639f5991">
+        <AttributeRelationship dwd:design-time-name="7d8645eb-34e3-40f0-95c2-6b9970f6738b">
           <AttributeID>Day Of Week No 1 2</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Day Of Week</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d3cc61fe-7585-4938-be8e-d268eea6c4c2">
+        <AttributeRelationship dwd:design-time-name="5c22c658-3574-4db4-b6b4-0bf23e29daf7">
           <AttributeID>Is First Day Of Week</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Is First Day Of Week</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9d569737-4dda-4a8b-90ef-4c682ec9bbe8">
+        <AttributeRelationship dwd:design-time-name="13601bd5-96f8-4a8f-88fe-aeafd8065a1f">
           <AttributeID>Week Of Year No</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Week Of Year</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ba5267d1-f4c8-40ea-bde6-09f403b1dd2d">
+        <AttributeRelationship dwd:design-time-name="859d88d1-b700-4de9-9004-38cafd5b7ce7">
           <AttributeID>First Day Of Week Key 1</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Week Begin Dt</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9ca0218f-1e31-4774-a5f8-20784177749d">
+        <AttributeRelationship dwd:design-time-name="600ce51f-cfca-40b3-8a82-fb52ab6f5bf4">
           <AttributeID>Relative Date</AttributeID>
           <Name>Relative Dt</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b43c60cf-135b-4ab1-aa5f-94031ee089bd">
+        <AttributeRelationship dwd:design-time-name="d69ff308-062a-4fc8-862e-80d947a03fab">
           <AttributeID>First Day Of Week Key</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Week-Year</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1626e700-202e-42e4-bba8-013c39bea271">
+        <AttributeRelationship dwd:design-time-name="07198253-ca4a-4602-813f-3adc846624a7">
           <AttributeID>Date Key 1</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Date</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="05ee3d5a-25fd-4b1d-9428-4174e3c4b035">
+        <AttributeRelationship dwd:design-time-name="74c10867-e2f5-4f4b-881e-2549b3b50399">
           <AttributeID>Quarter No 1</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Quarter</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="df3bb72b-e195-4477-94ae-3e84920df933">
+        <AttributeRelationship dwd:design-time-name="dbc9176e-561c-48c8-bb22-51357676b2e8">
           <AttributeID>Week Of Year No 1</AttributeID>
           <Name>Week Of Year No</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="abf67045-d3b6-4e7a-9932-57a5d5b52dab">
+        <AttributeRelationship dwd:design-time-name="fb9b2869-dae7-45f2-a788-55d63b7991f2">
           <AttributeID>Is Current Rpt Ytd Through Prior Month</AttributeID>
           <Name>Is Current Rpt YTD Through Prior Month</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b427f381-0df8-42ee-9380-2197bfa2ce0d">
+        <AttributeRelationship dwd:design-time-name="850861e5-b802-43c1-b2d6-c615ca6a911e">
           <AttributeID>Is Current Rpt Month Through End Of Cy</AttributeID>
           <Name>Is Current Rpt Month Through End Of CY</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="bb0d49b0-1b50-4680-bfc5-1b9095bc1891">
+        <AttributeRelationship dwd:design-time-name="1da2d622-957c-4d31-9443-43e1e9f89d80">
           <AttributeID>Is Current Rpt Ytg</AttributeID>
           <Name>Is Current Rpt YTG</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2cddd5c7-fb12-4860-a101-41eb4537e5b9">
+        <AttributeRelationship dwd:design-time-name="a13297ca-1c6c-4b1c-bb0a-37771c273cc6">
           <AttributeID>Is Current Rpt Ytd</AttributeID>
           <Name>Is Current Rpt YTD</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="550f2f67-db0f-4527-be5c-0fa53cce17b5">
+        <AttributeRelationship dwd:design-time-name="2219fa29-e616-493d-aef0-0877a857bd2f">
           <AttributeID>Is Prior Rpt Ytd</AttributeID>
           <Name>Is Prior Rpt YTD</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="990cf940-9540-423e-b0af-8fcc6abc2fc1">
+        <AttributeRelationship dwd:design-time-name="8ff641ca-0bd3-453a-86f7-c5dd0b7a2125">
           <AttributeID>Is Prior Rpt Ytg</AttributeID>
           <Name>Is Prior Rpt YTG</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7927a38a-f343-4aa3-9642-48e95742a484">
+        <AttributeRelationship dwd:design-time-name="d0e96f61-7355-43a2-9d01-aab0a5e7bd16">
           <AttributeID>Is Prior Rpt Year</AttributeID>
           <Name>Is Prior Rpt Year</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="dadb6f74-4e5a-483b-845c-f2385cff0756">
+        <AttributeRelationship dwd:design-time-name="1bd42e07-cd16-47bd-94a1-80298a209d2c">
           <AttributeID>Is Current Rpt Year</AttributeID>
           <Name>Is Current Rpt Year</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5b9c2570-2443-4fc6-82de-a90c263b53e6">
+        <AttributeRelationship dwd:design-time-name="60a3a8ed-7eb5-403b-bf03-da60b2d0654e">
           <AttributeID>Is Next Rpt Month</AttributeID>
           <Name>Is Next Rpt Month</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="048738cb-fe6c-44b0-8a4b-faf77b3775bd">
+        <AttributeRelationship dwd:design-time-name="92840a6e-bafd-48bd-b7f7-34650031c130">
           <AttributeID>Is Prior Rpt Month</AttributeID>
           <Name>Is Prior Rpt Month</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c6e58df9-3b77-453c-81d9-18d5903a4404">
+        <AttributeRelationship dwd:design-time-name="359e60d7-f5da-4daf-ace6-4422754c8566">
           <AttributeID>Is Current Rpt Month</AttributeID>
           <Name>Is Current Rpt Month</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="55caec23-5e97-420d-ba93-4aca555b46f9">
+        <AttributeRelationship dwd:design-time-name="d7bae9a1-46bd-46b9-bcdc-db9ebd71e423">
           <AttributeID>Is Current Rpt Dt Yago</AttributeID>
           <Name>Is Current Rpt Dt YAGO</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2122b65b-58ce-47fa-b663-cbb334457894">
+        <AttributeRelationship dwd:design-time-name="91cbb2aa-dc57-4e97-8d60-9f01ae7f9513">
           <AttributeID>Is Today Yago</AttributeID>
           <Name>Is Today YAGO</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="39f11c7c-f44d-4230-837c-37fddec8c490">
+        <AttributeRelationship dwd:design-time-name="08467c50-b681-4675-9e86-ee51f09917e6">
           <AttributeID>Is Current Rpt Dt</AttributeID>
           <Name>Is Current Rpt Dt</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="69c6f1e5-8a24-4869-a0fd-b3f1c63260a5">
+        <AttributeRelationship dwd:design-time-name="2071f42c-32c4-4df2-9dca-8d44133ed22f">
           <AttributeID>Is Today</AttributeID>
           <Name>Is Today</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="431e0cba-d274-4714-a195-d17be42d7e25">
+        <AttributeRelationship dwd:design-time-name="7b4f4251-8b40-4a70-84d3-9f21f3a97d02">
           <AttributeID>Day Of Month No</AttributeID>
           <Name>Day Of Month</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a420e6eb-72aa-4e76-ae33-1311c2e7a0f4">
+        <AttributeRelationship dwd:design-time-name="4cd92559-bb36-4868-9efa-02fccc2b168c">
           <AttributeID>Day Of Year No</AttributeID>
           <Name>Day Of Year</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5ce55daa-73ef-497f-a30e-92fadff2d55c">
+        <AttributeRelationship dwd:design-time-name="0b37cf90-3801-4c31-9bb4-53f65125d46c">
           <AttributeID>Half Yearof Year Key</AttributeID>
           <Name>Half Year of Year</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="cd9414a7-364c-49fb-9b86-5ec4cbed5b83">
+        <AttributeRelationship dwd:design-time-name="37134dd4-7402-45aa-a549-e17f70133d2e">
           <AttributeID>First Day Of Month Key</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Month-Year</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c053df6a-0067-4c13-a239-0b119881ca17">
+        <AttributeRelationship dwd:design-time-name="9a7be81a-6290-410c-9674-56035c723be6">
           <AttributeID>Relative Ytd</AttributeID>
           <Name>Relative YTD</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f74703ef-8a76-4ad2-a465-34cac620cd00">
+        <AttributeRelationship dwd:design-time-name="903cebe6-ad31-47d2-905c-57be4a67b200">
           <AttributeID>Half Year Key</AttributeID>
           <Name>Half Year-Year</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9854d450-6acc-448b-9f06-50c6ffdc727b">
+        <AttributeRelationship dwd:design-time-name="cf88aa44-ca30-4ebc-a17d-ce0b509261f7">
           <AttributeID>Relative Month Through Last Month</AttributeID>
           <Name>Relative Month - LM</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="aa7155d5-703e-4c87-8756-45b683c1882a">
+        <AttributeRelationship dwd:design-time-name="9271999b-88d9-411a-a6d2-b29a2da33718">
           <AttributeID>Relative Ytd Through Last Month</AttributeID>
           <Name>Relative YTD - LM</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="986e2802-d4df-4af7-80df-3fae870f1c8c">
+        <AttributeRelationship dwd:design-time-name="43ac2763-a477-4e29-85ea-fcc7bff40195">
           <AttributeID>Is Prior To Current Date Yago Or Unknown</AttributeID>
           <Name>Is Prior To Current Date YAGO Or Unknown</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="cfa33253-fea1-4f44-aacc-067389e30d25">
+        <AttributeRelationship dwd:design-time-name="dbcccdb2-3a78-4556-8b9a-660ac5a4ed3e">
           <AttributeID>Is Current Rpt Month Yago</AttributeID>
           <Name>Is Current Rpt Month YAGO</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ada550a4-f785-4720-a88e-790664b231f8">
+        <AttributeRelationship dwd:design-time-name="e7f17f84-b819-41f4-8777-44a104cca4a1">
           <AttributeID>Fiscal Period No</AttributeID>
           <Name>Fiscal Period</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="76ae523b-16f2-4ca0-9fc9-1db504fa19e6">
+        <AttributeRelationship dwd:design-time-name="4134534c-d8c3-4426-808a-3b166091ff28">
           <AttributeID>Fiscal Period Year</AttributeID>
           <Name>Fiscal Period-Year</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c2df0f44-9dbd-4ba2-b210-399c0f2fc740">
+        <AttributeRelationship dwd:design-time-name="49bd1c6e-fe48-4a87-978e-7b1f97442345">
           <AttributeID>Is Last Day Of Prior Month</AttributeID>
           <Name>Is Last Day Of Prior Month</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="164fa567-e89b-477f-b698-c6dca2878fcc">
+        <AttributeRelationship dwd:design-time-name="2556bf98-faec-4b75-a491-bc9b9fa0c836">
           <AttributeID>Is Last5 Days Of Month</AttributeID>
           <Name>Is Last 5 Days Of Month</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="fabab345-c7e1-4f70-85c1-8a0b3e367e71">
+        <AttributeRelationship dwd:design-time-name="101c2a91-17ab-4a00-befc-bae6851b778b">
           <AttributeID>Is First5 Days Of Month</AttributeID>
           <Name>Is First 5 Days Of Month</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="31c7cdcc-1174-4144-a24c-748682579339">
+        <AttributeRelationship dwd:design-time-name="a7d85d6e-aa9e-4421-ae13-1704662ff1c9">
           <AttributeID>Last Day Of Week Key</AttributeID>
           <Name>Week Ending Dt</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ce89ddbe-4cf8-49f1-ab91-8c7de490a862">
+        <AttributeRelationship dwd:design-time-name="435aff8e-3a6f-4624-b919-567ce4820d3a">
           <AttributeID>Last Date Of Week Desc</AttributeID>
           <Name>Week Ending</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="34d8da4a-5176-4bb4-b1d6-ab1f8719d5a4">
+        <AttributeRelationship dwd:design-time-name="b89a49f3-e813-4d6c-98c0-64f53c56cab6">
           <AttributeID>Wholesale BFS Short Note</AttributeID>
           <Name>BFS Short Note</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="004730c3-c409-4f1d-888d-b51f96ac3854">
+        <AttributeRelationship dwd:design-time-name="7b9220c7-3a6f-43d4-bb1e-3ddacc4d6398">
           <AttributeID>Wholesale FF Short Note</AttributeID>
           <Name>FF Short Note</Name>
         </AttributeRelationship>
       </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="c90b8387-2464-4e91-a31a-66da73c8c4c3">
+      <ValueColumn dwd:design-time-name="551cd962-8500-4c30-947f-a5bde143ac0d">
         <DataType>Date</DataType>
         <DataSize>-1</DataSize>
         <Format>Short Date</Format>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="bb074ac5-9063-4bee-9447-47dfd7b4c10f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d50c1345-d528-48b5-95b1-9eb5e3046b04">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FullDate</ColumnID>
         </Source>
@@ -529,24 +529,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3c96c035-8e41-4ba4-842d-7c416ee40188">
+    <Attribute dwd:design-time-name="a3d84d1c-8940-4ee8-bf20-8efba231255c">
       <ID>Is Holiday USA</ID>
       <Name>Is Holiday USA</Name>
       <Description>T/F Indicator for all US Holidays found in the "Holiday USA" attribute.</Description>
       <Type>IsHoliday</Type>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="919a2767-c40b-4083-89b9-e350eb1d39e3">
+        <KeyColumn dwd:design-time-name="23e41921-3abf-44d1-950a-6e1bdc2e2108">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9e5ebe9a-5d36-4686-a657-457d47c18029">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="96142bf4-4f51-417d-81c4-fbc74a0ab81a">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsHolidayUSA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="cba5ae9d-069e-4bb9-b51e-2779a2e45ca1">
+      <NameColumn dwd:design-time-name="8ae2108e-1215-48e5-8604-92db68aa5360">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5b9981a3-0e05-4537-b259-40b986f77af3">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3a8739ee-bde4-4bad-aa25-fce27554ab5e">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsHolidayUSA</ColumnID>
         </Source>
@@ -556,24 +556,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="cfa41ae0-3e1b-40e4-80c3-b891d29c6df2">
+    <Attribute dwd:design-time-name="6994be7b-ea64-4972-8c13-2f9af04f5421">
       <ID>Is Weekday</ID>
       <Name>Is Weekday</Name>
       <Description>T/F Indicator for weekdays</Description>
       <Type>IsWeekDay</Type>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="7ac791a9-707b-4ae2-9d2c-b4ce76103b12">
+        <KeyColumn dwd:design-time-name="2fcd46bc-6f0a-46fa-a523-86e177d816ad">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="abd8a5fc-bb0b-4dad-80b6-153efc88e822">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="93f3fa74-22d2-4196-a720-742ae1abe0d8">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsWeekday</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="aef73d30-24c2-431c-94d5-cbfebb07f607">
+      <NameColumn dwd:design-time-name="ee95cac2-1a4c-47c1-b81a-60122a6b10d1">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="a03f482c-73bd-453f-a11c-5f2f9337e0e8">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="02d24c3b-3f0d-4149-8c9d-ddcb0a01aefd">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsWeekday</ColumnID>
         </Source>
@@ -583,25 +583,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0482e7ac-eae2-46dd-90bf-b6e3f2dc5471">
+    <Attribute dwd:design-time-name="b48c213e-a885-49d1-8996-8af45da253eb">
       <ID>Holiday USA</ID>
       <Name>Holiday USA</Name>
       <Description>Allows you to select major US holidays to exclude in a report and/or to see YOY analysis of Sales on or near a paticular US Holiday.</Description>
       <EstimatedCount>22</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ede27eb5-cb50-4951-b94f-e563566a6008">
+        <KeyColumn dwd:design-time-name="22a9c08b-ffea-474b-a4b0-b52af276fb64">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="dcd3b214-a068-424e-8154-ed0dd4e34c73">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab7da853-3b78-4539-a7d6-7358ad016c52">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>HolidayUSA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="94b75b54-ce39-4f6d-94fe-fc73234d43db">
+      <NameColumn dwd:design-time-name="bc653f9a-c221-4c7a-bd71-5a6a5c4c6cfa">
         <DataType>WChar</DataType>
         <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="ce928627-1b6c-44b8-a98c-d3a9ea6aa27e">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cd0d2294-79e3-4fa6-addb-7a69859ae321">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>HolidayUSA</ColumnID>
         </Source>
@@ -611,40 +611,40 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="edfe1fc0-26e1-434b-834e-13c455b6b392">
+    <Attribute dwd:design-time-name="03cb0c42-c5b0-4015-9b7b-66684c399e35">
       <ID>First Day Of Month Key</ID>
       <Name>Month-Year</Name>
       <Description>Month of Year (Sample Format: January-2018)</Description>
       <Type>Months</Type>
       <EstimatedCount>289</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0435570e-f274-4d7a-a321-047b677268cb">
+        <KeyColumn dwd:design-time-name="3012770c-3696-4107-a8fa-3457140cdbff">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="691fbaa6-7d44-4226-a4bc-30ce6f2d90ed">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62a99926-5f9f-4984-9371-bb96cb08b96e">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>FirstDayOfMonthKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="6d1e8d54-bd24-4eaf-ae40-531222907bad">
+      <NameColumn dwd:design-time-name="7b915bf0-4108-47df-8dab-bf461c1a1c9c">
         <DataType>WChar</DataType>
         <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="6b54b74d-c1f2-4854-a9c5-aabb5fa9c922">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fe2977ce-ed08-473e-bef9-db07630c8372">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>MonthYear</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="a55e4a8e-c9cb-4fe7-802b-a70b6815515e">
+        <AttributeRelationship dwd:design-time-name="7eef34a7-226e-42fe-a012-192858b6253f">
           <AttributeID>First Day Of Quarter Key</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Quarter-Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="84f63850-a132-45a5-8c5d-31cbc0d10bf1">
+      <ValueColumn dwd:design-time-name="c0341706-bfe3-42dc-a958-2f4cb98a3495">
         <DataType>Integer</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f9b4a5ee-2e4a-47a6-8750-6e340a6ad73b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ce866363-d827-4dd5-a5df-35e6f21c8f45">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FirstDayOfMonthKey</ColumnID>
         </Source>
@@ -653,42 +653,42 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="99977f00-f183-40a1-b84b-119039758d59">
+    <Attribute dwd:design-time-name="09cdc3fd-d1e5-47df-8a86-8687b610dbeb">
       <ID>First Day Of Quarter Key</ID>
       <Name>Quarter-Year</Name>
       <Description>Quarter of Year (Sample Format: Q1-2018)</Description>
       <Type>Quarters</Type>
       <EstimatedCount>97</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b37e30f1-d573-46c7-8551-31663ba90dfe">
+        <KeyColumn dwd:design-time-name="5c81bf0e-096b-4162-969c-aba8ec55a670">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0591e9f7-db2e-4c44-8965-6a43e938da6d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="06785866-0dca-4cf7-885e-a6f83e324ad2">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>QuarterYearKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="6cbe081e-a515-4e4f-8bb8-dca8242f95ef">
+      <NameColumn dwd:design-time-name="5f65dceb-66a9-4c92-ad91-a42f2f4b4d11">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7023064c-5706-4b25-a798-a2d7fc9502ce">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="44b5efcc-f1ad-4ae4-99f5-01369f3d87ab">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>QuarterYear</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="56f4d989-6b22-42e2-a9e3-d7ab5c2bd86a">
+        <AttributeRelationship dwd:design-time-name="cc7f5e56-5d58-4a91-9ae6-2a438369ec22">
           <AttributeID>Year Name</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="1ba40d48-5934-4c69-b8bf-2b2b3ba182af">
+      <ValueColumn dwd:design-time-name="2984374b-5a03-42aa-b0ad-8ed2748b6865">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8557c3a3-0a60-4d49-9458-0b3376e75dca">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="221043c3-f2a1-4fca-9801-46c6555210fe">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>QuarterYearKey</ColumnID>
         </Source>
@@ -697,34 +697,34 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bfa2a6e7-65a1-49b3-8df1-13fe54002644">
+    <Attribute dwd:design-time-name="1f0a0d69-a316-4771-9e95-27757ee15bbd">
       <ID>Year Name</ID>
       <Name>Year</Name>
       <Description>Calendar Year Name (Sample Format: Cal Year 2018)</Description>
       <Type>Years</Type>
       <EstimatedCount>25</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="43d9d85b-3f87-43a1-80d1-5ca00e13e475">
+        <KeyColumn dwd:design-time-name="17be9005-69d6-46c3-94f4-823921e905a1">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba5dd78b-2fa4-4042-bb50-26cab23c3250">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="be0f03a9-d97c-4dce-98fa-c68d4d4ec309">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>YearNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="867c0c9a-dcab-4edd-a51a-173df36ec80f">
+      <NameColumn dwd:design-time-name="27f9b8d2-d530-4fd8-a6a7-e80381dc83e8">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f96df930-0191-48f6-813b-082fcf937212">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="88e82c31-d3d6-4a14-8803-724b7478f276">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>Year</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="3a872126-caa4-48fd-a88f-8fe0d7432a5f">
+      <ValueColumn dwd:design-time-name="ed08817d-2a74-4805-a103-6e148545ba5d">
         <DataType>Date</DataType>
         <DataSize>-1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="6831c86b-26bd-4115-87c5-3591013c3fbc">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3c3bbcb2-afaf-4ee7-a3b6-4498f8ead4ac">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FirstDateOfYear</ColumnID>
         </Source>
@@ -733,33 +733,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1d3c9daf-c1bb-4730-9042-b78c7c206c0b">
+    <Attribute dwd:design-time-name="f1e4586a-caa4-4d51-97a2-cd865e7bee13">
       <ID>Date Key 1</ID>
       <Name>Date</Name>
       <Description>Descriptive date name (ex. Mon, Jan 1st, 2018)</Description>
       <Type>Date</Type>
       <EstimatedCount>8767</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="bba12cca-9e53-4d9b-a9c8-2a13d5fa66bd">
+        <KeyColumn dwd:design-time-name="1a442122-1178-4018-9538-485e04671413">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8047634f-5b62-455f-88ff-11d5013615ff">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="06ffdd5c-1d67-436e-894f-cfddd6cc0428">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>DateKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="17a601ea-024a-4c29-b114-af0ceda76eb8">
+      <NameColumn dwd:design-time-name="e8cbc2b0-432d-4522-999b-29f79fc162c3">
         <DataType>WChar</DataType>
         <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="311f8675-b51a-4879-b4c1-c8f48b1a9cb6">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c643c318-47a5-4819-9391-83fb13573416">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FullDateDesc</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="4f0cda96-530e-4351-9fbe-6206885b6a89">
+      <ValueColumn dwd:design-time-name="7b681b8f-a787-4bfd-9765-f7424da17d0f">
         <DataType>Date</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7699d0f1-46f5-4d2e-b70a-ed1ea8ff056d">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9f1454cf-91d4-4255-9453-3af0f3081c44">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FullDate</ColumnID>
         </Source>
@@ -768,32 +768,32 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8405f4a6-e11b-4f9d-9611-185ebe816086">
+    <Attribute dwd:design-time-name="5a6b24b5-8371-475a-9835-2dc8858b8499">
       <ID>Year No</ID>
       <Name>Year Num</Name>
       <Description>Calendar Year Number (Sample Format: 2018)</Description>
       <Type>Years</Type>
       <EstimatedCount>25</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="165dfa0f-a09a-4991-93b2-e3fe28b88cb4">
+        <KeyColumn dwd:design-time-name="3df3f91a-672b-4fcb-ade7-aed775876b15">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9bbd3e8f-01fd-4616-a6c2-65302513040e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="71937e70-02da-4fea-a8ae-d7a25716d028">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>YearNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="36224c62-4014-4b45-9c27-740d4a0fadce">
+      <NameColumn dwd:design-time-name="0bc4a5a8-fcbc-4091-ba7f-f7be67b15428">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="2f98f727-b9be-454b-b255-ab6e99ef86dd">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d864d558-987d-4bdc-aa4e-6041072e8e92">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>YearNum</ColumnID>
         </Source>
       </NameColumn>
-      <ValueColumn dwd:design-time-name="6de8e18e-7b9a-48a8-8f4a-91509c10f282">
+      <ValueColumn dwd:design-time-name="6a797462-86d4-4d60-be02-1c13aad95364">
         <DataType>Date</DataType>
         <DataSize>-1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5785f0c0-e0a5-4c4e-bfa4-f15b74ba93d1">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="21fbcd7f-17e7-4204-9579-ec4bae7d1d41">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FirstDateOfYear</ColumnID>
         </Source>
@@ -802,24 +802,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2f04ca06-55ff-4033-93f1-fd46fc1fe852">
+    <Attribute dwd:design-time-name="85bba851-9d01-49d0-b947-647db7e2b88b">
       <ID>Month No</ID>
       <Name>Month Num</Name>
       <Description>Month Number (Sample Format: 1)</Description>
       <Type>MonthOfYear</Type>
       <EstimatedCount>13</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="98bd5915-05ac-469f-81dc-7a889844f6b8">
+        <KeyColumn dwd:design-time-name="a051681c-de32-456d-8c4c-d6a86edcea9c">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e478728-76ac-4764-a4d6-9b4d404a4007">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c375b90-a694-4df7-aea0-a211328232ea">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>MonthNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="260c573d-0fcb-4565-92eb-22b19205a675">
+      <NameColumn dwd:design-time-name="6252e8f9-272e-4aa2-96ab-68dfaf29c0d9">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="983d3de0-e0cb-4972-a767-3c3ee0dca14c">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f0eb1ed8-7fa1-4814-8510-55518e05d09a">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>MonthNum</ColumnID>
         </Source>
@@ -829,24 +829,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6e4bbc17-68b6-4ca5-a4a2-c63edf301c0e">
+    <Attribute dwd:design-time-name="eea89c4e-92a2-45b5-8409-5f9e85970686">
       <ID>Quarter No</ID>
       <Name>Quarter Num</Name>
       <Description>Quarter Number (Sample Format: 1)</Description>
       <Type>QuarterOfYear</Type>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="019f2d81-3951-4ba7-bfd6-a33e288c6d4d">
+        <KeyColumn dwd:design-time-name="eebd1e78-e38a-4ea0-bf56-66339472aa45">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba83d640-c3f6-4d1c-be8a-2de550e0bada">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="68746fc3-ff49-4fe7-bfeb-1bc2c54adce8">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>QuarterNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="a0295907-f6ef-42ca-8d68-b68cb4557ea7">
+      <NameColumn dwd:design-time-name="04b0b40a-cd6e-47f7-9aae-bd505d8931ba">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="412572de-2db1-4675-8be9-56ed176b6b0f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9cca1434-a179-4d59-be69-c3fe20d64f5f">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>QuarterNum</ColumnID>
         </Source>
@@ -855,23 +855,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="524324b6-25da-425a-bbce-faf3bfd67e78">
+    <Attribute dwd:design-time-name="ad1e99e9-daa3-48b2-b5cc-c7bdc3a60dfe">
       <ID>Is Last Day Of Month</ID>
       <Name>Is Last Day Of Month</Name>
       <Description>T/F Indicator for the last day of any given month</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e71aaae6-6ea3-4128-b312-186bd0d0a227">
+        <KeyColumn dwd:design-time-name="213b62d5-0a33-4272-8c9e-d729ccc2652d">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d89f529-bf79-478b-b571-a6acb896100f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e958defe-4dc5-438e-91f4-f48d14f4ebe6">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsLastDayOfMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="5812f3cf-6e27-43f6-ba96-ee8ffba692e0">
+      <NameColumn dwd:design-time-name="0b154425-c2f3-4b90-a379-3c287d68bc0c">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="0b45c33e-27ae-4669-b361-2201bb79b7ab">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="df2894ae-1aeb-4ea7-992e-94840bc526e9">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsLastDayOfMonth</ColumnID>
         </Source>
@@ -880,23 +880,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d3c2801c-03c9-4590-885f-b2b0be1267b0">
+    <Attribute dwd:design-time-name="540a9aee-6684-45fe-a33f-02cae853aac1">
       <ID>Is First Day Of Month</ID>
       <Name>Is First Day Of Month</Name>
       <Description>T/F Indicator for the 1st day of any given month</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="647cca51-6ae8-4c44-b4f4-d5ada969d7d3">
+        <KeyColumn dwd:design-time-name="63f23219-fe61-4ed1-8508-5028f9234be5">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="87b998f2-0994-4625-b175-865e1abbfff5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f25a948c-82f6-4163-a3f3-4c5824e787b4">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsFirstDayOfMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="62eaf053-3bc6-44c7-8d66-bd382da49aee">
+      <NameColumn dwd:design-time-name="d8890e88-c79f-486c-b91b-f7abf194582d">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="6cb2b14b-519e-4d70-83e5-ac37f8cfa350">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3d0fe43e-6710-4b35-a3d7-7eb718f97ff7">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsFirstDayOfMonth</ColumnID>
         </Source>
@@ -905,23 +905,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c42848aa-7760-4ff0-acc2-3b83dfa72dbd">
+    <Attribute dwd:design-time-name="763cf96c-f729-4b6c-af99-498e05b62f22">
       <ID>Day Counter</ID>
       <Name>Day Counter</Name>
       <Description>Number increments by 1 for each day</Description>
       <EstimatedCount>8767</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4875a291-9556-4307-9f00-56fec99a89ea">
+        <KeyColumn dwd:design-time-name="25dad556-ee87-438c-94ed-5c157c7e8b39">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f91abdea-d140-4b8e-a234-ee0d5c287366">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a91fbac4-4ff8-44e2-b915-5b0f68fc393a">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>DayCounter</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="f5fe88e0-aa2e-40c7-8730-8be5ee16022a">
+      <NameColumn dwd:design-time-name="9c946b1a-4f1f-430e-979f-7b9ef08f32ec">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8f44858b-8822-4602-821a-8462c88bed63">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="62c00948-16c8-4efc-a48b-83b2144186c6">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>DayCounter</ColumnID>
         </Source>
@@ -931,23 +931,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8c30ddbf-62b7-4ff9-b0b7-fe907af96e41">
+    <Attribute dwd:design-time-name="9ebf86b0-041a-46a4-a9e6-816b29e22c43">
       <ID>Month Counter</ID>
       <Name>Month Counter</Name>
       <Description>Number increments by 1 for each month</Description>
       <EstimatedCount>289</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d86ed879-5147-4278-a3bf-fbe8ee281c8a">
+        <KeyColumn dwd:design-time-name="1d9ac801-ce61-4c39-b538-6ac1eb877fe4">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a6b6179-1065-4905-8f1a-2953ed2a551d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af9fc58b-d189-472e-9b51-d6a40c0224a2">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>MonthCounter</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="3ba6d6d8-2762-4733-a135-3ac5c30993c5">
+      <NameColumn dwd:design-time-name="15ae7740-6fc3-49d8-ad58-78041bb2fbb6">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f7764121-ff25-4708-9678-780cc3c95114">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0f0a7a58-8c24-4d42-98c2-43979011d944">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>MonthCounter</ColumnID>
         </Source>
@@ -958,25 +958,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7d658655-def1-4e9f-b19a-e1b89055f5b2">
+    <Attribute dwd:design-time-name="a8bbb137-f12f-404d-ae49-c16fd75c5a5e">
       <ID>Month No 1</ID>
       <Name>Month Abbrv</Name>
       <Description>Abbreviated Month of Year (Sample Format: Jan)</Description>
       <Type>MonthOfYear</Type>
       <EstimatedCount>13</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8e62fb00-91e9-4506-aa0f-a23b5dc510c7">
+        <KeyColumn dwd:design-time-name="112c14a3-1f67-43b3-b258-a4b9ec47683b">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="df64ca49-9291-4542-979c-9419fb3d3691">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2747f9ac-51be-4ffb-b781-4bce716c1178">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>MonthNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="998cc048-ce90-4f3a-acc0-d8f6fa94b89c">
+      <NameColumn dwd:design-time-name="ee83c6e7-369a-4283-86ac-05d458c0d7e6">
         <DataType>WChar</DataType>
         <DataSize>3</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="881efcfc-a364-4161-8114-4b1ea954680a">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e60118d9-6b0a-4644-baa6-aeb88a771514">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>MonthAbbrv</ColumnID>
         </Source>
@@ -986,35 +986,35 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b1005362-f3e9-4279-941e-fcffaf3ea436">
+    <Attribute dwd:design-time-name="dc48e52f-7e73-4986-bddf-07a844e54b1e">
       <ID>Month No 1 1</ID>
       <Name>Month</Name>
       <Description>Month Name (Sample Format: January)</Description>
       <Type>MonthOfYear</Type>
       <EstimatedCount>13</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a66732e4-4d7a-40cf-8820-9153ce0c002f">
+        <KeyColumn dwd:design-time-name="f0c94954-a37e-4143-adf8-da3137590f4e">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2b8b513-6e2e-4e92-8db8-ac821ba3c025">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f54084d-3b80-43ab-8e47-db95d42daac3">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>MonthNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="523b4676-486b-4022-b9a1-65a4b2f64b40">
+      <NameColumn dwd:design-time-name="3cedbda8-6a19-4580-8560-1ac824234b04">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="ba22f119-2935-40a6-a7c8-4758e3c68e56">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="27909edf-ee58-4a3e-975f-5ed7c950ecba">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>Month</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="6d17426e-d6cc-4c73-8ec9-416b53e466a4">
+        <AttributeRelationship dwd:design-time-name="41b15225-7fa6-4a85-8034-4624dca3a894">
           <AttributeID>Month No 1</AttributeID>
           <Name>Month Abbrv</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6f2f7fc0-9801-4f67-9375-1384523d28aa">
+        <AttributeRelationship dwd:design-time-name="6d5d4d67-74a9-4366-ae94-5f6de809700b">
           <AttributeID>Month No</AttributeID>
           <Name>Month No</Name>
         </AttributeRelationship>
@@ -1024,24 +1024,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="581de3d5-26a4-4035-84f3-b46a010aae7e">
+    <Attribute dwd:design-time-name="e3511557-95f1-4b3f-93a8-dd232325c14d">
       <ID>Day Of Week No</ID>
       <Name>Day Of Week Num</Name>
       <Description>Day of Week Number, with week starting on Sunday.</Description>
       <Type>DayOfWeek</Type>
       <EstimatedCount>8</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="07f34d6b-62ab-4702-910d-eadc2571b8f2">
+        <KeyColumn dwd:design-time-name="770fe1e6-7da4-4cb8-8bbf-8123587903fd">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff984832-1dfa-4d9b-bfde-8c90aae684a7">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7424f804-353f-4bd7-a5c3-cffb04721da2">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>DayOfWeekNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="f2a06387-1ef0-4bc6-a673-7e1248c5f945">
+      <NameColumn dwd:design-time-name="3fdf040d-024f-46c5-a68b-5e8f38660699">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="15b4f19a-1be4-4fbe-a285-e17850eab01d">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cba70f41-aa00-4da0-91f4-8d9f15293d7c">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>DayOfWeekNum</ColumnID>
         </Source>
@@ -1051,25 +1051,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="05284a76-7138-4012-9b84-b6460b6ab27f">
+    <Attribute dwd:design-time-name="d77d9746-d76c-499c-bedc-899eea58b582">
       <ID>Day Of Week No 1</ID>
       <Name>Day Suffix</Name>
       <Description>Day of Month w/ Suffix (Sample Format: 1st)</Description>
       <Type>DayOfMonth</Type>
       <EstimatedCount>31</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="27e00bfa-9c43-41c9-a65a-7b51a3a2eef0">
+        <KeyColumn dwd:design-time-name="e9387779-dd15-45a0-94f1-558a79c9986c">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3814e5c4-23f9-49df-82b5-fccae33c2cea">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="da6a86bb-08fc-4b8c-a915-a4c14af15527">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>DayOfMonthNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="2f7936fe-318b-472a-895d-63566e0f5f7c">
+      <NameColumn dwd:design-time-name="5a7f102a-a2ee-44f3-b39a-081d464e3bc2">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="6c288109-e064-483b-bee3-4cb889db4bc0">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="678ba5f1-cf0f-48aa-bed5-f3c42195d47b">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>DaySuffix</ColumnID>
         </Source>
@@ -1079,31 +1079,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e5a3b12e-2ee5-46fe-9c76-b607f774ff4b">
+    <Attribute dwd:design-time-name="bef5e6cd-4e95-4fe0-976f-f50e7a6d1263">
       <ID>Day Of Week No 1 1</ID>
       <Name>Day Of Week Abbrv</Name>
       <Description>Abbreviated Day of Week, with the week starting on Sunday (Sample Format: Sun)</Description>
       <Type>DayOfWeek</Type>
       <EstimatedCount>8</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cc480e7a-8a24-4887-bf4c-027b7f5a6fed">
+        <KeyColumn dwd:design-time-name="121ec71f-eeeb-4c2c-8869-fac45972d2ee">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="37e0e0f1-c7d9-4ee7-aa9a-89a3c6bc91a1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="80cabfe5-c341-4eac-8879-1c128cea6668">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>DayOfWeekNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="02e9c90d-bf65-47e6-a21f-e38e19124714">
+      <NameColumn dwd:design-time-name="a50d21cf-9c28-4275-a9bb-fd00136f2cc3">
         <DataType>WChar</DataType>
         <DataSize>3</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="2862214d-09b5-47df-9132-b6e2f369d136">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="dc6c7502-8501-4a7d-befe-5659f8652795">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>DayOfWeekAbbrv</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="95055cbc-7670-4f5e-a882-e9f13fc2cec6">
+        <AttributeRelationship dwd:design-time-name="80a1e13d-78f2-4a98-9b7d-20daeb551e96">
           <AttributeID>Day Of Week No</AttributeID>
           <Name>Day Of Week No</Name>
         </AttributeRelationship>
@@ -1113,31 +1113,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="38f8b515-b7a2-476e-9583-af05df924d4e">
+    <Attribute dwd:design-time-name="3b0c954c-abcc-464e-8efe-b4e0a94aaa70">
       <ID>Quarter No 1</ID>
       <Name>Quarter</Name>
       <Description>Quarter Name (Sample Format: Q1)</Description>
       <Type>QuarterOfYear</Type>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4f1e7067-a292-4038-8d98-fccce111133b">
+        <KeyColumn dwd:design-time-name="36724015-dbbc-4629-9c7d-9ac5ad52a27a">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="aaedec17-7a3d-422d-9dfe-3c4f6e94d2e7">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2089e030-11c1-440e-bb5b-8918a0404af7">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>QuarterNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="c1f125f0-d0d7-4e3e-825c-604d29723af4">
+      <NameColumn dwd:design-time-name="c5f0ec6f-53d3-4a78-9599-2405932696e6">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="e4620e67-c51f-4784-bd5c-7de88f44c9eb">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e614ca08-204a-444c-8b7e-b0023439e0b3">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>Quarter</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="0790f8ee-6207-4974-af30-d97f76cdc823">
+        <AttributeRelationship dwd:design-time-name="58a2f45e-d25e-4db1-93ac-8181f7201ed7">
           <AttributeID>Quarter No</AttributeID>
           <Name>Quarter No</Name>
         </AttributeRelationship>
@@ -1147,31 +1147,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0c98060a-351e-42bc-8f25-6e0e833e776a">
+    <Attribute dwd:design-time-name="389af8b2-f7b6-4ef9-8714-f72b5135e058">
       <ID>Day Of Week No 1 2</ID>
       <Name>Day Of Week</Name>
       <Description>Day of Week, with week starting on Sunday (Sample Format: Day 1)</Description>
       <Type>DayOfWeek</Type>
       <EstimatedCount>8</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="665fd501-8589-46f8-a6fd-17992bed6be6">
+        <KeyColumn dwd:design-time-name="2ace710d-a24f-4466-b2be-f43587c77149">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="33e0e1e9-7822-4b2b-84a2-9e762e64aca1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a095c4a0-f6da-41fd-b884-d4a1e18aeb0e">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>DayOfWeekNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="601127ed-01cc-4dcb-866a-4e538dbe35ed">
+      <NameColumn dwd:design-time-name="3443b920-9796-44bf-ad65-a0713ca15df4">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="44924811-c12c-4c13-a0f8-a6a179778e62">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2b3dc4fd-09dc-4dec-901c-3cd00218488d">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>DayOfWeek</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="882c6163-cac8-463c-9c8b-da8d64f57df7">
+        <AttributeRelationship dwd:design-time-name="328b1921-fc16-4e19-a952-cb80a6b4771d">
           <AttributeID>Day Of Week No 1 1</AttributeID>
           <Name>Day Of Week Abbrv</Name>
         </AttributeRelationship>
@@ -1181,23 +1181,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="285114d6-7f9d-4dc6-97a9-8c6a108bf238">
+    <Attribute dwd:design-time-name="fe78d6c6-650d-46c5-9751-cacf21a291e9">
       <ID>Is First Day Of Week</ID>
       <Name>Is First Day Of Week</Name>
       <Description>T/F Indicator for the 1st day of any given week</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0f18d57e-2891-408c-a0db-594dad99156e">
+        <KeyColumn dwd:design-time-name="ba06ebe1-8e7f-47bf-b0cb-14b4a22dbf1f">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d197e96-4241-4cf8-b36c-c5519d387bde">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e63a8108-ee61-4cbf-a7dc-27984fa6e611">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsFirstDayOfWeek</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="5778e340-8232-4166-b2fe-6f15c26e16c6">
+      <NameColumn dwd:design-time-name="0566556a-c8ca-467b-ac9e-856de6becd17">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="cc203e2c-e001-47a5-88cb-a39b5ee89cde">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8774e437-43ed-47a8-a863-42b82b126e7b">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsFirstDayOfWeek</ColumnID>
         </Source>
@@ -1206,33 +1206,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="80f55c1b-7dfa-4a55-b741-551b25ab5cd2">
+    <Attribute dwd:design-time-name="d834ecae-73b8-404a-82f1-6f417f984402">
       <ID>First Day Of Week Key</ID>
       <Name>Week-Year</Name>
       <Description>Week of Year (Sample Format: Week 1)</Description>
       <Type>Weeks</Type>
       <EstimatedCount>1274</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5551e1ec-4473-4a89-bc78-2742f4f6ba1f">
+        <KeyColumn dwd:design-time-name="9f222610-1f47-4f45-9cab-b6b9ded9cfff">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="76ade80e-1f97-430d-be3e-4bc7552b9fbe">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e2c8710-670d-4f55-b7ea-5c0622a229a3">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>WeekYearKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="009a2aac-3e29-4f3e-b8ca-750323f95901">
+      <NameColumn dwd:design-time-name="ba208c3c-e4d8-4955-9b9a-02f683179cc3">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="4d88eccb-b525-470d-b0b8-7934ca1b20ca">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1485152a-d82f-41aa-9dd5-3b793024de6a">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>WeekYear</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="8218f0b0-5044-420d-a5cb-00f25f16eded">
+      <ValueColumn dwd:design-time-name="c6c79754-b6f4-47c7-ba4f-2843b3633a90">
         <DataType>Integer</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="16ecbc05-6a3f-4eb5-a232-28ff4623d2f1">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4aa67a68-5efa-4141-a657-bfa886e2957e">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>WeekYearKey</ColumnID>
         </Source>
@@ -1241,33 +1241,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2dddc062-a08a-4d04-b05a-173cb08de878">
+    <Attribute dwd:design-time-name="3127b8d6-f1d7-430e-84cd-9ce22595c0ab">
       <ID>Week Of Year No</ID>
       <Name>Week Of Year</Name>
       <Description>Week Name, with the weeks starting on Sunday (Sample Format: Week 1)</Description>
       <Type>WeekOfYear</Type>
       <EstimatedCount>55</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d11f6a22-cd72-494f-aaed-bf0a569540dc">
+        <KeyColumn dwd:design-time-name="283857b9-b4c5-4373-9a30-b67dcd69fa18">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8120b74-19cf-453c-bcab-95b08bd92f04">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a7473895-217d-4ff2-a50f-a867692dca6a">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>WeekOfYearNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="94741ce4-b376-41e3-bfb6-8cb60b8f8210">
+      <NameColumn dwd:design-time-name="cd970d9e-d49f-41c9-aaef-d07d7a40867c">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="adcec32f-9a67-4b77-a322-549076f3618d">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="595712bf-05b1-48cd-9ea6-a8b7bc36bb9d">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>WeekOfYear</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="27c53684-60b9-4c64-b08a-11625d22edce">
+      <ValueColumn dwd:design-time-name="6d9c3870-922b-4358-b3cc-3256e3016bf1">
         <DataType>Integer</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="bc7b82fb-d59a-4f39-a8aa-942d61726b9c">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3a051a06-1dac-4335-86ee-69d52b3a1f12">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>WeekOfYearNum</ColumnID>
         </Source>
@@ -1276,31 +1276,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2bfe24f1-9329-4eca-914a-0a628ada5959">
+    <Attribute dwd:design-time-name="c6587c5c-f2a3-4d7c-afd8-43353445c2f1">
       <ID>First Day Of Week Key 1</ID>
       <Name>Week Begin Dt</Name>
       <Description>The date of the Sunday within a defined week (ex. 2017-12-31)</Description>
       <EstimatedCount>1255</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e107fe8a-0f25-4e98-92c2-4806a725ce4c">
+        <KeyColumn dwd:design-time-name="9b546783-9129-4972-b6b6-d0196b2ca6cb">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8fd1c17-7958-4e67-8189-d58e6f466ddb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="249b12e4-d1bf-400d-aafc-5f4302b0cebc">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>FirstDayOfWeekKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="6ccc3296-6881-402c-8573-0c2254126778">
+      <NameColumn dwd:design-time-name="326a6821-ad4d-4c8f-a711-4a83263d5025">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7d573d95-1d58-4cde-b49a-459ecf2bea41">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3482469d-33ff-4be5-94c2-936a1b55b944">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FirstDateOfWeek</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="342b739e-f50c-40fe-b536-73dd7d33a8ac">
+      <ValueColumn dwd:design-time-name="04722e02-55a5-4391-9091-337e55800c8e">
         <DataType>Date</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="c65c8a3b-8613-4a44-a71a-6d851f1b9f53">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6d56863d-4c73-4e41-8148-40c8c3bf4d9b">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FirstDateOfWeek</ColumnID>
         </Source>
@@ -1310,41 +1310,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1d6d1869-ae3d-4fdc-9451-9da6b183814a">
+    <Attribute dwd:design-time-name="4ae8ec9d-5f04-4f2f-af8c-86f792f25603">
       <ID>Relative Year</ID>
       <Name>Relative Year</Name>
       <Description>Year (Sample Format: CY 2018) that displays "Current Year" for the Current Reporting Year and "Prev Year" for the Prior Reporting Year</Description>
       <Type>Years</Type>
       <EstimatedCount>25</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="02a54604-afc7-4202-a551-5d7626b6b7c3">
+        <KeyColumn dwd:design-time-name="83b929ed-2423-4cc2-a117-9731ec5ab1f7">
           <DataType>WChar</DataType>
           <DataSize>12</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e52dc1f4-7866-40ba-8360-c478688e1658">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ddb8db13-e841-4a7e-a81c-938520367ba6">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>RelativeYear</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="33b30622-5a9f-4d2e-8a9d-b700e0398117">
+      <NameColumn dwd:design-time-name="a4eb877c-7369-471c-a4b3-7bef296eba35">
         <DataType>WChar</DataType>
         <DataSize>12</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="ad8c1f1a-0ad0-4280-9269-cc6450043637">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d46c9bd3-67bf-4366-b408-fe7bea02c520">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RelativeYear</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="9a193436-032a-4c30-8aa2-75f06613f898">
+        <AttributeRelationship dwd:design-time-name="ed6961ab-325e-48c6-900f-a1de00fd41e2">
           <AttributeID>Year No</AttributeID>
           <Name>Year No</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>AttributeKey</OrderBy>
       <OrderByAttributeID>Year No</OrderByAttributeID>
-      <ValueColumn dwd:design-time-name="be02152a-6ed1-48ba-bcda-7eb586587ce9">
+      <ValueColumn dwd:design-time-name="03ad4e0b-9c1b-4d1d-af25-f426f42a35c4">
         <DataType>Integer</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f35d0bc9-3941-4fa2-8320-a20218a27382">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7e34b13f-be08-4c21-b5a6-74a3779c5b35">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>YearNum</ColumnID>
         </Source>
@@ -1353,46 +1353,46 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f4152235-e51b-41b7-84cd-22225b117b82">
+    <Attribute dwd:design-time-name="f20921ed-dbab-46d9-ae8b-60883021bd7d">
       <ID>Relative Month</ID>
       <Name>Relative Month</Name>
       <Description>Month of Year (Sample Format: January 2018) that displays "Prev Month"  for Prior Reporting Month and "Current Month" for Current Reporting Month.</Description>
       <Type>Months</Type>
       <EstimatedCount>289</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="dc978722-4c23-4275-a1c5-879c7b2055e7">
+        <KeyColumn dwd:design-time-name="f09e198e-61c9-496e-b7e7-6d2c164bbb62">
           <DataType>WChar</DataType>
           <DataSize>36</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9cb8b031-2e3c-426d-aa4f-b192eda44aa4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e66053f-2a27-4de5-ba1c-49c3f72f5e65">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>RelativeMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="deb6da0e-7aba-4d74-84df-475e187b35e5">
+      <NameColumn dwd:design-time-name="2ea7c505-34b9-446b-bc73-3e197e3fa161">
         <DataType>WChar</DataType>
         <DataSize>36</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f8303f44-f995-482a-900f-628085d70863">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d5464335-8dfd-4e58-828c-8934d2c0a2d6">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RelativeMonth</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="fd94d096-f078-4f02-9ada-47fab1498949">
+        <AttributeRelationship dwd:design-time-name="b4c06625-1f6e-4686-86ee-026cb5176e99">
           <AttributeID>First Day Of Month Key 1</AttributeID>
           <Name>First Day Of Month Key</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="475b7014-9039-49b4-b711-326c6092fe05">
+        <AttributeRelationship dwd:design-time-name="1ec6d341-c028-4305-ac58-327bf5f9e473">
           <AttributeID>Relative Year</AttributeID>
           <Name>Relative Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>AttributeKey</OrderBy>
       <OrderByAttributeID>First Day Of Month Key 1</OrderByAttributeID>
-      <ValueColumn dwd:design-time-name="2f3e7ea8-9dad-4671-9119-c9442511baa6">
+      <ValueColumn dwd:design-time-name="c3c64d07-2140-4363-a589-e45576a7b4c3">
         <DataType>WChar</DataType>
         <DataSize>36</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="89969f56-9e02-4f47-abc7-8ab14f330c5e">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c881d5ca-6976-47d6-a90f-b89d8aa311a1">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RelativeMonth</ColumnID>
         </Source>
@@ -1401,23 +1401,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="460c060c-bba3-47d8-8dc5-794204037988">
+    <Attribute dwd:design-time-name="70b894dc-e664-4334-bb74-f689f862fe60">
       <ID>First Day Of Month Key 1</ID>
       <Name>First Day Of Month Key</Name>
       <Description>Date Key in Integer format that represents the first date of the month (ex. 20180101)</Description>
       <EstimatedCount>289</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="dd03eb81-f029-4f01-8276-c8d153173ff7">
+        <KeyColumn dwd:design-time-name="9d70ee65-305d-4d84-afce-2a0595b7b2f3">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a7eebd0-92ab-4f39-b67e-979b5e7ddd36">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="706d53f8-36ec-446c-9f36-20a403e3759a">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>FirstDayOfMonthKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="7d3983c1-b24c-456d-a34a-bed05234a058">
+      <NameColumn dwd:design-time-name="67ad88ce-4a40-4189-9f57-c89ec440c1d1">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8db8a1cd-c542-4ae1-92ec-db77a43d960d">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b375da27-060e-45e1-89e2-20ca8f8ac6f9">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FirstDayOfMonthKey</ColumnID>
         </Source>
@@ -1426,40 +1426,40 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0bb0235d-fa85-40f1-b5ef-004736c0e657">
+    <Attribute dwd:design-time-name="57ca2b60-7286-4fae-af65-a12c8006435d">
       <ID>Relative Date</ID>
       <Name>Relative Dt</Name>
       <Description>Short Date (Sample Format: 2018-01-01) that displays "Today" for Current Reporting Date. </Description>
       <Type>Date</Type>
       <EstimatedCount>8767</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="82ec9143-da02-4d0d-af2e-c5549b09147a">
+        <KeyColumn dwd:design-time-name="1351bc86-6f07-40be-b66b-14ed8f8c5d8d">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3863f32-da16-4678-bd92-a4ee8e2dea5b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9bbf9692-0d49-4f14-bae8-b606e65f5fdf">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>ShortDate</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="2209bb7b-a522-4bbe-8627-d5174d075440">
+      <NameColumn dwd:design-time-name="b7a0cb96-23f4-4311-a62c-148a06f93a7a">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="371ae12a-5c7b-4d2a-b5f2-d5b38a1ae818">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="367873c4-ec70-4f8e-8c77-cffb728ac8dd">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RelativeDate</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="0f928de9-c54a-4a65-89b6-a04a0e352a6b">
+        <AttributeRelationship dwd:design-time-name="67e810c9-ddc1-4881-bdc4-ecd28644ca1d">
           <AttributeID>Relative Month</AttributeID>
           <Name>Relative Month</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="481bb61a-46a4-40f3-94e4-87e56215f8dd">
+      <ValueColumn dwd:design-time-name="ed0a9ffd-3f7e-4e26-b960-c52c26b2518c">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="060f2c68-72e2-4905-84e8-a5a1511d4657">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="80cdbbd3-3a31-4c0a-9604-11206b558979">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RelativeDate</ColumnID>
         </Source>
@@ -1468,31 +1468,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6c90d830-c2a3-4097-9123-bd70141ce854">
+    <Attribute dwd:design-time-name="4d63ca0f-c8f9-4102-a584-6eaffb83c8ef">
       <ID>Relative Ytd</ID>
       <Name>Relative YTD</Name>
       <Description>Year (Sample Format: CY 2018) bucketed into "Prior YTD" and "Prior YTG" for Prior Reporting Year and "YTD" and "YTG" for Current Reporting Year</Description>
       <EstimatedCount>27</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="94bb0f7e-7283-46cb-92b0-025c28ddab9d">
+        <KeyColumn dwd:design-time-name="5221d1d7-a1ad-4530-9998-7937818cc1bc">
           <DataType>WChar</DataType>
           <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d6b23fe-b3ce-4515-abf9-4b661bab5068">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c180d06d-b388-4833-a9cf-3825ed3d9eeb">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>RelativeYtd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="a48211d0-4c79-4144-ac2a-a85755cb65be">
+      <NameColumn dwd:design-time-name="bb22a9ef-9bc0-47b9-9ef1-4653f57993dc">
         <DataType>WChar</DataType>
         <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="cf844b69-8bcd-43d5-a71a-ebf0b52b3305">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4ad29ac2-5cb2-4073-8b96-d2ad7d9f4416">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RelativeYtd</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="48cecbee-2c2e-4eec-a43a-281eacc65e05">
+        <AttributeRelationship dwd:design-time-name="a5c6fb7e-5fe3-4ae9-85d6-22186ac8fd21">
           <AttributeID>Relative Ytd Sort</AttributeID>
           <Name>Relative YTD Sort</Name>
         </AttributeRelationship>
@@ -1503,22 +1503,22 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9dc10915-4be0-4df1-8bbc-4fa49ab4d0b5">
+    <Attribute dwd:design-time-name="fca7eebe-67df-461f-9a61-d338e7e5dc8e">
       <ID>Relative Ytd Sort</ID>
       <Name>Relative YTD Sort</Name>
       <EstimatedCount>25</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="45a0a869-4a33-4b5d-9f9d-897824df9e3b">
+        <KeyColumn dwd:design-time-name="63f2e2c4-4d9c-4b16-92fe-a85f4b8ed9a0">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="33fbc654-ba2a-473d-bdd5-0c046261f9d1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95a2fed8-88cb-4def-84b0-1080059ca658">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>RelativeYtdSort</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="89e508d2-f8cc-41ce-8732-9f049e14e849">
+      <NameColumn dwd:design-time-name="2d07dd28-eb84-4e27-8592-2c290ec3d42e">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="abdb3174-1275-45df-bfc6-67146ef0405f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ee554888-5216-45ad-8b04-61f3a37f8a48">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RelativeYtdSort</ColumnID>
         </Source>
@@ -1528,23 +1528,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="98e3e27c-e8d5-4862-83e6-6215bca0d9eb">
+    <Attribute dwd:design-time-name="8987710a-3af7-4e13-8983-9001fea15b4d">
       <ID>Week Of Year No 1</ID>
       <Name>Week Of Year Num</Name>
       <Description>Week Number relative to the Year, with the weeks starting on Sunday.</Description>
       <EstimatedCount>55</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fb0388a5-4ed2-45a9-ab81-36fe1440de51">
+        <KeyColumn dwd:design-time-name="4a7fa3c6-d1f5-4cb0-9320-d3c84c8138d7">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="778ffb85-60f2-4725-bfa5-6b5225fc910d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b035f89f-5db8-42e6-9f94-60a251e93e07">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>WeekOfYearNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ebd6a23d-5fd9-4b54-bf0c-9a55cf907c2c">
+      <NameColumn dwd:design-time-name="0dc9608f-44f3-41f9-b68e-9d58c98df04b">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="40aef964-2040-497a-a56c-9078ad7533b9">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4db629e5-21ec-444e-9f70-cf63c1485e5d">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>WeekOfYearNum</ColumnID>
         </Source>
@@ -1554,25 +1554,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ef20964b-8953-4a86-83ef-e48307d5ea60">
+    <Attribute dwd:design-time-name="fd3a1560-0f78-4171-ad07-718f076ad000">
       <ID>Is Current Rpt Ytd Through Prior Month</ID>
       <Name>Is Current Rpt YTD Through Prior Month</Name>
       <Description>T/F Indicator for YTD through the last full month before the Current Reporting Date.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="823f5c87-5ca6-4e66-b64a-bfe449a0b00d">
+        <KeyColumn dwd:design-time-name="e0a3142e-ec0f-44d8-a1d5-de2bb7e21973">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="94f8dd21-697e-4ebc-ae21-e72fb37689b7">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1984ee0-8401-4caa-9ce9-bbda0254bb0b">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsCurrentRptYtdThroughPriorMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="409f1c3a-57c2-493a-aff4-211e81bc3566">
+      <NameColumn dwd:design-time-name="2e915f15-9c68-4b10-a561-b44585b64c4c">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="01932899-b0d5-4dfe-9fc3-3ffc731c6296">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="74178f8d-0d82-439a-80b9-7badaec1ce1b">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsCurrentRptYtdThroughPriorMonth</ColumnID>
         </Source>
@@ -1581,25 +1581,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="22fa440a-c981-41bf-98fd-25191320d3cb">
+    <Attribute dwd:design-time-name="994191ba-f712-4d45-9f51-2c0996d0226c">
       <ID>Is Current Rpt Month Through End Of Cy</ID>
       <Name>Is Current Rpt Month Through End Of CY</Name>
       <Description>T/F Indicator for the Current Month that the Reporting date (yesterday's date) is located in through the end of the calendar year</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="067b4635-fc84-425c-82e4-fb3e54d32ad6">
+        <KeyColumn dwd:design-time-name="3af3a9da-0048-462e-b489-8feccf762414">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2cd3ea0a-733d-406b-b813-dea3b06cdcbb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e0daafda-12a5-4e9c-9975-39c9f64184ee">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsCurrentRptMonthThroughEndOfCy</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="73d4372f-b0f6-4c9e-a879-e9af0dbfe806">
+      <NameColumn dwd:design-time-name="4e01cfba-0c1f-479b-9789-9f26b3bcaab1">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b5083c87-ee2a-476b-9bb5-1a626c354928">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1b234d63-40a1-4fe6-88d8-a425d8c01347">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsCurrentRptMonthThroughEndOfCy</ColumnID>
         </Source>
@@ -1608,25 +1608,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b2fdd2b8-d2bc-4a0d-9517-f274f3251efa">
+    <Attribute dwd:design-time-name="c73242a7-7ecd-4c33-a354-f41a04604499">
       <ID>Is Current Rpt Ytg</ID>
       <Name>Is Current Rpt YTG</Name>
       <Description>T/F Indicator for Year to Go (YTG) from the day after the Current Reporting Date through the end of the Current Reporting Year.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d9a6baf6-8643-42a9-a1dd-03a3cdb3fed8">
+        <KeyColumn dwd:design-time-name="116193a8-cf94-4d74-bd2f-cc41be035fc0">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c387abdb-c17e-42cd-a04b-a44915d0ccb9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9bd8b0eb-435e-4314-ac7b-ff08f2f88466">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsCurrentRptYtg</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="7130116a-8eee-45f3-86db-53b17a5fb3fe">
+      <NameColumn dwd:design-time-name="f2fc7465-f157-4c70-b09c-15ffd1f30c6a">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="4fcff660-47b5-42f5-9753-7605bbcc96eb">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7822d7a1-23d8-439b-a1df-cd9dd3e6d8a5">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsCurrentRptYtg</ColumnID>
         </Source>
@@ -1635,25 +1635,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3c1d2085-d922-46e8-981d-bf978278cf42">
+    <Attribute dwd:design-time-name="0cef65ab-a627-424b-a3ac-bf6809647ccb">
       <ID>Is Current Rpt Ytd</ID>
       <Name>Is Current Rpt YTD</Name>
       <Description>T/F Indicator for YTD through the Current Reporting Date.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="52012197-f554-49af-8a7b-9c93a224b70e">
+        <KeyColumn dwd:design-time-name="06b138b0-9b38-40b6-8aa7-d2ba98fc6761">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d21d9844-44c9-4f0a-82c9-ad8f2e1b276d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2d82b4c8-2d21-4eb9-9555-77091479501c">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsCurrentRptYtd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="613cb985-c8e8-452d-9b14-ebc69c0660dc">
+      <NameColumn dwd:design-time-name="f865ddd1-5ceb-409b-9f95-e17c54fbea63">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5b9be7ee-25f8-4f09-a19e-e79fa15469ca">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="67fb72ec-fafc-4b65-8768-c888cd9b122e">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsCurrentRptYtd</ColumnID>
         </Source>
@@ -1662,25 +1662,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="47bd8d15-c90a-49ff-a3c1-8cd0e39598fe">
+    <Attribute dwd:design-time-name="d35436f2-d5f6-430d-bbf6-b210fced5f48">
       <ID>Is Prior Rpt Ytd</ID>
       <Name>Is Prior Rpt YTD</Name>
       <Description>T/F Indicator for YTD through the Current Reporting Date for Prior Year.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="00472ee0-5448-46bc-9870-1642b8df5ef7">
+        <KeyColumn dwd:design-time-name="8702fd9c-9fbd-4182-a9b9-7a21d4d81009">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="edea2f32-ae66-4bf4-ba89-0f450a5e79ef">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="faa8cba1-27c7-4ba4-9399-d93e1402c524">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsPriorRptYtd</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="425b2eee-b8b0-414e-b2d2-b91fad47e388">
+      <NameColumn dwd:design-time-name="feeea727-18dd-415c-a118-3fea05ffacb8">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="13cb2bd0-459f-410b-b6ea-5fcd1d05b4a3">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e17e954e-3280-47a8-8e9b-3a6f1d01228a">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsPriorRptYtd</ColumnID>
         </Source>
@@ -1689,25 +1689,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c89fc499-f1d6-4bfb-af6e-ae96d7386faa">
+    <Attribute dwd:design-time-name="a906f73f-2b35-4b00-985f-e48f0e1ac711">
       <ID>Is Prior Rpt Ytg</ID>
       <Name>Is Prior Rpt YTG</Name>
       <Description>T/F Indicator for Year to Go (YTG) from the day after the Current Reporting Date through the end of the year for Prior Year</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="29623301-37aa-4cdf-84a0-6a0fa30547d1">
+        <KeyColumn dwd:design-time-name="75f5326c-a516-43eb-b40f-65e8a93e86bf">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="cdc14107-2eac-4a91-995d-673dbd35668b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b70721ba-131e-40cb-8272-d53c18419716">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsPriorRptYtg</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="2b1bccaa-7281-4f9f-a058-31e10c616b5b">
+      <NameColumn dwd:design-time-name="a7b147f3-6908-4d30-80bf-cf68264825f8">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="2954179c-2b4a-4dd9-9fc9-db3a8c07b2a4">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0d9ebabc-c3dc-412e-87ad-0ee567d433ba">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsPriorRptYtg</ColumnID>
         </Source>
@@ -1716,25 +1716,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="305f0a62-ad10-4c2c-b010-3f4ae4fc5956">
+    <Attribute dwd:design-time-name="54c4d244-7aef-4d29-9b9e-944a4a9307eb">
       <ID>Is Prior Rpt Year</ID>
       <Name>Is Prior Rpt Year</Name>
       <Description>T/F Indicator for the year that preceeds the Current Reporting Year that the Current Reporting Dt (yesterday's date) is located in.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="99dafb61-51b2-4760-a742-fd94d8624eca">
+        <KeyColumn dwd:design-time-name="ab0a9e48-6999-4748-aab5-1e6b78d94084">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="11c271c5-606e-476a-8669-b8ab4019c130">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c9b02714-81a7-401d-aee9-0256ab4a6518">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsPriorRptYear</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="24b75f1b-9cf9-459a-b19e-f5efdd1f6750">
+      <NameColumn dwd:design-time-name="7ea2fa2f-04d4-48a3-8622-ff4b8c31860d">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="1f2debae-bcd1-4ab1-aff7-2e37addcbd9d">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5d80fc32-5c1b-4cdf-9862-ead6e510b765">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsPriorRptYear</ColumnID>
         </Source>
@@ -1743,25 +1743,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2efe9631-21d9-496b-8ea2-d05e4f0588c6">
+    <Attribute dwd:design-time-name="866bd432-56ac-46f2-8e0c-dab90ed892c4">
       <ID>Is Current Rpt Year</ID>
       <Name>Is Current Rpt Year</Name>
       <Description>T/F Indicator for the Current Year that the Reporting date (yesterday's date) is located in.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fd0d2c2e-d200-4d59-b535-627b3d6ecd7d">
+        <KeyColumn dwd:design-time-name="2ebee390-1405-4c08-94ce-f6bf7aa6cbbc">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="279db4c2-847d-4589-9e78-7b8c44a16147">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b07f1a08-96f5-441a-805c-a76aa40f4c71">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsCurrentRptYear</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="251a7908-d3e7-41fa-b687-1777548ee122">
+      <NameColumn dwd:design-time-name="e4e07aab-cbe0-4fa2-844b-9a403366ad55">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="221ba222-816e-4b89-a116-0b4a1ee90840">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4ac948e4-fb39-409b-9734-b9b679b68298">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsCurrentRptYear</ColumnID>
         </Source>
@@ -1770,25 +1770,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6a0394d5-d320-4b8d-8cec-aee73907ed14">
+    <Attribute dwd:design-time-name="74b484f5-f92b-4850-ba7c-a93a29a7c554">
       <ID>Is Next Rpt Month</ID>
       <Name>Is Next Rpt Month</Name>
       <Description>T/F Indicator for the month that follows the Current Reporting Month that the Current Reporting Dt (yesterday's date) is located in.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4cd013a1-d34e-4d20-ba89-0e13f54c56c0">
+        <KeyColumn dwd:design-time-name="109e9089-fd14-4f24-9139-55b588a1d34c">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="995be7e4-9cef-44b1-ae85-a0c9bdc6efec">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="14679eda-7346-4e47-b5fa-e34037f021a0">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsNextRptMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="99f7f120-457b-476d-b1ad-d478d3cc5261">
+      <NameColumn dwd:design-time-name="ec09202c-3e20-440f-80bb-05a5b778bfec">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="2d3df140-0e14-47d9-8555-7bb6a3405565">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0d1b8701-2dfb-445c-b632-7c55c8f6a686">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsNextRptMonth</ColumnID>
         </Source>
@@ -1797,25 +1797,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="08496501-42e4-4e9f-8fd4-16955d625a9b">
+    <Attribute dwd:design-time-name="94e24c99-4249-4ecc-a975-608933286e6b">
       <ID>Is Prior Rpt Month</ID>
       <Name>Is Prior Rpt Month</Name>
       <Description>T/F Indicator for the month that preceeds the Current Reporting Month that the Current Reporting Dt (yesterday's date) is located in.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b675dff7-ea18-4d0c-b450-f7e163c1958c">
+        <KeyColumn dwd:design-time-name="ec3af034-686c-4592-a140-ea2d32ba550d">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe0587e7-e009-42a2-b1ad-fdda3fa7ab35">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6eb1c3c9-36cf-4d34-a185-9cdb1c5eb6fe">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsPriorRptMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="d8637b45-2d20-46be-b390-3d5ecb09b5a0">
+      <NameColumn dwd:design-time-name="8aa0d92a-1c1f-4dc5-801c-02c487504aca">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8c7ee3ef-df8d-4430-96e6-4bdc3628c105">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ab821729-9848-4523-8218-e97b889d172d">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsPriorRptMonth</ColumnID>
         </Source>
@@ -1824,25 +1824,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4750892f-deb1-49ec-b771-a886725965ea">
+    <Attribute dwd:design-time-name="b7b5d828-7502-486a-b13f-71e23953f750">
       <ID>Is Current Rpt Month</ID>
       <Name>Is Current Rpt Month</Name>
       <Description>T/F Indicator for the Current Month that the Reporting date (yesterday's date) is located in.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8d5606d1-bf80-4987-a757-7892fd681259">
+        <KeyColumn dwd:design-time-name="42eee251-e207-4658-8143-988a64b567f2">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f034e897-7f81-402c-a63d-6df062b01b61">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc6fdc04-8e26-4e84-aaaa-df995a08295b">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsCurrentRptMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="651f896d-409f-4d5e-a19d-67304424b34b">
+      <NameColumn dwd:design-time-name="1e7c9900-ae15-4751-a789-3aa0afd41170">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="cdb1bd81-e5e2-4045-881f-b53835b3d1c2">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6f4728b4-7cc3-486c-92cd-6d2b1d6ccc5a">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsCurrentRptMonth</ColumnID>
         </Source>
@@ -1851,25 +1851,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="050a82ed-98ad-44f0-98d2-786d5c9661c9">
+    <Attribute dwd:design-time-name="589ed4e1-3ac8-4302-b88c-7825fffa35d5">
       <ID>Is Current Rpt Dt Yago</ID>
       <Name>Is Current Rpt Dt YAGO</Name>
       <Description>T/F Indicator on whether the date is yesterday's date (aka Reporting date) from a year ago.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cbb18cc5-f25e-4e11-af39-0c1c0d1f72d3">
+        <KeyColumn dwd:design-time-name="f097e83e-79b3-421b-bd8c-a9c4dc0ebeea">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b3b14855-ce0e-489f-96b6-bae08d121255">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6e862e21-d943-4594-8a52-6a294a6b8f6d">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsCurrentRptDtYago</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="6798a15e-f7f1-46c4-bc67-8ec0b26d6536">
+      <NameColumn dwd:design-time-name="2e7e26c1-b048-4603-97b7-0fb90f003a4e">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="369ed506-f678-4601-84b2-73a5e8810751">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="65492503-fbc4-4095-9a84-cff90682760f">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsCurrentRptDtYago</ColumnID>
         </Source>
@@ -1878,25 +1878,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="759cc063-a35d-4a25-8a8e-abaf2f4ac589">
+    <Attribute dwd:design-time-name="5cbd368c-07c6-470c-b147-5b5f6f27546b">
       <ID>Is Today Yago</ID>
       <Name>Is Today YAGO</Name>
       <Description>T/F Indicator for today's date one year ago</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="50711232-a834-4b36-86aa-5cc98809de0d">
+        <KeyColumn dwd:design-time-name="94cf3b9d-94ad-4feb-8125-6bb29df40a3e">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb6ff8e6-1dee-40f3-8c4e-bf0322f5ed89">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f32b5953-bd49-45af-a550-e1b792be738e">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsTodayYago</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="8effbbe1-e02e-4b57-81e3-c8be3a4a98d9">
+      <NameColumn dwd:design-time-name="004e745f-fec2-43ff-9dfe-de9eacff3f5e">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="df7eb154-23a3-4662-9f92-794b1f80c266">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3fc17854-9ab3-40d3-9e9d-5e7a2104cb50">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsTodayYago</ColumnID>
         </Source>
@@ -1905,25 +1905,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f9c84153-60f5-4561-ba2a-6b57b018706d">
+    <Attribute dwd:design-time-name="30f6dacb-7d3f-4706-8ccc-56a132258675">
       <ID>Is Current Rpt Dt</ID>
       <Name>Is Current Rpt Dt</Name>
       <Description>T/F Indicator on whether the date is yesterday's date (aka Reporting Date)</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="318fb864-606b-4751-9ebc-0d1e1a411a63">
+        <KeyColumn dwd:design-time-name="baa81620-5089-4041-b314-c62465634041">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e8911c7e-72f9-42d4-93e8-ae808d0ce030">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c6e744a-28b5-4806-8716-9ad267504a84">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsCurrentRptDt</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="34a6ea26-1a25-4bed-bf41-1aaa7cee5b1f">
+      <NameColumn dwd:design-time-name="8204c825-071e-4f55-ba4f-f4936ed090e7">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="87c5ba67-29e6-44b7-89d5-5a4365381bc7">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3bfb93c3-fb86-40ce-81ae-ee197b0b089f">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsCurrentRptDt</ColumnID>
         </Source>
@@ -1932,25 +1932,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="34f315f5-c638-47a7-9c28-917bfa669663">
+    <Attribute dwd:design-time-name="2ad45dc2-1731-47a7-bd5e-6168d259efd4">
       <ID>Is Today</ID>
       <Name>Is Today</Name>
       <Description>T/F Indicator for today's current date.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="66316628-3779-4d0b-9cc1-f33ffb96a1bc">
+        <KeyColumn dwd:design-time-name="9baf468b-f0d4-4295-880b-f3ddf7fc50c9">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e802d22d-5078-417e-8ed1-faf4246e6dde">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5beab0f5-3728-4ba3-a6e4-d12a56bad38e">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsToday</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="aed25d16-de59-41dd-a038-c187e770d4a0">
+      <NameColumn dwd:design-time-name="a339bbe9-8c57-4c9a-87c5-3f9b4f70b01a">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="602707ba-2560-446d-b49f-5713ef87893d">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="803b6b9d-2072-4ef5-8a2c-a12d9ff96575">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsToday</ColumnID>
         </Source>
@@ -1959,31 +1959,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="251963d1-0ef5-4ca3-bb20-6be7bfdd9d8d">
+    <Attribute dwd:design-time-name="d73519d0-6a9c-4cd5-85ab-8dc4472efc59">
       <ID>Relative Year Through Last Month</ID>
       <Name>Relative Year - LM</Name>
       <Description>Year (Sample Format: CY 2018) that displays "Current Year" for the Year represented in the last full calendar month and "Prev Year" for the year prior to that.</Description>
       <EstimatedCount>25</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6e083ac2-5ee1-4fcf-918c-423c20b9bcd2">
+        <KeyColumn dwd:design-time-name="77c8ffe0-5923-4597-811c-087836fa760c">
           <DataType>WChar</DataType>
           <DataSize>12</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a7dcaf52-f16f-44be-9eca-ca1a027c2afa">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bbae7c64-50dc-4848-97c7-3353eb119b94">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>RelativeYearAsOfLastMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="d1602f24-d838-46fa-8ed8-5bac905453b0">
+      <NameColumn dwd:design-time-name="0f1cf352-a902-406e-b605-325a1fb62a9d">
         <DataType>WChar</DataType>
         <DataSize>12</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="0d12105a-7b66-4f43-bcf0-99eb131596a0">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="70a20483-5d2f-4af6-8979-e1edee80395b">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RelativeYearAsOfLastMonth</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="a70a73dc-c011-495e-b095-d973f2e30747">
+        <AttributeRelationship dwd:design-time-name="3474f9f8-c9d1-4a8e-a8f6-e3a149efeecd">
           <AttributeID>RYTLM Sort</AttributeID>
           <Name>RYLM Sort</Name>
         </AttributeRelationship>
@@ -1994,35 +1994,35 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8ed8d62f-829d-4aa9-9a15-7e6089c30b84">
+    <Attribute dwd:design-time-name="e96bac63-aa99-480b-928b-f9c4a83a3729">
       <ID>Relative Month Through Last Month</ID>
       <Name>Relative Month - LM</Name>
       <Description>Month of Year (Sample Format: January 2018) that displays "Current Month" for the last full Month based on yesterday's date and "Prev Month" for the month before that.</Description>
       <EstimatedCount>289</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="37ec3667-78fe-43fa-9ac8-f7cf6dc28207">
+        <KeyColumn dwd:design-time-name="59c6a731-1d8b-4ec4-b2cb-5e8800e4a019">
           <DataType>WChar</DataType>
           <DataSize>36</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="85c1d1f5-055b-420c-ba1a-1218380e0118">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="61045217-df7e-43ed-9347-997aa20f89b3">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>RelativeMonthAsOfLastMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ea44e27e-9e22-4971-9ec0-200bae8c9ed8">
+      <NameColumn dwd:design-time-name="1a929fc8-a8d0-4e14-ac9f-7c4deed41cd8">
         <DataType>WChar</DataType>
         <DataSize>36</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="cedbdcca-c5d5-4a2a-8040-364d5f138147">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="be315ba2-b46f-4ea8-8486-b096be4d7383">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RelativeMonthAsOfLastMonth</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="6782e57e-1dd1-4dc6-b08c-3873f9e44ad3">
+        <AttributeRelationship dwd:design-time-name="f1c7ec89-63fb-43f5-9511-d1c432828cdd">
           <AttributeID>RMTLYM Sort</AttributeID>
           <Name>RMLM Sort</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="63d7c970-6237-49ed-8b2d-036acc5a0b0e">
+        <AttributeRelationship dwd:design-time-name="f7d74b7e-f2a5-4c77-8948-7cfe96c0b322">
           <AttributeID>Relative Year Through Last Month</AttributeID>
           <Name>Relative Year - LM</Name>
         </AttributeRelationship>
@@ -2033,22 +2033,22 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="37a961f9-7d86-4aa6-82d9-9c7d51c5aeb2">
+    <Attribute dwd:design-time-name="2913f76c-cd97-47ee-93f4-d4ed73517f8f">
       <ID>RYTLM Sort</ID>
       <Name>RYLM Sort</Name>
       <EstimatedCount>25</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="63df03c8-8d64-4343-a822-ad4d21abea0d">
+        <KeyColumn dwd:design-time-name="a588ae4b-ac6c-4255-bdb9-ebc61bca1a17">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e7c63c4-f7b2-46e0-8390-32b16158f93c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f2ed70c4-2d9f-466d-8506-a496973ffd02">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>RYLMSort</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="1dfd1b74-d3b6-4167-9b24-82b723f431bf">
+      <NameColumn dwd:design-time-name="b6984119-d895-4a9e-ac93-0e11013f2674">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="2bf4ce51-c0c0-426a-a74f-8f5fd175ca46">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="02606082-62c7-45cf-9003-e0a27c348a5f">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RYLMSort</ColumnID>
         </Source>
@@ -2057,22 +2057,22 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ffa90183-8fbe-4c05-ad00-6e02158f3669">
+    <Attribute dwd:design-time-name="bd6cec5a-2ec9-4219-8f0d-2bc1012f4a20">
       <ID>RMTLYM Sort</ID>
       <Name>RMLM Sort</Name>
       <EstimatedCount>289</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9ff0b445-7295-48d0-b9ec-4895ac68af14">
+        <KeyColumn dwd:design-time-name="62556576-0a00-4cca-9a1b-016d006ca039">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="68aa793c-9a0d-4606-ad39-36b543b87be8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b4ba630-a44b-4d56-83ea-9ff4159e3760">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>RMLMSort</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="02f00e89-3a0c-4cef-b483-e707d3dcc845">
+      <NameColumn dwd:design-time-name="3ed39298-bc3e-4ab5-917c-718e82e58065">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="68a471ac-55ef-461e-9dca-e03f92436f92">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cac42824-89ac-49f3-9c2b-0d55a50807eb">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RMLMSort</ColumnID>
         </Source>
@@ -2081,31 +2081,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="de2987f4-7bb5-4e05-b999-a4b438129055">
+    <Attribute dwd:design-time-name="1db0c566-c54a-450c-b071-fb052e775f33">
       <ID>Day Of Month No</ID>
       <Name>Day Of Month</Name>
       <Description>Day of Month (Sample Format: Day 1)</Description>
       <Type>DayOfMonth</Type>
       <EstimatedCount>31</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="edd05826-1d52-4dbd-becb-9cd9d4966e0a">
+        <KeyColumn dwd:design-time-name="b6fa69cd-1405-41e7-82c8-4d5729ddd14e">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1acd5e04-b181-40ae-9588-23cc9360091c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8e1de29-06ee-4bc6-806d-398d5b4f8dd9">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>DayOfMonthNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="f1dcc5b9-58e9-406f-93b3-8b72bcd91a7f">
+      <NameColumn dwd:design-time-name="90fbcf2f-ddfd-4c1a-987c-1672de496211">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="0dd490d5-a0ee-4ae1-8e93-dc2971676a65">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6880492e-92f6-434c-8b5a-7b2825b8b615">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>DayOfMonth</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="16ae58fa-8c15-4e7a-a247-4664a27cee64">
+        <AttributeRelationship dwd:design-time-name="7a8ebc45-cf75-4a28-8aa8-6e11ffa65fc6">
           <AttributeID>Day Of Month No 1</AttributeID>
           <Name>Day Of Month No</Name>
         </AttributeRelationship>
@@ -2115,24 +2115,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="94642907-0e04-499c-aad8-95abef91557f">
+    <Attribute dwd:design-time-name="25108cdf-94ca-4141-993a-f9fb0ac0a1f6">
       <ID>Day Of Month No 1</ID>
       <Name>Day Of Month Num</Name>
       <Description>Day of Month Number</Description>
       <Type>DayOfMonth</Type>
       <EstimatedCount>31</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fb32a9fe-2b8f-434f-9f9f-5178f2afa3c9">
+        <KeyColumn dwd:design-time-name="0a56686e-8d38-411d-b8cd-21872721957c">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e2b9f29-a710-4e3a-b26a-89e6b1e2e956">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5cbb885d-f914-4973-91ae-b245af520393">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>DayOfMonthNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="62d58a93-ae4b-4849-9e5c-42cd7acd36e7">
+      <NameColumn dwd:design-time-name="ffec1c72-5923-4645-be2f-3e0f9818d115">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f480a8b5-f149-4944-aa03-e8ba19b9f059">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f03b694a-3196-430b-9aa0-903891b795de">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>DayOfMonthNum</ColumnID>
         </Source>
@@ -2142,39 +2142,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="cce1d0a3-ecdd-4d76-a836-5639eb272ad4">
+    <Attribute dwd:design-time-name="6fb243be-d3e5-420d-a4b1-9bfccabd0a97">
       <ID>Day Of Year No</ID>
       <Name>Day Of Year</Name>
       <Description>Day of Year (Sample Format: Day 1)</Description>
       <Type>DayOfYear</Type>
       <EstimatedCount>367</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0946a693-6bca-40de-87ad-148918756d35">
+        <KeyColumn dwd:design-time-name="638a637a-b86d-4dd2-ad72-da48b9d15181">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="87bee008-fbc1-48b6-aad2-ab9b128e8bc3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="292d18c4-428a-4a79-8b3e-7173f7f77563">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>DayOfYearNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="b90b1330-db85-47cc-9e8c-af1c398fe1cf">
+      <NameColumn dwd:design-time-name="a40d4764-6c2a-4837-bf00-75e7b1ab22ad">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="746e9f78-789b-430f-944a-0e163b46dd3b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9d0aeeb0-73d5-4799-afaa-9f6f67e8b634">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>DayOfYear</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="d3a2d3b5-d25a-4410-86ca-7c258e85d0f0">
+        <AttributeRelationship dwd:design-time-name="f2ac0d57-b833-4a9c-bef3-aa5097124233">
           <AttributeID>Day Of Year No 1</AttributeID>
           <Name>Day Of Year No</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="b27644e2-646f-460f-a89a-254a59f1718b">
+      <ValueColumn dwd:design-time-name="956aa2f3-0d9d-4ae3-9a34-ccc874153525">
         <DataType>Integer</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8b327357-c5ad-4279-b67f-e2e4ae05f4f4">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c54596af-cfff-4181-8662-0ebe3e1bd514">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>DayOfYearNum</ColumnID>
         </Source>
@@ -2183,24 +2183,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ae400f3f-93ef-4db0-80ee-a8f84e056ae5">
+    <Attribute dwd:design-time-name="af6b2d21-2561-42dc-b7e7-740605e8517f">
       <ID>Day Of Year No 1</ID>
       <Name>Day Of Year Num</Name>
       <Description>Day of Year Number</Description>
       <Type>DayOfYear</Type>
       <EstimatedCount>367</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b820211e-224d-4659-bf5b-7dd02c8f989a">
+        <KeyColumn dwd:design-time-name="435b7933-085f-4be9-b6f5-884b3ff671e6">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7186805d-8983-4049-8f42-7163dae0a4ac">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c51f39f-699e-4378-8cc0-66c9daca10ab">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>DayOfYearNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="5a438157-7c5b-4859-8dc6-23280d486403">
+      <NameColumn dwd:design-time-name="6dc4973b-9d1b-49c8-80ab-8c3d36279ccf">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="3214737a-fa28-492d-b402-11a44e06c527">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="46bc14d3-e84b-4ad5-bff8-46c4242657ef">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>DayOfYearNum</ColumnID>
         </Source>
@@ -2210,25 +2210,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b5ca93de-1f1f-49b2-a702-70da9402d1a2">
+    <Attribute dwd:design-time-name="646089e7-1d95-4d59-9830-5bd0e1188fc1">
       <ID>Half Year Key</ID>
       <Name>Half Year-Year</Name>
       <Description>Half Year or Year Name (ex. Half 1-2018)</Description>
       <Type>HalfYears</Type>
       <EstimatedCount>49</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="af91dea7-bcc2-4ba4-aa12-9950b8622677">
+        <KeyColumn dwd:design-time-name="4ed9829c-ef52-4ab9-995a-ca783a986ca4">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b3bcf6c3-d38a-466c-aaa1-39eb759f8fce">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b5cfe94-8102-4ae1-a415-f7e024ae2940">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>HalfYearKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="b7da8651-d2b1-42d6-8bd7-61cc19c73e71">
+      <NameColumn dwd:design-time-name="6543edea-8fc5-492e-b235-66c1daf1134e">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="9d3378a0-444c-4c41-bf6e-7bb362bf9c57">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="64d13ac1-5308-42ff-8d4b-43ac9dd73753">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>HalfYear</ColumnID>
         </Source>
@@ -2238,25 +2238,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="69396735-b67c-40b4-a31e-953b6a994e21">
+    <Attribute dwd:design-time-name="7b5bbdbe-729d-4571-8e86-9eaa7bfa3af9">
       <ID>Half Yearof Year Key</ID>
       <Name>Half Year of Year</Name>
       <Description>Half Year of Year (Sample Format: Half 1)</Description>
       <Type>HalfYearOfYear</Type>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="188633de-ca2a-44a5-8c46-1e39e53b658b">
+        <KeyColumn dwd:design-time-name="431150a6-281c-4ac0-9ddb-522b106b8297">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="96abd1d6-df04-4100-8634-fa50a8b209dd">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af2b4e82-c577-4129-9c45-a545257f0e2c">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>HalfYearofYearKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="0dca84a7-8d26-4eb9-bf6e-a5c899ebf3ba">
+      <NameColumn dwd:design-time-name="322998ed-c41f-4a4b-80bc-a5ba525c3a61">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="bf75c1e2-d394-4057-8662-d16400456ccb">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5786eb0d-4dd9-44dc-a6bd-84c1e37c2053">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>HalfYearofYear</ColumnID>
         </Source>
@@ -2265,31 +2265,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2317887d-85cf-46ba-8acf-3d9add3beb1e">
+    <Attribute dwd:design-time-name="e49f8119-51f6-4342-8323-21f1850675fe">
       <ID>Relative Ytd Through Last Month</ID>
       <Name>Relative YTD - LM</Name>
       <Description>Similar to "Relative YTD", except YTD goes to the last full month (based on Current Reporting Date)</Description>
       <EstimatedCount>27</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5ae8ffee-c062-43b1-bb2c-438c41ce9c8f">
+        <KeyColumn dwd:design-time-name="77137ae2-2368-4821-a5c4-59c4338d9c4d">
           <DataType>WChar</DataType>
           <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="81c29790-731c-4dd9-994c-deb859449437">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="88c5c037-8f41-48f8-84fe-c43c480c88d6">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>RelativeYtdAsOfLastMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="9df699cc-898f-4cd8-b15f-fff1e68f4232">
+      <NameColumn dwd:design-time-name="775484b0-3eac-4318-9d1f-d8875906ddea">
         <DataType>WChar</DataType>
         <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="fa186f7a-fd2f-4fc1-b1ef-24f5c82d2fd6">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="22cfc6ea-26aa-4357-8490-8fba1f420f98">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RelativeYtdAsOfLastMonth</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="9e766f29-20d4-491d-a9a8-1f31acc2596e">
+        <AttributeRelationship dwd:design-time-name="6c2134eb-77c2-4bc0-bb9e-b428acf1772a">
           <AttributeID>Relative Ytd Sort 1</AttributeID>
           <Name>Relative YTD - LM Sort</Name>
         </AttributeRelationship>
@@ -2300,22 +2300,22 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d0c33797-a1a0-4a9d-9e53-3d529986d730">
+    <Attribute dwd:design-time-name="f0e51e5e-4f1b-4dde-8e64-dbfbd25fb706">
       <ID>Relative Ytd Sort 1</ID>
       <Name>Relative YTD - LM Sort</Name>
       <EstimatedCount>25</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="72daebff-c21b-4326-8ae4-1f332b45768e">
+        <KeyColumn dwd:design-time-name="58f48510-43ae-4999-8a63-b0fbf8a7b96c">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d243c1cf-33f9-4b46-a762-584467d5e9c7">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c112897-0185-45e9-b0af-cf87868b5891">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>RelativeYtdSort</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="b6410741-e635-492c-ae13-eaa4b91320d5">
+      <NameColumn dwd:design-time-name="bb2439cf-1858-46a8-b4a8-b7216c62ecff">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="414a1f18-4d5d-40d8-b508-fc49e4358d27">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a1969b8d-ea4f-4bba-9e2a-dd89248da34e">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>RelativeYtdSort</ColumnID>
         </Source>
@@ -2324,25 +2324,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2d28f533-7d17-435d-95f5-9720d00b9625">
+    <Attribute dwd:design-time-name="b43040dc-3b09-4a16-90a8-a91f7b92a4ed">
       <ID>Is Prior To Current Date Yago Or Unknown</ID>
       <Name>Is Prior To Current Date YAGO Or Unknown</Name>
       <Description>T/F Indicator that will hold a True value for any dates prior to the Current Reporting date in the Prior Year.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3a05ae75-5b21-4045-910f-451fb06fc8c1">
+        <KeyColumn dwd:design-time-name="0ef913f0-4868-48fb-917e-8f2b65eae3db">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="acc8cc3f-96e1-490e-b274-015b48f50e4d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="603dcede-ca7f-450b-9910-4af37e8bacf3">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsPriorToCurrentDateYagoOrUnknown</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="7de04312-3cb0-45b4-8d37-21c0596a9712">
+      <NameColumn dwd:design-time-name="2ccd8854-4ec4-4e78-9f3a-9d993cbd0db0">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="0cce2488-5845-4742-b4e5-43b2d3812a70">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0526a8dd-6e95-4314-aa54-f8753405d4f4">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsPriorToCurrentDateYagoOrUnknown</ColumnID>
         </Source>
@@ -2351,25 +2351,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6999195e-b8fa-42ff-860b-28b9430c9585">
+    <Attribute dwd:design-time-name="f0977b4d-138d-4921-b37a-8c9965138594">
       <ID>Is Current Rpt Month Yago</ID>
       <Name>Is Current Rpt Month YAGO</Name>
       <Description>T/F Indicator for the Current Month that the Reporting date (yesterday's date) is located in for Prior Year.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e1a54025-1b83-4ada-bf45-9c3176123636">
+        <KeyColumn dwd:design-time-name="d5ed0115-508e-4c55-9f6a-80d66b8a610a">
           <DataType>Boolean</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fdbc9b6a-10e1-4572-ae49-86a74b773d67">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bfc83dd6-de5a-4b6d-917d-8f6e6ec32b53">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsCurrentRptMonthYago</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="95eb19da-1a29-44cc-abd4-7748c7bda59e">
+      <NameColumn dwd:design-time-name="dc146571-838d-457a-aa4f-cb0270c44ccb">
         <DataType>WChar</DataType>
         <DataSize>1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="e7a924d1-3ff3-4cb0-84b2-dac470ffb12b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7ad24979-6262-4de9-8d4e-3fa54b3c64fb">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsCurrentRptMonthYago</ColumnID>
         </Source>
@@ -2378,33 +2378,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="482efe7d-aa0a-41c0-a204-ef9573fc6ccc">
+    <Attribute dwd:design-time-name="630a25fd-2351-44c0-9323-824da26325ee">
       <ID>Fiscal Year No</ID>
       <Name>Fiscal Year</Name>
       <Description>Name of the Fiscal Year (ex. FY 2017)</Description>
       <Type>Years</Type>
       <EstimatedCount>26</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6d328297-6e1f-4b5f-9800-c95bf7c71c8d">
+        <KeyColumn dwd:design-time-name="77172f46-effc-4ce6-aad0-b8d92f1e2b25">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d6c1905-9bde-49d8-92ad-42f3c65b8e1b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="23f680fe-02d9-4591-9363-bbab5acf1b3e">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>FiscalYearNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="7b9efb28-aef4-4e25-943e-7b8d631654d8">
+      <NameColumn dwd:design-time-name="ac7f63a5-2344-49fb-95c1-0fcd9e397c09">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7ec6acb0-3e1f-4248-973c-394e6a185f11">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a68ea625-e6ca-42b2-b97c-df503f49de14">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FiscalYear</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="9e251e56-0f9c-43de-bec8-847f2b6a3c5d">
+      <ValueColumn dwd:design-time-name="f78963b4-f243-408c-9f7c-86a535818306">
         <DataType>Integer</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="81503ddd-8b51-4c3f-b5cc-81f446430483">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b06f5f39-b7a6-444b-9686-ce0139cb0da6">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FiscalYearNum</ColumnID>
         </Source>
@@ -2413,34 +2413,34 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8ccfdc34-3cb5-4431-869c-60ec5d81761d">
+    <Attribute dwd:design-time-name="391147fd-0c6a-4755-8b24-d889fd1ce721">
       <ID>Fiscal Period No</ID>
       <Name>Fiscal Period</Name>
       <Description>Name of the Fiscal Period (ex. Period 2 - August)</Description>
       <Type>FiscalMonthOfYear</Type>
       <EstimatedCount>13</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="33084ac9-dc12-46b4-905f-6aa36037d7ee">
+        <KeyColumn dwd:design-time-name="e0631c5d-07b9-4c61-8c7c-b8cf8b8de7bc">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="707ee1d6-41a5-42b7-9c48-08c1a7f2f944">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fbc109c0-6b74-4d54-a8bc-3badc6d90074">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>MonthNum</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="59835c2c-3f3e-4435-bad4-835f84675e49">
+      <NameColumn dwd:design-time-name="80816b4e-cf99-4052-9b4a-32922efc723a">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="6b4825d7-2a6f-484b-acee-afc2a9563c42">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ed9c946b-7bf1-43de-8900-71edc5e29734">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FiscalPeriod</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="11eb8535-aa4b-40ad-8e63-4c150b364d36">
+      <ValueColumn dwd:design-time-name="fe7cddc7-0357-43c7-b320-1d89630dc3a2">
         <DataType>WChar</DataType>
         <DataSize>-1</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="23851bc5-2c1c-4660-b12f-a25abf28dcb0">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7e3008d4-2d66-4961-a864-6e5e236c7569">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>MonthNum</ColumnID>
         </Source>
@@ -2449,42 +2449,42 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="26a850f3-1c60-4caf-8582-9b59c70632c9">
+    <Attribute dwd:design-time-name="7b511c23-4e3a-4f47-90ed-1a48a4cd322c">
       <ID>Fiscal Quarter No</ID>
       <Name>Fiscal Quarter-Year</Name>
       <Description>Fiscal Quarter and its associated Fiscal Year (ex. Q1-FY2020)</Description>
       <Type>Quarters</Type>
       <EstimatedCount>97</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8a89f259-7a6d-4289-a0fd-bbb2b7ad868e">
+        <KeyColumn dwd:design-time-name="cfb65902-ca48-4227-adf8-bf454886b61b">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="633b7146-aeb7-4504-a1cb-0fcca27e0b3d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="130634e7-2ca5-4bfc-8d54-c4f1cb0d6c34">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>FiscalQuarterYearKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="1373dd40-a4dd-46cc-8500-0e33fad51f7e">
+      <NameColumn dwd:design-time-name="a066812a-c364-4a05-bc5a-b79d9034a684">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="aae440b6-fd2f-4f05-bdd9-0214531007fc">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3a9f726f-6574-4156-a831-5e458b983728">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FiscalQuarterYear</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="dae9bbbe-9e0d-4377-9700-68509e915f4c">
+        <AttributeRelationship dwd:design-time-name="372733cf-cdd6-454a-9119-453f7facb77a">
           <AttributeID>Fiscal Year No</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Fiscal Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="81ffd272-570f-44a9-afdb-2072380b3917">
+      <ValueColumn dwd:design-time-name="e1107323-68ed-4b7b-9c29-4dcf4ccf0611">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="94511adf-470f-44de-b95f-576579c194f9">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8c21c75c-1347-479a-b09f-bbdd5a7151bb">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FiscalQuarterYearKey</ColumnID>
         </Source>
@@ -2493,42 +2493,42 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d6823541-5d12-4260-9a14-fba6ceccd409">
+    <Attribute dwd:design-time-name="e7c9adfb-2355-4061-9794-5178a99013cc">
       <ID>Fiscal Period Year</ID>
       <Name>Fiscal Period-Year</Name>
       <Description>Name of Fiscal Period and its associated Fiscal Year (ex. P2 - Aug FY2020)</Description>
       <Type>FiscalMonths</Type>
       <EstimatedCount>289</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="66822d9f-4f16-462a-9903-09a8d284a7a9">
+        <KeyColumn dwd:design-time-name="a6620e7f-9f26-40d3-9a40-f339206d7aed">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bea7d7ec-044d-4133-916d-3e14302a9d92">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b589a1b-6cef-4692-af9d-2fa1a5b6d7a0">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>FiscalPeriodYearKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="d26ca476-20aa-4571-a38e-9813b520543f">
+      <NameColumn dwd:design-time-name="7dfa03c5-28d9-4752-8cb4-37e09fc50eb5">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="a73e9df9-1233-4037-8af3-30eee477ccc5">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c45d690b-87ea-4e56-a9ef-1389e3f0e5b8">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FiscalPeriodYear</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="e879183d-7adb-426b-937a-b364dc937014">
+        <AttributeRelationship dwd:design-time-name="eb277590-20a5-4699-bd67-9c04a9a53670">
           <AttributeID>Fiscal Quarter No</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Fiscal Quarter-Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="0a1aca33-3a1e-48dc-8985-7757d4cb6dee">
+      <ValueColumn dwd:design-time-name="16063b55-d7f0-4c92-ba0b-ae9db44dea75">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="05ee5065-b55a-4f46-8dd3-dc7cb7bd24ce">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="22545057-cc82-4b81-a451-ce09f69d86aa">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>FiscalPeriodYearKey</ColumnID>
         </Source>
@@ -2537,23 +2537,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="768c59e1-c74d-48e5-a5dd-f5c8bb91fed1">
+    <Attribute dwd:design-time-name="1cc859c1-9caf-4e8c-8a01-f5c1a9dc7991">
       <ID>Is Last Day Of Prior Month</ID>
       <Name>Is Last Day Of Prior Month</Name>
       <Description>T/F Indicator showingTrue for the last day of the prior Reporting month.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cea359b5-99ad-4670-a0a3-007c35c48dee">
+        <KeyColumn dwd:design-time-name="d60664ea-0352-4bcc-a2fc-ea825d5224ec">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb1480a4-c78e-447b-8f6b-9b7dce110285">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fca1a90f-7830-4c93-82d2-f467d78d5860">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsLastDayOfPriorMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="34b3c962-86d8-4b4e-a1e6-f030b21e080d">
+      <NameColumn dwd:design-time-name="549c2de1-a846-49ed-87ef-28b80e7eb210">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="09309770-7a0f-41fa-9231-ab297b87f9b3">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1cfe346b-89f4-4923-b7dd-f8f8698cc1ac">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsLastDayOfPriorMonth</ColumnID>
         </Source>
@@ -2562,23 +2562,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2184fd83-c572-4b73-ac12-ea4d3da43786">
+    <Attribute dwd:design-time-name="a0e02437-235c-4615-a5a5-1aee1fa6fc0d">
       <ID>Is Last5 Days Of Month</ID>
       <Name>Is Last 5 Days Of Month</Name>
       <Description>T/F Indicator showingTrue for the last 5 days in the selected month/fiscal period.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6b99a416-5413-40ba-a84f-e699d37a9291">
+        <KeyColumn dwd:design-time-name="0da330a6-9f4e-41c3-9e9c-3ab6ca565ade">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9e848d32-9d61-47ed-800f-38a53bb6f0e3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="86fe5c2c-c488-41d5-842d-e66d0fcbfb38">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsLast5DaysOfMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="3a4b9c5b-c21b-4769-830e-fa98e5c90809">
+      <NameColumn dwd:design-time-name="84db5c3b-3f86-43ae-aba3-00cb7790939a">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="628c59c2-8cfc-44f7-8a5b-6a0f612cf3bc">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4b1cecca-4d27-4dc1-b862-23b513a45dfa">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsLast5DaysOfMonth</ColumnID>
         </Source>
@@ -2587,23 +2587,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="76888908-1020-430a-9da6-43c79695dcfc">
+    <Attribute dwd:design-time-name="440267da-0f77-4da7-8309-d88126561358">
       <ID>Is First5 Days Of Month</ID>
       <Name>Is First 5 Days Of Month</Name>
       <Description>T/F Indicator showingTrue for the first 5 days in the selected month/fiscal period.</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e88c1e70-c595-42cd-b7a4-fa215c2524b1">
+        <KeyColumn dwd:design-time-name="ff56d814-14b2-47ab-b81c-b36b71760fc2">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca11cb1f-43e5-43fd-bd03-a4bac80d5d97">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a74178eb-c51a-42c5-a451-13e5db15c304">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>IsFirst5DaysOfMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="e31987d4-1779-408e-96ad-b630b27e41ef">
+      <NameColumn dwd:design-time-name="c85115bb-f9b7-4603-8f23-8c0822188c55">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="706af5cf-821b-485f-8fa8-3f0fd32adf0b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="686736f9-bea2-4e8d-be42-248f54c13624">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>IsFirst5DaysOfMonth</ColumnID>
         </Source>
@@ -2612,31 +2612,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bd1dc23a-156c-4d00-9197-8e13ea1cffaf">
+    <Attribute dwd:design-time-name="d3161432-79da-4f46-a735-c96eb9146367">
       <ID>Last Day Of Week Key</ID>
       <Name>Week Ending Dt</Name>
       <Description>Week Ending Date in YYYY-MM-DD format.  Week starts on Sunday.</Description>
       <Type>Weeks</Type>
       <EstimatedCount>1254</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e4908a56-4d80-4094-928a-d1cbb61c09d8">
+        <KeyColumn dwd:design-time-name="3c008e78-b821-409a-9477-3f2434e3161b">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5743ebc4-31fe-4074-9b96-0c64475281be">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="519d8dda-b489-4f9a-abc5-34985bda4216">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>LastDayOfWeekKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="d13b1627-4572-4258-8fa5-9abde8e94d65">
+      <NameColumn dwd:design-time-name="6dad4a2c-278a-4ba7-8503-64c67fb1a383">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="380d13bb-6de9-4649-b10a-765bd7dfb875">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="456b875c-95c1-4f40-b0c8-9431b29b02da">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>LastDateOfWeek</ColumnID>
         </Source>
       </NameColumn>
-      <ValueColumn dwd:design-time-name="ac5cd207-a974-4961-bd65-5fa3d2e79213">
+      <ValueColumn dwd:design-time-name="c037bf34-8821-4bfe-bbdd-591b386a9dfb">
         <DataType>Date</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="cff5c023-1a62-4fa4-981f-4426897c597c">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2fd087e7-684c-404e-8d46-ec39645b74d6">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>LastDateOfWeek</ColumnID>
         </Source>
@@ -2645,24 +2645,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6fd12d58-a5f7-4292-874e-9a376c27fdf0">
+    <Attribute dwd:design-time-name="b711d4bf-b960-4af6-973c-a81865f33b7a">
       <ID>Last Date Of Week Desc</ID>
       <Name>Week Ending</Name>
       <Description>Week Ending Date in mm/d/yy  format.  Week starts on Sunday.</Description>
       <EstimatedCount>1254</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a483846b-efab-4a27-a044-a9d1f73e2025">
+        <KeyColumn dwd:design-time-name="0e635379-793e-4915-901a-b54a0be5878d">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8059f42b-2a15-49f0-a5a6-bd67701a71fa">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea40a6f9-09d0-47f0-96bd-bf2dabb12182">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>LastDayOfWeekKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="d493e274-6c9c-4f61-a27a-0b02f3ddc335">
+      <NameColumn dwd:design-time-name="ffe03e05-d55e-4a62-aa5b-153265cb0859">
         <DataType>WChar</DataType>
         <DataSize>8</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f204e884-1ef4-4f2d-8827-2c8d129e1d26">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cd5ca06c-2827-447d-8d4d-b452932c8383">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>LastDateOfWeekDesc</ColumnID>
         </Source>
@@ -2672,25 +2672,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b7e6861b-0df2-4e91-87e4-ea58d5764b77">
+    <Attribute dwd:design-time-name="95652c76-32ec-4401-bd0f-27eaa6d722e6">
       <ID>Wholesale BFS Short Note</ID>
       <Name>BFS Short Note</Name>
       <Description>Sourced from MDS and managed by Bakery Flour Sales, allows 50 char note about the date that is useful for reporting and analysis.</Description>
       <EstimatedCount>1</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="53820da0-d770-44c3-b2f7-f7473e6a4a82">
+        <KeyColumn dwd:design-time-name="36685a3f-8154-4a8b-a978-81d209f89fbf">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7725aaf-26ee-403c-a6f1-5c5e18d6cb3e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04beedba-30c5-4c79-8117-3d36ea21ae7e">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>WholesaleBFSShortNote</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="a38ec823-ac5b-4ce8-b6b2-215a285ee6b7">
+      <NameColumn dwd:design-time-name="c2c37475-c0ff-4f84-bb09-45c84b9d6353">
         <DataType>WChar</DataType>
         <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="24373b49-16e2-4023-a122-ca3c7359bf80">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="be29d039-2c1d-4e43-a39f-72689f66c6a1">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>WholesaleBFSShortNote</ColumnID>
         </Source>
@@ -2699,25 +2699,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="17251ac8-5110-4afe-9036-89bd94055255">
+    <Attribute dwd:design-time-name="eb22f6c6-2a89-4b7d-8d32-277fddd93943">
       <ID>Wholesale FF Short Note</ID>
       <Name>FF Short Note</Name>
       <Description>Sourced from MDS and managed by Family Flour, allows 50 char note about the date that is useful for reporting and analysis.</Description>
       <EstimatedCount>1</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="58379f7c-d5a5-4d27-9810-a4874fb5d7b3">
+        <KeyColumn dwd:design-time-name="a41926bc-3535-4603-933c-7f5531ecbdff">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="30783eac-7fa2-4dd4-9438-f7168cc4abb4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="685d2c9b-8698-417a-9871-93572fe0f710">
             <TableID>ENTSales_DimDate</TableID>
             <ColumnID>WholesaleFFShortNote</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="45eea602-5167-4deb-8824-820158895e57">
+      <NameColumn dwd:design-time-name="87c0b7c9-c64f-4c54-90d2-51d4026b9cdf">
         <DataType>WChar</DataType>
         <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="82b8320e-fc16-41bc-96b4-5357aa259972">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9d7aaa0d-8cfe-422f-894c-0eb153fbf0e6">
           <TableID>ENTSales_DimDate</TableID>
           <ColumnID>WholesaleFFShortNote</ColumnID>
         </Source>
@@ -2728,94 +2728,94 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="19331d27-3fed-4416-8c35-431d82e48739">
+    <Hierarchy dwd:design-time-name="c0d7f91e-3216-4630-98c7-ee37b4674b9a">
       <ID>Hierarchy</ID>
       <Name>Calendar Year Hierarchy</Name>
       <Description>Calendar Year Hierarchy that drills from Year to Quarter-Year to Month-Year to Short Date</Description>
       <Levels>
-        <Level dwd:design-time-name="995ecb0f-361d-45cb-9b2e-e8a64f0b5e3e">
+        <Level dwd:design-time-name="81bcb4b5-446d-4e30-9359-ff68954b093f">
           <ID>Year</ID>
           <Name>Year</Name>
           <SourceAttributeID>Year Name</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="29bf6441-326e-43b1-8eeb-59cf22fdfbf1">
+        <Level dwd:design-time-name="2c62e8f2-4ea0-4630-b8c8-cfd9485e6a69">
           <ID>Quarter-Year</ID>
           <Name>Quarter-Year</Name>
           <SourceAttributeID>First Day Of Quarter Key</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="872a4cfe-84c6-42ba-96dd-116f1037912b">
+        <Level dwd:design-time-name="01426841-6315-4b49-8322-e644d5d5e9c7">
           <ID>Month-Year</ID>
           <Name>Month-Year</Name>
           <SourceAttributeID>First Day Of Month Key</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="32a1c0e7-fef0-44c3-9ed8-cd01c217d418">
+        <Level dwd:design-time-name="09a75899-2a0c-4450-81be-5a84f7a01f91">
           <ID>Short Dt</ID>
           <Name>Short Dt</Name>
           <SourceAttributeID>Date Key</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="a69342be-000f-4033-8846-1b937dc6b310">
+    <Hierarchy dwd:design-time-name="cc55b80e-d798-433f-8017-de5b537e0f5c">
       <ID>Hierarchy 2</ID>
       <Name>Relative Calendar Year Hierarchy</Name>
       <Description>Calendar Year Hierarchy that drills from Relative Year to Relative Month to Relative Dt (based on Current Rpt Date)</Description>
       <DisplayFolder>Relative to Current Rpt Date</DisplayFolder>
       <Levels>
-        <Level dwd:design-time-name="ae0009fa-8ce3-4b1a-ad4c-1c44d8be8122">
+        <Level dwd:design-time-name="69a53d38-499a-4100-91ba-5c67740020af">
           <ID>Relative Year</ID>
           <Name>Relative Year</Name>
           <SourceAttributeID>Relative Year</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="1977a03b-70eb-4027-b8b8-9d6328176d3b">
+        <Level dwd:design-time-name="25aeb3ca-4887-4c3e-bcdf-1cbcee6f1c80">
           <ID>Relative Month</ID>
           <Name>Relative Month</Name>
           <SourceAttributeID>Relative Month</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="10c97359-31b4-4f13-bdef-99d26007d622">
+        <Level dwd:design-time-name="b46e14ab-e25d-435e-a4b4-d515258d4e34">
           <ID>Relative Date</ID>
           <Name>Relative Dt</Name>
           <SourceAttributeID>Relative Date</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="76d4777f-9257-49cf-8e6d-60ca52cb25a9">
+    <Hierarchy dwd:design-time-name="76eb21f9-958e-487b-a342-8931eb89b1fd">
       <ID>Hierarchy 3</ID>
       <Name>Relative Calendar YTD Hierarchy</Name>
       <Description>Relative YTD Hierarchy that drills from Relative YTD to Short Dt</Description>
       <DisplayFolder>Relative to Current Rpt Date</DisplayFolder>
       <Levels>
-        <Level dwd:design-time-name="bb477b06-b527-4c54-a4df-56dbb183407e">
+        <Level dwd:design-time-name="9bf58dde-c56d-489f-b20a-a35a31d97af4">
           <ID>Relative YTD</ID>
           <Name>Relative YTD</Name>
           <SourceAttributeID>Relative Ytd</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="75271ac3-6fad-412e-8c05-d25ff89dd74c">
+        <Level dwd:design-time-name="66252405-6169-4bf5-94f1-61c1b9b72211">
           <ID>Short Dt</ID>
           <Name>Short Dt</Name>
           <SourceAttributeID>Date Key</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="8ca025be-1e87-418f-a699-6062df5d54b0">
+    <Hierarchy dwd:design-time-name="b101cd5f-0904-4b0e-bc19-aa60222e83b5">
       <ID>Hierarchy 4</ID>
       <Name>Fiscal Year Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="f9b75b4a-0782-4a39-9cd5-a589cd6a3663">
+        <Level dwd:design-time-name="858781bc-d11e-40a1-a1b3-e9b7b34f3ce9">
           <ID>Fiscal Year</ID>
           <Name>Fiscal Year</Name>
           <SourceAttributeID>Fiscal Year No</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="75f1800a-b46b-49e3-bef9-d0fb309d79ed">
+        <Level dwd:design-time-name="c8e24f8a-4ae3-436a-ade3-eb6aadde4a68">
           <ID>Fiscal Quarter</ID>
           <Name>Fiscal Quarter-Year</Name>
           <SourceAttributeID>Fiscal Quarter No</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="34ebc3a5-465f-432e-abe0-e68ab1cc78cd">
+        <Level dwd:design-time-name="f9d6aaa5-d76d-452e-94fe-5c60bbf71b29">
           <ID>Fiscal Period-Year</ID>
           <Name>Fiscal Period-Year</Name>
           <SourceAttributeID>Fiscal Period Year</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="d97fe69d-0f58-403b-886a-25ae97a5b580">
+        <Level dwd:design-time-name="19b0b9c5-308f-4859-9f93-27a3ceb11f77">
           <ID>Short Dt</ID>
           <Name>Short Dt</Name>
           <SourceAttributeID>Date Key</SourceAttributeID>
@@ -2823,12 +2823,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
-  <ProactiveCaching dwd:design-time-name="05d63809-1268-4f05-84ff-dad10c22819d">
+  <ProactiveCaching dwd:design-time-name="52ad4d57-72e8-4e79-bac9-4ef508cf1841">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="67a84b7d-ef13-4cdc-8b24-6739a1032db2" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="0d0dc078-a1b3-462d-ad42-f3259b1e63be" />
   </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

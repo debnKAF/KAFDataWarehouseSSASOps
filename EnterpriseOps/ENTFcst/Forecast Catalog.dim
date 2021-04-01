@@ -1,16 +1,17 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6a0f44ee-1802-43dc-99b2-681598028e5e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="de73ccb6-467b-4b6b-a145-a2bae0cf1c9b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Forecast Catalog</ID>
   <Name>Forecast Catalog</Name>
   <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+  <Description>The Forecast Catalog dimension allows users to toggle between various Forecast Snapshots.  This cube houses 12 months of snapshot history by default.</Description>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3089" scrolltop="-8876" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="0" y="0" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3089" scrolltop="-8876" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7514" y="22040" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -100,49 +101,50 @@
   </Annotations>
   <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8e921d75-2b74-4ee2-86a3-4850ea1256c9">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8c1f7f5b-6aa1-4f09-b8ef-1b03a8b972e7">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="3666d2c0-e9dd-4977-b921-d152ca503b5a">
+  <ErrorConfiguration dwd:design-time-name="5b7a2cd2-a0e3-4e48-9820-b4fbb1d4d7ce">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="bec2b09c-88e5-4ad8-afbe-6216c10c3961">
+    <Attribute dwd:design-time-name="cc2abad7-683f-4acf-bcbf-58f7d9bae670">
       <ID>Forecast Catalog Key</ID>
       <Name>Forecast Catalog Key</Name>
+      <Description>Unique Identifier in the Forecast Catalog Dimension</Description>
       <Usage>Key</Usage>
       <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="7cf4a936-5cd3-43a5-b25a-9dfcd59eceb5">
+        <KeyColumn dwd:design-time-name="4fb5e705-0741-4dbe-9f34-ec43e1c35a7a">
           <DataType>Integer</DataType>
           <NullProcessing>Error</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d33249e1-2573-483e-8531-dd05e5611d1c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="88dce0b5-22ae-43b0-a61f-7f2f0c55a6b1">
             <TableID>ENTFcst_dimForecastCatalog</TableID>
             <ColumnID>ForecastCatalogKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="61a8a42a-26cb-40eb-ad10-e23b138266f8">
+        <AttributeRelationship dwd:design-time-name="dbb0ad81-cee7-4953-93e4-d24e274d9ad6">
           <AttributeID>Forecast Desc</AttributeID>
           <Name>Forecast Desc</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="95ee6a70-a70e-48cf-92b6-4fd5699b144c">
+        <AttributeRelationship dwd:design-time-name="15b0b641-2b47-40f5-b621-eef0bfdf71a9">
           <AttributeID>Is Current Forecast</AttributeID>
           <Name>Is Current Forecast</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="757d3083-8a68-4d3f-aee9-c0a12389ecca">
+        <AttributeRelationship dwd:design-time-name="b0dfcc17-ff2a-4f3b-95ba-0e76882af5c0">
           <AttributeID>Snapshot Month Id</AttributeID>
           <Name>Snapshot Month</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a6015903-cae3-4729-aa58-2fc7210d9cf5">
+        <AttributeRelationship dwd:design-time-name="64abc777-e55c-4ad7-9f9f-5b4dfc98af1c">
           <AttributeID>Snapshot Month- Year</AttributeID>
           <Name>Snapshot Month- Year</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2a8e7f56-6c51-4d2a-9b15-b1ad59233b15">
+        <AttributeRelationship dwd:design-time-name="d80f6b0d-666c-4683-a7a3-ab3f73bc7f96">
           <AttributeID>Snapshot Year Num</AttributeID>
           <Name>Snapshot Year</Name>
         </AttributeRelationship>
@@ -152,22 +154,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="69b95a0b-b240-42e8-b158-82ec683cdbb3">
+    <Attribute dwd:design-time-name="0abd93e1-e6e3-4a11-b7c9-77ce2ca58860">
       <ID>Forecast Desc</ID>
       <Name>Forecast Desc</Name>
+      <Description>Forecast Snapshot Description.  This cube defaults to the Current Forecast which is what is currently reflected in the SOR.</Description>
       <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="60e6afaa-c66a-4d63-8790-56040036de62">
+        <KeyColumn dwd:design-time-name="6f3d654b-065d-41b1-a755-7e7a0b2f4598">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="774749dc-5742-4471-b6d4-5ace943e957a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0300a445-1bd1-4336-b9d2-737e6b026b00">
             <TableID>ENTFcst_dimForecastCatalog</TableID>
             <ColumnID>ForecastDesc</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="86448063-f4ac-4814-8fe6-9bbf33f970f2">
+        <AttributeRelationship dwd:design-time-name="602798ad-fdca-4d0a-800e-97a7878d73ac">
           <AttributeID>Sort Order</AttributeID>
           <Name>Sort Order</Name>
         </AttributeRelationship>
@@ -178,14 +181,15 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="958e2d0a-d1ba-458a-9147-310e04f60aa3">
+    <Attribute dwd:design-time-name="420f8494-98ef-4939-8700-6cc0482e58ed">
       <ID>Is Current Forecast</ID>
       <Name>Is Current Forecast</Name>
+      <Description>T/F Indicator noting if the Forecast is the most Current (vs Historical Snapshot)</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ec1de02c-fdbf-4778-94e3-42b712703979">
+        <KeyColumn dwd:design-time-name="67503d00-4794-4c9e-9aff-f19c79edacd1">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="75c61d70-dd82-4b69-b237-0e0caa0a9e48">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="17160754-3abe-464b-af81-6afa6b6c767f">
             <TableID>ENTFcst_dimForecastCatalog</TableID>
             <ColumnID>IsCurrentForecast</ColumnID>
           </Source>
@@ -194,14 +198,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d1fd4635-1f6e-4d93-b46c-6ee14d612d80">
+    <Attribute dwd:design-time-name="ee5191ac-b112-4bc3-aea4-a9689f83127b">
       <ID>Sort Order</ID>
       <Name>Sort Order</Name>
       <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="882bddaa-817e-4b81-8924-d3d65d7c044a">
+        <KeyColumn dwd:design-time-name="77c018c1-6eef-4741-8093-8195cae83077">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fc7eb48a-b923-4cfc-b293-d0e67d2ef133">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2db36c46-7466-45de-b869-0de9a760b36b">
             <TableID>ENTFcst_dimForecastCatalog</TableID>
             <ColumnID>SortOrder</ColumnID>
           </Source>
@@ -211,23 +215,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="702fbd10-f573-4e10-bfb6-dab1dc39aa95">
+    <Attribute dwd:design-time-name="c2460ea4-a644-443e-96ce-fef63c2897ef">
       <ID>Snapshot Month Id</ID>
       <Name>Snapshot Month</Name>
+      <Description>Month the Snapshot was taken</Description>
       <EstimatedCount>12</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="64b4b144-2d8c-4bd4-90b4-9d366fa9cad7">
+        <KeyColumn dwd:design-time-name="6d6f3700-1287-4298-89e7-e47704aae072">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3cbb6b6c-fa24-402e-8dd1-615254d453d8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b3461e37-c071-4dde-97a5-8e2384e2b4d4">
             <TableID>ENTFcst_dimForecastCatalog</TableID>
             <ColumnID>SnapshotMonthId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="455108a3-c5d3-4cbd-8aa8-8b888b6c62e2">
+      <NameColumn dwd:design-time-name="c4cfbf5f-000e-47ab-8219-6f6cc59bbb02">
         <DataType>WChar</DataType>
         <DataSize>30</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="560d6a86-480b-44da-995c-5b8e25f9e178">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="75e9cd3f-0818-4977-85d3-b6a7b18327cd">
           <TableID>ENTFcst_dimForecastCatalog</TableID>
           <ColumnID>SnapshotMonth</ColumnID>
         </Source>
@@ -235,15 +240,16 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="60c6bdd9-6d49-4e6a-b3f9-b04e02c149e6">
+    <Attribute dwd:design-time-name="54bb2669-3bda-43a4-8a44-fc0857346324">
       <ID>Snapshot Month- Year</ID>
       <Name>Snapshot Month- Year</Name>
+      <Description>Month - Year the Snapshot was taken</Description>
       <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e2a4f520-fb0c-4d55-8dea-2af389e7177f">
+        <KeyColumn dwd:design-time-name="9a3aedd9-5045-4c79-9c00-68d097b44a87">
           <DataType>WChar</DataType>
           <DataSize>35</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="dad69c36-77f0-454a-9ae2-01e8d422ba67">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92435a1d-cb00-4caa-919f-ca9c045eae22">
             <TableID>ENTFcst_dimForecastCatalog</TableID>
             <ColumnID>SnapshotMonth-Year</ColumnID>
           </Source>
@@ -252,14 +258,15 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0b1e355e-cb67-4d70-b480-465d75f3ea5b">
+    <Attribute dwd:design-time-name="2705e192-b90e-42df-97d0-510a0d399aa2">
       <ID>Snapshot Year Num</ID>
       <Name>Snapshot Year</Name>
+      <Description>Year the Snapshot was taken</Description>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="894e7e66-8476-4b57-ada9-89ae0eceeeee">
+        <KeyColumn dwd:design-time-name="d8f91b9d-e4b4-47cc-8c39-52e90fa71d87">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b906f9f8-826b-4752-9919-d0d97cc3ac9f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0cf89712-3078-4af4-886a-6339d4d6dbf3">
             <TableID>ENTFcst_dimForecastCatalog</TableID>
             <ColumnID>SnapshotYearNum</ColumnID>
           </Source>
