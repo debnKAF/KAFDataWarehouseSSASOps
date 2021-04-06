@@ -67,6 +67,10 @@
       <Name>Sales Order Line.dim</Name>
       <FullPath>Sales Order Line.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Intercompany.dim</Name>
+      <FullPath>Intercompany.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

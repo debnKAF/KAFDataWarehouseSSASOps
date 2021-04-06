@@ -1,17 +1,18 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a8fed486-b51e-4af2-9629-6e92675d157f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dab24c74-332a-45e7-a9ef-9aa27cf957c2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Reporting Unitof Measure</ID>
   <Name>Reporting Unit of Measure</Name>
   <CreatedTimestamp>2020-05-06T19:03:56.7Z</CreatedTimestamp>
   <LastSchemaUpdate>2021-01-03T22:42:35.746667Z</LastSchemaUpdate>
-  <Description>This utility dimension works with all Qty measures to allow for toggling between various Unit Of Measure (UOM) conversions.  UOM's currently available are Cases, Eaches, Lbs and Hundredweight, the latter being based on Net Weight.  The dimension is set to a default value of Cases since these are non-aggregatable.  The accuracy of these data conversions is completely dependent on the conversion rates being properly entered into the system of record (SOR).  If a conversion rate is unknown, the Qty will be multiplied by 1 in the conversion rule.</Description>
+  <Description>This utility dimension works with all Qty measures to allow for toggling between various Unit Of Measure (UOM) conversions.  UOM's currently available are Cases, Eaches, Lbs and Hundredweight, the latter being based on Net Weight.  The dimension is set to a default value of Cases since these are non-aggregatable.  The accuracy of these data conversions is completely dependent on the conversion rates being properly entered into the system of record (SOR).  If a conversion rate is unknown, the Qty will be multiplied by 1 in the conversion rule. The rates are not stored historical and will always reflect what is currently in the system
+</Description>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3632" scrolltop="-9366" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="0" y="0" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3632" scrolltop="-9366" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9975" y="22040" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -69,11 +70,11 @@
   </Annotations>
   <LastProcessed>2021-01-25T15:26:16.096667Z</LastProcessed>
   <State>Processed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="11be1575-e781-4cfb-999e-c10e316e2967">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2829f8f2-4992-4479-9d3f-279f24c92b8d">
     <DataSourceViewID>Enterprise DW</DataSourceViewID>
   </Source>
   <Type>Utility</Type>
-  <ErrorConfiguration dwd:design-time-name="17810a7b-215c-4b9f-8970-cf72f37b98f9">
+  <ErrorConfiguration dwd:design-time-name="1a9bc338-4e34-4914-9c98-f5806fc414c9">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
@@ -83,35 +84,35 @@
   <Collation>Latin1_General_CI_AS</Collation>
   <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="eff88984-4710-4165-a1ba-e2d25a3c460d">
+    <Attribute dwd:design-time-name="11f760d3-7900-409c-b8de-8dac478a80c8">
       <ID>Unit Of Measure Key</ID>
       <Name>Reporting Unit of Measure</Name>
       <Description>Choice of reporting unit of measure.  Current values are Eaches, Cases, Hundredweight and Pounds.  Default value is Cases.</Description>
       <Usage>Key</Usage>
       <EstimatedCount>7</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e6df5113-c284-4e7e-ae0e-d07876b0c122">
+        <KeyColumn dwd:design-time-name="9a139691-18e7-446c-9e00-0e1f1d352e77">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="689d903c-758a-4ea7-ac07-641231be8d8d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4c1a7de0-8877-441e-9ca2-5b9cabe30cd0">
             <TableID>dim_ReportingUnitofMeasure</TableID>
             <ColumnID>UnitOfMeasureKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="85495d90-c83f-4fd9-9d09-1d88da166abc">
+      <NameColumn dwd:design-time-name="e7f61713-38a2-40ab-a8b7-20663fd67b19">
         <DataType>WChar</DataType>
         <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="2a2dfd1d-ca82-4e90-acf7-ea946d66b5ac">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8219ad0b-ea26-4a2b-a20a-25a77d8831f2">
           <TableID>dim_ReportingUnitofMeasure</TableID>
           <ColumnID>UnitOfMeasureDesc</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
       <DefaultMember>[Reporting Unit of Measure].[Reporting Unit of Measure].&amp;[1]</DefaultMember>
-      <ValueColumn dwd:design-time-name="f58bb2f8-c496-415f-85b2-3dc87aa6e250">
+      <ValueColumn dwd:design-time-name="d449f607-3e84-4fc2-82d6-d0b418b95cb2">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="6159222d-ef6b-42af-a2ed-1ca1346ab07a">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e7b8f67b-61fa-4661-8ae8-68302511e1d9">
           <TableID>dim_ReportingUnitofMeasure</TableID>
           <ColumnID>UnitOfMeasureCd</ColumnID>
         </Source>
@@ -121,12 +122,12 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
-  <ProactiveCaching dwd:design-time-name="9100eab3-65ac-4d8c-b3f2-559f23f7d898">
+  <ProactiveCaching dwd:design-time-name="a6e7e900-2176-4d77-9d6a-ea4b64af0f8a">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="ac79b055-9c11-48a0-95e3-4ac1c46d1894" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="288b86f0-bd36-49dd-aaa5-3d91ae06c402" />
   </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>
