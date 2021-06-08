@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d7cf789b-8e63-4efb-96d5-ceaab50e11f7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ea145973-1922-4f58-9eef-585e346975b2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>ENTOps</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Fact Sales</ID>
       <Partitions>
-        <Partition dwd:design-time-name="77632af6-6276-444a-8ac5-1a4a43be087c">
+        <Partition dwd:design-time-name="bf84a0f6-2e48-4a8e-8535-ecb4fe80ef04">
           <ID>Fact Sales - KAF</ID>
           <Name>Fact Sales - KAF</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="9b4c3e0c-95ac-4906-8101-c6f9656ea7a2">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="00e82864-34fd-4d8c-9ddb-3dd4e1576c1f">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT [ENTOps].[factSales].[CompanyKey],[ENTOps].[factSales].[OrderDateKey],[ENTOps].[factSales].[InvoiceDateKey],[ENTOps].[factSales].[ShipDateKey],[ENTOps].[factSales].[OrderCustomerKey],[ENTOps].[factSales].[BillToCustomerKey],[ENTOps].[factSales].[DeliverToKey],[ENTOps].[factSales].[VendorKey],[ENTOps].[factSales].[WarehouseKey],[ENTOps].[factSales].[GLAcctKey],[ENTOps].[factSales].[UnitPriceLocal],[ENTOps].[factSales].[UnitCostLocal],[ENTOps].[factSales].[UnitDiscLocal],[ENTOps].[factSales].[ItemKey],[ENTOps].[factSales].[InvoiceNetSalesAmt],[ENTOps].[factSales].[InvoiceGrossSalesAmt],[ENTOps].[factSales].[InvoiceDiscAmt],[ENTOps].[factSales].[InvoiceCOGSAmt],[ENTOps].[factSales].[OrderNetSalesAmt],[ENTOps].[factSales].[OrderGrossSalesAmt],[ENTOps].[factSales].[OrderDiscAmt],[ENTOps].[factSales].[OrderCOGSAmt],[ENTOps].[factSales].[OrderQtyEach],[ENTOps].[factSales].[OrderQtyCase],[ENTOps].[factSales].[OrderQtyCWT],[ENTOps].[factSales].[OrderQtyLbs],[ENTOps].[factSales].[InvoiceQtyEach],[ENTOps].[factSales].[InvoiceQtyCase],[ENTOps].[factSales].[InvoiceQtyCWT],[ENTOps].[factSales].[InvoiceQtyLbs],[ENTOps].[factSales].[MergeCustomerKey],[ENTOps].[factSales].[AllocLineDiscAmtLocal],[ENTOps].[factSales].[DocumentKey],[ENTOps].[factSales].[Datasource],[ENTOps].[factSales].[SalesOrderNum],[ENTOps].[factSales].[CompanyCd],[ENTOps].[factSales].[SalesOrderKey],[ENTOps].[factSales].[SalesOrderSourceKey],[ENTOps].[factSales].[AllocShippingIncomeAmt],[ENTOps].[factSales].[AllocShippingExpenseAmt],[ENTOps].[factSales].[SalesOrderLineKey],[ENTOps].[factSales].[InvoiceLineAmt],[ENTOps].[factSales].[InvoiceExtAmt],[ENTOps].[factSales].[OrderLineAmt],[ENTOps].[factSales].[OrderExtAmt],[ENTOps].[factSales].[EstOrderDateKey],[ENTOps].[factSales].[OrderQty],[ENTOps].[factSales].[InvoiceQty],[ENTOps].[factSales].[OrderTimeKey],[ENTOps].[factSales].[OrderQtyGrossLbs],[ENTOps].[factSales].[OrderQtyPallets],[ENTOps].[factSales].[InvoiceQtyGrossLbs],[ENTOps].[factSales].[InvoiceQtyPallets],[ENTOps].[factSales].[AllocPOFreightInAmt],[ENTOps].[factSales].[AllocTransferFreightInAmt],[ENTOps].[factSales].[AllocDropShipFreightOutAmt]
 FROM [ENTOps].[factSales]
@@ -23,14 +23,14 @@ WHERE [CompanyCd] = 'KAF'</QueryDefinition>
           <EstimatedRows>106446</EstimatedRows>
           <AggregationDesignID>40PctAgg</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="74c72d79-a943-4abb-8d67-9f8984adb691">
+        <Partition dwd:design-time-name="fa141175-d3e1-42d0-a51f-39d53cb752a8">
           <ID>Fact Sales - BCI</ID>
           <Name>Fact Sales - BCI</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="f1e04fd4-845d-4ff3-919d-4c405b48c2be">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="85150720-925d-4cab-9b4c-1518567eeb90">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT [ENTOps].[factSales].[CompanyKey],[ENTOps].[factSales].[OrderDateKey],[ENTOps].[factSales].[InvoiceDateKey],[ENTOps].[factSales].[ShipDateKey],[ENTOps].[factSales].[OrderCustomerKey],[ENTOps].[factSales].[BillToCustomerKey],[ENTOps].[factSales].[DeliverToKey],[ENTOps].[factSales].[VendorKey],[ENTOps].[factSales].[WarehouseKey],[ENTOps].[factSales].[GLAcctKey],[ENTOps].[factSales].[UnitPriceLocal],[ENTOps].[factSales].[UnitCostLocal],[ENTOps].[factSales].[UnitDiscLocal],[ENTOps].[factSales].[ItemKey],[ENTOps].[factSales].[InvoiceNetSalesAmt],[ENTOps].[factSales].[InvoiceGrossSalesAmt],[ENTOps].[factSales].[InvoiceDiscAmt],[ENTOps].[factSales].[InvoiceCOGSAmt],[ENTOps].[factSales].[OrderNetSalesAmt],[ENTOps].[factSales].[OrderGrossSalesAmt],[ENTOps].[factSales].[OrderDiscAmt],[ENTOps].[factSales].[OrderCOGSAmt],[ENTOps].[factSales].[OrderQtyEach],[ENTOps].[factSales].[OrderQtyCase],[ENTOps].[factSales].[OrderQtyCWT],[ENTOps].[factSales].[OrderQtyLbs],[ENTOps].[factSales].[InvoiceQtyEach],[ENTOps].[factSales].[InvoiceQtyCase],[ENTOps].[factSales].[InvoiceQtyCWT],[ENTOps].[factSales].[InvoiceQtyLbs],[ENTOps].[factSales].[MergeCustomerKey],[ENTOps].[factSales].[AllocLineDiscAmtLocal],[ENTOps].[factSales].[DocumentKey],[ENTOps].[factSales].[Datasource],[ENTOps].[factSales].[SalesOrderNum],[ENTOps].[factSales].[CompanyCd],[ENTOps].[factSales].[SalesOrderKey],[ENTOps].[factSales].[SalesOrderSourceKey],[ENTOps].[factSales].[AllocShippingIncomeAmt],[ENTOps].[factSales].[AllocShippingExpenseAmt],[ENTOps].[factSales].[SalesOrderLineKey],[ENTOps].[factSales].[InvoiceLineAmt],[ENTOps].[factSales].[InvoiceExtAmt],[ENTOps].[factSales].[OrderLineAmt],[ENTOps].[factSales].[OrderExtAmt],[ENTOps].[factSales].[EstOrderDateKey],[ENTOps].[factSales].[OrderQty],[ENTOps].[factSales].[InvoiceQty],[ENTOps].[factSales].[OrderTimeKey],[ENTOps].[factSales].[OrderQtyGrossLbs],[ENTOps].[factSales].[OrderQtyPallets],[ENTOps].[factSales].[InvoiceQtyGrossLbs],[ENTOps].[factSales].[InvoiceQtyPallets],[ENTOps].[factSales].[AllocPOFreightInAmt],[ENTOps].[factSales].[AllocTransferFreightInAmt],[ENTOps].[factSales].[AllocDropShipFreightOutAmt]
 FROM [ENTOps].[factSales]
@@ -737,347 +737,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                 <Attribute>
                   <AttributeID>Data As Of Datetime</AttributeID>
                   <EstimatedCount>4</EstimatedCount>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension>
-              <CubeDimensionID>Item</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Item Key</AttributeID>
-                  <EstimatedCount>19216</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Item Num</AttributeID>
-                  <EstimatedCount>12840</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Item Name</AttributeID>
-                  <EstimatedCount>12840</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Item Num 1</AttributeID>
-                  <EstimatedCount>12840</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Item Num 2</AttributeID>
-                  <EstimatedCount>12840</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Item Desc</AttributeID>
-                  <EstimatedCount>12840</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Barcode</AttributeID>
-                  <EstimatedCount>12248</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Barcode 1</AttributeID>
-                  <EstimatedCount>12248</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>GTIN</AttributeID>
-                  <EstimatedCount>277</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Line Cd</AttributeID>
-                  <EstimatedCount>52</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Line Cd 1</AttributeID>
-                  <EstimatedCount>54</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Category Cd</AttributeID>
-                  <EstimatedCount>117</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Category Desc</AttributeID>
-                  <EstimatedCount>117</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Family Cd</AttributeID>
-                  <EstimatedCount>30</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Family Cd 1</AttributeID>
-                  <EstimatedCount>30</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>SKU Group Cd</AttributeID>
-                  <EstimatedCount>75</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Brand Cd</AttributeID>
-                  <EstimatedCount>262</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Item Group Cd</AttributeID>
-                  <EstimatedCount>21</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Net Weight</AttributeID>
-                  <EstimatedCount>590</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Tare Weight</AttributeID>
-                  <EstimatedCount>62</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Gross Weight</AttributeID>
-                  <EstimatedCount>650</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Depth</AttributeID>
-                  <EstimatedCount>236</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Width</AttributeID>
-                  <EstimatedCount>230</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Height</AttributeID>
-                  <EstimatedCount>215</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Cubic Inches</AttributeID>
-                  <EstimatedCount>920</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Qty Per Layer</AttributeID>
-                  <EstimatedCount>30</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Units Per Case</AttributeID>
-                  <EstimatedCount>21</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Cases Per Pallet</AttributeID>
-                  <EstimatedCount>39</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Units Per Pallet</AttributeID>
-                  <EstimatedCount>48</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Best Before Days</AttributeID>
-                  <EstimatedCount>7</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Shelf Advice Days</AttributeID>
-                  <EstimatedCount>4</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Shelf Life Days</AttributeID>
-                  <EstimatedCount>63</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Target End Dt</AttributeID>
-                  <EstimatedCount>383</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Target Begin Dt</AttributeID>
-                  <EstimatedCount>723</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Availability Cd</AttributeID>
-                  <EstimatedCount>13</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Allergen Type Cd</AttributeID>
-                  <EstimatedCount>40</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>GMO Grade Label Cd</AttributeID>
-                  <EstimatedCount>18</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>GMO Pct</AttributeID>
-                  <EstimatedCount>30</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Ready To Eat Cd</AttributeID>
-                  <EstimatedCount>10</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Virtual Kit</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Production Type Id</AttributeID>
-                  <EstimatedCount>4</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Inventory Status Cd</AttributeID>
-                  <EstimatedCount>11</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Coverage Group Cd</AttributeID>
-                  <EstimatedCount>8</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Item Buyer Group Cd</AttributeID>
-                  <EstimatedCount>24</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Primary Vendor Item Num</AttributeID>
-                  <EstimatedCount>5435</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Base Sales Gross Price</AttributeID>
-                  <EstimatedCount>1885</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Base Sales UOM Cd</AttributeID>
-                  <EstimatedCount>10</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Base Sales Gross Price Last Mod Dt</AttributeID>
-                  <EstimatedCount>995</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Unit Cost</AttributeID>
-                  <EstimatedCount>3089</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Inventory UOM Cd</AttributeID>
-                  <EstimatedCount>10</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Default Business Unit Cd</AttributeID>
-                  <EstimatedCount>6</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Default Item Type Cd</AttributeID>
-                  <EstimatedCount>17</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Organic</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is100 Pct Organic</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Kosher</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is GMO</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Non GMO</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Non GMO Labled</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Gluten Free</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is GF Certified</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Whole Grain</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Allergen Labeled</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Soft Wheat</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Winter Wheat</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Spring Wheat</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Special Savings Ind</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Purchase Leadtime</AttributeID>
-                  <EstimatedCount>39</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>BOMUOM Cd</AttributeID>
-                  <EstimatedCount>10</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Origin Country Region Cd</AttributeID>
-                  <EstimatedCount>57</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Invent Product Type</AttributeID>
-                  <EstimatedCount>4</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Level1 Id</AttributeID>
-                  <EstimatedCount>4</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Level2 Id</AttributeID>
-                  <EstimatedCount>20</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Level3 Id</AttributeID>
-                  <EstimatedCount>34</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Num Layers High</AttributeID>
-                  <EstimatedCount>47</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Exclude From Reporting Ind</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Default Item Type Cd 1</AttributeID>
-                  <EstimatedCount>17</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Default Business Unit Cd 1</AttributeID>
-                  <EstimatedCount>6</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Item Num Id</AttributeID>
-                  <EstimatedCount>12243</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Target End Year</AttributeID>
-                  <EstimatedCount>14</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Target End Month Key</AttributeID>
-                  <EstimatedCount>98</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Target Begin Year</AttributeID>
-                  <EstimatedCount>17</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Target Begin Month Key</AttributeID>
-                  <EstimatedCount>133</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Tariff Cd</AttributeID>
-                  <EstimatedCount>121</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Tax Group Cd</AttributeID>
-                  <EstimatedCount>7</EstimatedCount>
                 </Attribute>
               </Attributes>
             </Dimension>
@@ -2023,14 +1682,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                   <CubeDimensionID>Datasource</CubeDimensionID>
                 </Dimension>
                 <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Level1 Id</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
                   <CubeDimensionID>Sales Order</CubeDimensionID>
                 </Dimension>
                 <Dimension>
@@ -2093,9 +1744,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                   </Attributes>
                 </Dimension>
                 <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
                   <CubeDimensionID>Sales Order</CubeDimensionID>
                 </Dimension>
                 <Dimension>
@@ -2135,14 +1783,14 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
     <MeasureGroup>
       <ID>Fact Purchase</ID>
       <Partitions>
-        <Partition dwd:design-time-name="c5bda11c-d089-4e91-9703-f5ffc921a6ee">
+        <Partition dwd:design-time-name="b88582c7-43c6-4d4b-9e7e-8f4de31f73bc">
           <ID>Fact Purchase - KAF</ID>
           <Name>Fact Purchase - KAF</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="ed15daa6-90dd-4c70-9c23-0c922cfb2605">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="ac38773c-2002-46cd-bd12-938dba34d287">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT *
 FROM [ENTOps].[factPurchase]
@@ -2153,14 +1801,14 @@ WHERE CompanyCd = 'KAF'</QueryDefinition>
           <ProcessingMode>Regular</ProcessingMode>
           <EstimatedRows>112907</EstimatedRows>
         </Partition>
-        <Partition dwd:design-time-name="9c417430-5b36-4cbe-a152-503197332b0a">
+        <Partition dwd:design-time-name="ca2814e9-7848-4a54-828a-631caaafca51">
           <ID>Fact Purchase - BCI</ID>
           <Name>Fact Purchase - BCI</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="2a70f2db-93cb-4774-a66f-4dbcdc040c8f">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="fdbb9733-91ba-4a6c-afa5-3d6df7796162">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT*
 FROM [ENTOps].[factPurchase]
@@ -2176,14 +1824,14 @@ WHERE CompanyCd = 'BCI'</QueryDefinition>
     <MeasureGroup>
       <ID>Fact Transfer</ID>
       <Partitions>
-        <Partition dwd:design-time-name="cd5db997-334e-4877-9fdf-ef9b32c9fd31">
+        <Partition dwd:design-time-name="ceacb464-2f11-4161-9e3e-a88af5eb3afb">
           <ID>Fact Transfer - KAF</ID>
           <Name>Fact Transfer - KAF</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="df5bf0d0-0e9d-4668-9974-c42ae635502e">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="55652505-26af-4d0c-9114-0677c906512e">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT [ENTOps].[factTransfer].[CompanyKey],[ENTOps].[factTransfer].[OrderDateKey],[ENTOps].[factTransfer].[ShipDateKey],[ENTOps].[factTransfer].[ReceiveDateKey],[ENTOps].[factTransfer].[OrderVendorKey],[ENTOps].[factTransfer].[BillToVendorKey],[ENTOps].[factTransfer].[DeliverToKey],[ENTOps].[factTransfer].[ItemKey],[ENTOps].[factTransfer].[FromWarehouseKey],[ENTOps].[factTransfer].[ToWarehouseKey],[ENTOps].[factTransfer].[DocumentKey],[ENTOps].[factTransfer].[ReceiveQty],[ENTOps].[factTransfer].[ShipQty],[ENTOps].[factTransfer].[TransferQty],[ENTOps].[factTransfer].[AllocFreightInAmtLocal],[ENTOps].[factTransfer].[Datasource],[ENTOps].[factTransfer].[CustomerKey],[ENTOps].[factTransfer].[OrderTimeKey],[ENTOps].[factTransfer].[TransferOrderKey],[ENTOps].[factTransfer].[TransferOrderLineKey],[ENTOps].[factTransfer].[ReceiveQtyEach],[ENTOps].[factTransfer].[ReceiveQtyCase],[ENTOps].[factTransfer].[ReceiveQtyCWT],[ENTOps].[factTransfer].[ReceiveQtyLbs],[ENTOps].[factTransfer].[ReceiveQtyGrossLbs],[ENTOps].[factTransfer].[ReceiveQtyPallets],[ENTOps].[factTransfer].[ShipQtyEach],[ENTOps].[factTransfer].[ShipQtyCase],[ENTOps].[factTransfer].[ShipQtyCWT],[ENTOps].[factTransfer].[ShipQtyLbs],[ENTOps].[factTransfer].[ShipQtyGrossLbs],[ENTOps].[factTransfer].[ShipQtyPallets],[ENTOps].[factTransfer].[TransferQtyEach],[ENTOps].[factTransfer].[TransferQtyCase],[ENTOps].[factTransfer].[TransferQtyCWT],[ENTOps].[factTransfer].[TransferQtyLbs],[ENTOps].[factTransfer].[TransferQtyGrossLbs],[ENTOps].[factTransfer].[TransferQtyPallets],[ENTOps].[factTransfer].[CompanyCd]
 FROM [ENTOps].[factTransfer]
@@ -2194,14 +1842,14 @@ WHERE CompanyCd = 'KAF'</QueryDefinition>
           <ProcessingMode>Regular</ProcessingMode>
           <EstimatedRows>14430</EstimatedRows>
         </Partition>
-        <Partition dwd:design-time-name="499b114f-0bc5-42e4-96c3-2e94d03bddf1">
+        <Partition dwd:design-time-name="878b37a7-54a5-4beb-ad9d-4a6d49a12d26">
           <ID>Fact Transfer</ID>
           <Name>Fact Transfer - BCI</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="3b9a3439-8cc5-4fcd-9ab0-6ebcfc9f559b">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="9347eee4-56b5-4561-b59f-a114fb3ea48e">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT [ENTOps].[factTransfer].[CompanyKey],[ENTOps].[factTransfer].[OrderDateKey],[ENTOps].[factTransfer].[ShipDateKey],[ENTOps].[factTransfer].[ReceiveDateKey],[ENTOps].[factTransfer].[OrderVendorKey],[ENTOps].[factTransfer].[BillToVendorKey],[ENTOps].[factTransfer].[DeliverToKey],[ENTOps].[factTransfer].[ItemKey],[ENTOps].[factTransfer].[FromWarehouseKey],[ENTOps].[factTransfer].[ToWarehouseKey],[ENTOps].[factTransfer].[DocumentKey],[ENTOps].[factTransfer].[ReceiveQty],[ENTOps].[factTransfer].[ShipQty],[ENTOps].[factTransfer].[TransferQty],[ENTOps].[factTransfer].[AllocFreightInAmtLocal],[ENTOps].[factTransfer].[Datasource],[ENTOps].[factTransfer].[CustomerKey],[ENTOps].[factTransfer].[OrderTimeKey],[ENTOps].[factTransfer].[TransferOrderKey],[ENTOps].[factTransfer].[TransferOrderLineKey],[ENTOps].[factTransfer].[ReceiveQtyEach],[ENTOps].[factTransfer].[ReceiveQtyCase],[ENTOps].[factTransfer].[ReceiveQtyCWT],[ENTOps].[factTransfer].[ReceiveQtyLbs],[ENTOps].[factTransfer].[ReceiveQtyGrossLbs],[ENTOps].[factTransfer].[ReceiveQtyPallets],[ENTOps].[factTransfer].[ShipQtyEach],[ENTOps].[factTransfer].[ShipQtyCase],[ENTOps].[factTransfer].[ShipQtyCWT],[ENTOps].[factTransfer].[ShipQtyLbs],[ENTOps].[factTransfer].[ShipQtyGrossLbs],[ENTOps].[factTransfer].[ShipQtyPallets],[ENTOps].[factTransfer].[TransferQtyEach],[ENTOps].[factTransfer].[TransferQtyCase],[ENTOps].[factTransfer].[TransferQtyCWT],[ENTOps].[factTransfer].[TransferQtyLbs],[ENTOps].[factTransfer].[TransferQtyGrossLbs],[ENTOps].[factTransfer].[TransferQtyPallets],[ENTOps].[factTransfer].[CompanyCd]
 FROM [ENTOps].[factTransfer]

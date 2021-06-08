@@ -98,7 +98,7 @@
           <ConfigurationSetting>
             <Id>Enterprise DW</Id>
             <Name>Enterprise DW</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=bi-dev;Integrated Security=SSPI;Initial Catalog=EnterpriseDW</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=axsqlha2;Integrated Security=SSPI;Initial Catalog=EnterpriseDW</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
