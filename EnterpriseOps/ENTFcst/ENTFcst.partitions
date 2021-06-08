@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9366b701-7bb8-45c7-bb61-7207d115b72d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="720cbdd9-00fa-49e1-99c0-e61e02d70b6b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>ENTFcst</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Fact Sales</ID>
       <Partitions>
-        <Partition dwd:design-time-name="81a7b112-3f27-4c52-a30d-ec67a4bb6411">
+        <Partition dwd:design-time-name="3cfc50b8-ded1-4db6-b02e-4922a0646548">
           <ID>Fact Sales - KAF</ID>
           <Name>Fact Sales - KAF</Name>
           <CreatedTimestamp>2020-07-06T21:48:20.77Z</CreatedTimestamp>
           <LastSchemaUpdate>2021-01-03T22:42:36.13Z</LastSchemaUpdate>
           <LastProcessed>2021-01-25T15:30:48.093333Z</LastProcessed>
           <State>Processed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="3800bed4-1287-485e-95e8-b07d221e678a">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="5659f983-6769-4afd-a3ba-ef99519daa28">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT *
 FROM [ENTFcst].[factSales]
@@ -20,25 +20,25 @@ WHERE [CompanyCd] = 'KAF'</QueryDefinition>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="c59ff328-a1fc-4b07-8c18-1b96a66aa2ad">
+          <ProactiveCaching dwd:design-time-name="8ea1feb1-4373-44b7-ad5b-a561b1bd0bd7">
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="58ef7a7b-e94a-46a1-8909-85f98331205d" />
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="7bab3314-938b-432d-957e-52dc747b9f04" />
           </ProactiveCaching>
           <EstimatedSize>17073414</EstimatedSize>
           <EstimatedRows>141175</EstimatedRows>
           <AggregationDesignID>UsageBased</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="47607e5b-1cef-4d44-8b90-f2d9d2d82a4d">
+        <Partition dwd:design-time-name="a5f98781-399f-4caa-b909-eeaa28d74cfb">
           <ID>Fact Sales - BCI</ID>
           <Name>Fact Sales - BCI</Name>
           <CreatedTimestamp>2020-07-06T21:48:20.816667Z</CreatedTimestamp>
           <LastSchemaUpdate>2021-01-03T22:42:36.3Z</LastSchemaUpdate>
           <LastProcessed>2021-01-25T15:35:41.67Z</LastProcessed>
           <State>Processed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="857a828d-698e-45d1-84f0-1728b71473ab">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="3ad9039d-0005-4b30-9ccc-0a80247cfcf4">
             <DataSourceID>Enterprise DW</DataSourceID>
             <QueryDefinition>SELECT *
 FROM [ENTFcst].[factSales]
@@ -47,12 +47,12 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="3c578802-b980-46a5-80a7-d4651916b9d1">
+          <ProactiveCaching dwd:design-time-name="8bd6f368-26fe-4419-bb48-cc5e2b31dc14">
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4eed1a96-973f-4185-bafe-775607806e4e" />
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="faf04924-9267-4808-8de6-1bee90156ac5" />
           </ProactiveCaching>
           <EstimatedSize>777252900</EstimatedSize>
           <EstimatedRows>7326496</EstimatedRows>
@@ -346,22 +346,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                   <EstimatedCount>295</EstimatedCount>
                 </Attribute>
                 <Attribute>
-                  <AttributeID>Product Line Cd</AttributeID>
-                  <EstimatedCount>53</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Line Cd 1</AttributeID>
-                  <EstimatedCount>55</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Category Cd</AttributeID>
-                  <EstimatedCount>117</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Category Desc</AttributeID>
-                  <EstimatedCount>117</EstimatedCount>
-                </Attribute>
-                <Attribute>
                   <AttributeID>Product Family Cd</AttributeID>
                   <EstimatedCount>31</EstimatedCount>
                 </Attribute>
@@ -526,14 +510,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                   <EstimatedCount>1</EstimatedCount>
                 </Attribute>
                 <Attribute>
-                  <AttributeID>Is Kosher</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is GMO</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
                   <AttributeID>Is Non GMO</AttributeID>
                   <EstimatedCount>1</EstimatedCount>
                 </Attribute>
@@ -542,32 +518,8 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                   <EstimatedCount>2</EstimatedCount>
                 </Attribute>
                 <Attribute>
-                  <AttributeID>Is Gluten Free</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
                   <AttributeID>Is GF Certified</AttributeID>
                   <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Whole Grain</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Allergen Labeled</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Soft Wheat</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Winter Wheat</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Spring Wheat</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
                 </Attribute>
                 <Attribute>
                   <AttributeID>Special Savings Ind</AttributeID>
@@ -1647,12 +1599,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Item Num 1</AttributeID>
                     </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Line Cd</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Category Cd</AttributeID>
-                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
@@ -1834,9 +1780,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Item Num 1</AttributeID>
                     </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Category Cd</AttributeID>
-                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
@@ -1956,12 +1899,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Item Num 1</AttributeID>
                     </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Line Cd</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Category Cd</AttributeID>
-                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
@@ -2022,12 +1959,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                     </Attribute>
                     <Attribute>
                       <AttributeID>Item Num 1</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Line Cd</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Category Cd</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -2274,9 +2205,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Item Num 1</AttributeID>
                     </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Line Cd</AttributeID>
-                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
@@ -2463,12 +2391,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Item Num 1</AttributeID>
                     </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Line Cd</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Category Cd</AttributeID>
-                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
@@ -2530,9 +2452,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Item Num 1</AttributeID>
                     </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Line Cd</AttributeID>
-                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
@@ -2593,9 +2512,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                     </Attribute>
                     <Attribute>
                       <AttributeID>Item Num 1</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Category Cd</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -2943,14 +2859,14 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
     <MeasureGroup>
       <ID>Fact Sales Budget TEMP</ID>
       <Partitions>
-        <Partition dwd:design-time-name="a43eba47-d5af-4972-b8bc-799b478e591a">
+        <Partition dwd:design-time-name="8bcc0fca-030f-4430-8352-15dff47a7bb4">
           <ID>Fact Sales Budget TEMP</ID>
           <Name>Fact Sales Budget TEMP</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="58a2aeb9-6f17-4690-87ab-1e2dee158921">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ea39d730-9d39-4ff0-9b13-df9f7d45701c">
             <DataSourceViewID>Enterprise DW</DataSourceViewID>
             <TableID>ENTFcst_factSalesBudgetTEMP</TableID>
           </Source>
@@ -2964,14 +2880,14 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
     <MeasureGroup>
       <ID>Fact Forecast</ID>
       <Partitions>
-        <Partition dwd:design-time-name="28ea77e7-3cb1-49fa-8c0e-76c7c869217f">
+        <Partition dwd:design-time-name="a3f6df4a-4e31-4ea2-9b4d-2e11d81dc20e">
           <ID>Fact Forecast</ID>
           <Name>Fact Forecast</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7b729a56-9165-457d-8da4-af2c92e67ee2">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="409b1ec4-aace-484f-8304-2150f2970dc7">
             <DataSourceViewID>Enterprise DW</DataSourceViewID>
             <TableID>ENTFcst_factForecastTEMP</TableID>
           </Source>
@@ -3028,22 +2944,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                 <Attribute>
                   <AttributeID>GTIN</AttributeID>
                   <EstimatedCount>295</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Line Cd</AttributeID>
-                  <EstimatedCount>53</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Line Cd 1</AttributeID>
-                  <EstimatedCount>55</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Category Cd</AttributeID>
-                  <EstimatedCount>117</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Category Desc</AttributeID>
-                  <EstimatedCount>117</EstimatedCount>
                 </Attribute>
                 <Attribute>
                   <AttributeID>Product Family Cd</AttributeID>
@@ -3210,14 +3110,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                   <EstimatedCount>1</EstimatedCount>
                 </Attribute>
                 <Attribute>
-                  <AttributeID>Is Kosher</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is GMO</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
                   <AttributeID>Is Non GMO</AttributeID>
                   <EstimatedCount>1</EstimatedCount>
                 </Attribute>
@@ -3226,32 +3118,8 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                   <EstimatedCount>2</EstimatedCount>
                 </Attribute>
                 <Attribute>
-                  <AttributeID>Is Gluten Free</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
                   <AttributeID>Is GF Certified</AttributeID>
                   <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Whole Grain</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Allergen Labeled</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Soft Wheat</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Winter Wheat</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Is Spring Wheat</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
                 </Attribute>
                 <Attribute>
                   <AttributeID>Special Savings Ind</AttributeID>
@@ -4300,12 +4168,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Item Num</AttributeID>
                     </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Line Cd</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Category Cd</AttributeID>
-                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
@@ -4458,12 +4320,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Item Num</AttributeID>
                     </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Line Cd</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Category Cd</AttributeID>
-                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
@@ -4541,9 +4397,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Item Num</AttributeID>
                     </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Line Cd</AttributeID>
-                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
@@ -4620,9 +4473,6 @@ WHERE [CompanyCd] = 'BCI'</QueryDefinition>
                     </Attribute>
                     <Attribute>
                       <AttributeID>Item Num</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Product Line Cd</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
